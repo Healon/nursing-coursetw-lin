@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 本機週更：每週日 16:00（接在雲端 GitHub Actions 週更 15:00 之後）跑 local_update.py，
+     補爬雲端機房 IP 被擋的 jct/tnpa、收 twna 另存頁、commit push。
+     當時沒開機則於下次喚醒補跑一次（StartCalendarInterval 特性）。
+     必須用專案 venv 的 Homebrew Python，勿改 /usr/bin/python3
+     （系統 Python 在 launchd 讀外接 SSD 會被 TCC 擋，LESSONS L-2026-07-10-005）。
+     安裝／移除指令見 README「本機更新（一個指令）」。 -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.lin.nursing-local-update</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/healon/Projects/nursing-coursetw-lin/.venv/bin/python</string>
+        <string>/Users/healon/Projects/nursing-coursetw-lin/scripts/local_update.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/healon/Projects/nursing-coursetw-lin</string>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>16</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/tmp/nursing-local-update.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/nursing-local-update.log</string>
+</dict>
+</plist>

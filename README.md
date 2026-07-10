@@ -197,6 +197,33 @@ launchctl load ~/Library/LaunchAgents/com.lin.twna-watch.plist
 5. 上線前清掉示範資料：`config/site.py` 把 `demo` 的 `enabled` 改 `False`，執行
    `python3 scripts/update.py --reset`，確認頁面只剩真實來源後 commit push。
 
+## 本機更新（一個指令）
+
+雲端每週日 15:00 自動更新 9 家學會，但有兩家（醫策會 jct、專科護理師學會 tnpa）會擋
+GitHub 機房 IP，只有台灣住宅 IP 爬得到（LESSONS L-2026-07-10-008）；台灣護理學會（twna）
+的另存頁也只存在你電腦裡。這三家由**同一個指令**在本機補完：
+
+```bash
+.venv/bin/python scripts/local_update.py
+```
+
+它會自動做完全部：收雲端最新結果（git pull）→ 掃「下載」資料夾匯入 twna 另存頁 →
+補爬 jct＋tnpa → 重建 → commit → push → 桌面通知。同一天已成功抓過就不重爬
+（`--force` 可強制）；工作區有非資料檔的改動會先中止，保護你改到一半的東西。
+
+**自動化**：每週日 16:00 由 launchd 自動跑同一支（接在雲端週更之後，pull 恰好收到最新）。
+安裝一次即可：
+
+```bash
+cp scripts/launchd/com.lin.nursing-local-update.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.lin.nursing-local-update.plist
+```
+
+- 看執行紀錄：`tail /tmp/nursing-local-update.log`
+- 移除：`launchctl unload ~/Library/LaunchAgents/com.lin.nursing-local-update.plist && rm ~/Library/LaunchAgents/com.lin.nursing-local-update.plist`
+- 當週日電腦沒開機：下次開機喚醒會自動補跑一次。
+- twna 即時監看（方式三）為選配：另存後想「立刻」上站才需要；平常靠本節的週排程即可。
+
 ## 出錯時你會看到什麼（刻意設計，不會靜默失敗）
 
 | 情況 | 呈現 |

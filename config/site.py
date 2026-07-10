@@ -145,7 +145,7 @@ SOURCES = {
         "label": "醫策會",
         "url": "https://attend.jct.org.tw/activity/event_news_calendar.php",
         "enabled": True,
-        "note": "已驗證可抓（2026-07-10 v2 重工：Lin 發現首頁精選表只挑 5 筆漏課程，改抓活動"
+        "note": "⚠️ 雲端更新不到：attend.jct.org.tw 對 GitHub Actions 機房 IP 連線逾時（LESSONS L-2026-07-10-008），由本機週排程 scripts/local_update.py 補抓。已驗證可抓（2026-07-10 v2 重工：Lin 發現首頁精選表只挑 5 筆漏課程，改抓活動"
         "月曆頁，免登入伺服器渲染；robots.txt 404 視為未限制）。月曆「下個月」是純 GET 連結"
         "（非 postback），本模組固定逐月串接抓 3 頁＝本月＋未來兩個月，涵蓋『三個月內』全部"
         "排定場次；2026 年 7 月單月實測即有數十筆真實場次，遠多於 v1 首頁的 5 筆。同一報名"
@@ -177,7 +177,7 @@ SOURCES = {
         "label": "台灣專科護理師學會",
         "url": "https://www.tnpa.org.tw/events/",
         "enabled": True,
-        "note": "已驗證可抓（2026-07-10 實測「所有活動」列表 11 筆，event__item 卡片式，免登入伺服器渲染；"
+        "note": "⚠️ 雲端更新不到：tnpa.org.tw 對 GitHub Actions 機房 IP 回 403（LESSONS L-2026-07-10-008），由本機週排程 scripts/local_update.py 補抓。已驗證可抓（2026-07-10 實測「所有活動」列表 11 筆，event__item 卡片式，免登入伺服器渲染；"
         "robots.txt 對通用 UA 於 /events/ 允許，僅點名禁止具名 AI 爬蟲）。積點統一對映 np（本學會即專科護理師學會）。",
     },
 }
