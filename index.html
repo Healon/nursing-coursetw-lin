@@ -106,6 +106,7 @@ a { color: var(--primary); }
 }
 .pill:hover { background: var(--bg); }
 .pill[aria-pressed="true"] { background: var(--pill-c, var(--primary)); border-color: var(--pill-c, var(--primary)); color: #fff; }
+.pill-all { font-weight: 600; }
 /* 三組篩選各一色（config THEME 的 pill_cat/pill_region/pill_src 控制） */
 #pills-cat { --pill-c: var(--pill-cat); }
 #pills-region { --pill-c: var(--pill-region); }
@@ -317,6 +318,10 @@ function startOfToday() {
 function daysUntil(s) {
   return Math.round((parseDate(s) - startOfToday()) / 86400000);
 }
+/* 已結束的活動一律不列（2026-07-10 Lin 指示）：以訪客開頁當下判定（非 build 時間，
+   靜態頁放幾天仍正確）；隨選課程無場次日期不在此限。data/events.json 的歷史資料
+   保留不刪（merge 防清空設計不動），只是不再渲染。 */
+const LIVE_EVENTS = EVENTS.filter((e) => e.ondemand || daysUntil(e.date) >= 0);
 function creditTotal(ev) {
   return Object.values(ev.credits || {}).reduce((a, b) => a + b, 0);
 }
@@ -416,7 +421,7 @@ function cardHTML(ev) {
 }
 
 function render() {
-  const filtered = EVENTS.filter(matches);
+  const filtered = LIVE_EVENTS.filter(matches);
   // 隨選課程與有場次日期的活動分開呈現：隨選的「日期」只是公告日，混入月份分組
   // 會被誤標成過去的已結束活動（實例：醫策會數位課程掛 2024 公告日）
   const dated = filtered.filter((e) => !e.ondemand);
@@ -442,17 +447,18 @@ function render() {
   }
   $("#cards").innerHTML = parts.join("");
   $("#empty").hidden = filtered.length !== 0;
-  $("#stats").textContent = "顯示 " + filtered.length + " 筆／共 " + EVENTS.length + " 筆";
+  $("#stats").textContent = "顯示 " + filtered.length + " 筆／共 " + LIVE_EVENTS.length + " 筆";
 }
 
 /* pill 只列出資料中實際存在的值，避免一排永遠篩不到東西的死 pill */
 function buildPills(groupEl, labels, stateSet, field) {
-  const present = new Set(EVENTS.map((e) => e[field]));
+  const present = new Set(LIVE_EVENTS.map((e) => e[field]));
   for (const code of Object.keys(labels)) {
     if (!present.has(code)) continue;
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "pill";
+    btn.dataset.code = code;
     btn.textContent = labels[code];
     btn.setAttribute("aria-pressed", "false");
     btn.addEventListener("click", () => {
@@ -463,10 +469,41 @@ function buildPills(groupEl, labels, stateSet, field) {
         stateSet.add(code);
         btn.setAttribute("aria-pressed", "true");
       }
+      syncSelectAllPill(groupEl);
       render();
     });
     groupEl.appendChild(btn);
   }
+}
+
+/* 「全選」pill（2026-07-10 Lin 指示，目前只掛來源組）：常見操作是「只想排除一兩個
+   來源」，沒有全選要點十幾下；全選後再逐一取消即可。再點一次取消全選（回到未篩選）。 */
+function addSelectAllPill(groupEl, stateSet) {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "pill pill-all";
+  btn.textContent = "全選";
+  btn.setAttribute("aria-pressed", "false");
+  btn.addEventListener("click", () => {
+    const turnOn = btn.getAttribute("aria-pressed") !== "true";
+    groupEl.querySelectorAll(".pill[data-code]").forEach((p) => {
+      p.setAttribute("aria-pressed", String(turnOn));
+      if (turnOn) stateSet.add(p.dataset.code);
+      else stateSet.delete(p.dataset.code);
+    });
+    btn.setAttribute("aria-pressed", String(turnOn));
+    render();
+  });
+  groupEl.appendChild(btn);
+}
+
+/* 個別 pill 增減後同步「全選」的亮暗：全部亮才亮，缺一即暗。沒有全選 pill 的組是 no-op */
+function syncSelectAllPill(groupEl) {
+  const all = groupEl.querySelector(".pill-all");
+  if (!all) return;
+  const pills = Array.from(groupEl.querySelectorAll(".pill[data-code]"));
+  const on = pills.length > 0 && pills.every((p) => p.getAttribute("aria-pressed") === "true");
+  all.setAttribute("aria-pressed", String(on));
 }
 
 /* 來源健康狀態（2026-07-10 Lin 指示改版）：公開頁不顯示個別來源的錯誤訊息——
@@ -478,13 +515,13 @@ function buildPills(groupEl, labels, stateSet, field) {
    停用且無資料的來源（如已下線的示範資料、尚未填資料的手動來源）不佔版面當噪音 */
 function srcVisible(code) {
   const st = (SOURCE_STATUS && SOURCE_STATUS.sources) || {};
-  return Boolean(st[code]) || EVENTS.some((e) => e.src === code);
+  return Boolean(st[code]) || LIVE_EVENTS.some((e) => e.src === code);
 }
 
 function renderStatus() {
   const st = (SOURCE_STATUS && SOURCE_STATUS.sources) || {};
   const counts = {};
-  EVENTS.forEach((e) => { counts[e.src] = (counts[e.src] || 0) + 1; });
+  LIVE_EVENTS.forEach((e) => { counts[e.src] = (counts[e.src] || 0) + 1; });
 
   $("#source-stats").innerHTML = Object.entries(CONFIG.sources)
     .filter(([code]) => srcVisible(code))
@@ -507,6 +544,7 @@ function renderStatus() {
 
 buildPills($("#pills-cat"), CONFIG.categories, state.cat, "cat");
 buildPills($("#pills-region"), CONFIG.regions, state.region, "region");
+addSelectAllPill($("#pills-src"), state.src);
 buildPills(
   $("#pills-src"),
   Object.fromEntries(Object.entries(CONFIG.sources).filter(([code]) => srcVisible(code))),
