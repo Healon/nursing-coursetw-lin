@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-07-10T15:22:28+08:00",
+  "generated": "2026-07-10T09:09:09+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -74,8 +74,8 @@
    "title": "115年度急重症護理繼續教育視訊直播講座(四)急重症暴力與壓力因應",
    "location": "Google meet視訊直播",
    "credits": {
-    "np": 3,
-    "pro": 3
+    "pro": 3,
+    "np": 3
    },
    "cat": "clinical",
    "src": "critical",
@@ -213,7 +213,7 @@
    "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (中區) -中慈場",
    "location": "台中慈濟醫院大愛講堂",
    "credits": {
-    "pro": 3.0
+    "pro": 3
    },
    "cat": "teaching",
    "src": "nuna",
@@ -228,7 +228,7 @@
    "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略(中區-醫院推薦場) -中慈場",
    "location": "台中慈濟醫院階梯教室",
    "credits": {
-    "pro": 7.0
+    "pro": 7
    },
    "cat": "teaching",
    "src": "nuna",
@@ -271,7 +271,7 @@
    "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略(南區-醫院推薦場) -高醫岡山醫院",
    "location": "高雄醫學大學附設高醫岡山醫院11樓第一會議室",
    "credits": {
-    "pro": 7.0
+    "pro": 7
    },
    "cat": "teaching",
    "src": "nuna",
@@ -286,7 +286,7 @@
    "title": "臨床教師的留任藝術CBME實務、AI創新與帶領新生代護理人的關鍵策略",
    "location": "財團法人私立高雄醫學大學附設高醫岡山醫院 第一會議室",
    "credits": {},
-   "cat": "teaching",
+   "cat": "clinical",
    "src": "twna",
    "online": false,
    "ondemand": false,
@@ -357,6 +357,45 @@
    "ondemand": false,
    "region": "tbd",
    "ctext": "無",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-20",
+   "title": "2026年（第27屆）NHQA國家醫療品質獎淨零醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】淨零醫療類現場發表暨觀摩活動-第1場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpj%2FOMNRvceFu2m2XHYwJ1tzMe8Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-21",
+   "title": "2026年（第27屆）NHQA國家醫療品質獎淨零醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】淨零醫療類現場發表暨觀摩活動-第2場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpj%2FOMNRvceFu2m2XHYwJ1tzMe8Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-22",
+   "title": "115年度臨床醫事人員培訓計畫教學成效指標說明會-115年度臨床醫事人員培訓計畫教學成效指標說明會 (第2場)",
+   "location": "",
+   "credits": {},
+   "cat": "teaching",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -456,11 +495,24 @@
   },
   {
    "date": "2026-07-23",
+   "title": "115年度中醫負責醫師訓練「主要訓練院所受訓醫師病例報告研習營」-主要訓練診所-受訓醫師病例報告研習營（北區場）",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5T8NsNa5MeFu2m2XHYwJ1tzMe8Zj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-23",
    "title": "115年度急重症護理繼續教育視訊直播講座(五)災難護理",
    "location": "Google meet視訊直播",
    "credits": {
-    "np": 3,
-    "pro": 3
+    "pro": 3,
+    "np": 3
    },
    "cat": "clinical",
    "src": "critical",
@@ -516,7 +568,7 @@
    "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(一)",
    "location": "永和耕莘醫院住院大樓12樓國際會議廳",
    "credits": {
-    "pro": 3.0
+    "pro": 3
    },
    "cat": "clinical",
    "src": "nuna",
@@ -553,6 +605,45 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-07-27",
+   "title": "115 年醫院病人安全年度目標推廣課程(實體課程及視訊課程)-115 年醫院病人安全年度目標推廣課程",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-27",
+   "title": "115 年醫院病人安全年度目標推廣課程(實體課程及視訊課程)-115年醫院病人安全年度目標推廣課程-視訊報名",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-29",
+   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第二場）",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5mpOMIK4JaFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
    "date": "2026-07-29",
    "title": "【本會研習會訊息】115年7月29日【法官保留制度下探討強制住院精神照護權益】研習會",
    "location": "",
@@ -564,6 +655,45 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://www.psynurse.org.tw/news1.aspx?entry=1226"
+  },
+  {
+   "date": "2026-07-30",
+   "title": "115年度中醫負責醫師訓練「主要訓練院所受訓醫師病例報告研習營」-主要訓練診所-受訓醫師病例報告研習營（中區場）",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5T8NsNa5MeFu2m2XHYwJ1tzMe8Zj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-30",
+   "title": "2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】第一組-建構感管專業分級制度強化人才培育與留任",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-30",
+   "title": "2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】第二組-深化防疫一體抗藥性防治策略推動與實踐",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
    "date": "2026-07-31",
@@ -663,7 +793,7 @@
    "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -中部場",
    "location": "台中慈濟醫院感恩樓5樓階梯教室",
    "credits": {
-    "pro": 3.0
+    "pro": 3
    },
    "cat": "clinical",
    "src": "nuna",
@@ -732,6 +862,32 @@
    "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1923"
   },
   {
+   "date": "2026-08-03",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第1場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-04",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第2場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
    "date": "2026-08-05",
    "title": "115年「護理倫理暨法律研討會」 -南區(實體場)",
    "location": "高雄醫學大學附設中和紀念醫院啟川大樓6樓第一講堂",
@@ -749,10 +905,62 @@
   },
   {
    "date": "2026-08-05",
+   "title": "115年度中醫醫療機構負責醫師訓練計畫-第二次專家共識會議",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B5n%2FOcwJtMKFu2m2XHYwJ1tzMe8Wj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-05",
+   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第三場）",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZmsN5AK48mFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-05",
+   "title": "115年醫療品質學院實作課程-品質改善循環PDCA 基礎課程及案例演練工作坊",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqM5MM48eFu2m2XHYwJ1tzMe8Vj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-05",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第3場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-05",
    "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(二)",
    "location": "林口長庚紀念醫院醫學大樓第二會議廳",
    "credits": {
-    "pro": 3.0
+    "pro": 3
    },
    "cat": "clinical",
    "src": "nuna",
@@ -761,6 +969,19 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-08-06",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第4場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
    "date": "2026-08-06",
@@ -784,7 +1005,7 @@
    "src": "psy",
    "online": false,
    "ondemand": false,
-   "region": "tbd",
+   "region": "south",
    "ctext": "",
    "url": "https://www.psynurse.org.tw/news1.aspx?entry=1229"
   },
@@ -800,6 +1021,19 @@
    "region": "north",
    "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
    "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3538"
+  },
+  {
+   "date": "2026-08-07",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第5場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
    "date": "2026-08-07",
@@ -854,6 +1088,32 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-08-10",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第6場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-11",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第7場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
    "date": "2026-08-12",
    "title": "115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會(視訊場)",
    "location": "視訊課程（課程連結待報名截止，將以email方式通知）",
@@ -867,6 +1127,58 @@
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BpX7YcJcspKFu2m2XHYwJ1tzMe8Qj1Y9tC2zt9TN9%2B1xlWZteFQN6%2FHYf%2FmFY%2BW0mg"
   },
   {
+   "date": "2026-08-12",
+   "title": "115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會(視訊場)-115年台灣臨床成效指標(TCPI)精神照護指標交流暨標竿學習營(視訊場)",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8Zv8YZQN4MKFu2m2XHYwJ1tzMe8Qj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-12",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第8場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-13",
+   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第四場）",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZmsN5AK48mFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-13",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第9場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
    "date": "2026-08-14",
    "title": "2026 智慧醫療 × 科技管理 × 幸福職場標竿交流",
    "location": "東元綜合醫院",
@@ -878,6 +1190,19 @@
    "region": "tbd",
    "ctext": "積分與細節詳見簡章附件",
    "url": "https://www.tnma100.org.tw/manager/upload/2606091400011.pdf"
+  },
+  {
+   "date": "2026-08-14",
+   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第10場",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
    "date": "2026-08-14",
@@ -918,7 +1243,7 @@
    "src": "hospice",
    "online": false,
    "ondemand": false,
-   "region": "tbd",
+   "region": "south",
    "ctext": "學術研討",
    "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/4e0c2d2bcbdd4fcfad30225c3c07bbb1"
   },
@@ -936,6 +1261,19 @@
    "region": "online",
    "ctext": "公務人員終身學習時數 3 小時",
    "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1924"
+  },
+  {
+   "date": "2026-08-18",
+   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第五場）",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZmsN5AK48mFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
    "date": "2026-08-18",
@@ -995,12 +1333,38 @@
    "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
+   "date": "2026-08-20",
+   "title": "115年台灣臨床成效指標（TCPI）指標全攻略套裝課程品管必備統計分析技巧課程",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-21",
+   "title": "115年台灣臨床成效指標（TCPI）指標全攻略套裝課程品管必備統計分析技巧課程",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
    "date": "2026-08-21",
    "title": "115年度急重症護理繼續教育視訊直播講座(六)急重症器官衰竭照護",
    "location": "webex視訊直播",
    "credits": {
-    "np": 3,
-    "pro": 3
+    "pro": 3,
+    "np": 3
    },
    "cat": "clinical",
    "src": "critical",
@@ -1052,6 +1416,19 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-08-24",
+   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第六場）",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZmsN5AK48mFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
    "date": "2026-08-25",
    "title": "個案報告審查委員共識會(北區─國泰)",
    "location": "國泰人壽大樓 B1 國際會議廳",
@@ -1082,7 +1459,7 @@
    "title": "護理師核心職能與國家考試及教學精進研討會",
    "location": "台灣護理學會 國際會議廳(9F)",
    "credits": {},
-   "cat": "teaching",
+   "cat": "clinical",
    "src": "twna",
    "online": false,
    "ondemand": false,
@@ -1166,8 +1543,8 @@
    "title": "重症照護3.0 - 智慧化、整合化、流程再進化研習會-南區",
    "location": "高雄日航酒店",
    "credits": {
-    "np": 5,
-    "pro": 5
+    "pro": 5,
+    "np": 5
    },
    "cat": "clinical",
    "src": "critical",
@@ -1195,8 +1572,8 @@
    "title": "重症照護3.0 - 智慧化、整合化、流程再進化研習會-中區",
    "location": "台中日月千禧酒店",
    "credits": {
-    "np": 5,
-    "pro": 5
+    "pro": 5,
+    "np": 5
    },
    "cat": "clinical",
    "src": "critical",
@@ -1267,7 +1644,7 @@
    "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (北區) -亞東醫院",
    "location": "亞東醫院國際會議廳",
    "credits": {
-    "pro": 3.0
+    "pro": 3
    },
    "cat": "teaching",
    "src": "nuna",
@@ -1282,7 +1659,7 @@
    "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -南部場",
    "location": "高雄醫學大學附設中和紀念醫院啟川大樓6樓第二講堂",
    "credits": {
-    "pro": 3.0
+    "pro": 3
    },
    "cat": "clinical",
    "src": "nuna",
@@ -1297,8 +1674,8 @@
    "title": "115年度急重症CKRT照護研習會(北區)",
    "location": "新北市立土城醫院二樓國際會議廳",
    "credits": {
-    "np": 6,
-    "pro": 6
+    "pro": 6,
+    "np": 6
    },
    "cat": "clinical",
    "src": "critical",
@@ -1473,8 +1850,8 @@
    "title": "115年外傷護理繼續教育線上直播研習會(三)",
    "location": "Webex視訊直播",
    "credits": {
-    "np": 6,
-    "pro": 6
+    "pro": 6,
+    "np": 6
    },
    "cat": "clinical",
    "src": "critical",
@@ -1495,7 +1872,7 @@
    "src": "hospice",
    "online": false,
    "ondemand": false,
-   "region": "tbd",
+   "region": "central",
    "ctext": "必修課程",
    "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/d7d76f8a9874446dbe58712aec3c3db0"
   },
@@ -1511,383 +1888,6 @@
    "region": "tbd",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-07-20",
-   "title": "2026年（第27屆）NHQA國家醫療品質獎淨零醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】淨零醫療類現場發表暨觀摩活動-第1場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpj%2FOMNRvceFu2m2XHYwJ1tzMe8Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-21",
-   "title": "2026年（第27屆）NHQA國家醫療品質獎淨零醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】淨零醫療類現場發表暨觀摩活動-第2場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpj%2FOMNRvceFu2m2XHYwJ1tzMe8Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-22",
-   "title": "115年度臨床醫事人員培訓計畫教學成效指標說明會-115年度臨床醫事人員培訓計畫教學成效指標說明會 (第2場)",
-   "location": "",
-   "credits": {},
-   "cat": "teaching",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "115年度中醫負責醫師訓練「主要訓練院所受訓醫師病例報告研習營」-主要訓練診所-受訓醫師病例報告研習營（北區場）",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5T8NsNa5MeFu2m2XHYwJ1tzMe8Zj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-27",
-   "title": "115 年醫院病人安全年度目標推廣課程(實體課程及視訊課程)-115 年醫院病人安全年度目標推廣課程",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-27",
-   "title": "115 年醫院病人安全年度目標推廣課程(實體課程及視訊課程)-115年醫院病人安全年度目標推廣課程-視訊報名",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-29",
-   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第二場）",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5mpOMIK4JaFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-30",
-   "title": "115年度中醫負責醫師訓練「主要訓練院所受訓醫師病例報告研習營」-主要訓練診所-受訓醫師病例報告研習營（中區場）",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5T8NsNa5MeFu2m2XHYwJ1tzMe8Zj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-30",
-   "title": "2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】第一組-建構感管專業分級制度強化人才培育與留任",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-30",
-   "title": "2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】第二組-深化防疫一體抗藥性防治策略推動與實踐",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-08-03",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第1場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-04",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第2場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-05",
-   "title": "115年度中醫醫療機構負責醫師訓練計畫-第二次專家共識會議",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B5n%2FOcwJtMKFu2m2XHYwJ1tzMe8Wj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-05",
-   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第三場）",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZmsN5AK48mFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-05",
-   "title": "115年醫療品質學院實作課程-品質改善循環PDCA 基礎課程及案例演練工作坊",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqM5MM48eFu2m2XHYwJ1tzMe8Vj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-05",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第3場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-06",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第4場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-07",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第5場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-10",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第6場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-11",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第7場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-12",
-   "title": "115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會(視訊場)-115年台灣臨床成效指標(TCPI)精神照護指標交流暨標竿學習營(視訊場)",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8Zv8YZQN4MKFu2m2XHYwJ1tzMe8Qj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-12",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第8場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-13",
-   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第四場）",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZmsN5AK48mFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-13",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第9場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-14",
-   "title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】智慧醫療類現場發表暨觀摩活動-第10場",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fp%2F%2FNcVb55aFu2m2XHYwJ1tzMe8Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-18",
-   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第五場）",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZmsN5AK48mFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-20",
-   "title": "115年台灣臨床成效指標（TCPI）指標全攻略套裝課程品管必備統計分析技巧課程",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-21",
-   "title": "115年台灣臨床成效指標（TCPI）指標全攻略套裝課程品管必備統計分析技巧課程",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-24",
-   "title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第六場）",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZmsN5AK48mFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   }
  ]
 }

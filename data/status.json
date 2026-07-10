@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-10T15:22:28+08:00",
-  "overall": "ok",
+  "generated": "2026-07-10T09:09:09+00:00",
+  "overall": "partial",
   "sources": {
     "nuna": {
       "status": "ok",
@@ -45,10 +45,10 @@
       "message": ""
     },
     "jct": {
-      "status": "ok",
-      "count": 12,
+      "status": "error",
+      "count": 0,
       "last_success": "2026-07-10",
-      "message": ""
+      "message": "ConnectTimeout: HTTPSConnectionPool(host='attend.jct.org.tw', port=443): Max retries exceeded with url: /activity/event_news_calendar.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='attend.jct.org.tw', port=443) at 0x7f05457a4a40>, 'Connection to attend.jct.org.tw timed out. (connect timeout=30)'))"
     },
     "hospice": {
       "status": "ok",
@@ -63,10 +63,10 @@
       "message": ""
     },
     "tnpa": {
-      "status": "ok",
-      "count": 11,
+      "status": "error",
+      "count": 0,
       "last_success": "2026-07-10",
-      "message": ""
+      "message": "HTTPError: 403 Client Error: Forbidden for url: https://www.tnpa.org.tw/events/"
     }
   }
 }
