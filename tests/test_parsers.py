@@ -670,6 +670,27 @@ class TestJctSource:
         captured = capsys.readouterr()
         assert captured.err == ""
 
+    def test_nursing_signal_from_credits_or_ctext(self):
+        # 醫師/中醫專屬判定（Lin 2026-07-10）：詳情頁學分欄有護理訊號＝跨職類保留
+        assert jct._has_nursing_signal({"credits": {"pro": 6.0}, "ctext": ""}) is True
+        assert jct._has_nursing_signal({"credits": {}, "ctext": "醫策會上課時數證明、護理人員繼續教育積分申請中"}) is True
+        assert jct._has_nursing_signal({"credits": {}, "ctext": "醫師繼續教育積分、中醫師學分"}) is False
+        assert jct._has_nursing_signal({"credits": {}, "ctext": ""}) is False
+
+    def test_doctor_trigger_candidates_prioritized_into_detail_queue(self):
+        # 醫師/中醫觸發字的候選必須搶到詳情額度（沒有詳情就無法判定專屬與否）：
+        # 即使日期排在禮貌上限之外，也要被排進 with_detail
+        today = dt.date(2026, 7, 10)
+        candidates = [
+            {"title": f"一般課程 {i}", "date": (today + dt.timedelta(days=i)).isoformat(), "url": f"https://x/{i}"}
+            for i in range(jct.MAX_DETAIL_PAGES + 2)
+        ]
+        candidates.append({"title": "115年度醫師畢業後一般醫學訓練計畫－導師研習營",
+                           "date": (today + dt.timedelta(days=60)).isoformat(), "url": "https://x/doc"})
+        with_detail, without_detail = jct._select_for_detail(candidates, today)
+        assert any("醫師" in c["title"] for c in with_detail)
+        assert not any("醫師" in c["title"] for c in without_detail)
+
     def test_dedupe_keeps_same_href_across_different_days_and_same_day(self):
         # 真實情境（見 jct_calendar.html 20/21/22 日、23/30 日）：同一 href 出現在不同天，
         # 是不同場次，不可被 href 單獨去重砍成一筆

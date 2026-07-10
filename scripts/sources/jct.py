@@ -73,6 +73,12 @@ MONTHS_TO_FETCH = 3
 # 上限不變，時間窗內超過此數只取最近的，stderr 留痕，見 fetch()）。
 MAX_DETAIL_PAGES = 12
 
+# 醫師／中醫「專屬」課程排除（Lin 2026-07-10 指示）：標題含觸發字只代表「需要判定」，
+# 是否專屬由詳情頁「學分認可單位」決定——有護理積分認可＝跨職類保留，否則排除。
+# 這條是語意規則、需要詳情頁資料，所以寫在程式（config 的 exclude_title_keywords
+# 仍是「字面命中即排除」的硬規則清單，兩者互補）。
+_DOCTOR_RE = re.compile(r"醫師|中醫")
+
 _MONTH_HEADER_RE = re.compile(r"(\d{4})年\s*(\d{1,2})月")
 _BULLET_RE = re.compile(r"^＊\s*")
 _ONLINE_RE = re.compile(r"線上|直播|視訊|遠距|webinar", re.IGNORECASE)
@@ -180,6 +186,16 @@ def parse_detail(html: str) -> dict:
     return {"location": location, "credits": credits, "ctext": ctext}
 
 
+def _has_nursing_signal(detail: dict) -> bool:
+    """詳情頁是否有「護理積分認可」訊號；供醫師/中醫專屬課程的去留判定。純函式。
+
+    兩種訊號擇一即成立：credits 非空（parse_detail 只在「學分認可單位」文字含護理且有
+    數字時才會填 pro）；或 ctext（學分認可單位原文）提到護理。兩者皆無＝該課程的學分
+    認可不涵蓋護理人員＝醫師/中醫專屬，排除。
+    """
+    return bool(detail.get("credits")) or ("護理" in detail.get("ctext", ""))
+
+
 def _dedupe_candidates(candidates: list[dict]) -> list[dict]:
     """依 (日期, href, 標題) 三元鍵去重，保留首次出現的順序；純函式、不連網。
 
@@ -250,7 +266,9 @@ def _select_for_detail(candidates: list[dict], today: dt.date) -> tuple[list[dic
             f"{len(candidates) - len(windowed)} 筆省請求，剩 {len(windowed)} 筆",
             file=sys.stderr,
         )
-    windowed.sort(key=lambda c: (c["date"], c["title"]))
+    # 排序鍵第一段：標題含醫師/中醫觸發字的優先進詳情佇列——這類課程「需要詳情頁的
+    # 學分欄才能判定去留」（見 _DOCTOR_RE 註解），不搶到詳情額度就無法裁決；其餘照日期近遠。
+    windowed.sort(key=lambda c: (0 if _DOCTOR_RE.search(c["title"]) else 1, c["date"], c["title"]))
 
     with_detail = windowed[:MAX_DETAIL_PAGES]
     without_detail = windowed[MAX_DETAIL_PAGES:]
@@ -283,10 +301,15 @@ def fetch() -> list[dict]:
     with_detail, without_detail = _select_for_detail(candidates, dt.date.today())
 
     events: list[dict] = []
+    doctor_excluded: list[str] = []
+    doctor_pending = 0
     for cand in with_detail:
         detail_html = base.download(cand["url"])
         detail = parse_detail(detail_html)
         title = cand["title"]
+        if _DOCTOR_RE.search(title) and not _has_nursing_signal(detail):
+            doctor_excluded.append(title)
+            continue
         events.append(
             base.make_event(
                 date=cand["date"],
@@ -299,9 +322,14 @@ def fetch() -> list[dict]:
             )
         )
     # 禮貌上限外的窗內課程照樣收錄：月曆頁已給標題／日期／報名連結，零額外請求；
-    # 地點／積分留空，待每週更新輪到它們成為「日期最近的前 N 筆」時自動補齊
+    # 地點／積分留空，待每週更新輪到它們成為「日期最近的前 N 筆」時自動補齊。
+    # 例外：醫師/中醫觸發字者未取得詳情無法判定專屬與否，本輪先不收錄（下輪自然重判），
+    # 寧可晚一週上架也不讓醫師專屬課程混進來。
     for cand in without_detail:
         title = cand["title"]
+        if _DOCTOR_RE.search(title):
+            doctor_pending += 1
+            continue
         events.append(
             base.make_event(
                 date=cand["date"],
@@ -309,5 +337,16 @@ def fetch() -> list[dict]:
                 url=cand["url"],
                 online=_is_online(title),
             )
+        )
+    if doctor_excluded:
+        print(
+            f"[jct] 排除醫師/中醫專屬課程 {len(doctor_excluded)} 筆（詳情頁無護理積分認可）："
+            + "；".join(t[:24] for t in doctor_excluded[:4]),
+            file=sys.stderr,
+        )
+    if doctor_pending:
+        print(
+            f"[jct] {doctor_pending} 筆醫師/中醫觸發課程未及詳情判定，本輪暫不收錄（下輪重判）",
+            file=sys.stderr,
         )
     return events
