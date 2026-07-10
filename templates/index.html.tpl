@@ -26,7 +26,7 @@ body {
 }
 a { color: var(--primary); }
 
-.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
 
 /* ── Header ─────────────────────────────────────────── */
 .site-header {
@@ -193,9 +193,30 @@ a { color: var(--primary); }
 .disclaimer, .footer-note, .credit-line { margin: 8px 0 0; }
 .credit-line { font-size: .78rem; opacity: .8; }
 
+/* ── RWD 斷點（Lin 2026-07-10 指示：適應不同視窗大小）──────────
+   桌機寬幕：wrap 上限 1200px，網格 auto-fill 自動 3-4 欄；
+   平板：網格自動 2 欄（auto-fill 天然行為，不需斷點）；
+   手機：以下斷點處理控制列、卡片與字級的緊湊化。 */
+@media (max-width: 900px) {
+  .site-header { padding: 24px 0 20px; }
+}
 @media (max-width: 560px) {
-  .site-header h1 { font-size: 1.35rem; }
+  .site-header { padding: 20px 0 16px; }
+  .site-header h1 { font-size: 1.3rem; }
+  .site-header .subtitle { font-size: .9rem; }
+  .site-header .updated { font-size: .76rem; }
+  .controls { padding: 12px; border-radius: 12px; }
   #q { flex-basis: 100%; }
+  #sort { flex: 1 1 auto; }
+  .group-label { flex-basis: 100%; min-width: 0; margin: 0 0 -2px; }
+  .grid { gap: 10px; }
+  .card { padding: 12px 13px; border-radius: 12px; }
+  .card-title { font-size: .98rem; }
+  .card-actions .btn { flex: 1 1 auto; text-align: center; }
+  .month-divider { font-size: .95rem; }
+}
+@media (max-width: 380px) {
+  .grid { grid-template-columns: 1fr; }  /* 極窄機型保險：強制單欄，避免 300px 下限撐出橫向捲動 */
 }
 </style>
 </head>
