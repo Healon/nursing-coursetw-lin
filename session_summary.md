@@ -1,5 +1,26 @@
 # Session Summary — 2026-07-10
 
+## 本機自動化補完（部署後最終輪，Lin 三問全數解決）
+
+**成果**：jct/tnpa 雲端被擋問題有了長期解，且**線上網站已從 partial 治癒回 ok**（黃警示消除）。
+
+- **一個指令**（Lin 指定只要一個）：`.venv/bin/python scripts/local_update.py`——
+  收雲端（pull）→ 匯 twna 另存頁 → 補爬 jct/tnpa（台灣住宅 IP）→ 重建 → commit → push → 桌面通知。
+- **自動化**：launchd `com.lin.nursing-local-update` 每週日 16:00 跑同一支（接在雲端 15:00 之後），
+  **已安裝並 kickstart 實測通過**（launchd 下 SSD 讀取/git/護欄/通知全綠；venv Homebrew python
+  ＝L-005 驗證解）。當週沒開機→下次喚醒補跑。
+- **機房 IP 封鎖的處理結論**（Lin 問「有沒有辦法」）：可行方案中選了本機排程；
+  self-hosted runner 因 public repo 安全風險不採用；proxy 繞封鎖違反姿態不採用；
+  去函學會白名單列為選配。
+- **防護**：當日已成功抓過就不重爬（--force 強制）；工作區有非資料檔改動即中止（實測兩者皆正確）；
+  每步失敗 stderr＋通知。pytest 168 passed（新增 7 個離線測試）。
+- **驗證三路徑實錄**：①未提交程式碼→正確中止 ②乾淨＋今日已抓→跳過爬取、無變更不推
+  ③--force→jct 41 筆/tnpa 11 筆、自動 commit push、線上 overall=ok。
+- **待下週日自然驗證**：真排程（非 kickstart）與 launchd 下 git push（本輪無變更未觸發），
+  失敗會有桌面通知不會靜默。
+
+---
+
 ## 部署（已完成上線）
 
 **網站上線**：https://healon.github.io/nursing-coursetw-lin/ （HTTP 200、137 筆課程、靜謐青主題）
