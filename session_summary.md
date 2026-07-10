@@ -1,5 +1,28 @@
 # Session Summary — 2026-07-10
 
+## 部署（已完成上線）
+
+**網站上線**：https://healon.github.io/nursing-coursetw-lin/ （HTTP 200、137 筆課程、靜謐青主題）
+- repo：`Healon/nursing-coursetw-lin`（public）；本機專案：`~/Projects/nursing-coursetw-lin`
+  （＝外接 SSD `/Volumes/MAC SSD/dev/Projects/...`，Lin 確認在 SSD、暫不搬本機）。
+- Pages：legacy branch 部署（main / root），status=built。
+- **雲端每週自動更新已驗證可跑**：手動觸發首次 workflow → 結論 success，自動 commit
+  `90ecbbb chore: weekly events update`（本機已 pull 同步）。cron 週日 07:00 UTC 之後自動執行。
+
+**首次雲端跑暴露的來源問題（見 ~/.claude/rules/LESSONS.md L-2026-07-10-008）**：11 家中 9 家 ok，
+但 **jct（醫策會）ConnectTimeout、tnpa（專科護理師）403**——本機（台灣家用 IP）都 ok，
+GitHub Actions 機房 IP 被這兩站擋。設計正確運作：舊資料 merge 保留（jct 42／tnpa 8，總數
+仍 137）、overall=partial 不擋站、頁面照發＋這兩家顯示黃色警示。
+- **原本最擔心的 hospice 憑證在雲端過了**（curl 走系統信任清單，ubuntu 上 ok）。
+- **後續選項（待 Lin 決定，非本次做）**：jct/tnpa 改「本機手動跑該來源＋push」半自動，
+  或接受停在快照＋警示（三個月窗會逐漸把舊場次濾掉）。不建議掛 proxy 繞 IP 封鎖。
+
+**待 Lin**：(1) jct/tnpa 雲端更新策略如上；(2) twna 自動監看 launchd 是否安裝
+（plist 路徑已隨搬家更新為 ~/Projects/nursing-coursetw-lin）；(3) 是否搬本機（L-005 權限可克服，
+搬家非必要，Lin 已知情選留 SSD）。
+
+---
+
 > 本檔含四段：客製第二三輪（前端細節／法規化積分／jct 月曆）、客製化（配色／地點規則／自動化）、
 > 第二階段（接入 11 學會）、第一階段（模板骨架）。新內容在前。
 
