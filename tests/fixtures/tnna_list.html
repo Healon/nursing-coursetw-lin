@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><title>研習會 - 臺灣腎臟護理學會</title></head>
+<body>
+<!-- 節錄自 https://www.tnna.org.tw/home/study_list.asp 真實頁面（研習會列表卡片），
+     保留真實 class 與 DOM 結構，原始頁面共 10 張卡片，此處裁到 4 張：
+     WC_ID=1918／1925 為「今天 7 天前」以後的近期活動（fetch() 會進詳情頁補積分，
+     1918 對應 tnna_detail.html）；WC_ID=1922／1914 分別為過期 19 天與過期超過三個月的
+     候選，用來驗證 parse_list() 仍會正確解析出這些候選（日期／地點／標題），但 fetch()
+     的「跳過明顯過期候選不進詳情」節流邏輯要另外用 fetch() 自身的單元測試/整合觀察，
+     parse_list() 本身不做時間窗判斷。抓取日期 2026-07-10。 -->
+<section class="py-12 sm:py-16">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-5xl mx-auto">
+<div class="grid grid-cols-1 gap-6">
+
+<div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<a href="study_content.asp?WC_ID=1918" class="block p-6">
+<div class="flex items-start justify-between space-x-4">
+<div class="flex-1 min-w-0">
+<div class="flex items-center space-x-3 mb-3">
+<span class="material-icons-outlined text-primary">menu_book</span>
+<span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-200">實體課程</span>
+<span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+<span class="material-icons-outlined text-sm mr-1">visibility</span>
+0
+</span>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white hover:text-primary transition-colors mb-2">
+115&#24180;_&#30740;3 (&#21271;&#21312;) &#39640;&#40801;&#36879;&#26512;&#30740;&#32722;&#26371;
+</h3>
+
+<div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1">
+<span class="material-icons-outlined text-sm mr-1">event</span>
+<span>舉辦日期：2026/7/12</span>
+</div>
+
+<div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-1">location_on</span>
+<span class="truncate">&#20126;&#26481;&#37291;&#38498; 14 &#27155;&#22283;&#38555;&#26371;&#35696;&#24307;
+&#22320;&#22336;:&#26032;&#21271;&#24066;&#26495;&#27211;&#21312;&#21335;&#38597;&#21335;&#36335;&#20108;&#27573; 21 &#34399;</span>
+</div>
+
+</div>
+<div class="flex-shrink-0 flex flex-col items-end space-y-2">
+<span class="material-icons-outlined text-gray-400">chevron_right</span>
+
+<span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300">
+限額290人
+</span>
+
+</div>
+</div>
+</a>
+</div>
+
+
+<div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<a href="study_content.asp?WC_ID=1925" class="block p-6">
+<div class="flex items-start justify-between space-x-4">
+<div class="flex-1 min-w-0">
+<div class="flex items-center space-x-3 mb-3">
+<span class="material-icons-outlined text-primary">menu_book</span>
+<span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-200">實體課程</span>
+<span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+<span class="material-icons-outlined text-sm mr-1">visibility</span>
+0
+</span>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white hover:text-primary transition-colors mb-2">
+115&#24180;_&#30740;6_&#34892;&#25919;&#20027;&#31649;&#30740;&#32722;&#29151;
+</h3>
+
+<div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1">
+<span class="material-icons-outlined text-sm mr-1">event</span>
+<span>舉辦日期：2026/8/30</span>
+</div>
+
+<div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-1">location_on</span>
+<span class="truncate">&#20126;&#26481;&#32000;&#24565;&#37291;&#38498;&#21335;&#26847;10&#27155;&#31532;&#20108;&#25945;&#23460; (&#26032;&#21271;&#24066;&#26495;&#27211;&#21312;&#21335;&#38597;&#21335;&#36335;&#20108;&#27573;21&#34399;D&#21312;10&#27155;)</span>
+</div>
+
+</div>
+<div class="flex-shrink-0 flex flex-col items-end space-y-2">
+<span class="material-icons-outlined text-gray-400">chevron_right</span>
+
+<span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300">
+限額60人
+</span>
+
+</div>
+</div>
+</a>
+</div>
+
+
+<div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<a href="study_content.asp?WC_ID=1922" class="block p-6">
+<div class="flex items-start justify-between space-x-4">
+<div class="flex-1 min-w-0">
+<div class="flex items-center space-x-3 mb-3">
+<span class="material-icons-outlined text-primary">menu_book</span>
+<span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-200">實體課程</span>
+<span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+<span class="material-icons-outlined text-sm mr-1">visibility</span>
+0
+</span>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white hover:text-primary transition-colors mb-2">
+115&#24180;_&#30740;5 (&#21271;&#21312;)_&#23621;&#23478;&#34880;&#28082;&#36879;&#26512;
+</h3>
+
+<div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1">
+<span class="material-icons-outlined text-sm mr-1">event</span>
+<span>舉辦日期：2026/6/21</span>
+</div>
+
+<div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-1">location_on</span>
+<span class="truncate">&#21488;&#21271;&#24066;&#31435;&#32879;&#21512;&#37291;&#38498;&#24544;&#23389;&#38498;&#21312;10&#27155;&#22823;&#31150;&#22530;
+&#33274;&#21271;&#24066;&#21335;&#28207;&#21312;&#21516;&#24503;&#36335;87&#34399;</span>
+</div>
+
+</div>
+<div class="flex-shrink-0 flex flex-col items-end space-y-2">
+<span class="material-icons-outlined text-gray-400">chevron_right</span>
+
+<span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300">
+限額210人
+</span>
+
+</div>
+</div>
+</a>
+</div>
+
+
+<div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<a href="study_content.asp?WC_ID=1914" class="block p-6">
+<div class="flex items-start justify-between space-x-4">
+<div class="flex-1 min-w-0">
+<div class="flex items-center space-x-3 mb-3">
+<span class="material-icons-outlined text-primary">menu_book</span>
+<span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-200">實體課程</span>
+<span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+<span class="material-icons-outlined text-sm mr-1">visibility</span>
+0
+</span>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white hover:text-primary transition-colors mb-2">
+115&#24180;&#30740;1A&#12304;&#26371;&#21729;&#20195;&#34920;&#12305;&#31532;&#21313;&#23622;&#31532;&#20108;&#27425;&#26371;&#21729;&#20195;&#34920;&#22823;&#26371;
+</h3>
+
+<div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1">
+<span class="material-icons-outlined text-sm mr-1">event</span>
+<span>舉辦日期：2026/3/22</span>
+</div>
+
+<div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-1">location_on</span>
+<span class="truncate">&#20126;&#26481;&#32000;&#24565;&#37291;&#38498;14&#27155;&#22283;&#38555;&#26371;&#35696;&#24307;
+&#65288;&#26032;&#21271;&#24066;&#26495;&#27211;&#21312;&#21335;&#38597;&#21335;&#36335;&#20108;&#27573;21&#34399;14&#27155;&#65289;</span>
+</div>
+
+</div>
+<div class="flex-shrink-0 flex flex-col items-end space-y-2">
+<span class="material-icons-outlined text-gray-400">chevron_right</span>
+
+<span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300">
+限額250人
+</span>
+
+</div>
+</div>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

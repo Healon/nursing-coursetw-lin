@@ -1,0 +1,240 @@
+# 學會活動彙整站模板（society events aggregator template）
+
+把多個學會網站的繼續教育課程與學術活動，自動彙整成一頁可搜尋、可篩選的靜態網站。
+零後端、零資料庫、零框架、零維運成本：內容更新靠 GitHub Actions 排程爬蟲，發布靠 GitHub Pages。
+
+做法逆向自 [Taiwan_Neurology](https://tlan1012.github.io/Taiwan_Neurology/) 彙整站，
+架構參考同作者 MIT 授權的 [Taiwan_Nurse_CNT](https://github.com/TLAN1012/Taiwan_Nurse_CNT) 重新通用化實作。
+完整拆解與設計決策見 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)。
+
+```
+GitHub Actions cron（每週日台北 15:00）
+  → scripts/update.py：跑各來源 parser（爬公開活動頁）
+  → 正規化、去重合併、時間窗過濾 → data/events.json
+  → 來源健康快照 → data/status.json
+  → scripts/build.py：注入 templates/index.html.tpl → index.html（自包含單檔）
+  → 有變更才自動 commit push → GitHub Pages 自動重新發布
+```
+
+## 快速開始（本機，不需網路）
+
+需求：macOS／Linux、Python 3.10 以上。
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python3 scripts/update.py --sources demo   # 用離線示範資料跑通整條 pipeline
+python3 -m http.server 8000                # 開 http://localhost:8000 預覽
+```
+
+跑測試（全部離線）：
+
+```bash
+pytest -q
+```
+
+## 換成你的學會（最重要的一節）
+
+`config/site.py` 是唯一的「換主題開關」，全部是純資料設定，照註解改即可：
+
+| 設定 | 改什麼 |
+|---|---|
+| `SITE` | 網站標題、副標、免責聲明 |
+| `THEME` | 整站配色（CSS 變數） |
+| `CATEGORIES` | 活動類別與自動歸類關鍵字（保留 `other`） |
+| `CREDIT_TYPES` | 積分別（護理師／專師／醫師／長照…依你的領域定義） |
+| `REGIONS` | 地區與推斷關鍵字（保留 `online` 與 `tbd`） |
+| `SOURCES` | 要彙整哪些學會：代碼、名稱、列表頁網址、是否啟用 |
+| `SCRAPE` | 時間窗、請求延遲、User-Agent（請填上你的聯絡方式） |
+
+程式碼（`scripts/`）與版面（`templates/index.html.tpl`）在換主題時原則上不用動。
+
+## 新增一個學會來源（SOP）
+
+1. 確認該學會的活動列表頁「免登入」就看得到。需要會員登入的網站不要爬：`enabled` 設 `False`、`note` 註明，改人工維護。
+2. 在 `config/site.py` 的 `SOURCES` 加一筆（代碼用小寫英文，如 `twna`）。
+3. 建 `scripts/sources/<代碼>.py`，實作 `fetch() -> list[dict]`：用 `base.download()` 抓頁面（內建禮貌延遲與 UA），解析邏輯放在純函式 `parse(html)` 裡，事件用 `base.make_event()` 建構。
+4. 存一份真實頁面快照到 `tests/fixtures/<代碼>_list.html`，在 `tests/test_parsers.py` 加離線測試。
+5. 本機驗證：`python3 scripts/update.py --sources <代碼>`，確認筆數與內容合理。
+6. 驗證通過後把該來源 `enabled` 改 `True`。
+
+### 請 Claude Code 幫你寫 parser 的提示語範本
+
+```
+我在維護一個學會活動彙整站（本 repo），要新增資料來源「{學會名稱}」。
+活動列表頁（已確認免登入可看）：{URL}
+請先讀 scripts/sources/base.py、demo.py 與 tests/test_parsers.py 理解介面，
+然後：
+1. 實作 scripts/sources/{代碼}.py：fetch() 用 base.download() 抓頁，
+   解析放在純函式 parse(html)，事件用 base.make_event() 建構；
+   積分對映到 config CREDIT_TYPES 既有代碼，細項說明放 ctext。
+2. 把實際頁面存到 tests/fixtures/{代碼}_list.html，補離線測試。
+3. 跑 pytest 與 python3 scripts/update.py --sources {代碼} 驗證，回報結果。
+注意爬蟲禮貌：所有請求走 base.download()，開發過程總請求控制在 20 次內，
+且對外實跑以 2 次為上限（偵察 1＋最終驗收 1），中間迭代一律餵本地快取檔；
+多條驗收指令共用同一次實跑的輸出，不要各自重抓。
+```
+
+### 手動維護來源（robots 禁爬或需登入的學會）
+
+有些學會網站的活動頁 `robots.txt` 全站 `Disallow`，或整個活動列表都要會員登入才看得到。
+遇到這種情況不要繞過限制硬爬，改用「手動維護」模式：由你自己瀏覽官網、手動把課程資訊
+填進一份 JSON，程式只負責讀檔轉換成事件，完全不發出網路請求（範例見 `twna` 來源）。
+
+**建立方式**：
+
+1. `config/site.py` 的 `SOURCES` 該筆維持 `enabled: False`，`note` 註明「robots 禁爬／需登入，
+   手動維護」與判定依據（哪天測的、robots.txt 內容）。
+2. 建 `data/manual_<代碼>.json`，格式：
+
+   ```json
+   {
+    "comment": "一行說明這份清單怎麼維護、資料來源是什麼",
+    "events": []
+   }
+   ```
+
+3. 建 `scripts/sources/<代碼>.py`，`fetch()` 讀這份 JSON 的 `events` 陣列，每筆用
+   `base.make_event(**item)` 轉成標準事件；檔案不存在或 JSON 壞掉要讓例外往外拋（不要
+   `try/except` 吞掉），讓 registry 記成該來源 `status=error`，錯誤才看得見；`events` 是
+   空清單則回傳空 list，這是合法狀態（`status=empty`），不是失敗。
+
+**`events` 陣列每筆物件欄位**（對應 `base.make_event()` 的參數，除 `date`／`title`／`url`
+外皆可省略，省略就套用該函式的預設值）：
+
+| 欄位 | 必填 | 說明 |
+|---|---|---|
+| `date` | 是 | `YYYY-MM-DD`（西元 ISO 格式；民國日期要先自己換算） |
+| `title` | 是 | 活動標題 |
+| `url` | 是 | 活動原始網址（供使用者點回官網報名） |
+| `location` | 否 | 地點文字，留空則 `region` 會落 `tbd` |
+| `credits` | 否 | 積分物件，key 須為 `config/site.py` 的 `CREDIT_TYPES` 既有代碼，如 `{"pro": 3}` |
+| `cat` | 否 | 類別代碼，省略則依標題關鍵字自動推斷 |
+| `region` | 否 | 地區代碼，省略則依 `location`＋`title` 關鍵字自動推斷 |
+| `online` | 否 | 是否為線上活動，預設 `false` |
+| `ondemand` | 否 | 是否為隨選（不受時間窗限制），預設 `false` |
+| `ctext` | 否 | 補充說明文字（如積分細節、報名限制） |
+
+**範例一筆**（假資料，示範格式用）：
+
+```json
+{
+ "comment": "台灣護理學會（twna）robots.txt 全站禁爬，手動維護；資料來源：官網課程公告頁人工核對",
+ "events": [
+  {
+   "date": "2026-10-05",
+   "title": "【示範】社區護理繼續教育研習會",
+   "url": "https://www.twna.org.tw/example-course-page",
+   "location": "台北市中正區",
+   "credits": {"pro": 3},
+   "ctext": "積分以官方公告為準，此為示範資料"
+  }
+ ]
+}
+```
+
+4. 填完真實課程資料後，把 `config/site.py` 該來源的 `enabled` 改成 `true`，跑
+   `python3 scripts/update.py` 驗證能正常併入 `data/events.json`。之後每次要更新，方式一是
+   直接編輯這份 JSON；不想手動打字的話，twna 來源另外準備了方式二（見下）。
+
+### 方式二：另存網頁匯入（推薦，較省力；以 twna 為例，寫給非工程師看）
+
+twna（台灣護理學會）不用你逐欄手動打字抄課程資訊，改用瀏覽器「另存」＋一個小工具自動整理，
+全程不連網（工具只讀你另存到電腦裡的檔案，不會主動連去 twna 網站，符合它 robots.txt 全站
+禁爬的限制）：
+
+1. 用瀏覽器開啟 twna 課程列表頁（活動報名頁）。
+2. 瀏覽器選單「檔案」→「另存新檔」，**格式選「網頁，僅 HTML」**（不要選「網頁，完整」，不需要
+   另外存圖片等檔案），存到你電腦上任何位置（例如桌面），記住存的檔名。
+3. 打開終端機（Terminal），切到專案資料夾，執行（把路徑換成你實際存檔的位置）：
+
+   ```bash
+   .venv/bin/python scripts/import_twna_page.py ~/Desktop/你存的檔名.html
+   ```
+
+   執行完會印出一行「新增 N 筆、略過重複 M 筆、解析失敗 K 筆」。新課程已經自動整理寫進
+   `data/manual_twna.json`；已經存在的活動、或你之前手動修改過的內容，不會被覆蓋掉。
+4. 執行 `python3 scripts/update.py --sources twna`，把新資料併入網站。
+5. 打開 `index.html` 確認新課程有出現，沒問題再照一般流程 commit push。
+
+### 方式三：全自動監看（最省力；你只剩「另存」一個動作）
+
+安裝一次之後，流程變成：**瀏覽器開課程頁 → 另存新檔到「下載」資料夾 → 完事**。
+系統會自動認出這是 twna 課程頁、匯入去重、重建網站、跳桌面通知，原始檔自動歸檔到
+`下載/twna-imported/`。合規不變：程式永遠只讀你另存的本機檔案，不對該站發任何請求；
+「開頁面、存檔」這步依守則保留為人類動作。
+
+安裝（一次性，每台機器各裝一次）：
+
+```bash
+cp "scripts/launchd/com.lin.twna-watch.plist" ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.lin.twna-watch.plist
+```
+
+- 手動單次掃描（不裝監看也能用）：`.venv/bin/python scripts/twna_watch.py`
+- 看執行紀錄：`tail /tmp/twna-watch.log`
+- 移除：`launchctl unload ~/Library/LaunchAgents/com.lin.twna-watch.plist && rm ~/Library/LaunchAgents/com.lin.twna-watch.plist`
+- 注意：plist 內的路徑指向本專案在外接 SSD 的位置，專案搬家或換機時要同步修改；
+  且必須用專案 venv 的 Python（系統 Python 在 launchd 下讀外接 SSD 會被權限擋）。
+
+## 部署到 GitHub Pages
+
+> 本專案已於 2026-07-10 部署：repo `Healon/nursing-coursetw-lin`、
+> 網站 https://healon.github.io/nursing-coursetw-lin/ 。以下步驟保留給「套用本模板到
+> 新主題」時參考（若模板資料夾位於其他 git repo 內，先搬到獨立位置如 `~/Projects/` 再進行）。
+
+1. 建立 GitHub repo（Pages 免費方案需 public）並推上去：
+
+   ```bash
+   git init && git add -A && git commit -m "feat: society events aggregator"
+   gh repo create <你的帳號>/<repo名> --public --source . --push
+   ```
+
+2. GitHub 網頁 → repo → Settings → Pages → Build and deployment：
+   Source 選「Deploy from a branch」，Branch 選 `main`、資料夾 `/(root)`，存檔。
+3. 一到兩分鐘後網站上線：`https://<你的帳號>.github.io/<repo名>/`。
+4. 啟用自動更新：repo → Actions → 啟用 workflows → 選「update-events」→「Run workflow」手動跑第一次，確認流程綠燈（或亮紅時查頁尾與 log）。之後每週日台北 15:00 自動執行。
+5. 上線前清掉示範資料：`config/site.py` 把 `demo` 的 `enabled` 改 `False`，執行
+   `python3 scripts/update.py --reset`，確認頁面只剩真實來源後 commit push。
+
+## 出錯時你會看到什麼（刻意設計，不會靜默失敗）
+
+| 情況 | 呈現 |
+|---|---|
+| 某來源抓失敗或 0 筆 | 頁首黃色橫幅＋頁尾警示徽章（含原因與最後成功日期）；該來源舊資料保留不清空 |
+| 全部來源失敗 | 頁首紅色橫幅；Actions 亮紅（`status.py --check` exit 1）通知維護者；頁面照常發布 |
+| 樣板壞掉、token 殘留 | build 直接報錯非零退出，不會發布半成品頁面 |
+
+Actions 亮紅時：開 repo → Actions → 點該次執行看哪個來源失敗，通常是來源網站改版，
+依上面 SOP 請 Claude Code 讀新版頁面修 parser 即可。
+
+## 爬蟲禮貌守則（請遵守）
+
+- 排程每週最多一次；手動測試時勿反覆狂打。
+- 所有請求一律走 `base.download()`：內建 1 至 2.5 秒隨機延遲與表明身分的 User-Agent（請到 `SCRAPE["user_agent"]` 填上聯絡方式）。極少數老憑證網站改走 `base.download_curl()`（同樣完整驗證憑證，見該函式 docstring）；**禁止**用 verify=False 關閉憑證驗證。
+- 只抓公開、免登入頁面；需登入的來源不爬，改人工維護。
+- 每張活動卡保留回連原始報名頁，不轉載全文，資料著作權歸各學會。
+- 新增來源前先看該站 `robots.txt`；被明確禁止就不要爬（實例：台灣護理學會，改手動維護）。
+- 開發新 parser 時，對外實跑以 2 次為上限（偵察 1 次＋最終驗收 1 次），中間迭代一律餵本地快取檔，不重抓（2026-07-10 教訓：把驗收步驟也各自實跑會讓請求量翻倍破預算）。
+
+## 專案結構
+
+```
+config/site.py           唯一設定檔（換學會改這裡）
+scripts/sources/         來源 parser：base.py 共用工具、demo.py 離線示範、<code>.py 各學會
+scripts/update.py        pipeline 入口（scrape → normalize → 寫檔 → build）
+scripts/normalize.py     純函式：驗證、去重合併、時間窗
+scripts/status.py        來源健康快照與 CI 閘門（--check）
+scripts/build.py         樣板注入，產出 index.html
+templates/index.html.tpl 版面樣板（改版面改這裡）
+data/events.json         活動資料（單一事實來源，自動產生）
+data/status.json         來源健康狀態（自動產生）
+index.html               發布頁（自動產生，勿手改）
+tests/                   離線測試（fixture 驅動，不連網）
+.github/workflows/update.yml  每週自動更新流程
+docs/ARCHITECTURE.md     逆向拆解報告與設計決策
+```
+
+## 授權
+
+程式碼與樣板採 MIT 授權（見 LICENSE）。活動資訊著作權歸各主辦學會／單位所有。

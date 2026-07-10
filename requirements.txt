@@ -1,0 +1,5 @@
+# 執行期依賴（真實來源爬蟲用；離線 demo 與測試不需要 requests）
+requests>=2.31
+beautifulsoup4>=4.12
+# 開發期依賴
+pytest>=8.0

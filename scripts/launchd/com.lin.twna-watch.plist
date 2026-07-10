@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- twna 另存頁自動匯入：任何檔案落入 ~/Downloads 即觸發單次掃描（非 twna 檔案立即結束）。
+     安裝／移除指令見 README「方式三」。用專案 venv 的 Homebrew Python，
+     勿改成 /usr/bin/python3（系統 Python 在 launchd context 讀外接 SSD 會被 TCC 擋，
+     見 ~/.claude/rules/LESSONS.md L-2026-07-10-005）。 -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.lin.twna-watch</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/healon/Projects/nursing-coursetw-lin/.venv/bin/python</string>
+        <string>/Users/healon/Projects/nursing-coursetw-lin/scripts/twna_watch.py</string>
+    </array>
+    <key>WatchPaths</key>
+    <array>
+        <string>/Users/healon/Downloads</string>
+    </array>
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/tmp/twna-watch.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/twna-watch.log</string>
+</dict>
+</plist>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><title>財團法人醫院評鑑暨醫療品質策進會 - 活動月曆</title></head>
+<body>
+<!-- 節錄自 https://attend.jct.org.tw/activity/event_news_calendar.php 真實月曆頁（2026-07-10
+     實測，預設頁＝當月 2026 年 07 月，免登入）。2026-07-10 重工記錄：使用者發現首頁精選表
+     （原 jct_list.html 來源）漏課程，改抓本月曆頁，一次涵蓋整月所有排定場次，不再只挑 5 筆。
+
+     結構裁剪說明：保留真實 <div class="calendar2">（上個月／本月標題／下個月，GET 純連結，
+     無 postback，可逐月往前抓）與真實 <table class="table2 table-bordered"> 月曆格線，但只留
+     週標題列＋3 個真實週列（原始 6 週列全部有效，為求 fixture 精簡只留有代表性的 3 週），
+     其餘技術上等價的週列略去；已丟棄與解析無關的年份／月份下拉選單（<div class="calendar1">，
+     純 UI 裝飾，parser 不讀）。
+
+     涵蓋情境（皆為真實資料，未竄改文字）：
+     1. 首列（7/1 那週）：前導空白格（週日／週一／週二，屬上月）＋2 日、3 日各 1 筆課程，
+        驗證「空白格跳過」與「(日期,href) 為鍵」的基本解析。
+     2. 第 4 週列（19-25 日）：20 日格內有 5 筆課程連結（同一天多筆），其中 2 筆與 21 日、
+        22 日的連結共用同一個 href（同一報名活動的不同場次，各自在月曆上是獨立一天一場），
+        驗證「多筆同天」與「(日期,href) 去重不可退化成單用 href 去重」。
+     3. 末列（26-31 日＋月底後空白）：23 日（在上一週列）與 30 日的課程連結共用同一 href，
+        驗證去重鍵在跨週、跨行也要正確（不能誤判成同一場活動而漏掉其中一天）；31 日後的
+        週六格是空白（無「8/1」字樣），證實月底溢出格本站原生留白、不需額外的跨月判斷。
+
+     月份標題「2026年07月」與「下個月」連結的 arg token，供 parse_calendar() 的月份解析與
+     GET 換月串接測試使用；token 為真實加密字串，本身不可讀但可直接沿用發下一次 GET。 -->
+<div class="calendarBox">
+<div class="calendar2">
+                 <a href="event_news_calendar.php?arg=rJT9YcJatsWDoW2rW3YwJ1tndYJMxkxv9nzm5KaYtw" class="btn5">上個月</a> <strong>2026年07月 </strong> <a href="event_news_calendar.php?arg=%2FJ2sYsBfspKDoW2rW3YwJ1tndYJMxkxv9nzm5KaYuQ" class="btn5">下個月</a> 
+                </div>
+</div>
+<div class="table-responsive">
+<table width="100%" class="table2 table-bordered">
+  <tbody>
+<tr>
+<td align="center" bgcolor="#F4C9CD" width="15%"><strong>星期日</strong></td>
+<td align="center" bgcolor="#EFEFEF" width="15%"><strong>星期一</strong></td>
+<td align="center" bgcolor="#EFEFEF" width="14%"><strong>星期二</strong></td>
+<td align="center" bgcolor="#EFEFEF" width="14%"><strong>星期三</strong></td>
+<td align="center" bgcolor="#EFEFEF" width="14%"><strong>星期四</strong></td>
+<td align="center" bgcolor="#EFEFEF" width="14%"><strong>星期五</strong></td>
+<td align="center" bgcolor="#C3E2F0" width="14%"><strong>星期六</strong></td>
+</tr>
+<tr>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong> </strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong> </strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong> </strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>1</strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>2</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=%2BpqsMsJRsMeFu2m2XHYwJ1tzMuQTj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊<font color="#DFDFDF">115年醫療品質學院實作課程-團隊資源管理TRM工作坊</font></a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>3</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=%2BZ3%2BZJAJtMeFu2m2XHYwJ1tzMe0Yj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊<font color="#DFDFDF">115 年診所病人安全年度目標推廣課程（美醫實體場）-視訊報名</font></a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>4</strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>19</strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>20</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=%2BJz8ZZBZs5OFu2m2XHYwJ1tzMe0Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-數據分析解讀與初階實作</a><br/><a href="event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115年度臨床醫事人員培訓計畫教學成效指標說明會-115年度臨床醫事人員培訓計畫教學成效指標說明會 (第1場)</a><br/><a href="event_news_detail.php?arg=%2Bpj%2FOMNRvceFu2m2XHYwJ1tzMe8Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊2026年（第27屆）NHQA國家醫療品質獎淨零醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】淨零醫療類現場發表暨觀摩活動-第1場</a><br/><a href="event_news_detail.php?arg=%2FpX3NpNcvcmFu2m2XHYwJ1tzMewVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115 年診所病人安全年度目標推廣課程 (實體課程及視訊課程)-115 年診所病人安全年度目標推廣課程</a><a href="event_news_detail.php?arg=%2FpX3NpNcvcmFu2m2XHYwJ1tzMewVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115 年診所病人安全年度目標推廣課程 (實體課程及視訊課程)-115年診所病人安全年度目標推廣課程-視訊報名</a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>21</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=%2Bpj%2FOMNRvceFu2m2XHYwJ1tzMe8Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊2026年（第27屆）NHQA國家醫療品質獎淨零醫療類現場發表暨觀摩活動-【NHQA國家醫療品質獎】淨零醫療類現場發表暨觀摩活動-第2場</a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>22</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115年度臨床醫事人員培訓計畫教學成效指標說明會-115年度臨床醫事人員培訓計畫教學成效指標說明會 (第2場)</a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>23</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=%2F5T8NsNa5MeFu2m2XHYwJ1tzMe8Zj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115年度中醫負責醫師訓練「主要訓練院所受訓醫師病例報告研習營」-主要訓練診所-受訓醫師病例報告研習營（北區場）</a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>24</strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>25</strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>26</strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>27</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115 年醫院病人安全年度目標推廣課程(實體課程及視訊課程)-115年醫院病人安全年度目標推廣課程-視訊報名</a><a href="event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115 年醫院病人安全年度目標推廣課程(實體課程及視訊課程)-115 年醫院病人安全年度目標推廣課程</a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>28</strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>29</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=%2F5mpOMIK4JaFu2m2XHYwJ1tzMuQUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115年度醫師畢業後一般醫學訓練計畫－導師研習營-導師研習營（第二場）</a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>30</strong></td>
+</tr>
+<tr>
+<td height="60">
+<a href="event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】第一組-建構感管專業分級制度強化人才培育與留任</a><br/><a href="event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】第二組-深化防疫一體抗藥性防治策略推動與實踐</a><a href="event_news_detail.php?arg=%2F5T8NsNa5MeFu2m2XHYwJ1tzMe8Zj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt">＊115年度中醫負責醫師訓練「主要訓練院所受訓醫師病例報告研習營」-主要訓練診所-受訓醫師病例報告研習營（中區場）</a> </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong>31</strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+<td align="left" height="90" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="text4"><strong> </strong></td>
+</tr>
+<tr>
+<td height="60">
+		                           </td>
+</tr>
+</table>
+</td>
+</tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

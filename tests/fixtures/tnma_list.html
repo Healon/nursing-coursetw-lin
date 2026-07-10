@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><title>研習會活動報名 - 臺灣護理管理學會</title></head>
+<body>
+<!-- 節錄自 https://www.tnma100.org.tw/training/training02.asp 真實頁面（研習會活動報名表格），
+     保留真實（且有缺陷的）DOM 結構：原始頁面「課程表」欄的 <td> 沒有 </td> 閉合，導致其後
+     報名狀態／可報名人數兩欄被瀏覽器/解析器容錯地巢狀掛在課程表欄底下；本 fixture 逐字保留
+     這個缺陷（未修正、未補閉合標籤），因為 tnma.parse() 正是靠 recursive=False 取直接子節點
+     來應對它，若 fixture 把標籤補齊反而測不到這個真實情境。原始頁面共 50 列，此處裁到 6 列：
+     T2607425（視訊課程，無課程表附件，日期為區間）／T2607424、T2607423（一般實體課程＋單一
+     PDF 附件）／T2606422（額滿狀態，仍應正常解析，狀態文字不影響本站欄位）／T2403389（歷史
+     活動，課程表欄有 3 個附件，第一個是 .xls 非 .pdf，長地點文字含換行與備註）／T2401383
+     （歷史活動，3 個附件中第一個是 .docx）。抓取日期 2026-07-10。 -->
+<table width=850 border="1" style="border-collapse:collapse" cellspacing="2" cellpadding="2" bordercolordark=#ffffff bordercolorlight=#c0c0c0 >
+<tr>
+ <td bgcolor=abff7f width=50>編號</td>
+ <td bgcolor=abff7f width=180>活動名稱</td>
+ <td bgcolor=abff7f width=100>辦理日期</td>
+ <td bgcolor=abff7f width=120>活動地點</td>
+ <td bgcolor=abff7f width=90>報名截止日</td>
+ <td bgcolor=abff7f width=70>課程表</td>
+ <td bgcolor=abff7f width=70>報名狀態</td>
+ <td bgcolor=abff7f width=80>可報名人數</td>
+</tr>
+
+     <tr onMouseOver=catcheyes(this) onMouseOut=loseeyes(this) style=font-size: 9.5pt>
+     <td><center>T2607425</a></td>
+     <td>9月視訊-護理人力管理：法規合規、指標應用與排班最佳化</td>
+     <td>
+     	2026/9/2～2026/9/9 <br>
+     	11:50-13:10
+     	</td>
+     <td>採 Microsoft Teams 線上直播</td>
+     <td>2026/8/26</td>
+     <td>
+     	<br>
+     <td>
+
+     	  <font color=blue><a href=apply_add1.asp?no=T2607425><center><br>我要報名<br><br></a></font>
+
+     </td>
+    <td>尚有名額
+
+    	</td>
+   </tr><tr>
+
+     <tr onMouseOver=catcheyes(this) onMouseOut=loseeyes(this) style=font-size: 9.5pt>
+     <td><center>T2607424</a></td>
+     <td>【中區】科技賦能 × 護理韌力-打造高壓時代的職場復原力與情意支持工作坊</td>
+     <td>
+     	2026/9/23 <br>
+     	09:30-16:50
+     	</td>
+     <td>中區-臺中榮民總醫院研究大樓一樓第四會議室</td>
+     <td>2026/9/16</td>
+     <td>
+     	<a href=../manager/upload/2607021315231.pdf target=_new1>課程表1</a><br>
+     <td>
+
+     	  <font color=blue><a href=apply_add1.asp?no=T2607424><center><br>我要報名<br><br></a></font>
+
+     </td>
+    <td>尚有名額
+
+    	</td>
+   </tr><tr>
+
+     <tr onMouseOver=catcheyes(this) onMouseOut=loseeyes(this) style=font-size: 9.5pt>
+     <td><center>T2607423</a></td>
+     <td>【北區】科技賦能 × 護理韌力-打造高壓時代的職場復原力與情意支持工作坊</td>
+     <td>
+     	2026/9/3 <br>
+     	09:30-16:50
+     	</td>
+     <td>北區-三軍總醫院B1 OSCE擬真大教室
+</td>
+     <td>2026/8/27</td>
+     <td>
+     	<a href=../manager/upload/2607021301141.pdf target=_new1>課程表1</a><br>
+     <td>
+
+     	  <font color=blue><a href=apply_add1.asp?no=T2607423><center><br>我要報名<br><br></a></font>
+
+     </td>
+    <td>尚有名額
+
+    	</td>
+   </tr><tr>
+
+     <tr onMouseOver=catcheyes(this) onMouseOut=loseeyes(this) style=font-size: 9.5pt>
+     <td><center>T2606422</a></td>
+     <td>2026 智慧醫療 × 科技管理 × 幸福職場標竿交流</td>
+     <td>
+     	2026/8/14 <br>
+     	09:00-16:00
+     	</td>
+     <td>東元綜合醫院</td>
+     <td>2026/7/31</td>
+     <td>
+     	<a href=../manager/upload/2606091400011.pdf target=_new1>課程表1</a><br>
+     <td>
+
+        <font color=red><br>額滿<br><br></font>
+
+     </td>
+    <td>
+
+    	</td>
+   </tr><tr>
+
+     <tr onMouseOver=catcheyes(this) onMouseOut=loseeyes(this) style=font-size: 9.5pt>
+     <td><center>T2403389</a></td>
+     <td>第十五屆海峽護理高峰論壇徵文 (6/14報到，1516日大會，需回傳徵文資料表及文章至學會信箱)</td>
+     <td>
+     	2024/6/14～2024/6/16 <br>
+
+     	</td>
+     <td>廈門：北海灣惠龍萬達嘉華酒店
+註：會議費用：980元人民幣（線下）800元人民幣（線上），待通知錄取後繳交至主辦大會(福建省護理學會)
+</td>
+     <td>2024/4/30</td>
+     <td>
+     	<a href=../manager/upload/2404230925203.xls target=_new1>課程表1</a><br><a href=../manager/upload/2404230925202.pdf target=_new1>課程表2</a><br><a href=../manager/upload/2404230925201.pdf target=_new1>課程表3</a><br>
+     <td>
+
+        <font color=red><br>截止報名<br><br></font>
+
+     </td>
+    <td>
+
+    	</td>
+   </tr><tr>
+
+     <tr onMouseOver=catcheyes(this) onMouseOut=loseeyes(this) style=font-size: 9.5pt>
+     <td><center>T2401383</a></td>
+     <td>第五屆第二次會員大會</td>
+     <td>
+     	2024/3/9 <br>
+     	09:00-11:50
+     	</td>
+     <td>三軍總醫院松山分院大禮堂</td>
+     <td>2024/3/9</td>
+     <td>
+     	<a href=../manager/upload/2403061646533.docx target=_new1>課程表1</a><br><a href=../manager/upload/2403061646532.pdf target=_new1>課程表2</a><br><a href=../manager/upload/2403061646531.pdf target=_new1>課程表3</a><br>
+     <td>
+
+        <font color=red><br>截止報名<br><br></font>
+
+     </td>
+    <td>
+
+    	</td>
+   </tr>
+</table>
+</body>
+</html>

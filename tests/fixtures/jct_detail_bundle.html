@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><title>財團法人醫院評鑑暨醫療品質策進會</title></head>
+<body>
+<!-- 節錄自 https://attend.jct.org.tw/activity/event_news_detail.php?arg=... 真實頁面
+     （jct_list.html 中「醫療品質學院-數位課程」這類數位課程／教學影片項目的詳情頁），
+     保留真實結構（課程時間/名稱/名額限制表格，逐列列出數十個課程子模組，原始頁面實測
+     40+ 列，此處裁到 3 列）但無「課程資訊」自由文字區塊、無 span.title5 標籤值清單
+     （無活動地點、無學分認可單位）。用來驗證 parse_detail() 在這種頁面形態下優雅回傳空
+     location／credits／ctext，不因為結構不同而拋例外。抓取日期 2026-07-10。 -->
+<div class="col-md-9">
+<h1>課程公告 &gt; 訓練課程</h1>
+<p>
+<a href="mem_login.php?arg=...">我要報名</a>
+<a href="event_reg_list.php?arg=...">報名名單</a>
+</p>
+<div class="table-responsive">
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <td width="33%" align="center" bgcolor="#EDEDED"><strong>課程時間</strong></td>
+      <td width="51%" bgcolor="#EDEDED"><strong>課程名稱</strong></td>
+      <td width="16%" align="center" bgcolor="#EDEDED"><strong>名額限制</strong></td>
+    </tr>
+    <tr>
+      <td align="center">2026/01/01~2026/12/31 .</td>
+      <td>02-【有效的醫療品質系統運作】巨量資料-提升醫療品質與病人安全的好朋友</td>
+      <td align="center">9999</td>
+    </tr>
+    <tr>
+      <td align="center">2026/01/01~2026/12/31 .</td>
+      <td>03-【有效的醫療品質系統運作】醫院推行品管活動的經驗與挑戰(上)(此課程分上下部)</td>
+      <td align="center">9999</td>
+    </tr>
+    <tr>
+      <td align="center">2026/01/01~2026/12/31 .</td>
+      <td>04-【有效的醫療品質系統運作】醫院推行品管活動的經驗與挑戰(下)(此課程分上下部)</td>
+      <td align="center">9999</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
