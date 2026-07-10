@@ -190,15 +190,6 @@ a { color: var(--primary); }
   padding: 3px 10px;
   font-size: .8rem;
 }
-#source-alerts .alert {
-  margin: 6px 0;
-  padding: 8px 12px;
-  background: var(--warn-bg);
-  color: var(--warn);
-  border-left: 3px solid var(--warn);
-  border-radius: 6px;
-  font-size: .84rem;
-}
 .disclaimer, .footer-note, .credit-line { margin: 8px 0 0; }
 .credit-line { font-size: .78rem; opacity: .8; }
 
@@ -244,7 +235,6 @@ a { color: var(--primary); }
 <footer class="site-footer">
   <div class="wrap">
     <div id="source-stats"></div>
-    <div id="source-alerts"></div>
     <p class="disclaimer">@@DISCLAIMER@@</p>
     <p class="footer-note">@@FOOTER_NOTE@@</p>
     <p class="credit-line">本頁由開源靜態模板自動產生（GitHub Actions 排程爬蟲＋GitHub Pages）。</p>
@@ -444,7 +434,11 @@ function buildPills(groupEl, labels, stateSet, field) {
   }
 }
 
-/* 來源健康狀態：頁尾統計 chips＋非 ok 來源的警示，加頁首橫幅（錯誤可見性核心） */
+/* 來源健康狀態（2026-07-10 Lin 指示改版）：公開頁不顯示個別來源的錯誤訊息——
+   訪客不需要看原始技術錯誤；維護者的錯誤可見性走 data/status.json、GitHub Actions
+   紅燈、本機更新的桌面通知三個管道，資訊沒有變少、只是換對象。
+   公開頁保留：頁尾中性筆數 chips（含停更來源的「更新至」日期，誠實不驚悚）；
+   以及唯一例外「全滅紅橫幅」——所有來源都失敗代表整頁可能過期，這是訪客權益，保留。 */
 /* 來源能見度規則：列入健康快照（＝enabled）或實際有課程才顯示 chip 與篩選 pill；
    停用且無資料的來源（如已下線的示範資料、尚未填資料的手動來源）不佔版面當噪音 */
 function srcVisible(code) {
@@ -459,26 +453,20 @@ function renderStatus() {
 
   $("#source-stats").innerHTML = Object.entries(CONFIG.sources)
     .filter(([code]) => srcVisible(code))
-    .map(([code, label]) => '<span class="chip">' + esc(label) + '：' + (counts[code] || 0) + ' 筆</span>')
+    .map(([code, label]) => {
+      const s = st[code];
+      const stale = s && s.status !== "ok" && s.last_success
+        ? '（更新至 ' + esc(s.last_success) + '）' : '';
+      return '<span class="chip">' + esc(label) + '：' + (counts[code] || 0) + ' 筆' + stale + '</span>';
+    })
     .join("");
 
-  const alerts = Object.entries(st).filter(([, s]) => s.status !== "ok");
-  $("#source-alerts").innerHTML = alerts.map(([code, s]) => {
-    const label = CONFIG.sources[code] || code;
-    const kind = s.status === "error" ? "來源更新失敗" : "查無資料（可能網站已改版）";
-    const last = s.last_success ? "最後成功更新：" + esc(s.last_success) : "從未成功更新";
-    const msg = s.message ? "，" + esc(s.message) : "";
-    return '<p class="alert">⚠️ ' + esc(label) + '：' + kind + msg + '。' + last + '。</p>';
-  }).join("");
-
   const overall = SOURCE_STATUS && SOURCE_STATUS.overall;
-  if (overall && overall !== "ok") {
+  if (overall === "down") {
     const banner = $("#status-banner");
     banner.hidden = false;
-    banner.classList.add(overall === "down" ? "down" : "partial");
-    banner.textContent = overall === "down"
-      ? "所有資料來源更新失敗，本頁內容可能已過時，詳見頁尾說明。"
-      : "部分資料來源更新異常，詳見頁尾說明。";
+    banner.classList.add("down");
+    banner.textContent = "資料來源更新暫時中斷，本頁內容可能非最新，活動請以各學會官網公告為準。";
   }
 }
 

@@ -145,6 +145,9 @@ SOURCES = {
         "label": "醫策會",
         "url": "https://attend.jct.org.tw/activity/event_news_calendar.php",
         "enabled": True,
+        # 標題含任一關鍵字即整筆不收錄（Lin 指示的排除規則；要加新規則往清單加詞即可，不用改程式）：
+        # 數位課程/教學影片（2026-07-10，隨選非排定場次）、觀摩活動（2026-07-10，NHQA 現場觀摩非課程）
+        "exclude_title_keywords": ["數位課程", "教學影片", "觀摩活動"],
         "note": "⚠️ 雲端更新不到：attend.jct.org.tw 對 GitHub Actions 機房 IP 連線逾時（LESSONS L-2026-07-10-008），由本機週排程 scripts/local_update.py 補抓。已驗證可抓（2026-07-10 v2 重工：Lin 發現首頁精選表只挑 5 筆漏課程，改抓活動"
         "月曆頁，免登入伺服器渲染；robots.txt 404 視為未限制）。月曆「下個月」是純 GET 連結"
         "（非 postback），本模組固定逐月串接抓 3 頁＝本月＋未來兩個月，涵蓋『三個月內』全部"

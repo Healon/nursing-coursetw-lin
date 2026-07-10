@@ -641,30 +641,31 @@ class TestJctSource:
         detail = jct.parse_detail(_fixture("jct_detail_bundle.html"))
         assert detail == {"location": "", "credits": {}, "ctext": ""}
 
-    def test_ondemand_regex_still_detects_digital_course_keywords(self):
-        # _ONDEMAND_RE 用途已由「標記 ondemand=True」改為「fetch() 內部排除」（Lin 2026-07-10
-        # 指示，見 jct.py 檔頭說明與 _exclude_ondemand），這裡單獨驗證正則本身仍正確比對真實
-        # 標題；月曆頁的月份範圍內通常不會出現這類標題（真實隨選課程落在建立當月，如
-        # 2024/2025/2026 年各自的 1 月），不是本測試的重點，重點是正則沒有在改寫過程中被誤刪。
-        assert bool(jct._ONDEMAND_RE.search("醫療品質學院數位課程-TRM系列套裝課程")) is True
-        assert bool(jct._ONDEMAND_RE.search("115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會")) is False
+    def test_exclude_keywords_read_from_config(self):
+        # 排除規則已 config 化（SOURCES['jct']['exclude_title_keywords']），維護者加詞免改程式；
+        # 三個既定規則（Lin 2026-07-10）必須在清單裡
+        kws = jct._exclude_keywords()
+        assert "數位課程" in kws and "教學影片" in kws and "觀摩活動" in kws
 
-    def test_exclude_ondemand_filters_digital_course_candidates_with_stderr(self, capsys):
-        # Lin 2026-07-10 指示：數位課程／教學影片一律排除，不收錄上站；命中候選整批濾掉，
-        # 排除筆數以彙總形式 stderr 留痕（不可無聲丟棄）
+    def test_exclude_by_title_rules_filters_and_reports_per_keyword(self, capsys):
+        # Lin 指示的排除規則：命中候選整批濾掉、連詳情頁都不抓；
+        # 排除以「關鍵字：筆數」彙總 stderr 留痕（不可無聲丟棄）
         candidates = [
             {"title": "醫療品質學院數位課程-TRM系列套裝課程", "date": "2026-07-01", "url": "https://x/1"},
             {"title": "醫療品質學院【TRM醫療團隊資源管理工具書】教學影片", "date": "2026-07-02", "url": "https://x/2"},
+            {"title": "2026年第27屆NHQA國家醫療品質獎智慧醫療類現場發表暨觀摩活動", "date": "2026-07-15", "url": "https://x/4"},
             {"title": "115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會", "date": "2026-07-20", "url": "https://x/3"},
         ]
-        kept = jct._exclude_ondemand(candidates)
+        kept = jct._exclude_by_title_rules(candidates)
         assert [c["title"] for c in kept] == ["115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會"]
         captured = capsys.readouterr()
-        assert "排除數位課程/教學影片 2 筆" in captured.err
+        assert "數位課程 1 筆" in captured.err
+        assert "教學影片 1 筆" in captured.err
+        assert "觀摩活動 1 筆" in captured.err
 
-    def test_exclude_ondemand_noop_and_silent_when_nothing_matches(self, capsys):
+    def test_exclude_by_title_rules_noop_and_silent_when_nothing_matches(self, capsys):
         candidates = [{"title": "115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會", "date": "2026-07-20", "url": "https://x/3"}]
-        kept = jct._exclude_ondemand(candidates)
+        kept = jct._exclude_by_title_rules(candidates)
         assert kept == candidates
         captured = capsys.readouterr()
         assert captured.err == ""
@@ -720,7 +721,6 @@ class TestJctSource:
             location=detail["location"],
             credits=detail["credits"],
             online=jct._is_online(f"{cand['title']} {detail['location']}"),
-            ondemand=bool(jct._ONDEMAND_RE.search(cand["title"])),
             ctext=detail["ctext"],
         )
         normalized = normalize.normalize_event(dict(ev, src="jct"))
@@ -744,7 +744,6 @@ class TestJctSource:
             location=detail["location"],
             credits=detail["credits"],
             online=jct._is_online(f"{cand['title']} {detail['location']}"),
-            ondemand=bool(jct._ONDEMAND_RE.search(cand["title"])),
             ctext=detail["ctext"],
         )
         normalized = normalize.normalize_event(dict(ev, src="jct"))
