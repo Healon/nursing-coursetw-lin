@@ -1,72 +1,72 @@
 {
-  "generated": "2026-07-12T16:47:19+08:00",
-  "overall": "ok",
+  "generated": "2026-07-12T09:01:31+00:00",
+  "overall": "partial",
   "sources": {
     "nuna": {
       "status": "ok",
       "count": 24,
-      "last_success": "2026-07-10",
+      "last_success": "2026-07-12",
       "message": ""
     },
     "critical": {
       "status": "ok",
-      "count": 10,
-      "last_success": "2026-07-10",
+      "count": 9,
+      "last_success": "2026-07-12",
       "message": ""
     },
     "psy": {
       "status": "ok",
       "count": 2,
-      "last_success": "2026-07-10",
+      "last_success": "2026-07-12",
       "message": ""
     },
     "tnna": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-07-10",
+      "last_success": "2026-07-12",
       "message": ""
     },
     "tnma": {
       "status": "ok",
       "count": 50,
-      "last_success": "2026-07-10",
+      "last_success": "2026-07-12",
       "message": ""
     },
     "ni": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-07-10",
+      "last_success": "2026-07-12",
       "message": ""
     },
     "ahqroc": {
       "status": "ok",
       "count": 8,
-      "last_success": "2026-07-10",
-      "message": ""
-    },
-    "jct": {
-      "status": "ok",
-      "count": 20,
       "last_success": "2026-07-12",
       "message": ""
     },
+    "jct": {
+      "status": "error",
+      "count": 0,
+      "last_success": "2026-07-12",
+      "message": "ConnectTimeout: HTTPSConnectionPool(host='attend.jct.org.tw', port=443): Max retries exceeded with url: /activity/event_news_calendar.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='attend.jct.org.tw', port=443) at 0x7fb70b0dd580>, 'Connection to attend.jct.org.tw timed out. (connect timeout=30)'))"
+    },
     "hospice": {
       "status": "ok",
-      "count": 5,
-      "last_success": "2026-07-10",
+      "count": 4,
+      "last_success": "2026-07-12",
       "message": ""
     },
     "twna": {
       "status": "ok",
       "count": 42,
-      "last_success": "2026-07-10",
+      "last_success": "2026-07-12",
       "message": ""
     },
     "tnpa": {
-      "status": "ok",
-      "count": 11,
+      "status": "error",
+      "count": 0,
       "last_success": "2026-07-12",
-      "message": ""
+      "message": "HTTPError: 403 Client Error: Forbidden for url: https://www.tnpa.org.tw/events/"
     }
   }
 }
