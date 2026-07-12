@@ -1,48 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-10T18:24:25+08:00",
+  "generated": "2026-07-12T16:47:19+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-03",
-   "title": "115 年診所病人安全年度目標推廣課程（美醫實體場）-視訊報名",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、台灣微整形美容醫學會 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BZ3%2BZJAJtMeFu2m2XHYwJ1tzMe0Yj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-03",
-   "title": "「急重難症病人跨專業團隊整合照護成效工作坊」(上午線上視訊)",
-   "location": "線上視訊 請自備電腦、手機或平板,下載並安裝視訊軟體。",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-07-03",
-   "title": "「急重難症病人跨專業團隊整合照護成效工作坊」(全日實體場)(北區)",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-07-06",
    "title": "115年醫院病人安全年度目標推廣課程(北部場)",
@@ -192,20 +153,20 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師學分申請中",
+   "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BcmtYZEJ5paFu2m2XHYwJ1tzMuQYj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
    "date": "2026-07-14",
    "title": "115年醫療品質學院實作課程-風險管理工具-FMEA工作坊",
-   "location": "醫策會901會議室",
+   "location": "",
    "credits": {},
    "cat": "safety",
    "src": "jct",
    "online": false,
    "ondemand": false,
-   "region": "north",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
+   "region": "tbd",
+   "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rcj%2FNZdavcOFu2m2XHYwJ1tzMe0Wj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -241,7 +202,7 @@
   {
    "date": "2026-07-15",
    "title": "115年數位醫療危害病人安全之相關風險管控課程(實體場)",
-   "location": "【實體】醫策會901會議室",
+   "location": "",
    "credits": {},
    "cat": "safety",
    "src": "jct",
@@ -317,7 +278,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
+   "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FpX3NpNcvcmFu2m2XHYwJ1tzMewVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -330,7 +291,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
+   "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FpX3NpNcvcmFu2m2XHYwJ1tzMewVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -343,7 +304,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "醫策會上課時數證明、公務人力時數、護理繼續教育訓練積分",
+   "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJz8ZZBZs5OFu2m2XHYwJ1tzMe0Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -356,7 +317,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "無",
+   "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
