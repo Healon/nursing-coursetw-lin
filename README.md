@@ -9,11 +9,17 @@
 
 ```
 GitHub Actions cron（每週日台北 15:00）
-  → scripts/update.py：跑各來源 parser（爬公開活動頁）
+  → scripts/update.py --profile cloud：只跑 8 個可從雲端抓取的公開來源
   → 正規化、去重合併、時間窗過濾 → data/events.json
   → 來源健康快照 → data/status.json
   → scripts/build.py：注入 templates/index.html.tpl → index.html（自包含單檔）
   → 有變更才自動 commit push → GitHub Pages 自動重新發布
+
+本機 launchd（每週日台北 16:00）
+  → 匯入 Downloads 內的 twna 另存頁 → 從住宅 IP 抓 jct/tnpa → commit push
+
+GitHub Actions watchdog（每週一台北 09:00）
+  → 完全離線檢查 jct/tnpa/twna 新鮮度；逾期就讓 Actions 亮紅
 ```
 
 ## 快速開始（本機，不需網路）
@@ -32,6 +38,19 @@ python3 -m http.server 8000                # 開 http://localhost:8000 預覽
 ```bash
 pytest -q
 ```
+
+## 三種來源執行模式
+
+每個 `config/site.py` 來源都有 `execution`，用執行位置而非抓取技巧分流：
+
+| 模式 | 來源 | 執行方式 |
+|---|---|---|
+| `cloud` | nuna、critical、psy、tnna、tnma、ni、ahqroc、hospice | 週日 15:00 GitHub Actions 執行 `scripts/update.py --profile cloud` |
+| `local` | jct、tnpa | 週日 16:00 Mac 住宅 IP 執行；雲端 workflow 不會嘗試 |
+| `manual` | twna | 程式只讀人工另存後的本機 JSON，永不自動請求 TWNA |
+
+指定模式可用 `.venv/bin/python scripts/update.py --profile cloud|local|manual`；診斷單一來源則用
+`--sources code1,code2`。兩者互斥，避免同時指定後執行範圍含糊。
 
 ## 換成你的學會（最重要的一節）
 
@@ -83,13 +102,16 @@ pytest -q
 
 **建立方式**：
 
-1. `config/site.py` 的 `SOURCES` 該筆維持 `enabled: False`，`note` 註明「robots 禁爬／需登入，
-   手動維護」與判定依據（哪天測的、robots.txt 內容）。
+1. `config/site.py` 的 `SOURCES` 該筆設為 `execution: "manual"`；資料未備妥前維持
+   `enabled: False`，備妥後才改為 `True`。`note` 註明「robots 禁爬／需登入、手動維護」與
+   判定依據（哪天測的、robots.txt 內容）。
 2. 建 `data/manual_<代碼>.json`，格式：
 
    ```json
    {
     "comment": "一行說明這份清單怎麼維護、資料來源是什麼",
+    "manual_imported_at": "",
+    "manual_checked_at": "",
     "events": []
    }
    ```
@@ -98,6 +120,10 @@ pytest -q
    `base.make_event(**item)` 轉成標準事件；檔案不存在或 JSON 壞掉要讓例外往外拋（不要
    `try/except` 吞掉），讓 registry 記成該來源 `status=error`，錯誤才看得見；`events` 是
    空清單則回傳空 list，這是合法狀態（`status=empty`），不是失敗。
+
+`manual_imported_at` 記錄最近一次成功解析並匯入另存頁的時間（即使新增 0 筆也會更新）；
+`manual_checked_at` 記錄最近一次人工確認官網沒有新內容的時間。兩欄都是含時區的 ISO 時間，
+watchdog 取兩者較新者判斷資料是否仍新鮮；不要用自動排程時間假裝人工檢查時間。
 
 **`events` 陣列每筆物件欄位**（對應 `base.make_event()` 的參數，除 `date`／`title`／`url`
 外皆可省略，省略就套用該函式的預設值）：
@@ -134,7 +160,7 @@ pytest -q
 ```
 
 4. 填完真實課程資料後，把 `config/site.py` 該來源的 `enabled` 改成 `true`，跑
-   `python3 scripts/update.py` 驗證能正常併入 `data/events.json`。之後每次要更新，方式一是
+   `python3 scripts/update.py --sources <代碼>` 驗證能正常併入 `data/events.json`。之後每次要更新，方式一是
    直接編輯這份 JSON；不想手動打字的話，twna 來源另外準備了方式二（見下）。
 
 ### 方式二：另存網頁匯入（推薦，較省力；以 twna 為例，寫給非工程師看）
@@ -177,6 +203,26 @@ launchctl load ~/Library/LaunchAgents/com.lin.twna-watch.plist
 - 注意：plist 內的路徑指向本專案在外接 SSD 的位置，專案搬家或換機時要同步修改；
   且必須用專案 venv 的 Python（系統 Python 在 launchd 下讀外接 SSD 會被權限擋）。
 
+### 每週人工核對提醒（已採用）
+
+週日 14:00 與 15:00，`com.lin.twna-reminder` 會在資料超過 7 天未匯入／確認時顯示對話框。
+「開啟課程頁」必須由你明確點選才會交給瀏覽器；程式本身不下載或自動存取 TWNA。
+另存成「僅 HTML」到 `~/Downloads` 後，16:00 的本機更新會自動匯入。若官網確實沒有新課，
+按「本週已確認」只更新 `manual_checked_at`；「稍後提醒」則保留逾期狀態，15:00 再提醒。
+
+安裝或更新（plist 固定指向 `/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin`）：
+
+```bash
+cp scripts/launchd/com.lin.twna-reminder.plist ~/Library/LaunchAgents/
+launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.lin.twna-reminder.plist 2>/dev/null || true
+launchctl bootstrap "gui/$(id -u)" ~/Library/LaunchAgents/com.lin.twna-reminder.plist
+launchctl print "gui/$(id -u)/com.lin.twna-reminder"
+```
+
+- 紀錄：`tail /tmp/nursing-twna-reminder.log`
+- 移除：`launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.lin.twna-reminder.plist && rm ~/Library/LaunchAgents/com.lin.twna-reminder.plist`
+- 外接 SSD 必須掛載；若路徑搬移，先修改 plist 再重新 bootstrap。
+
 ## 部署到 GitHub Pages
 
 > 本專案已於 2026-07-10 部署：repo `Healon/nursing-coursetw-lin`、
@@ -199,17 +245,18 @@ launchctl load ~/Library/LaunchAgents/com.lin.twna-watch.plist
 
 ## 本機更新（一個指令）
 
-雲端每週日 15:00 自動更新 9 家學會，但有兩家（醫策會 jct、專科護理師學會 tnpa）會擋
-GitHub 機房 IP，只有台灣住宅 IP 爬得到（LESSONS L-2026-07-10-008）；台灣護理學會（twna）
-的另存頁也只存在你電腦裡。這三家由**同一個指令**在本機補完：
+雲端每週日 15:00 只更新 8 家 `cloud` 來源，不執行會擋 GitHub 機房 IP 的醫策會 jct、
+專科護理師學會 tnpa（LESSONS L-2026-07-10-008），也不執行 robots 禁爬的 twna。
+後三家的本機資料由**同一個指令**補完：
 
 ```bash
 .venv/bin/python scripts/local_update.py
 ```
 
 它會自動做完全部：收雲端最新結果（git pull）→ 掃「下載」資料夾匯入 twna 另存頁 →
-補爬 jct＋tnpa → 重建 → commit → push → 桌面通知。同一天已成功抓過就不重爬
-（`--force` 可強制）；工作區有非資料檔的改動會先中止，保護你改到一半的東西。
+補爬 jct＋tnpa → 重建 → commit → push → 桌面通知。同一天兩家都已成功抓過就不重爬；
+隔天執行可再次抓取，符合課程可能每日更新的需求。只有明知需要重驗時才用 `--force`。
+工作區有非資料檔的改動會先中止，保護你改到一半的東西。
 
 **Finder／Dock 一鍵執行**：在 Finder 雙擊 `scripts/run_local_update.command`，或把它拖到
 Dock 右側的檔案區，之後點一下即可執行同一套流程；同一天已成功的來源仍由
@@ -226,8 +273,26 @@ launchctl load ~/Library/LaunchAgents/com.lin.nursing-local-update.plist
 
 - 看執行紀錄：`tail /tmp/nursing-local-update.log`
 - 移除：`launchctl unload ~/Library/LaunchAgents/com.lin.nursing-local-update.plist && rm ~/Library/LaunchAgents/com.lin.nursing-local-update.plist`
-- 當週日電腦沒開機：下次開機喚醒會自動補跑一次。
+- 排程時 Mac 只是睡眠會在喚醒後補跑；完全關機錯過不保證補跑，週一 watchdog 會亮紅提醒改按一鍵。
 - twna 即時監看（方式三）為選配：另存後想「立刻」上站才需要；平常靠本節的週排程即可。
+
+### 週一 09:00 失聯偵測
+
+`.github/workflows/freshness-watchdog.yml` 每週一台北 09:00 執行
+`scripts/check_freshness.py --max-age-days 8`。它只讀 repo 裡的 `data/status.json` 與
+`data/manual_twna.json`，不載入 parser、不連來源網站；jct/tnpa 最近成功日或 twna 最近人工活動
+超過 8 天、缺漏、格式錯誤或位於未來時，Actions 會亮紅。也可在 Actions 頁手動 Run workflow。
+
+### 本機更新失敗時
+
+- **工作區髒檔**：訊息會列出非資料產物。先用 `git status` 確認，將自己的程式／文件改動 commit
+  或暫存後再按一鍵；不要直接刪除不認得的檔案。
+- **watchdog 過期**：先看本機 log 與 Actions。twna 請人工另存或按「本週已確認」；jct/tnpa
+  則在住宅網路執行一鍵更新。不要用 proxy、偽裝 header 或把來源放回雲端。
+- **push 遇到一般競速**：程式會自動做一次 `pull --rebase` 後重推。若 rebase 衝突，程式會 abort
+  並通知，不會無限重試；用 `git status` 確認已無 rebase，再人工整合遠端變更後重跑。
+- **log**：Finder/Dock 一鍵看 `~/Library/Logs/nursing-course-update.log`；launchd 排程看
+  `/tmp/nursing-local-update.log`；提醒看 `/tmp/nursing-twna-reminder.log`。
 
 ## 出錯時你會看到什麼（刻意設計，不會靜默失敗）
 

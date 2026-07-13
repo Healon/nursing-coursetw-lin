@@ -1,69 +1,57 @@
-# HANDOFF — 護理教育訓練網站（2026-07-10 收工交接）
+# HANDOFF — 護理教育訓練網站（2026-07-13）
 
-> 給下一個 session 的 agent：先讀這份，再視需要讀 `session_summary.md`（完整開發歷程）。
-> **下次對話請直接在本資料夾開**：`~/Projects/nursing-coursetw-lin`
-> （此路徑是指向外接 SSD `/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin` 的捷徑，同一份資料；
-> 捷徑勿刪，本機自動更新與 Lin 的其他專案都靠它。）
+> 給下一個 session 的 agent：先讀本檔與 `README.md`，再讀 `docs/ARCHITECTURE.md`。
+> 正式專案路徑是 `/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin`。
 
-## 專案是什麼
+## 現行更新架構
 
-Lin（護理長）的個人彙整站：把 11 個學會的護理繼續教育課程自動彙整成單頁靜態網站。
-逆向自 Taiwan_Neurology、參考 MIT 授權之 Taiwan_Nurse_CNT 通用化重寫。
-
-- **正式網站**：https://healon.github.io/nursing-coursetw-lin/
-- **GitHub repo**：`Healon/nursing-coursetw-lin`（public，Pages＝main 分支 root）
-- 現況：**已上線、已全自動化**。117 筆課程、pytest 170 passed、健康檢查 ok。
-
-## 目前的自動化架構（已全部驗證可跑）
-
-| 時間（台北） | 誰 | 做什麼 |
+| 時間（台北） | 執行位置 | 工作 |
 |---|---|---|
-| 週日 15:00 | GitHub Actions（雲端） | 爬 9 家可雲端爬的學會 → 自動 commit push → Pages 更新 |
-| 週日 16:00 | launchd `com.lin.nursing-local-update`（本機，已安裝） | 跑 `scripts/local_update.py`：pull 收雲端 → 掃 ~/Downloads 匯入 twna 另存頁 → 補爬 jct/tnpa（僅台灣住宅 IP 爬得到，見 LESSONS L-2026-07-10-008）→ commit push |
-| 隨時手動 | 一鍵指令 | `.venv/bin/python scripts/local_update.py`（同一支程式；`--force` 跳過當日護欄） |
+| 週日 14:00、15:00 | Mac launchd `com.lin.twna-reminder` | twna 超過 7 天未人工處理才提醒；只有 Lin 點按才開瀏覽器 |
+| 週日 15:00 | GitHub Actions `update-events` | `scripts/update.py --profile cloud`，只更新 8 個 cloud 來源 |
+| 週日 16:00 | Mac launchd `com.lin.nursing-local-update` | 匯入 Downloads 的 twna 另存頁、以住宅 IP 抓 jct/tnpa、commit、push |
+| 週一 09:00 | GitHub Actions `local-source-freshness` | 離線檢查 jct/tnpa/twna 是否在 8 天期限內；逾期亮紅 |
+| 隨時 | Finder/Dock 一鍵 | `scripts/run_local_update.command`，執行同一套本機更新 |
 
-twna（台灣護理學會）robots 全站禁爬：Lin 用瀏覽器另存課程頁到「下載」資料夾即可，其餘全自動。
-twna「即時」監看（com.lin.twna-watch.plist）**未安裝**（功能已被週排程涵蓋，Lin 要即時再裝）。
+來源的 `config/site.py` `execution` 是固定邊界：
 
-## 下次對話可能要處理的事
+- `cloud`：nuna、critical、psy、tnna、tnma、ni、ahqroc、hospice。
+- `local`：jct、tnpa；GitHub Actions 不嘗試，僅在台灣住宅 IP 執行。
+- `manual`：twna；只讀 `data/manual_twna.json`，沒有自動抓取路徑。
 
-1. **真排程二次確認**（最重要）：下週日（2026-07-12）後檢查兩個排程是否真的自動跑了——
-   `gh run list` 看雲端；`tail /tmp/nursing-local-update.log` 看本機；網站頁尾 jct/tnpa 筆數應刷新。
-   特別注意 launchd 下的 git push 憑證（keychain）本輪未實測到（當時無變更），失敗會有桌面通知。
-2. **舊空殼可刪**：`/Volumes/MAC SSD/claude code/project/training-course` 只剩 `.claude/launch.json`
-   （上一 session 的預覽橋接），整個資料夾可刪。刪除類動作先跟 Lin 確認。
-3. **選配（Lin 尚未決定）**：去函醫策會/專科護理師學會請求白名單（合規正道，可擬信稿）；
-   twna 即時監看安裝；「離島」地區分類（金門/連江課程目前視訊場歸線上、實體會落未定其他）。
+## 絕對不能退回的作法
 
-## 關鍵慣例（動手前必知）
+- 不得讓 cloud workflow 執行 jct/tnpa，也不得用 proxy、住宅代理、輪替 IP、偽裝 header 或 cookie
+  繞過機房 IP 封鎖。
+- 不得對 `act.e-twna.org.tw` 發出任何自動化請求。其 robots.txt 全站 `Disallow: /`；提醒工具
+  只有在使用者明確按「開啟課程頁」時才呼叫瀏覽器，另存仍是人工動作。
+- 不得使用 `verify=False`。老憑證站使用 `scripts/sources/base.py` 的 `download_curl()`，保持完整驗證。
+- 不得在測試中實跑來源；parser 開發維持「fixture 迭代、單一來源對外最多偵察 1 次＋驗收 1 次」。
 
-- **唯一設定檔** `config/site.py`：站名/配色（RX Ⅱ 靜謐青）/類別/積分別/地區/來源/排除規則全在此。
-- **積分四類**依《醫事人員執業登記及繼續教育辦法》第 13 條：pro 專業／quality 品質／ethics 倫理／
-  law 法規＋np 專科護理師。nuna 細項自動拆解（含性別/感染主題提示）。
-- **jct 排除規則兩層**：config `exclude_title_keywords`（數位課程/教學影片/觀摩活動，加詞免改程式）
-  ＋程式內語意規則（標題含醫師/中醫→看詳情頁學分認可，無護理積分＝專屬排除）。
-- **公開頁不顯示來源錯誤**（Lin 指示）：維護者錯誤可見性走 Actions 紅燈＋桌面通知＋status.json；
-  頁面只有中性「更新至日期」註記與全滅紅橫幅。
-- **爬蟲禮貌**（README 守則）：只 GET、守 robots、每站 dev ≤20 請求、**實跑 2 次上限**（偵察1＋驗收1，
-  迭代餵快取）、禁 verify=False、禁 proxy 繞封鎖。
-- 測試：`.venv/bin/python -m pytest -q`（全離線，fixture 驅動）。改動後必跑。
-- RWD 已完成（375/768/1440 實測 1/2/3 欄）。
-- 新增來源照 README「新增一個學會來源（SOP）」與內建提示語範本。
+## 操作語意
 
-## 參考文件（不重複內容，按需讀取）
+- jct/tnpa 同一天都成功過，一鍵或排程會跳過網站請求；隔天允許再抓。`--force` 只供明確重驗。
+- twna 成功匯入另存頁時，同時更新 `manual_imported_at` 與 `manual_checked_at`，新增 0 筆也算完成核對；
+  對話框按「本週已確認」只更新 `manual_checked_at`。watchdog 取兩者較新者。
+- `local_update.py` 發現非資料產物的髒檔會中止。push 被一般 non-fast-forward 拒絕時只做一次
+  `pull --rebase`＋重推；衝突會 abort 並交由人處理，禁止無限重試。
+- `.command` 與 launchd 都呼叫同一支 `local_update.py`，沒有第二套更新邏輯。
 
-- `session_summary.md`——當日完整歷程（部署/客製三輪/審查修正）
-- `README.md`——維運手冊（本機更新/部署/禮貌守則/twna 三種方式）
-- `docs/ARCHITECTURE.md`——逆向拆解報告與設計決策
-- `AC_*.md` 三份——各階段驗收清單
-- `~/.claude/rules/LESSONS.md` L-2026-07-10-002/006/007/008——本專案沉澱的四條通用教訓
-- 計畫檔（歷輪核准紀錄）：`~/.claude/plans/https-tlan1012-github-io-taiwan-neurolog-radiant-pretzel.md`
+## 安裝狀態與檢查
 
-## Suggested skills（下一個 agent 視情境調用）
+- `com.lin.nursing-local-update`：既有週日 16:00 排程，必須保留。
+- `com.lin.twna-reminder`：已於 2026-07-13 bootstrap，週日 14:00、15:00；plist 固定指向外接 SSD
+  正式路徑。安裝、移除命令與 log 路徑見 README「每週人工核對提醒」。
+- `com.lin.twna-watch`：選配的 Downloads 即時監看，不是每週流程必要條件。
+- 一鍵 log：`~/Library/Logs/nursing-course-update.log`；本機排程 log：`/tmp/nursing-local-update.log`；
+  twna 提醒 log：`/tmp/nursing-twna-reminder.log`。
 
-- `dual-machine-sync`——Lin 換 MacBook Air 工作時（MBA 端 `git clone` 到 ~/Projects 即可）
-- `systematic-debugging`——任何來源突然 error/empty 時（多半是網站改版，照 README SOP 修 parser）
-- `verification-before-completion`——宣稱完成前一律實跑驗證（本專案鐵則）
-- `brainstorming`——若 Lin 要開新功能（如訂閱通知、行事曆匯出檔）
+## 故障處理順序
 
-（維護註記：本檔為一次性交接快照，內容以 session_summary 與 README 為準；過時可直接刪除重寫。）
+1. `git status` 檢查髒檔；使用者改動先 commit 或暫存，不刪除未知檔案。
+2. `gh run list` 看兩個 Actions；`tail /tmp/nursing-local-update.log` 看住宅 IP 更新。
+3. watchdog 指向 twna 時人工另存／確認；指向 jct/tnpa 時在住宅網路按一鍵。不要改執行邊界。
+4. rebase 衝突先確認自動流程已 abort，再人工整合遠端；不要反覆觸發排程。
+5. 宣稱完成前跑 `.venv/bin/python -m pytest -q`、plist lint、shell syntax 與 AST `verify=False` audit。
+
+正式網站：<https://healon.github.io/nursing-coursetw-lin/>；repo：`Healon/nursing-coursetw-lin`。

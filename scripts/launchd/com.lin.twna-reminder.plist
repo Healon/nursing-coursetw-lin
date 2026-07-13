@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!-- 每週日 14:00、15:00 檢查 TWNA 人工資料新鮮度；只有使用者明確點擊才開課程頁。
-     本工具不自動連線 TWNA。使用既有 ~/Projects symlink 與專案 venv，安裝步驟見 README。 -->
+     本工具不自動連線 TWNA。固定指向外接 SSD 上的正式專案與 venv，安裝步驟見 README。 -->
 <plist version="1.0">
 <dict>
     <key>Label</key>
     <string>com.lin.twna-reminder</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/healon/Projects/nursing-coursetw-lin/.venv/bin/python</string>
-        <string>/Users/healon/Projects/nursing-coursetw-lin/scripts/twna_reminder.py</string>
+        <string>/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin/.venv/bin/python</string>
+        <string>/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin/scripts/twna_reminder.py</string>
     </array>
     <key>WorkingDirectory</key>
-    <string>/Users/healon/Projects/nursing-coursetw-lin</string>
+    <string>/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin</string>
     <key>StartCalendarInterval</key>
     <array>
         <dict>
