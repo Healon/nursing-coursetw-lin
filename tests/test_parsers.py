@@ -18,7 +18,23 @@ import pytest
 
 from config import site as cfg
 from scripts import import_twna_page, normalize
-from scripts.sources import ahqroc, base, critical, demo, hospice, jct, ni, nuna, psy, tnma, tnna, tnpa, twna, run_all
+from scripts.sources import (
+    ahqroc,
+    base,
+    critical,
+    demo,
+    hospice,
+    jct,
+    ni,
+    nuna,
+    psy,
+    run_all,
+    select_source_codes,
+    tnma,
+    tnna,
+    tnpa,
+    twna,
+)
 
 FIXTURES = Path(__file__).resolve().parent / "fixtures"
 
@@ -57,6 +73,27 @@ class TestRegistry:
         events, outcomes = run_all(["no-such-source"])
         assert events == []
         assert outcomes["no-such-source"]["status"] == "error"
+
+
+class TestSourceSelection:
+    def test_profile_selects_only_enabled_matching_sources(self, monkeypatch):
+        monkeypatch.setattr(cfg, "SOURCES", {
+            "a": {"enabled": True, "execution": "cloud"},
+            "b": {"enabled": True, "execution": "local"},
+            "c": {"enabled": False, "execution": "cloud"},
+        })
+        assert select_source_codes(profile="cloud") == ["a"]
+        assert select_source_codes(profile="local") == ["b"]
+
+    def test_explicit_sources_override_enabled_and_execution(self, monkeypatch):
+        monkeypatch.setattr(cfg, "SOURCES", {
+            "a": {"enabled": False, "execution": "manual"},
+        })
+        assert select_source_codes(only=["a"]) == ["a"]
+
+    def test_profile_and_only_are_mutually_exclusive(self):
+        with pytest.raises(ValueError, match="only and profile"):
+            select_source_codes(only=["a"], profile="cloud")
 
 
 class TestNunaSource:

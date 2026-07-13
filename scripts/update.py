@@ -1,5 +1,6 @@
 """Purpose: pipeline entry point — scrape sources, normalize/merge/filter, write data files, rebuild the page.
-Input:  --sources code1,code2（只跑指定來源）；--reset（忽略既有資料，從空開始）。
+Input:  --sources code1,code2（只跑指定來源）或 --profile cloud/local/manual（擇一）；
+--reset（忽略既有資料，從空開始）。
 Output: data/events.json、data/status.json、index.html。
 
 失敗語意（刻意設計，勿改動順序）：
@@ -19,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config import site as cfg
 from scripts import build, normalize, status
-from scripts.sources import run_all
+from scripts.sources import VALID_EXECUTIONS, run_all
 
 ROOT = Path(__file__).resolve().parents[1]
 EVENTS_PATH = ROOT / "data" / "events.json"
@@ -33,7 +34,13 @@ def load_previous_events() -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Scrape sources and rebuild the site")
-    parser.add_argument("--sources", help="逗號分隔的來源代碼，只跑這些（預設：所有 enabled 來源）")
+    selection = parser.add_mutually_exclusive_group()
+    selection.add_argument("--sources", help="逗號分隔的來源代碼，只跑這些（預設：所有 enabled 來源）")
+    selection.add_argument(
+        "--profile",
+        choices=sorted(VALID_EXECUTIONS),
+        help="只跑指定執行環境的 enabled 來源",
+    )
     parser.add_argument("--reset", action="store_true", help="忽略既有 events.json，從空資料開始（例如清除示範資料）")
     args = parser.parse_args()
     only = [s.strip() for s in args.sources.split(",") if s.strip()] if args.sources else None
@@ -41,7 +48,7 @@ def main() -> None:
     today = dt.date.today()
     previous = [] if args.reset else load_previous_events()
 
-    fresh_raw, outcomes = run_all(only)
+    fresh_raw, outcomes = run_all(only=only, profile=args.profile)
     fresh: list[dict] = []
     survived_by_src: dict[str, int] = {}
     for ev in fresh_raw:

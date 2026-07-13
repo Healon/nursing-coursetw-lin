@@ -84,6 +84,7 @@ REGIONS = {
 #   label:   顯示名稱（pill 與頁尾統計用）
 #   url:     活動列表頁（必須是公開、免登入的頁面）
 #   enabled: 是否納入「無參數執行 update.py」的自動更新
+#   execution: 執行位置（cloud＝GitHub Actions；local＝住宅 IP；manual＝只讀人工匯入資料）
 #   note:    維護備註（例如「需會員登入，不爬，改人工維護」）
 # 每個要爬的 code 必須在 scripts/sources/<code>.py 有對應模組（實作 fetch()）。
 # 需要登入才看得到活動的網站：不要爬，enabled 設 False 並在 note 註明。
@@ -92,6 +93,7 @@ SOURCES = {
         "label": "示範資料",
         "url": "",
         "enabled": False,
+        "execution": "cloud",
         "note": "離線假資料產生器，讓模板不需網路即可完整跑通（pytest 與新手體驗仍會用到，勿刪模組）。"
         "已於 2026-07-10 轉正式資料後停用；要重新體驗示範模式改回 True 再 update.py --reset。",
     },
@@ -99,12 +101,14 @@ SOURCES = {
         "label": "護理師護士公會全聯會",
         "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx",
         "enabled": True,
+        "execution": "cloud",
         "note": "已驗證可抓（2026-07-10 實測研習活動報名表格，24 筆，ASP.NET GridView，免登入）。",
     },
     "critical": {
         "label": "中華民國急重症護理學會",
         "url": "https://www.taccn.org.tw/activity/list/2",
         "enabled": True,
+        "execution": "cloud",
         "note": "已驗證可抓（2026-07-10 實測列表頁 10 筆，逐筆進入詳情頁取日期與積分，免登入）。官方全名依詳情頁頁尾核實。",
     },
     # ---- 以下為 2026-07-10 偵察後登錄、待逐波實作的來源（enabled=False 起步）----
@@ -112,30 +116,35 @@ SOURCES = {
         "label": "中華民國精神衛生護理學會",
         "url": "https://www.psynurse.org.tw/news.aspx",
         "enabled": True,
+        "execution": "cloud",
         "note": "已驗證可抓（2026-07-10 實測消息公告頁 10 則中 2 則為研習會，免登入，標題含民國日期用 base.roc_date_to_iso 換算；無積分欄）。",
     },
     "tnna": {
         "label": "臺灣腎臟護理學會",
         "url": "https://www.tnna.org.tw/home/study_list.asp",
         "enabled": True,
+        "execution": "cloud",
         "note": "已驗證可抓（2026-07-10 實測列表 10 筆卡片式，含日期／地點；詳情頁 study_content.asp?WC_ID= 補積分，免登入）。勿與腎臟醫學會 tsn.org.tw 混淆。",
     },
     "tnma": {
         "label": "臺灣護理管理學會",
         "url": "https://www.tnma100.org.tw/training/training02.asp",
         "enabled": True,
+        "execution": "cloud",
         "note": "已驗證可抓（2026-07-10 實測表格 50 列，標題＋西元日期＋地點，免登入）。詳情多為 PDF/XLS/DOCX 簡章，v1 不解析附件內容，只取第一個附件連結當 url；/training/ 目錄本身 403 不直接打。",
     },
     "ni": {
         "label": "台灣護理資訊學會",
         "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx",
         "enabled": True,
+        "execution": "cloud",
         "note": "已驗證可抓（2026-07-10 實測列表 10 筆/頁，免登入；詳情 ?pidm=ID 補地點）。分頁機制無法從靜態 HTML 確認為純 GET（無 __doPostBack 字串但也無 querystring 分頁證據），v1 只取第一頁。",
     },
     "ahqroc": {
         "label": "台灣醫療品質協會",
         "url": "https://www.ahqroc.org.tw/Class.aspx",
         "enabled": True,
+        "execution": "cloud",
         "note": "已驗證可抓（2026-07-10 實測「課程清單」第 1 頁 8 筆，news_List 卡片式列表＋"
         "ClassDetail.aspx?sid= 詳情頁二段式，免登入伺服器渲染；robots.txt 404 視為未限制）。"
         "分頁為 ASP.NET postback，v1 只取第 1 頁。學分統一對映 quality（本會核心業務為醫品師"
@@ -145,6 +154,7 @@ SOURCES = {
         "label": "醫策會",
         "url": "https://attend.jct.org.tw/activity/event_news_calendar.php",
         "enabled": True,
+        "execution": "local",
         # 標題含任一關鍵字即整筆不收錄（Lin 指示的排除規則；要加新規則往清單加詞即可，不用改程式）：
         # 數位課程/教學影片（2026-07-10，隨選非排定場次）、觀摩活動（2026-07-10，NHQA 現場觀摩非課程）
         "exclude_title_keywords": ["數位課程", "教學影片", "觀摩活動"],
@@ -162,6 +172,7 @@ SOURCES = {
         "label": "台灣安寧緩和護理學會",
         "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/schedule/schedule1?integrationProperty=1",
         "enabled": True,
+        "execution": "cloud",
         "note": "已驗證可抓（2026-07-10 實測 5 筆；URL 由 Lin 提供，?integrationProperty=1 為必要參數，"
         "帶參數為伺服器渲染表格非 JS 空殼；robots.txt 404 視為未限制）。下載層用 base.download_curl"
         "（系統信任清單驗證憑證）：此站憑證鏈的 TWCA 老式根憑證會被 requests/OpenSSL 嚴格驗證拒收，"
@@ -171,6 +182,7 @@ SOURCES = {
         "label": "台灣護理學會",
         "url": "https://www.twna.org.tw/",
         "enabled": True,
+        "execution": "manual",
         "note": "手動維護＋另存頁匯入器（robots 全站禁爬不自動抓，2026-07-10 實測"
         "act.e-twna.org.tw/robots.txt 為「User-agent: * / Disallow: /」）。初始資料"
         "2026-07-10 由偵察期快取頁匯入（42 筆）；日後更新：瀏覽器另存課程頁後跑"
@@ -180,6 +192,7 @@ SOURCES = {
         "label": "台灣專科護理師學會",
         "url": "https://www.tnpa.org.tw/events/",
         "enabled": True,
+        "execution": "local",
         "note": "⚠️ 雲端更新不到：tnpa.org.tw 對 GitHub Actions 機房 IP 回 403（LESSONS L-2026-07-10-008），由本機週排程 scripts/local_update.py 補抓。已驗證可抓（2026-07-10 實測「所有活動」列表 11 筆，event__item 卡片式，免登入伺服器渲染；"
         "robots.txt 對通用 UA 於 /events/ 允許，僅點名禁止具名 AI 爬蟲）。積點統一對映 np（本學會即專科護理師學會）。",
     },

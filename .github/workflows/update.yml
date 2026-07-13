@@ -26,8 +26,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Scrape sources and rebuild page
-        run: python scripts/update.py
+      - name: Scrape cloud sources and rebuild page
+        run: python scripts/update.py --profile cloud
 
       - name: Commit and push if changed
         run: |
