@@ -7,10 +7,10 @@
 
 | 時間（台北） | 執行位置 | 工作 |
 |---|---|---|
-| 週日 14:00、15:00 | Mac launchd `com.lin.twna-reminder` | twna 超過 7 天未人工處理才提醒；只有 Lin 點按才開瀏覽器 |
+| 週日 14:00、15:00 | Mac launchd `com.lin.twna-reminder` | twna 本週日更新週期尚未人工處理才提醒；只有 Lin 點按才開瀏覽器 |
 | 週日 15:00 | GitHub Actions `update-events` | `scripts/update.py --profile cloud`，只更新 8 個 cloud 來源 |
 | 週日 16:00 | Mac launchd `com.lin.nursing-local-update` | 匯入 Downloads 的 twna 另存頁、以住宅 IP 抓 jct/tnpa、commit、push |
-| 週一 09:00 | GitHub Actions `local-source-freshness` | 離線檢查 jct/tnpa/twna 是否在 8 天期限內；逾期亮紅 |
+| 週一 09:00 | GitHub Actions `local-source-freshness` | 離線確認 jct/tnpa/twna 均在剛開始的星期日更新週期成功；否則亮紅 |
 | 隨時 | Finder/Dock 一鍵 | `scripts/run_local_update.command`，執行同一套本機更新 |
 
 來源的 `config/site.py` `execution` 是固定邊界：
