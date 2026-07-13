@@ -205,7 +205,8 @@ launchctl load ~/Library/LaunchAgents/com.lin.twna-watch.plist
 
 ### 每週人工核對提醒（已採用）
 
-週日 14:00 與 15:00，`com.lin.twna-reminder` 會在資料超過 7 天未匯入／確認時顯示對話框。
+週日 14:00 與 15:00，`com.lin.twna-reminder` 會在本週日更新週期尚未匯入／確認時顯示對話框；
+前一個星期日的匯入不會壓掉新一週提醒。
 「開啟課程頁」必須由你明確點選才會交給瀏覽器；程式本身不下載或自動存取 TWNA。
 另存成「僅 HTML」到 `~/Downloads` 後，16:00 的本機更新會自動匯入。若官網確實沒有新課，
 按「本週已確認」只更新 `manual_checked_at`；「稍後提醒」則保留逾期狀態，15:00 再提醒。
@@ -286,9 +287,9 @@ launchctl load ~/Library/LaunchAgents/com.lin.nursing-local-update.plist
 ### 週一 09:00 失聯偵測
 
 `.github/workflows/freshness-watchdog.yml` 每週一台北 09:00 執行
-`scripts/check_freshness.py --max-age-days 8`。它只讀 repo 裡的 `data/status.json` 與
-`data/manual_twna.json`，不載入 parser、不連來源網站；jct/tnpa 最近成功日或 twna 最近人工活動
-超過 8 天、缺漏、格式錯誤或位於未來時，Actions 會亮紅。也可在 Actions 頁手動 Run workflow。
+`scripts/check_freshness.py`。它只讀 repo 裡的 `data/status.json` 與 `data/manual_twna.json`，
+不載入 parser、不連來源網站；jct/tnpa 與 twna 必須在剛開始的星期日更新週期內成功，否則
+（含缺漏、格式錯誤或時間位於未來）Actions 會亮紅。也可在 Actions 頁手動 Run workflow。
 
 ### 本機更新失敗時
 

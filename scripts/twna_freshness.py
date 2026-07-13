@@ -6,8 +6,10 @@ import json
 import os
 import tempfile
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 FIELDS = ("manual_imported_at", "manual_checked_at")
+TAIPEI = ZoneInfo("Asia/Taipei")
 
 
 def _require_aware(value: dt.datetime, label: str) -> dt.datetime:
@@ -34,8 +36,30 @@ def is_fresh(raw: dict, now: dt.datetime, max_age_days: int) -> bool:
     return latest is not None and now - latest <= dt.timedelta(days=max_age_days)
 
 
+def weekly_cycle_start(now: dt.datetime) -> dt.datetime:
+    """Return Sunday 00:00 at the start of ``now``'s Asia/Taipei update cycle."""
+    local_now = _require_aware(now, "now").astimezone(TAIPEI)
+    days_since_sunday = (local_now.weekday() + 1) % 7
+    return (local_now - dt.timedelta(days=days_since_sunday)).replace(
+        hour=0,
+        minute=0,
+        second=0,
+        microsecond=0,
+    )
+
+
+def has_activity_in_current_cycle(raw: dict, now: dt.datetime) -> bool:
+    """Whether the latest manual activity belongs to the current Sunday cycle."""
+    local_now = _require_aware(now, "now").astimezone(TAIPEI)
+    latest = latest_manual_activity(raw)
+    if latest is None:
+        return False
+    local_latest = latest.astimezone(TAIPEI)
+    return weekly_cycle_start(local_now) <= local_latest <= local_now
+
+
 def _timestamp(now: dt.datetime) -> str:
-    return _require_aware(now, "now").astimezone().isoformat(timespec="seconds")
+    return _require_aware(now, "now").astimezone(TAIPEI).isoformat(timespec="seconds")
 
 
 def mark_imported(raw: dict, now: dt.datetime) -> None:

@@ -33,7 +33,7 @@ def _local_source_failure(
     status_snapshot: dict,
     code: str,
     today: dt.date,
-    max_age_days: int,
+    cycle_start: dt.date,
 ) -> str | None:
     try:
         value = status_snapshot["sources"][code]["last_success"]
@@ -41,15 +41,14 @@ def _local_source_failure(
     except (KeyError, TypeError, ValueError):
         return f"{code}: 缺少或無效的 last_success"
 
-    age = (today - last_success).days
-    if age < 0:
+    if last_success > today:
         return f"{code}: last_success 位於未來（{last_success.isoformat()}）"
-    if age > max_age_days:
-        return f"{code}: 已 {age} 天未成功（最近 {last_success.isoformat()}）"
+    if last_success < cycle_start:
+        return f"{code}: 本週日更新週期尚未成功（最近 {last_success.isoformat()}）"
     return None
 
 
-def _twna_failure(manual_twna: dict, now: dt.datetime, max_age_days: int) -> str | None:
+def _twna_failure(manual_twna: dict, now: dt.datetime) -> str | None:
     try:
         latest = twna_freshness.latest_manual_activity(manual_twna)
     except (AttributeError, TypeError, ValueError):
@@ -60,9 +59,8 @@ def _twna_failure(manual_twna: dict, now: dt.datetime, max_age_days: int) -> str
     if latest > now:
         return f"twna: 手動檢查時間位於未來（{latest.isoformat()}）"
 
-    age = now - latest
-    if age > dt.timedelta(days=max_age_days):
-        return f"twna: 已超過 {max_age_days} 天未手動檢查（最近 {latest.isoformat()}）"
+    if latest.astimezone(TAIPEI) < twna_freshness.weekly_cycle_start(now):
+        return f"twna: 本週日更新週期尚未手動檢查（最近 {latest.isoformat()}）"
     return None
 
 
@@ -70,12 +68,10 @@ def evaluate(
     status_snapshot: dict,
     manual_twna: dict,
     now: dt.datetime,
-    max_age_days: int = 8,
 ) -> list[str]:
-    """Return one failure per missing, invalid, future, or stale required source."""
-    if max_age_days < 0:
-        raise ValueError("max_age_days 不可為負數")
+    """Return one failure per source not successful in the current Sunday cycle."""
     local_now = _aware_now(now)
+    cycle_start = twna_freshness.weekly_cycle_start(local_now).date()
 
     failures: list[str] = []
     for code in LOCAL_SOURCES:
@@ -83,12 +79,12 @@ def evaluate(
             status_snapshot,
             code,
             local_now.date(),
-            max_age_days,
+            cycle_start,
         )
         if failure:
             failures.append(failure)
 
-    twna_failure = _twna_failure(manual_twna, local_now, max_age_days)
+    twna_failure = _twna_failure(manual_twna, local_now)
     if twna_failure:
         failures.append(twna_failure)
     return failures
@@ -110,23 +106,19 @@ def main(
     manual_path: Path | None = None,
 ) -> int:
     parser = argparse.ArgumentParser(description="檢查本機／手動來源資料是否過期（完全離線）")
-    parser.add_argument("--max-age-days", type=int, default=8, help="允許的最長天數（預設 8）")
-    args = parser.parse_args(argv)
-    if args.max_age_days < 0:
-        parser.error("--max-age-days 不可為負數")
+    parser.parse_args(argv)
 
     failures = evaluate(
         _load_dict(status_path or STATUS_PATH),
         _load_dict(manual_path or MANUAL_TWNA_PATH),
         now or dt.datetime.now(TAIPEI),
-        args.max_age_days,
     )
     if failures:
         for failure in failures:
             print(failure)
         return 1
 
-    print(f"fresh: jct、tnpa、twna 均在 {args.max_age_days} 天期限內")
+    print("fresh: jct、tnpa、twna 均已在本週日更新週期成功")
     return 0
 
 

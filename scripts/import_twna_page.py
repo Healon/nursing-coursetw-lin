@@ -76,10 +76,12 @@ def run(html_path: Path, data_path: Path, *, now: dt.datetime | None = None) -> 
         raise FileNotFoundError(f"找不到另存的課程頁檔案：{html_path}")
 
     html = html_path.read_text(encoding="utf-8")
-    if BeautifulSoup(html, "html.parser").find(
+    table = BeautifulSoup(html, "html.parser").find(
         "table", id="ctl00_ContentPlaceHolder1_GridView1"
-    ) is None:
+    )
+    if table is None:
         raise ValueError("不是有效的 twna 課程列表另存頁：找不到課程表格")
+    candidate_rows = [row for row in table.find_all("tr") if row.find("td") is not None]
 
     # parse_saved_page 對單列缺日期/標題的問題列印 stderr（見該函式 docstring），這裡暫時
     # 接住以便算出「解析失敗 K 筆」的摘要數字，接完仍原樣轉印到真正的 stderr——不吞掉診斷訊息。
@@ -90,6 +92,8 @@ def run(html_path: Path, data_path: Path, *, now: dt.datetime | None = None) -> 
     if skip_log:
         sys.stderr.write(skip_log)
     failed = len([line for line in skip_log.splitlines() if line.strip()])
+    if candidate_rows and not parsed:
+        raise ValueError("twna 課程表格有候選資料列，但全部解析失敗；未更新核對時間")
 
     if data_path.exists():
         raw = json.loads(data_path.read_text(encoding="utf-8"))

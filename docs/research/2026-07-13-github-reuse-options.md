@@ -74,7 +74,7 @@ event 與 status，避免雲端晚到時覆寫本機成功結果。
 新增只讀 `data/status.json` 的輕量 workflow，不連任何學會網站：
 
 - 在預期本機補抓後（例如每週一）檢查 `jct`、`tnpa` 的 `last_success`。
-- 超過約 8 天未成功時讓 Actions 明確失敗，透過既有 GitHub 通知提醒維護者。
+- 週一檢查時若本週日更新週期尚未成功，讓 Actions 明確失敗並透過既有 GitHub 通知提醒維護者。
 - 檢查 twna 時使用 `manual_imported_at`／`manual_checked_at`，不能把「JSON 可讀」當成「官網資料剛更新」。
 
 ### 4. 不導入完整第三方平台
@@ -89,6 +89,6 @@ Scrapy、Crawlee、Playwright、Huginn、n8n 與 act 都無法讓 GitHub-hosted 
    競態的離線測試。
 2. GitHub cloud workflow log 中不再出現對 `jct`、`tnpa` 的請求。
 3. 本機補抓不論發生在 cloud workflow 之前或之後，遠端最終 `jct`、`tnpa` 都保持最近一次本機成功狀態。
-4. watchdog 對 8 天內成功回 0，超過門檻回非零；整個測試不連來源站。
+4. watchdog 對本週日更新週期內成功回 0，前一週或更舊資料回非零；整個測試不連來源站。
 5. `twna` 仍保持零自動請求，頁面／狀態能區分 parser 成功與人工資料的新鮮度。
 6. 禁止 `verify=False` 應用 Python AST 或離線測試檢查實際函式呼叫，不用會命中說明文字的 grep 零結果。

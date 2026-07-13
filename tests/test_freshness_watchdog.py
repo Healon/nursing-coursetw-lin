@@ -20,17 +20,26 @@ def snapshot(last_success="2026-07-12"):
     }
 
 
-def test_exactly_eight_days_is_fresh():
-    manual = {"manual_checked_at": "2026-07-12T09:00:00+08:00"}
-    assert check_freshness.evaluate(snapshot(), manual, NOW, 8) == []
+def test_current_sunday_is_fresh():
+    manual = {"manual_checked_at": "2026-07-19T14:00:00+08:00"}
+    assert check_freshness.evaluate(snapshot("2026-07-19"), manual, NOW) == []
 
 
-def test_older_than_eight_days_reports_each_source():
+def test_missed_sunday_makes_next_monday_fail_even_if_previous_sunday_succeeded():
+    failures = check_freshness.evaluate(
+        snapshot("2026-07-12"),
+        {"manual_checked_at": "2026-07-12T16:00:00+08:00"},
+        NOW,
+    )
+
+    assert [failure.split(":", 1)[0] for failure in failures] == ["jct", "tnpa", "twna"]
+
+
+def test_older_cycle_reports_each_source():
     failures = check_freshness.evaluate(
         snapshot("2026-07-11"),
         {"manual_checked_at": "2026-07-11T08:59:59+08:00"},
         NOW,
-        8,
     )
     assert any("jct" in failure for failure in failures)
     assert any("tnpa" in failure for failure in failures)
@@ -38,7 +47,7 @@ def test_older_than_eight_days_reports_each_source():
 
 
 def test_missing_or_invalid_state_fails_closed():
-    failures = check_freshness.evaluate({}, {}, NOW, 8)
+    failures = check_freshness.evaluate({}, {}, NOW)
     assert len(failures) == 3
 
 
@@ -47,7 +56,6 @@ def test_invalid_dates_fail_closed_with_source_names():
         snapshot("not-a-date"),
         {"manual_checked_at": "not-a-timestamp"},
         NOW,
-        8,
     )
     assert [failure.split(":", 1)[0] for failure in failures] == ["jct", "tnpa", "twna"]
 
@@ -57,7 +65,6 @@ def test_future_dates_fail_closed():
         snapshot("2026-07-21"),
         {"manual_checked_at": "2026-07-20T09:00:01+08:00"},
         NOW,
-        8,
     )
     assert len(failures) == 3
 
@@ -65,14 +72,14 @@ def test_future_dates_fail_closed():
 def test_cli_reads_injected_local_files_and_returns_zero(tmp_path, capsys):
     status_path = tmp_path / "status.json"
     manual_path = tmp_path / "manual_twna.json"
-    status_path.write_text(json.dumps(snapshot()), encoding="utf-8")
+    status_path.write_text(json.dumps(snapshot("2026-07-19")), encoding="utf-8")
     manual_path.write_text(
-        json.dumps({"manual_checked_at": "2026-07-12T09:00:00+08:00"}),
+        json.dumps({"manual_checked_at": "2026-07-19T14:00:00+08:00"}),
         encoding="utf-8",
     )
 
     exit_code = check_freshness.main(
-        ["--max-age-days", "8"],
+        [],
         now=NOW,
         status_path=status_path,
         manual_path=manual_path,
@@ -87,7 +94,7 @@ def test_cli_returns_one_and_prints_one_line_per_failure(tmp_path, capsys):
     manual_path = tmp_path / "missing-manual.json"
 
     exit_code = check_freshness.main(
-        ["--max-age-days", "8"],
+        [],
         now=NOW,
         status_path=status_path,
         manual_path=manual_path,

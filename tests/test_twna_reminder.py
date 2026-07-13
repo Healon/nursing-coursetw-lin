@@ -7,6 +7,8 @@ import plistlib
 import subprocess
 from pathlib import Path
 
+import pytest
+
 from scripts import twna_reminder
 from scripts.sources import twna
 
@@ -36,6 +38,18 @@ def test_recent_manual_activity_suppresses_reminder(tmp_path):
     )
 
     assert twna_reminder.reminder_needed(data, tmp_path, NOW) is False
+
+
+@pytest.mark.parametrize("hour", [14, 15])
+def test_previous_sunday_import_does_not_suppress_new_sunday_reminder(tmp_path, hour):
+    data = tmp_path / "manual.json"
+    data.write_text(
+        json.dumps({"events": [], "manual_imported_at": "2026-07-12T16:00:00+08:00"}),
+        encoding="utf-8",
+    )
+    reminder_time = dt.datetime(2026, 7, 19, hour, 0, tzinfo=TZ)
+
+    assert twna_reminder.reminder_needed(data, tmp_path, reminder_time) is True
 
 
 def test_stale_state_without_saved_page_needs_reminder(tmp_path):

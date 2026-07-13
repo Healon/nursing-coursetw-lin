@@ -96,9 +96,30 @@ class TestTwnaSummary:
         assert local_update.twna_summary(2, 3, {}, self.NOW) == "匯入 2 檔、新增 3 筆"
 
     def test_recent_confirmation_without_file_is_explicit(self):
-        raw = {"manual_checked_at": "2026-07-13T14:00:00+08:00"}
+        raw = {"manual_checked_at": "2026-07-19T14:00:00+08:00"}
         assert local_update.twna_summary(0, 0, raw, self.NOW) == "本週已確認，無新匯入檔"
 
     def test_stale_or_unconfirmed_data_is_explicit(self):
         raw = {"manual_imported_at": "2026-07-10T14:00:00+08:00"}
         assert local_update.twna_summary(0, 0, raw, self.NOW) == "尚未核對，本次沿用上次資料"
+
+
+def test_twna_scan_error_uses_failure_notification_path(monkeypatch, tmp_path):
+    downloads = tmp_path / "Downloads"
+    downloads.mkdir()
+    monkeypatch.setattr(local_update.Path, "home", lambda: tmp_path)
+    monkeypatch.setattr(local_update, "_git", lambda *args: result(0))
+    monkeypatch.setattr(
+        local_update.twna_watch,
+        "scan_folder",
+        lambda folder: (_ for _ in ()).throw(ValueError("broken saved page")),
+    )
+    notifications = []
+    monkeypatch.setattr(local_update, "_notify", notifications.append)
+
+    exit_code = local_update.main(["--no-push"])
+
+    assert exit_code == 1
+    assert notifications == [
+        "本機更新失敗（twna import），詳見終端機或 /tmp/nursing-local-update.log"
+    ]

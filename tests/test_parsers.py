@@ -95,6 +95,13 @@ class TestSourceSelection:
         with pytest.raises(ValueError, match="only and profile"):
             select_source_codes(only=["a"], profile="cloud")
 
+    @pytest.mark.parametrize("source", [{"enabled": True}, {"enabled": True, "execution": "edge"}])
+    def test_profile_fails_closed_for_missing_or_unknown_execution(self, monkeypatch, source):
+        monkeypatch.setattr(cfg, "SOURCES", {"unsafe": source})
+
+        with pytest.raises(ValueError, match="unsafe.*execution"):
+            select_source_codes(profile="cloud")
+
 
 class TestNunaSource:
     """nuna.parse() 對 tests/fixtures/nuna_list.html（真實表格裁剪 7 列）的離線測試。"""
@@ -1050,6 +1057,28 @@ class TestImportTwnaPage:
         data_path.write_text(json.dumps(original), encoding="utf-8")
 
         with pytest.raises(ValueError, match="twna"):
+            import_twna_page.run(html_path, data_path)
+
+        assert json.loads(data_path.read_text(encoding="utf-8")) == original
+
+    def test_run_all_candidate_rows_invalid_leaves_timestamps_unchanged(self, tmp_path):
+        html_path = tmp_path / "broken_twna.html"
+        html_path.write_text(
+            """<html><body><table id="ctl00_ContentPlaceHolder1_GridView1">
+            <tr><th>辦理日期</th><th>活動名稱</th></tr>
+            <tr><td data-th="辦理日期">日期壞掉</td><td data-th="活動名稱"></td></tr>
+            </table></body></html>""",
+            encoding="utf-8",
+        )
+        data_path = tmp_path / "manual_twna.json"
+        original = {
+            "manual_imported_at": "2026-07-10T00:00:00+08:00",
+            "manual_checked_at": "",
+            "events": [],
+        }
+        data_path.write_text(json.dumps(original), encoding="utf-8")
+
+        with pytest.raises(ValueError, match="全部.*解析失敗"):
             import_twna_page.run(html_path, data_path)
 
         assert json.loads(data_path.read_text(encoding="utf-8")) == original

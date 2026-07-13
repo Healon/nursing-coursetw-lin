@@ -21,6 +21,14 @@ def test_freshness_boundary_is_inclusive():
     assert twna_freshness.is_fresh(raw, NOW + dt.timedelta(seconds=1), 7) is False
 
 
+def test_manual_activity_must_be_in_current_sunday_cycle():
+    previous_sunday = {"manual_checked_at": "2026-07-12T16:00:00+08:00"}
+    current_sunday = {"manual_checked_at": "2026-07-19T13:00:00+08:00"}
+
+    assert twna_freshness.has_activity_in_current_cycle(previous_sunday, NOW) is False
+    assert twna_freshness.has_activity_in_current_cycle(current_sunday, NOW) is True
+
+
 def test_mark_checked_preserves_events(tmp_path):
     path = tmp_path / "manual_twna.json"
     path.write_text(json.dumps({"events": [{"title": "x"}]}), encoding="utf-8")

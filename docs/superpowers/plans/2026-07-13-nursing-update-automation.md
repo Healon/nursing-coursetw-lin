@@ -551,17 +551,16 @@ def snapshot(last_success="2026-07-12"):
     }}
 
 
-def test_exactly_eight_days_is_fresh():
-    manual = {"manual_checked_at": "2026-07-12T09:00:00+08:00"}
-    assert check_freshness.evaluate(snapshot(), manual, NOW, 8) == []
+def test_current_sunday_is_fresh():
+    manual = {"manual_checked_at": "2026-07-19T14:00:00+08:00"}
+    assert check_freshness.evaluate(snapshot("2026-07-19"), manual, NOW) == []
 
 
-def test_older_than_eight_days_reports_each_source():
+def test_previous_sunday_does_not_satisfy_next_monday_cycle():
     failures = check_freshness.evaluate(
-        snapshot("2026-07-11"),
-        {"manual_checked_at": "2026-07-11T08:59:59+08:00"},
+        snapshot("2026-07-12"),
+        {"manual_checked_at": "2026-07-12T16:00:00+08:00"},
         NOW,
-        8,
     )
     assert any("jct" in x for x in failures)
     assert any("tnpa" in x for x in failures)
@@ -569,7 +568,7 @@ def test_older_than_eight_days_reports_each_source():
 
 
 def test_missing_or_invalid_state_fails_closed():
-    failures = check_freshness.evaluate({}, {}, NOW, 8)
+    failures = check_freshness.evaluate({}, {}, NOW)
     assert len(failures) == 3
 ```
 
@@ -604,7 +603,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python scripts/check_freshness.py --max-age-days 8
+      - run: python scripts/check_freshness.py
 ```
 
 - [ ] **Step 4: Verify offline and inspect workflow**
@@ -613,7 +612,7 @@ Run:
 
 ```bash
 .venv/bin/python -m pytest tests/test_freshness_watchdog.py tests/test_twna_freshness.py -q
-.venv/bin/python scripts/check_freshness.py --max-age-days 8
+.venv/bin/python scripts/check_freshness.py
 ```
 
 Expected during implementation week: the real command may exit 1 for stale twna and must print the exact stale reason; this is valid evidence, not a test failure. The pytest command must pass.

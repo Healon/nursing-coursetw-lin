@@ -21,15 +21,13 @@ from scripts.sources import twna
 PROJECT = Path(__file__).resolve().parents[1]
 DATA_PATH = PROJECT / "data" / "manual_twna.json"
 DOWNLOADS = Path.home() / "Downloads"
-MAX_AGE_DAYS = 7
-
 SCRIPT = '''button returned of (display dialog "台灣護理學會資料需要人工核對。請開啟課程頁，選擇「檔案 → 另存新檔 → 僅 HTML」，存到下載資料夾。" with title "護理教育訓練網站" buttons {"稍後提醒", "本週已確認", "開啟課程頁"} default button "開啟課程頁")'''
 
 
 def reminder_needed(data_path: Path, downloads: Path, now: dt.datetime) -> bool:
     """資料逾期且 Downloads 沒有待匯入 TWNA 另存頁時才需要提醒。"""
     raw = json.loads(data_path.read_text(encoding="utf-8"))
-    if twna_freshness.is_fresh(raw, now, MAX_AGE_DAYS):
+    if twna_freshness.has_activity_in_current_cycle(raw, now):
         return False
     return not bool(twna_watch.scan_folder(downloads, now=now.timestamp()))
 

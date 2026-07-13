@@ -1,6 +1,10 @@
 """twna_watch 監看器測試：頁面辨識與資料夾掃描。全部離線、只碰 tmp_path。"""
 from __future__ import annotations
 
+import json
+
+import pytest
+
 from scripts import twna_watch
 
 TWNA_HTML = "<html><div id='ctl00_ContentPlaceHolder1_GridView1'>x</div><a href='/ActSign/PUB/'>y</a></html>"
@@ -32,3 +36,26 @@ class TestScanFolder:
         # 用 now 參數模擬「檔案已超過 MAX_AGE_DAYS」，不真的改系統時間
         future = f.stat().st_mtime + (twna_watch.MAX_AGE_DAYS + 1) * 86400
         assert twna_watch.scan_folder(tmp_path, now=future) == []
+
+
+def test_broken_candidate_rows_are_not_archived_or_recorded(monkeypatch, tmp_path):
+    page = tmp_path / "broken.html"
+    page.write_text(
+        """<html><body><a href="/ActSign/PUB/">TWNA</a>
+        <table id="ctl00_ContentPlaceHolder1_GridView1">
+        <tr><th>辦理日期</th><th>活動名稱</th></tr>
+        <tr><td data-th="辦理日期">壞日期</td><td data-th="活動名稱"></td></tr>
+        </table></body></html>""",
+        encoding="utf-8",
+    )
+    data = tmp_path / "manual_twna.json"
+    original = {"manual_imported_at": "2026-07-10T00:00:00+08:00", "events": []}
+    data.write_text(json.dumps(original), encoding="utf-8")
+    monkeypatch.setattr(twna_watch, "DATA_PATH", data)
+
+    with pytest.raises(ValueError, match="全部.*解析失敗"):
+        twna_watch.process(page)
+
+    assert page.exists()
+    assert not (tmp_path / twna_watch.ARCHIVE_DIRNAME).exists()
+    assert json.loads(data.read_text(encoding="utf-8")) == original

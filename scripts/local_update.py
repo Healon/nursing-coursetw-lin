@@ -92,7 +92,7 @@ def twna_summary(hits_count: int, added: int, raw: dict, now: dt.datetime) -> st
     """Describe whether TWNA was imported, recently confirmed, or left stale."""
     if hits_count:
         return f"匯入 {hits_count} 檔、新增 {added} 筆"
-    if twna_freshness.is_fresh(raw, now, max_age_days=7):
+    if twna_freshness.has_activity_in_current_cycle(raw, now):
         return "本週已確認，無新匯入檔"
     return "尚未核對，本次沿用上次資料"
 
@@ -129,15 +129,27 @@ def main(argv: list[str] | None = None) -> int:
     downloads = Path.home() / "Downloads"
     twna_hits = 0
     twna_added = 0
-    if downloads.is_dir():
-        hits = twna_watch.scan_folder(downloads)
-        if hits:
-            twna_hits = len(hits)
-            for f in hits:
-                stats = twna_watch.process(f)
-                twna_added += stats["added"]
-    twna_raw = json.loads(TWNA_DATA_PATH.read_text(encoding="utf-8")) if TWNA_DATA_PATH.exists() else {}
-    twna_note = twna_summary(twna_hits, twna_added, twna_raw, dt.datetime.now().astimezone())
+    try:
+        if downloads.is_dir():
+            hits = twna_watch.scan_folder(downloads)
+            if hits:
+                twna_hits = len(hits)
+                for f in hits:
+                    stats = twna_watch.process(f)
+                    twna_added += stats["added"]
+        twna_raw = (
+            json.loads(TWNA_DATA_PATH.read_text(encoding="utf-8"))
+            if TWNA_DATA_PATH.exists()
+            else {}
+        )
+        twna_note = twna_summary(
+            twna_hits,
+            twna_added,
+            twna_raw,
+            dt.datetime.now().astimezone(),
+        )
+    except Exception as exc:  # noqa: BLE001 - operational boundary must notify instead of traceback
+        return _fail("twna import", f"{type(exc).__name__}: {exc}"[:160])
     print(f"[local-update] ✔ twna 另存頁：{twna_note}")
 
     # 4. 防狂打護欄：今天已成功抓過 jct/tnpa 就不重爬（--force 可強制）

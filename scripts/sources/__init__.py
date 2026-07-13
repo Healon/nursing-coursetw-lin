@@ -28,11 +28,15 @@ def select_source_codes(
         raise ValueError(f"unknown execution profile: {profile}")
     if only is not None:
         return list(only)
+    for code, src in cfg.SOURCES.items():
+        execution = src.get("execution") if isinstance(src, dict) else None
+        if execution not in VALID_EXECUTIONS:
+            raise ValueError(f"{code} has invalid execution metadata: {execution!r}")
     return [
         code
         for code, src in cfg.SOURCES.items()
         if src.get("enabled", False)
-        and (profile is None or src.get("execution", "cloud") == profile)
+        and (profile is None or src["execution"] == profile)
     ]
 
 

@@ -79,8 +79,8 @@ merge 流程保留。
 
 提醒前先檢查：
 
-- 最近七天是否已成功匯入 twna 另存頁；或
-- 最近七天是否已按下「本週已確認」；或
+- 本週日 00:00（Asia/Taipei）起是否已成功匯入 twna 另存頁；或
+- 本週日 00:00（Asia/Taipei）起是否已按下「本週已確認」；或
 - `~/Downloads` 是否已存在等待處理的 twna HTML。
 
 符合任一條件即安靜退出，不重複打擾。
@@ -102,7 +102,7 @@ merge 流程保留。
 ### 6.3 16:00 本機更新結果
 
 - 找到 twna HTML：匯入、去重、更新新鮮度、歸檔原始檔；有新事件時重建 twna 資料。
-- 沒有 HTML 但最近七天已人工確認：顯示「twna 本週已確認，無新匯入檔」。
+- 沒有 HTML 但本週日更新週期已人工確認：顯示「twna 本週已確認，無新匯入檔」。
 - 沒有 HTML且未確認：沿用舊資料，通知「twna 尚未核對，本次沿用上次資料」；不把它誤記為新鮮。
 
 任何情況都不對 twna 發出網路請求。
@@ -152,8 +152,8 @@ diff-gated commit/push → 桌面通知。
 
 檢查規則：
 
-- `jct`、`tnpa`：`last_success` 距檢查日超過 8 天，視為失聯並非零退出。
-- `twna`：`manual_imported_at` 與 `manual_checked_at` 兩者較新者距檢查日超過 8 天，視為尚未人工核對並非零退出。
+- `jct`、`tnpa`：`last_success` 不在剛開始的星期日更新週期內，視為失聯並非零退出。
+- `twna`：`manual_imported_at` 與 `manual_checked_at` 兩者較新者不在該星期日更新週期內，視為尚未人工核對並非零退出。
 - 其他來源不在此 watchdog 範圍，仍由既有雲端健康三態負責。
 
 失敗只影響維護者的 GitHub Actions 通知，不在公開頁顯示詳細錯誤；符合既有「公開頁保持中性、
@@ -179,10 +179,10 @@ diff-gated commit/push → 桌面通知。
 3. 本輪未執行來源保留舊 events、status 與 last_success。
 4. 雲端先／本機先兩種順序得到相同的來源狀態。
 5. `sources_fresh_today()`：同日跳過、隔日允許、任一來源未成功則執行。
-6. twna 最近七天已匯入／已確認／有待處理檔時不提醒。
+6. twna 本週日更新週期已匯入／已確認／有待處理檔時不提醒。
 7. reminder 三個按鈕不會在未明確點擊時開啟網頁或寫入完成時間。
 8. twna 匯入即使新增 0 筆也更新人工核對時間；解析失敗不更新。
-9. watchdog 的 8 天門檻與缺檔／壞 JSON。
+9. watchdog 的星期日更新週期邊界與缺檔／壞 JSON。
 10. push non-fast-forward 只重試一次，且不重新呼叫任何 source fetch。
 11. 一鍵入口缺 SSD、缺 venv、工作區髒檔的錯誤呈現。
 12. 以 AST 或等價離線檢查確認沒有函式呼叫傳入 `verify=False`；不使用會命中說明註解的 grep 零結果。
