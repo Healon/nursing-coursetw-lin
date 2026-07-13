@@ -1,7 +1,14 @@
-"""local_update 一鍵更新的離線測試：工作區保護與防狂打護欄兩個純函式。不連網、不碰真 git。"""
+"""local_update 一鍵更新的離線測試：防狂打護欄、TWNA 摘要與 git 競爭處理。"""
 from __future__ import annotations
 
+import datetime as dt
+import subprocess
+
 from scripts import local_update
+
+
+def result(code=0, out="", err=""):
+    return subprocess.CompletedProcess([], code, out, err)
 
 
 class TestDirtyBeyondData:
@@ -26,9 +33,72 @@ class TestSourcesFreshToday:
         snap = {"sources": {"jct": {"last_success": "2026-07-10"}, "tnpa": {"last_success": "2026-07-03"}}}
         assert local_update.sources_fresh_today(snap, "2026-07-10") is False
 
+    def test_both_succeeded_yesterday_requires_scrape(self):
+        snap = {"sources": {"jct": {"last_success": "2026-07-10"}, "tnpa": {"last_success": "2026-07-10"}}}
+        assert local_update.sources_fresh_today(snap, "2026-07-11") is False
+
     def test_missing_source_requires_scrape(self):
         # status.json 還沒有該來源（例如剛部署、從未成功）→ 必須爬，不可誤判成「今天抓過」
         assert local_update.sources_fresh_today({"sources": {}}, "2026-07-10") is False
 
     def test_empty_snapshot_requires_scrape(self):
         assert local_update.sources_fresh_today({}, "2026-07-10") is False
+
+
+class TestPushWithOneRebaseRetry:
+    def test_push_retries_once_after_non_fast_forward(self, monkeypatch):
+        responses = iter(
+            [
+                result(1, err="non-fast-forward"),
+                result(0),
+                result(0),
+            ]
+        )
+        calls = []
+        monkeypatch.setattr(local_update, "_git", lambda *args: calls.append(args) or next(responses))
+
+        ok, detail = local_update.push_with_one_rebase_retry()
+
+        assert ok is True
+        assert detail == ""
+        assert calls == [
+            ("push", "origin", "main"),
+            ("pull", "--rebase", "origin", "main"),
+            ("push", "origin", "main"),
+        ]
+
+    def test_push_conflict_aborts_rebase_and_does_not_retry_again(self, monkeypatch):
+        responses = iter(
+            [
+                result(1, err="non-fast-forward"),
+                result(1, err="CONFLICT"),
+                result(0),
+            ]
+        )
+        calls = []
+        monkeypatch.setattr(local_update, "_git", lambda *args: calls.append(args) or next(responses))
+
+        ok, detail = local_update.push_with_one_rebase_retry()
+
+        assert ok is False
+        assert "CONFLICT" in detail
+        assert calls == [
+            ("push", "origin", "main"),
+            ("pull", "--rebase", "origin", "main"),
+            ("rebase", "--abort"),
+        ]
+
+
+class TestTwnaSummary:
+    NOW = dt.datetime(2026, 7, 19, 16, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
+
+    def test_import_summary_takes_precedence(self):
+        assert local_update.twna_summary(2, 3, {}, self.NOW) == "匯入 2 檔、新增 3 筆"
+
+    def test_recent_confirmation_without_file_is_explicit(self):
+        raw = {"manual_checked_at": "2026-07-13T14:00:00+08:00"}
+        assert local_update.twna_summary(0, 0, raw, self.NOW) == "本週已確認，無新匯入檔"
+
+    def test_stale_or_unconfirmed_data_is_explicit(self):
+        raw = {"manual_imported_at": "2026-07-10T14:00:00+08:00"}
+        assert local_update.twna_summary(0, 0, raw, self.NOW) == "尚未核對，本次沿用上次資料"

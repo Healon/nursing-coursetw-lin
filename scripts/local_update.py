@@ -25,10 +25,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from scripts import twna_watch
+from scripts import twna_freshness, twna_watch
 
 ROOT = Path(__file__).resolve().parents[1]
 STATUS_PATH = ROOT / "data" / "status.json"
+TWNA_DATA_PATH = ROOT / "data" / "manual_twna.json"
 LOCAL_SOURCES = ("jct", "tnpa")
 
 # 自動更新允許變動的檔案（資料產物）。工作區若有這清單以外的髒檔，代表 Lin 可能改到一半，
@@ -68,6 +69,34 @@ def _git(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
 
 
+def push_with_one_rebase_retry() -> tuple[bool, str]:
+    """Push once, recovering from one ordinary non-fast-forward race only."""
+    first = _git("push", "origin", "main")
+    if first.returncode == 0:
+        return True, ""
+    detail = (first.stderr or first.stdout).strip()
+    if "non-fast-forward" not in detail and "fetch first" not in detail.lower():
+        return False, detail
+
+    rebase = _git("pull", "--rebase", "origin", "main")
+    if rebase.returncode != 0:
+        conflict = (rebase.stderr or rebase.stdout).strip()
+        _git("rebase", "--abort")
+        return False, conflict
+
+    second = _git("push", "origin", "main")
+    return second.returncode == 0, (second.stderr or second.stdout).strip()
+
+
+def twna_summary(hits_count: int, added: int, raw: dict, now: dt.datetime) -> str:
+    """Describe whether TWNA was imported, recently confirmed, or left stale."""
+    if hits_count:
+        return f"匯入 {hits_count} 檔、新增 {added} 筆"
+    if twna_freshness.is_fresh(raw, now, max_age_days=7):
+        return "本週已確認，無新匯入檔"
+    return "尚未核對，本次沿用上次資料"
+
+
 def _fail(step: str, detail: str) -> int:
     print(f"[local-update] ❌ {step}失敗：{detail}", file=sys.stderr)
     _notify(f"本機更新失敗（{step}），詳見終端機或 /tmp/nursing-local-update.log")
@@ -98,15 +127,17 @@ def main(argv: list[str] | None = None) -> int:
 
     # 3. 掃下載資料夾有無 twna 另存頁（重用監看器邏輯：辨識、匯入、去重、歸檔）
     downloads = Path.home() / "Downloads"
-    twna_note = "無新檔"
+    twna_hits = 0
+    twna_added = 0
     if downloads.is_dir():
         hits = twna_watch.scan_folder(downloads)
         if hits:
-            added = 0
+            twna_hits = len(hits)
             for f in hits:
                 stats = twna_watch.process(f)
-                added += stats["added"]
-            twna_note = f"匯入 {len(hits)} 檔、新增 {added} 筆"
+                twna_added += stats["added"]
+    twna_raw = json.loads(TWNA_DATA_PATH.read_text(encoding="utf-8")) if TWNA_DATA_PATH.exists() else {}
+    twna_note = twna_summary(twna_hits, twna_added, twna_raw, dt.datetime.now().astimezone())
     print(f"[local-update] ✔ twna 另存頁：{twna_note}")
 
     # 4. 防狂打護欄：今天已成功抓過 jct/tnpa 就不重爬（--force 可強制）
@@ -140,11 +171,14 @@ def main(argv: list[str] | None = None) -> int:
     for step, cmd in [
         ("git add", ["add", *DATA_PATHS]),
         ("git commit", ["commit", "-m", "chore: local sources update (jct/tnpa/twna)"]),
-        ("git push", ["push", "origin", "main"]),
     ]:
         r = _git(*cmd)
         if r.returncode != 0:
             return _fail(step, (r.stderr or r.stdout).strip()[:160])
+
+    pushed, detail = push_with_one_rebase_retry()
+    if not pushed:
+        return _fail("git push", detail[:160])
 
     print("[local-update] ✔ 已推送，GitHub Pages 一至兩分鐘後更新")
     _notify(f"本機更新完成並已推送（twna：{twna_note}）")
