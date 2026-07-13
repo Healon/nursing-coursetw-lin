@@ -1,0 +1,19 @@
+name: local-source-freshness
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"  # Monday 09:00 Asia/Taipei
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/check_freshness.py --max-age-days 8
