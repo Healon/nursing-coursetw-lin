@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 每週日 14:00、15:00 檢查 TWNA 人工資料新鮮度；只有使用者明確點擊才開課程頁。
+     本工具不自動連線 TWNA。使用既有 ~/Projects symlink 與專案 venv，安裝步驟見 README。 -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.lin.twna-reminder</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/healon/Projects/nursing-coursetw-lin/.venv/bin/python</string>
+        <string>/Users/healon/Projects/nursing-coursetw-lin/scripts/twna_reminder.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/healon/Projects/nursing-coursetw-lin</string>
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Weekday</key>
+            <integer>0</integer>
+            <key>Hour</key>
+            <integer>14</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <dict>
+            <key>Weekday</key>
+            <integer>0</integer>
+            <key>Hour</key>
+            <integer>15</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+    </array>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/tmp/nursing-twna-reminder.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/nursing-twna-reminder.log</string>
+</dict>
+</plist>
