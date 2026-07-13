@@ -1,5 +1,7 @@
 {
  "comment": "台灣護理學會（twna）robots.txt 全站 Disallow，依專案守則不自動爬。初始資料 2026-07-10 由偵察期單次快取頁（另存頁匯入器開發過程中留存）匯入，42 筆。日後更新方式：瀏覽器開課程列表頁 → 另存新檔（僅 HTML）→ 跑 scripts/import_twna_page.py <另存的.html>，會自動合併新資料且保留你手動修過的既有條目；也可以直接手動編輯下方 events（欄位格式見 README「手動維護來源」一節）。",
+ "manual_imported_at": "2026-07-10T00:00:00+08:00",
+ "manual_checked_at": "",
  "events": [
   {
    "date": "2026-07-02",

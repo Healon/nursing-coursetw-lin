@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import contextlib
+import datetime as dt
 import io
 import json
 import sys
@@ -28,6 +29,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from bs4 import BeautifulSoup
+
+from scripts import twna_freshness
 from scripts.sources import twna
 
 DEFAULT_COMMENT = (
@@ -62,7 +66,7 @@ def merge_events(existing: list[dict], parsed: list[dict]) -> tuple[list[dict], 
     return merged, added, skipped_dupe
 
 
-def run(html_path: Path, data_path: Path) -> dict:
+def run(html_path: Path, data_path: Path, *, now: dt.datetime | None = None) -> dict:
     """核心邏輯（純函式化，供 CLI 與測試共用，I/O 範圍限定在傳入的兩個路徑，不碰任何全域路徑）。
 
     html_path 不存在 -> raise FileNotFoundError（呼叫端決定如何呈現；CLI 轉成 exit 1）。
@@ -72,6 +76,10 @@ def run(html_path: Path, data_path: Path) -> dict:
         raise FileNotFoundError(f"找不到另存的課程頁檔案：{html_path}")
 
     html = html_path.read_text(encoding="utf-8")
+    if BeautifulSoup(html, "html.parser").find(
+        "table", id="ctl00_ContentPlaceHolder1_GridView1"
+    ) is None:
+        raise ValueError("不是有效的 twna 課程列表另存頁：找不到課程表格")
 
     # parse_saved_page 對單列缺日期/標題的問題列印 stderr（見該函式 docstring），這裡暫時
     # 接住以便算出「解析失敗 K 筆」的摘要數字，接完仍原樣轉印到真正的 stderr——不吞掉診斷訊息。
@@ -91,9 +99,9 @@ def run(html_path: Path, data_path: Path) -> dict:
 
     merged, added, skipped_dupe = merge_events(existing, parsed)
     raw["events"] = merged
+    twna_freshness.mark_imported(raw, now or dt.datetime.now().astimezone())
 
-    data_path.parent.mkdir(parents=True, exist_ok=True)
-    data_path.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    twna_freshness.write_json_atomic(data_path, raw)
 
     return {"added": added, "skipped_dupe": skipped_dupe, "failed": failed}
 
@@ -107,7 +115,7 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         stats = run(Path(args.saved_html), twna.DATA_PATH)
-    except FileNotFoundError as exc:
+    except (FileNotFoundError, ValueError) as exc:
         print(f"[import_twna_page] {exc}", file=sys.stderr)
         return 1
 

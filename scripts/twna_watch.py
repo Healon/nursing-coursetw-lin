@@ -76,6 +76,8 @@ def _notify(message: str) -> None:
 def process(f: Path) -> dict:
     """匯入單一另存頁 → 更新網站 → 歸檔原始檔。任何一步失敗都讓例外浮出（launchd log 可見）。"""
     stats = import_twna_page.run(f, DATA_PATH)
+    # 即使沒有新課程，run() 仍已更新 manual_* 時間戳；不要回復或略過這個本機資料變更，
+    # local_update.py 會在後續 diff/commit 階段把「本週已人工檢查」的事實一併保存。
     if stats["added"] > 0:
         # 有新課程才值得重建網站；沒新增就省下這步（重建仍是本機動作，只是避免無謂 churn）
         subprocess.run(

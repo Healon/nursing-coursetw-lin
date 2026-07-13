@@ -996,11 +996,14 @@ class TestImportTwnaPage:
             encoding="utf-8",
         )
 
-        stats = import_twna_page.run(html_path, data_path)
+        now = dt.datetime(2026, 7, 19, 14, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
+        stats = import_twna_page.run(html_path, data_path, now=now)
 
         assert stats == {"added": 4, "skipped_dupe": 1, "failed": 1}
 
         saved = json.loads(data_path.read_text(encoding="utf-8"))
+        assert saved["manual_imported_at"] == "2026-07-19T14:00:00+08:00"
+        assert saved["manual_checked_at"] == "2026-07-19T14:00:00+08:00"
         events = saved["events"]
         assert len(events) == 2 + 4  # 既有 2 筆 + 新增 4 筆（5 筆解析成功 - 1 筆撞鍵）
 
@@ -1011,9 +1014,59 @@ class TestImportTwnaPage:
         assert kept["credits"] == {"pro": 99}
         assert ("2099-01-01", "既有不相關活動，應保留") in by_key
 
+    def test_run_updates_both_timestamps_when_no_event_is_added(self, tmp_path):
+        html_path = FIXTURES / "twna_saved_page.html"
+        parsed = twna.parse_saved_page(html_path.read_text(encoding="utf-8"))
+        data_path = tmp_path / "manual_twna.json"
+        data_path.write_text(
+            json.dumps(
+                {
+                    "manual_imported_at": "2026-07-10T00:00:00+08:00",
+                    "manual_checked_at": "",
+                    "events": parsed,
+                },
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+        now = dt.datetime(2026, 7, 19, 14, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
+
+        stats = import_twna_page.run(html_path, data_path, now=now)
+
+        assert stats["added"] == 0
+        saved = json.loads(data_path.read_text(encoding="utf-8"))
+        assert saved["manual_imported_at"] == "2026-07-19T14:00:00+08:00"
+        assert saved["manual_checked_at"] == "2026-07-19T14:00:00+08:00"
+
+    def test_run_invalid_html_leaves_timestamps_unchanged(self, tmp_path):
+        html_path = tmp_path / "not_twna.html"
+        html_path.write_text("<html><body>not a saved TWNA page</body></html>", encoding="utf-8")
+        data_path = tmp_path / "manual_twna.json"
+        original = {
+            "manual_imported_at": "2026-07-10T00:00:00+08:00",
+            "manual_checked_at": "",
+            "events": [],
+        }
+        data_path.write_text(json.dumps(original), encoding="utf-8")
+
+        with pytest.raises(ValueError, match="twna"):
+            import_twna_page.run(html_path, data_path)
+
+        assert json.loads(data_path.read_text(encoding="utf-8")) == original
+
     def test_run_missing_html_raises_file_not_found(self, tmp_path):
+        data_path = tmp_path / "manual_twna.json"
+        original = {
+            "manual_imported_at": "2026-07-10T00:00:00+08:00",
+            "manual_checked_at": "",
+            "events": [],
+        }
+        data_path.write_text(json.dumps(original), encoding="utf-8")
+
         with pytest.raises(FileNotFoundError):
-            import_twna_page.run(tmp_path / "does_not_exist.html", tmp_path / "manual_twna.json")
+            import_twna_page.run(tmp_path / "does_not_exist.html", data_path)
+
+        assert json.loads(data_path.read_text(encoding="utf-8")) == original
 
     def test_main_missing_html_returns_exit_code_1(self, tmp_path, capsys):
         # html 不存在時 run() 在碰到 data_path 之前就 raise，main() 才會用到真實
