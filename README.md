@@ -210,12 +210,19 @@ launchctl load ~/Library/LaunchAgents/com.lin.twna-watch.plist
 另存成「僅 HTML」到 `~/Downloads` 後，16:00 的本機更新會自動匯入。若官網確實沒有新課，
 按「本週已確認」只更新 `manual_checked_at`；「稍後提醒」則保留逾期狀態，15:00 再提醒。
 
-安裝或更新（plist 固定指向 `/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin`）：
+安裝或更新前，必須先把含 `scripts/twna_reminder.py` 的版本整合到正式專案；不要從暫時的
+worktree 直接載入。下列命令固定指向 `/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin`，並在
+改變 launchd 狀態前確認正式 venv 與腳本都存在：
 
 ```bash
-cp scripts/launchd/com.lin.twna-reminder.plist ~/Library/LaunchAgents/
-launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.lin.twna-reminder.plist 2>/dev/null || true
-launchctl bootstrap "gui/$(id -u)" ~/Library/LaunchAgents/com.lin.twna-reminder.plist
+PROJECT="/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin"
+AGENT="$HOME/Library/LaunchAgents/com.lin.twna-reminder.plist"
+test -x "$PROJECT/.venv/bin/python" || { echo "找不到正式專案 venv" >&2; exit 1; }
+test -f "$PROJECT/scripts/twna_reminder.py" || { echo "正式專案尚未整合 twna reminder" >&2; exit 1; }
+mkdir -p "$HOME/Library/LaunchAgents"
+cp "$PROJECT/scripts/launchd/com.lin.twna-reminder.plist" "$AGENT"
+launchctl bootout "gui/$(id -u)" "$AGENT" 2>/dev/null || true
+launchctl bootstrap "gui/$(id -u)" "$AGENT"
 launchctl print "gui/$(id -u)/com.lin.twna-reminder"
 ```
 

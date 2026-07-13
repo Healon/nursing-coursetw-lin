@@ -3,11 +3,17 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import plistlib
 import subprocess
+from pathlib import Path
 
 from scripts import twna_reminder
 from scripts.sources import twna
 
+ROOT = Path(__file__).resolve().parents[1]
+README = ROOT / "README.md"
+REMINDER_PLIST = ROOT / "scripts" / "launchd" / "com.lin.twna-reminder.plist"
+DURABLE_ROOT = Path("/Volumes/MAC SSD/dev/Projects/nursing-coursetw-lin")
 TZ = dt.timezone(dt.timedelta(hours=8))
 NOW = dt.datetime(2026, 7, 19, 14, 0, tzinfo=TZ)
 TWNA_HTML = "<div id='ContentPlaceHolder1_GridView1'><a href='/ActSign/'>課程</a></div>"
@@ -92,3 +98,21 @@ def test_cli_returns_one_when_osascript_fails(monkeypatch, tmp_path):
     monkeypatch.setattr(twna_reminder.subprocess, "run", fail)
 
     assert twna_reminder.main(["--data", str(tmp_path / "x.json"), "--downloads", str(tmp_path)]) == 1
+
+
+def test_install_docs_preflight_durable_checkout_before_launchctl_mutation():
+    readme = README.read_text(encoding="utf-8")
+    section = readme.split("安裝或更新前", 1)[1].split("```bash", 1)[1].split("```", 1)[0]
+
+    python_check = 'test -x "$PROJECT/.venv/bin/python"'
+    script_check = 'test -f "$PROJECT/scripts/twna_reminder.py"'
+    first_mutation = 'launchctl bootout "gui/$(id -u)"'
+    assert section.index(python_check) < section.index(first_mutation)
+    assert section.index(script_check) < section.index(first_mutation)
+
+    plist = plistlib.loads(REMINDER_PLIST.read_bytes())
+    assert plist["ProgramArguments"] == [
+        str(DURABLE_ROOT / ".venv" / "bin" / "python"),
+        str(DURABLE_ROOT / "scripts" / "twna_reminder.py"),
+    ]
+    assert plist["WorkingDirectory"] == str(DURABLE_ROOT)
