@@ -40,10 +40,9 @@
 ## 安裝狀態與檢查
 
 - `com.lin.nursing-local-update`：既有週日 16:00 排程，必須保留。
-- `com.lin.twna-reminder`：2026-07-13 曾確認週日 14:00、15:00 triggers 正確，審查時因正式 main
-  尚未整合腳本而已 bootout；最終控制者須先整合本分支，再依 README preflight 後重新 bootstrap。
-  plist 固定指向外接 SSD 正式路徑，禁止載入 worktree 路徑。
-- `com.lin.twna-watch`：選配的專案 `download-twna/` 即時監看，不是每週流程必要條件。
+- `com.lin.twna-reminder`：已整合至正式 main 並 bootstrap；週日 14:00、15:00 triggers 已確認，
+  plist 固定指向外接 SSD 正式路徑。禁止載入 worktree 路徑。
+- `com.lin.twna-watch`：選配的專案 `download-twna/` 即時監看，目前未載入；不是每週流程必要條件。
 - 一鍵 log：`~/Library/Logs/nursing-course-update.log`；本機排程 log：`/tmp/nursing-local-update.log`；
   twna 提醒 log：`/tmp/nursing-twna-reminder.log`。
 
