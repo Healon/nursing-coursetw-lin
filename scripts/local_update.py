@@ -30,6 +30,7 @@ from scripts import twna_freshness, twna_watch
 ROOT = Path(__file__).resolve().parents[1]
 STATUS_PATH = ROOT / "data" / "status.json"
 TWNA_DATA_PATH = ROOT / "data" / "manual_twna.json"
+TWNA_DOWNLOAD_DIR = twna_watch.DOWNLOAD_DIR
 LOCAL_SOURCES = ("jct", "tnpa")
 
 # 自動更新允許變動的檔案（資料產物）。工作區若有這清單以外的髒檔，代表 Lin 可能改到一半，
@@ -126,7 +127,7 @@ def main(argv: list[str] | None = None) -> int:
     print("[local-update] ✔ 已同步雲端最新結果")
 
     # 3. 掃下載資料夾有無 twna 另存頁（重用監看器邏輯：辨識、匯入、去重、歸檔）
-    downloads = Path.home() / "Downloads"
+    downloads = TWNA_DOWNLOAD_DIR
     twna_hits = 0
     twna_added = 0
     try:

@@ -1,6 +1,6 @@
 """提醒維護者人工核對 TWNA 課程；只讀本機狀態，不對 TWNA 發出請求。
 
-TWNA 的 robots.txt 全站禁止自動抓取，因此本工具只在資料逾期且 Downloads 沒有待處理
+TWNA 的 robots.txt 全站禁止自動抓取，因此本工具只在資料逾期且 download-twna/ 沒有待處理
 另存頁時顯示 macOS 對話框。只有使用者明確按下「開啟課程頁」才會交由瀏覽器開頁；
 程式不會自行開頁、下載或模擬瀏覽器操作。
 """
@@ -20,12 +20,12 @@ from scripts.sources import twna
 
 PROJECT = Path(__file__).resolve().parents[1]
 DATA_PATH = PROJECT / "data" / "manual_twna.json"
-DOWNLOADS = Path.home() / "Downloads"
-SCRIPT = '''button returned of (display dialog "台灣護理學會資料需要人工核對。請開啟課程頁，選擇「檔案 → 另存新檔 → 僅 HTML」，存到下載資料夾。" with title "護理教育訓練網站" buttons {"稍後提醒", "本週已確認", "開啟課程頁"} default button "開啟課程頁")'''
+DOWNLOADS = twna_watch.DOWNLOAD_DIR
+SCRIPT = f'''button returned of (display dialog "台灣護理學會資料需要人工核對。請開啟課程頁，選擇「檔案 → 另存新檔 → 僅 HTML」，存到 {DOWNLOADS}。" with title "護理教育訓練網站" buttons {{"稍後提醒", "本週已確認", "開啟課程頁"}} default button "開啟課程頁")'''
 
 
 def reminder_needed(data_path: Path, downloads: Path, now: dt.datetime) -> bool:
-    """資料逾期且 Downloads 沒有待匯入 TWNA 另存頁時才需要提醒。"""
+    """資料逾期且 download-twna/ 沒有待匯入 TWNA 另存頁時才需要提醒。"""
     raw = json.loads(data_path.read_text(encoding="utf-8"))
     if twna_freshness.has_activity_in_current_cycle(raw, now):
         return False

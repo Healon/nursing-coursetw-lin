@@ -105,9 +105,9 @@ class TestTwnaSummary:
 
 
 def test_twna_scan_error_uses_failure_notification_path(monkeypatch, tmp_path):
-    downloads = tmp_path / "Downloads"
+    downloads = tmp_path / "download-twna"
     downloads.mkdir()
-    monkeypatch.setattr(local_update.Path, "home", lambda: tmp_path)
+    monkeypatch.setattr(local_update, "TWNA_DOWNLOAD_DIR", downloads)
     monkeypatch.setattr(local_update, "_git", lambda *args: result(0))
     monkeypatch.setattr(
         local_update.twna_watch,

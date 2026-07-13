@@ -4,3 +4,5 @@ __pycache__/
 .venv/
 .pytest_cache/
 .worktrees/
+/download-twna/*
+!/download-twna/.gitkeep
