@@ -211,6 +211,11 @@ GitHub 機房 IP，只有台灣住宅 IP 爬得到（LESSONS L-2026-07-10-008）
 補爬 jct＋tnpa → 重建 → commit → push → 桌面通知。同一天已成功抓過就不重爬
 （`--force` 可強制）；工作區有非資料檔的改動會先中止，保護你改到一半的東西。
 
+**Finder／Dock 一鍵執行**：在 Finder 雙擊 `scripts/run_local_update.command`，或把它拖到
+Dock 右側的檔案區，之後點一下即可執行同一套流程；同一天已成功的來源仍由
+`local_update.py` 判斷並跳過，不會重複抓取。完整輸出會附加到
+`~/Library/Logs/nursing-course-update.log`，方便事後查看。
+
 **自動化**：每週日 16:00 由 launchd 自動跑同一支（接在雲端週更之後，pull 恰好收到最新）。
 安裝一次即可：
 
