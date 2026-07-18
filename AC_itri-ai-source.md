@@ -50,6 +50,9 @@
 
 ## 交付後待辦（非本次範圍，需人工確認）
 - [ ] 首次雲端排程（2026-07-19 週日 15:00）跑完核對 itri 是否被 GitHub 機房 IP 擋
-      （LESSONS L-2026-07-10-008）；被擋就把 config 的 execution 改 "local"。
+      （LESSONS L-2026-07-10-008）。被擋的完整修法是三處，缺一 itri 會靜默停更：
+      (1) config/site.py 該來源 execution 改 "local"；(2) scripts/local_update.py 的
+      LOCAL_SOURCES 加 "itri"；(3) scripts/check_freshness.py 的 LOCAL_SOURCES 加 "itri"
+      （後兩者為寫死清單，不讀 config 的 execution 欄）。
 - [ ] 既有來源 10 筆含智慧科技關鍵字的課程（jct 1／tnpa 2／psy 1／ni 1／tnma 3／critical 2），
       將於 2026-07-19 各來源重抓時自動改判 tech，週日後可抽查。

@@ -218,7 +218,9 @@ SOURCES = {
         " L-2026-07-10-007），curl 系統信任清單驗證可過，禁止 verify=False。開課日期「進行中」"
         "的雲端教室自學課不收錄（比照 jct 2026-07-10 Lin 指示：僅收排定場次）；無護理積分"
         "（credits 留空），時數存 ctext；類別固定 tech（本來源即 AI 分類）。⚠️ 首次雲端排程"
-        "跑完需核對是否被機房 IP 擋（LESSONS L-2026-07-10-008），被擋就把 execution 改 local。",
+        "跑完需核對是否被機房 IP 擋（LESSONS L-2026-07-10-008）；被擋要改三處（缺一即靜默停更）："
+        "本欄 execution 改 local＋scripts/local_update.py 與 scripts/check_freshness.py 兩處的"
+        " LOCAL_SOURCES 加 itri（皆為寫死清單，不吃 config）。",
     },
 }
 
