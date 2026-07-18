@@ -1,5 +1,5 @@
 """來源 parser 測試：demo 離線來源、registry 錯誤隔離、nuna／critical／psy／tnna／tnma／ni／tnpa／
-hospice／ahqroc／jct／twna 的 fixture 驅動測試；另含 import_twna_page.py 另存頁匯入器的
+hospice／ahqroc／jct／twna／itri 的 fixture 驅動測試；另含 import_twna_page.py 另存頁匯入器的
 合併邏輯測試。
 
 真實來源的 parse() 測試以 tests/fixtures/ 的頁面快照驅動，同樣不連網；fixture 為實際頁面
@@ -24,6 +24,7 @@ from scripts.sources import (
     critical,
     demo,
     hospice,
+    itri,
     jct,
     ni,
     nuna,
@@ -972,6 +973,82 @@ class TestTwnaSource:
         captured = capsys.readouterr()
         assert "缺日期或標題" in captured.err
         assert "已跳過" in captured.err
+
+
+class TestItriSource:
+    """itri 的單頁表格 parser 對 tests/fixtures/itri_list.html 的離線測試。
+
+    fixture 為真實頁面（2026-07-18 抓取，83 筆）裁剪成 8 筆代表列：6 筆排定場次
+    （台北×2／數位直播／高雄／台中／12.5 小時）＋2 筆開課日期「進行中」的雲端自學課
+    （依 jct 前例不收隨選課程的排除案例）。
+    """
+
+    def test_parse_extracts_only_scheduled_sessions(self):
+        events = itri.parse(_fixture("itri_list.html"))
+        assert len(events) == 6  # 8 列中 2 筆「進行中」不收
+
+    def test_ongoing_selfpaced_courses_excluded(self):
+        events = itri.parse(_fixture("itri_list.html"))
+        titles = {e["title"] for e in events}
+        assert "可信任AI趨勢與發展" not in titles  # 進行中＋雲端教室
+        assert all(e["date"] for e in events)
+
+    def test_events_normalize_clean(self):
+        events = itri.parse(_fixture("itri_list.html"))
+        assert events
+        for ev in events:
+            assert normalize.normalize_event(dict(ev, src="itri")) is not None
+
+    def test_dates_are_western_iso_not_roc(self):
+        events = itri.parse(_fixture("itri_list.html"))
+        for ev in events:
+            assert dt.date.fromisoformat(ev["date"]).year >= 2026  # 西元年，未經 +1911 換算
+
+    def test_all_events_tech_category_no_credits(self):
+        # 本來源即站方「人工智慧」分類，cat 固定 tech；工研院課程無護理積分
+        events = itri.parse(_fixture("itri_list.html"))
+        assert all(e["cat"] == "tech" for e in events)
+        assert all(e["credits"] == {} for e in events)
+
+    def test_livestream_marked_online_with_region(self):
+        events = itri.parse(_fixture("itri_list.html"))
+        live = next(e for e in events if "PyTorch人臉辨識" in e["title"])
+        assert live["online"] is True
+        assert live["region"] == "online"
+        onsite = next(e for e in events if "行政與財務流程AI自動化" in e["title"])
+        assert onsite["online"] is False
+        assert onsite["region"] == "north"
+
+    def test_city_locations_infer_regions(self):
+        events = itri.parse(_fixture("itri_list.html"))
+        regions = {e["location"]: e["region"] for e in events}
+        assert regions["高雄"] == "south"
+        assert regions["台中"] == "central"
+
+    def test_hours_stored_in_ctext(self):
+        events = itri.parse(_fixture("itri_list.html"))
+        rag = next(e for e in events if "RAG技術實戰" in e["title"])
+        assert rag["ctext"] == "時數 12.5 小時"
+
+    def test_urls_are_absolute_lesson_data_links(self):
+        events = itri.parse(_fixture("itri_list.html"))
+        assert all(
+            e["url"].startswith("https://college.itri.org.tw/Lesson/LessonData/") for e in events
+        )
+
+    def test_duplicate_rows_deduped_by_date_and_url(self):
+        html = _fixture("itri_list.html")
+        # 往前找包住目標 GUID 的 <tr> 起點，截出完整一列
+        row_start = html.rindex("<tr>", 0, html.index("99D3CFD7"))
+        row = html[row_start : html.index("</tr>", row_start) + len("</tr>")]
+        assert "99D3CFD7" in row
+        duplicated = html.replace(row, row + row)
+        assert len(itri.parse(duplicated)) == len(itri.parse(html))
+
+    def test_missing_table_raises_not_silent_empty(self):
+        # 網站改版拿掉 table#sample_1 時要 raise 記 error，不可回空清單假裝正常
+        with pytest.raises(ValueError, match="sample_1"):
+            itri.parse("<html><body><p>改版後的頁面</p></body></html>")
 
 
 class TestImportTwnaPage:

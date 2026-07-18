@@ -9,7 +9,7 @@
 
 ```
 GitHub Actions cron（每週日台北 15:00）
-  → scripts/update.py --profile cloud：只跑 8 個可從雲端抓取的公開來源
+  → scripts/update.py --profile cloud：只跑 9 個可從雲端抓取的公開來源
   → 正規化、去重合併、時間窗過濾 → data/events.json
   → 來源健康快照 → data/status.json
   → scripts/build.py：注入 templates/index.html.tpl → index.html（自包含單檔）
@@ -45,7 +45,7 @@ pytest -q
 
 | 模式 | 來源 | 執行方式 |
 |---|---|---|
-| `cloud` | nuna、critical、psy、tnna、tnma、ni、ahqroc、hospice | 週日 15:00 GitHub Actions 執行 `scripts/update.py --profile cloud` |
+| `cloud` | nuna、critical、psy、tnna、tnma、ni、ahqroc、hospice、itri | 週日 15:00 GitHub Actions 執行 `scripts/update.py --profile cloud` |
 | `local` | jct、tnpa | 週日 16:00 Mac 住宅 IP 執行；雲端 workflow 不會嘗試 |
 | `manual` | twna | 程式只讀人工另存後的本機 JSON，永不自動請求 TWNA |
 
@@ -255,7 +255,7 @@ launchctl print "gui/$(id -u)/com.lin.twna-reminder"
 
 ## 本機更新（一個指令）
 
-雲端每週日 15:00 只更新 8 家 `cloud` 來源，不執行會擋 GitHub 機房 IP 的醫策會 jct、
+雲端每週日 15:00 只更新 9 家 `cloud` 來源，不執行會擋 GitHub 機房 IP 的醫策會 jct、
 專科護理師學會 tnpa（LESSONS L-2026-07-10-008），也不執行 robots 禁爬的 twna。
 後三家的本機資料由**同一個指令**補完：
 

@@ -1,11 +1,37 @@
 """scripts.sources.base 共用工具測試：roc_date_to_iso 民國轉西元邊界情境、
-download_curl 的成功／失敗契約（用 file:// URL，不連網）。
+download_curl 的成功／失敗契約（用 file:// URL，不連網）、infer_category 的
+智慧科技分類優先序（2026-07-18 新增 tech 分類時訂下的比對順序契約）。
 """
 from __future__ import annotations
 
 import pytest
 
 from scripts.sources import base
+
+
+class TestInferCategoryTechPriority:
+    """tech（智慧科技）分類 2026-07-18 新增時的順序契約：teaching 之後、clinical 之前；
+    「智慧／數位／資訊」自 research 移入 tech。標題皆取自或仿自真實課程。"""
+
+    def test_ai_in_care_title_prefers_tech_over_clinical(self):
+        # 含「照護」也含 AI／智慧 → tech 先於 clinical 命中
+        assert base.infer_category("AI數位照護在精神科護理的運用研習會") == "tech"
+        assert base.infer_category("重症照護3.0 - 智慧化、整合化、流程再進化研習會") == "tech"
+
+    def test_informatics_title_moved_from_research_to_tech(self):
+        # 「資訊／數位」原屬 research 關鍵字，移入 tech 後改判智慧科技
+        assert base.infer_category("護理資訊進階系列課程") == "tech"
+        assert base.infer_category("手術室數位轉型與管理新紀元工作坊") == "tech"
+
+    def test_teaching_keywords_still_win_over_tech(self):
+        # 教學類特定詞在 tech 之前：AI 教學課程仍歸教學
+        assert base.infer_category("臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略") == "teaching"
+
+    def test_plain_research_title_still_research(self):
+        assert base.infer_category("年度學術研討會論文發表") == "research"
+
+    def test_plain_clinical_title_unaffected(self):
+        assert base.infer_category("疼痛照護實務研習") == "clinical"
 
 
 class TestSimplifyLocation:

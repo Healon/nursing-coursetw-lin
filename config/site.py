@@ -44,11 +44,19 @@ THEME = {
 # 換主題時整組替換即可，但請保留 "other" 這個 fallback，勿刪除。
 CATEGORIES = {
     "teaching": {"label": "教學", "keywords": ["教學", "師資", "教案", "臨床教師", "OSCE", "教育訓練師", "怎麼教"]},
+    # tech 放 teaching 之後、clinical 之前：智慧科技詞彙特定性高於「照護／護理」泛用詞，
+    # 讓「AI 在護理照護之應用」這類標題判 tech 而非 clinical；純教學類（含 AI 教案）仍歸 teaching。
+    # 「智慧／數位／資訊」原屬 research 關鍵字，2026-07-18 隨本分類新增移入（Lin 指示加「智慧科技」
+    # 分類收工研院 AI 課程；既有含這些字的課程會從研究學術改判智慧科技）。
+    # 注意 infer_category 是子字串比對："AI" 理論上會誤中 TRAINING／PAIN 這類英文詞，
+    # 2026-07-18 已逐筆掃過既有 events.json 標題確認無誤中；日後若出現，把 "AI" 移出關鍵字
+    # 並靠其餘中文詞承接。
+    "tech": {"label": "智慧科技", "keywords": ["AI", "人工智慧", "智慧", "智能", "數位", "資訊", "科技", "大數據", "機器學習", "深度學習", "生成式", "ChatGPT", "資安", "物聯網", "機器人", "虛擬實境", "元宇宙"]},
     "clinical": {"label": "臨床照護", "keywords": ["照護", "護理", "臨床", "急救", "重症", "傷口", "安寧", "緩和", "腎臟", "透析"]},
     "safety": {"label": "病人安全", "keywords": ["病人安全", "病安", "感染", "感控", "品質", "醫療品質", "異常事件"]},
     "admin": {"label": "行政管理", "keywords": ["管理", "行政", "領導", "溝通", "督導"]},
     "ethics": {"label": "倫理法規", "keywords": ["倫理", "法規", "法律", "性別"]},
-    "research": {"label": "研究學術", "keywords": ["研究", "論文", "實證", "統計", "研討會", "年會", "學術", "資訊", "智慧", "數位"]},
+    "research": {"label": "研究學術", "keywords": ["研究", "論文", "實證", "統計", "研討會", "年會", "學術"]},
     "other": {"label": "其他", "keywords": []},  # fallback，勿刪除
 }
 
@@ -195,6 +203,22 @@ SOURCES = {
         "execution": "local",
         "note": "⚠️ 雲端更新不到：tnpa.org.tw 對 GitHub Actions 機房 IP 回 403（LESSONS L-2026-07-10-008），由本機週排程 scripts/local_update.py 補抓。已驗證可抓（2026-07-10 實測「所有活動」列表 11 筆，event__item 卡片式，免登入伺服器渲染；"
         "robots.txt 對通用 UA 於 /events/ 允許，僅點名禁止具名 AI 爬蟲）。積點統一對映 np（本學會即專科護理師學會）。",
+    },
+    "itri": {
+        "label": "工研院產業學院",
+        # 「找課程」的「人工智慧」分類資料夾（Lin 2026-07-18 指定只收 AI 相關課程）；
+        # FolderGUIDs 即該分類的固定識別碼，換分類範圍改這個參數。
+        "url": "https://college.itri.org.tw/Lesson/LessonList?FolderGUIDs=41098C03-5148-4153-964A-2DE86697F68F",
+        "enabled": True,
+        "execution": "cloud",
+        "note": "已驗證可抓（2026-07-18 實測人工智慧分類 83 筆課程，同頁 table#sample_1 含課名／"
+        "開課日期／地點／時數，單一請求免詳情頁，免登入伺服器渲染；robots.txt 不存在（回自訂"
+        "錯誤頁），依慣例視為未限制）。下載層用 base.download_curl：requests 對此站報 Missing"
+        " Subject Key Identifier 憑證驗證失敗，與 hospice 同款老憑證問題（LESSONS"
+        " L-2026-07-10-007），curl 系統信任清單驗證可過，禁止 verify=False。開課日期「進行中」"
+        "的雲端教室自學課不收錄（比照 jct 2026-07-10 Lin 指示：僅收排定場次）；無護理積分"
+        "（credits 留空），時數存 ctext；類別固定 tech（本來源即 AI 分類）。⚠️ 首次雲端排程"
+        "跑完需核對是否被機房 IP 擋（LESSONS L-2026-07-10-008），被擋就把 execution 改 local。",
     },
 }
 

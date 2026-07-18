@@ -1,77 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-14T00:34:41+08:00",
+  "generated": "2026-07-18T20:30:07+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-08",
-   "title": "115 年診所病人安全年度目標推廣課程（美醫視訊場）",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZr3MsddtsSFu2m2XHYwJ1tzMewTj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-10",
-   "title": "115年度急重症護理繼續教育視訊直播講座(四)急重症暴力與壓力因應",
-   "location": "Google meet視訊直播",
-   "credits": {
-    "pro": 3,
-    "np": 3
-   },
-   "cat": "clinical",
-   "src": "critical",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/409"
-  },
-  {
-   "date": "2026-07-10",
-   "title": "115年數位醫療危害病人安全之相關風險管控課程(視訊場)",
-   "location": "【視訊】報名後視訊連結於上課前一週提供",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8c6sOcULtMmFu2m2XHYwJ1tzMewRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-10",
-   "title": "115年醫療品質學院實作課程-醫院內部稽核工作坊",
-   "location": "醫策會901會議室",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZj%2FZpRbscmFu2m2XHYwJ1tzMe0Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-10",
-   "title": "智慧領航.永續全期:手術室數位轉型與管理新紀元工作坊",
-   "location": "財團法人私立高雄醫學大學附設中和紀念醫院 啟川大樓6樓第一會議室",
-   "credits": {},
-   "cat": "admin",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-07-11",
    "title": "流感疫苗教育訓練(南區)",
@@ -322,6 +254,32 @@
   },
   {
    "date": "2026-07-22",
+   "title": "Vibe Coding × AI程式開發-進階實戰班（規格驅動開發與AI協作）",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/C99365DE-C60E-4CC9-9492-2FA19CE8F206"
+  },
+  {
+   "date": "2026-07-22",
+   "title": "【免費課程】行政與財務流程AI自動化： 打造高效能行政財務AI部隊-臺北班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/99D3CFD7-404B-4EEA-932A-A85677163D2E"
+  },
+  {
+   "date": "2026-07-22",
    "title": "【線上直播】心痛該怎麼辦：該如何治療心絞痛",
    "location": "Google Meet 線上直播課程",
    "credits": {
@@ -446,6 +404,19 @@
   },
   {
    "date": "2026-07-23",
+   "title": "RAG向量資料庫與多模態AI應用工作坊",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 20 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/177F60F8-3485-438D-8C10-03785DECF5B9"
+  },
+  {
+   "date": "2026-07-23",
    "title": "「住院整合照護服務品質與人力運用效益研析暨輔導計畫」期末成果發表會 -實體場",
    "location": "台大兒醫大樓B1講堂",
    "credits": {
@@ -486,6 +457,19 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-07-24",
+   "title": "零程式打造智慧流程自動化-微軟PL-900考證輔導班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/0F944D6F-A481-4754-BB34-3FA8D420D6DA"
   },
   {
    "date": "2026-07-25",
@@ -538,6 +522,71 @@
    "region": "online",
    "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-27",
+   "title": "AI工具輕鬆入門：提升職場效率與決策力-台北班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/3CFD8FAF-75C4-4937-BFDA-7A928087F6BE"
+  },
+  {
+   "date": "2026-07-28",
+   "title": "NotebookLM AI工作助理實戰",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/1F7F993A-90D4-448F-9668-5F0F9A55EDC4"
+  },
+  {
+   "date": "2026-07-28",
+   "title": "【免費課程】AI應用工具：零基礎輕鬆入門AI工具百寶箱-基礎實務班(臺南班)",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 15 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/43A9ED7A-8DEE-4AA0-8E9F-2F0339B97F28"
+  },
+  {
+   "date": "2026-07-29",
+   "title": "AI應用規劃師中級能力培訓班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 23 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/74ACE65B-B5DC-4515-8914-39EFF7DE70CA"
+  },
+  {
+   "date": "2026-07-29",
+   "title": "Power BI Desktop 大數據分析實務與應用",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/3DEB4783-098A-4A8C-A331-FE9949B666BF"
   },
   {
    "date": "2026-07-29",
@@ -688,6 +737,19 @@
   },
   {
    "date": "2026-08-01",
+   "title": "PyTorch人臉辨識模型實作",
+   "location": "數位直播",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/483A8687-CF22-452A-9CAB-841B2C7B067B"
+  },
+  {
+   "date": "2026-08-01",
    "title": "【⏰延期更新】第八屆第一次會員代表大會暨學術研討會-當生命不以斷食作答：如何陪伴病人走向善終",
    "location": "",
    "credits": {
@@ -745,6 +807,19 @@
    "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1923"
   },
   {
+   "date": "2026-08-04",
+   "title": "【免費課程】AI投報率(ROI)評估：服務業 AI 轉型與 ROI 評估實戰班(臺北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/5C9BDAE8-8CF2-40D1-A336-6C585B1CBF28"
+  },
+  {
    "date": "2026-08-05",
    "title": "115年「護理倫理暨法律研討會」 -南區(實體場)",
    "location": "高雄醫學大學附設中和紀念醫院啟川大樓6樓第一講堂",
@@ -772,6 +847,19 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqM5MM48eFu2m2XHYwJ1tzMe8Vj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-05",
+   "title": "【免費課程】開發潛在客戶：AI 關鍵字行銷讓客戶主動找上你實作應用班(臺南班)",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/2EBEDF70-A868-4CAA-8B95-4C8321CBA7E4"
   },
   {
    "date": "2026-08-05",
@@ -803,6 +891,19 @@
   },
   {
    "date": "2026-08-06",
+   "title": "【免費課程】消費行為洞察與預測：掌握消費行為預測與個人化精準行銷實戰班 (嘉義班)",
+   "location": "嘉義",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/4A4125D9-6F19-4562-8B14-520607DAB02B"
+  },
+  {
+   "date": "2026-08-06",
    "title": "【本會研習會訊息】115年8月6日【AI數位照護在精神科護理的運用】研習會（南區）",
    "location": "",
    "credits": {},
@@ -813,6 +914,32 @@
    "region": "south",
    "ctext": "",
    "url": "https://www.psynurse.org.tw/news1.aspx?entry=1229"
+  },
+  {
+   "date": "2026-08-06",
+   "title": "自動光學檢測AOI及AI之工業應用實務",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/A949F019-9A58-464D-B778-F57768CF57CC"
+  },
+  {
+   "date": "2026-08-06",
+   "title": "零程式生成式AI打造互動式網頁",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/32B72F8D-35E4-4FB6-A7E2-6A04053CAF39"
   },
   {
    "date": "2026-08-07",
@@ -880,6 +1007,32 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-08-10",
+   "title": "AI工具輕鬆入門：提升職場效率與決策力",
+   "location": "高雄",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/9DCE808C-874A-457A-9AF2-9D48250DA6F2"
+  },
+  {
+   "date": "2026-08-11",
+   "title": "AI Agent開發實戰：多Agent架構設計與MCP整合",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/7E8677C7-A2FB-40BD-B1F6-6161D9FE9509"
+  },
+  {
    "date": "2026-08-12",
    "title": "115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會(視訊場)",
    "location": "視訊課程（課程連結待報名截止，將以email方式通知）",
@@ -906,6 +1059,45 @@
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8Zv8YZQN4MKFu2m2XHYwJ1tzMe8Qj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
+   "date": "2026-08-12",
+   "title": "ISO/IEC 42001: 2023 人工智慧管理系統主導稽核員訓練課程(台北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 40 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/577571C9-8E7F-48CF-A988-80DFBF651CC7"
+  },
+  {
+   "date": "2026-08-12",
+   "title": "【免費課程】商業服務業-AI部署與應用系統導入工作坊(臺南班)",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 40 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/3F58E67C-079E-4E3C-81CC-15D6ABC49C2C"
+  },
+  {
+   "date": "2026-08-13",
+   "title": "零程式AI編輯術-情資蒐集、自動分類與內容發布全攻略",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/5FEEA01B-A520-4BD6-A554-D148010D9BFC"
+  },
+  {
    "date": "2026-08-14",
    "title": "2026 智慧醫療 × 科技管理 × 幸福職場標竿交流",
    "location": "東元綜合醫院",
@@ -917,6 +1109,32 @@
    "region": "tbd",
    "ctext": "積分與細節詳見簡章附件",
    "url": "https://www.tnma100.org.tw/manager/upload/2606091400011.pdf"
+  },
+  {
+   "date": "2026-08-14",
+   "title": "AI工具輕鬆入門：提升職場效率與決策力-直播班",
+   "location": "數位直播",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/DE4F0F01-584D-4E9E-9496-5CC10BA72248"
+  },
+  {
+   "date": "2026-08-14",
+   "title": "【產業新尖兵計畫】廠區智慧AI監測與城市基礎設施數位化養成班（台中班）",
+   "location": "台中",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "時數 234 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B9439DF6-0848-4DC7-ABE0-9E94F793C0CD"
   },
   {
    "date": "2026-08-14",
@@ -947,6 +1165,19 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-08-14",
+   "title": "生成式AI短影音實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/8DACE65E-6863-4DC2-8663-17E4D7C48A9F"
+  },
+  {
    "date": "2026-08-15",
    "title": "2026年台灣安寧緩和護理學會💜【南區】💜🧘🎶《回到內在的寧靜｜聲音療癒與正念覺察》",
    "location": "",
@@ -962,6 +1193,19 @@
    "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/4e0c2d2bcbdd4fcfad30225c3c07bbb1"
   },
   {
+   "date": "2026-08-15",
+   "title": "Claude Code 韌體開發-AI自動化程式設計實戰班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/9E7D8C38-36AA-4B80-8B17-E338B756CB2B"
+  },
+  {
    "date": "2026-08-16",
    "title": "115年_研4(線上) 慢性腎臟病繼續教育研習會",
    "location": "",
@@ -975,6 +1219,32 @@
    "region": "online",
    "ctext": "公務人員終身學習時數 3 小時",
    "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1924"
+  },
+  {
+   "date": "2026-08-17",
+   "title": "Claude Skills工作流程自動化實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/C789FA0D-6CE7-41AE-93DE-C5AB594334A5"
+  },
+  {
+   "date": "2026-08-17",
+   "title": "從AI模型到決策-資料建模與決策優化實務案例訓練",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/DB73EF5A-B667-4FB3-B787-40EFB89B6805"
   },
   {
    "date": "2026-08-18",
@@ -1034,6 +1304,58 @@
    "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
+   "date": "2026-08-19",
+   "title": "Vibe Coding × AI輔助資料分析-入門實作班",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/566F29EE-423C-4491-84D2-F6CE7DBE0727"
+  },
+  {
+   "date": "2026-08-19",
+   "title": "【免費課程】AI應用工具：零基礎輕鬆入門AI工具百寶箱-基礎實務班(高雄班)",
+   "location": "高雄",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 15 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/D37C0C7F-D23D-4FB5-A0EE-5F779A7A46EF"
+  },
+  {
+   "date": "2026-08-19",
+   "title": "【免費課程】iPAS AI應用規劃師初級能力培訓班-臺南班",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 15 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/A11543D1-D132-4A19-A088-B426CAFC9FED"
+  },
+  {
+   "date": "2026-08-19",
+   "title": "【免費課程】客戶數據分析：AI解讀消費者歷史數據高效行銷實作應用班(臺北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/2BA56EEC-3873-4DF5-B798-C34161278730"
+  },
+  {
    "date": "2026-08-20",
    "title": "115年台灣臨床成效指標（TCPI）指標全攻略套裝課程品管必備統計分析技巧課程",
    "location": "",
@@ -1045,6 +1367,45 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-20",
+   "title": "Gemini多元工作術實戰班",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/4CBC10F6-F195-4EFD-84C8-B6042A087215"
+  },
+  {
+   "date": "2026-08-20",
+   "title": "n8n × AI 智慧製造自動化實戰班",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/AA51B0FC-7E8C-4554-A4C8-2A5D24FD0776"
+  },
+  {
+   "date": "2026-08-20",
+   "title": "零程式自動化實務：n8n 與生成式 AI 整合應用",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/0EDF1F03-236C-44CB-9856-87D76B323B01"
   },
   {
    "date": "2026-08-21",
@@ -1074,6 +1435,19 @@
    "region": "online",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/413"
+  },
+  {
+   "date": "2026-08-21",
+   "title": "AI應用規劃師初級培訓班(新竹班-第三梯次)",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/820D25B2-B22A-410B-B68C-E37CFE5BAF9D"
   },
   {
    "date": "2026-08-22",
@@ -1117,6 +1491,32 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-08-24",
+   "title": "Make × LINE × Gemini 自動化應用實戰班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/6CC5374D-AF6C-4232-9210-52F5FC40BF0A"
+  },
+  {
+   "date": "2026-08-25",
+   "title": "RAG技術實戰：打造內部知識查詢系統",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12.5 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/474162A9-9FEE-4E82-9F05-4C2DB65061EC"
+  },
+  {
    "date": "2026-08-25",
    "title": "個案報告審查委員共識會(北區─國泰)",
    "location": "國泰人壽大樓 B1 國際會議廳",
@@ -1154,6 +1554,58 @@
    "region": "tbd",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-08-26",
+   "title": "n8n自動化流程實戰：建構高效工作流",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/14078F49-7329-4B99-A835-C57C1A00A194"
+  },
+  {
+   "date": "2026-08-27",
+   "title": "【免費課程】AI需求洞察預測：數據分析與Tableau視覺化應用-實作應用班(臺南班)",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B44AC5A6-5B52-4702-B1A3-DEC321BB138E"
+  },
+  {
+   "date": "2026-08-28",
+   "title": "Claude實戰班： 從自動化辦公到打造專屬AI工具",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/E3F29E16-FE73-41C6-B0CF-1AD63D19D969"
+  },
+  {
+   "date": "2026-08-28",
+   "title": "零背景程式開發-Google AI Studio實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/AA6A4938-1F1F-4F11-83A0-C5DC7ABF21FD"
   },
   {
    "date": "2026-08-29",
@@ -1214,6 +1666,58 @@
    "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1925"
   },
   {
+   "date": "2026-08-31",
+   "title": "知識圖譜實戰-語意搜尋與AI問答的關鍵技術",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B17001D2-11D1-44AC-B8E0-283F473C4163"
+  },
+  {
+   "date": "2026-09-01",
+   "title": "AI應用規劃師初級能力培訓班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14.5 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/ADEF443A-0DDA-4B27-BDE8-FF9BCD4C336C"
+  },
+  {
+   "date": "2026-09-01",
+   "title": "Excel × AI數據分析與報表優化實務",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/24483468-6B96-4353-A9FC-00080A52B32C"
+  },
+  {
+   "date": "2026-09-01",
+   "title": "餐飲暨服務業青年AI實戰養成班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 240 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/81CBA606-AAA1-4702-943B-10263B7D41D5"
+  },
+  {
    "date": "2026-09-02",
    "title": "9月視訊-護理人力管理：法規合規、指標應用與排班最佳化",
    "location": "採 Microsoft Teams 線上直播",
@@ -1225,6 +1729,32 @@
    "region": "online",
    "ctext": "積分與細節請洽官方公告",
    "url": "https://www.tnma100.org.tw/training/training02.asp"
+  },
+  {
+   "date": "2026-09-02",
+   "title": "AI Agent × MCP × 自動化工作流實作：從本地 LLM 到跨平台整合",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/3EDA9988-0286-4997-AA5D-C8F8E5EAF033"
+  },
+  {
+   "date": "2026-09-02",
+   "title": "AI動態及不確定性建模-風險管控與分佈式強化學習技術",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/F76FFEE5-E5BD-45D4-A3BA-C38F6579B29B"
   },
   {
    "date": "2026-09-02",
@@ -1241,6 +1771,19 @@
    "region": "south",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/421"
+  },
+  {
+   "date": "2026-09-03",
+   "title": "AI與大數據應用開發實戰養成班(第11梯次)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 350 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/68E8BACF-E0A6-4238-9A49-C128F4DD085C"
   },
   {
    "date": "2026-09-03",
@@ -1270,6 +1813,19 @@
    "region": "central",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/422"
+  },
+  {
+   "date": "2026-09-04",
+   "title": "Microsoft Azure AI 基礎-微軟AI-901考證輔導班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/76E0EF6D-0161-44B2-AF73-087B9E741D79"
   },
   {
    "date": "2026-09-05",
@@ -1313,6 +1869,32 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-09-07",
+   "title": "從先驗知識到高風險決策建模-貝氏機器學習與不確定性量化實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/58337D24-4991-4E86-804C-831952A336BB"
+  },
+  {
+   "date": "2026-09-08",
+   "title": "Vibe Coding 應用 - SDD規格驅動開發實務",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/865A130B-BCB6-45F8-B706-C8932FF71DE3"
+  },
+  {
    "date": "2026-09-08",
    "title": "※護理人的改善故事館",
    "location": "高雄榮民總醫院門診大樓第二會議室",
@@ -1344,6 +1926,32 @@
   },
   {
    "date": "2026-09-09",
+   "title": "AI應用規劃師中級能力培訓班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 23 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/223AA1BF-966F-4BA6-AA4E-29E7262250F5"
+  },
+  {
+   "date": "2026-09-09",
+   "title": "圖神經網路實戰應用-從圖資料到AI建模解決方案",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/204994B5-5346-4069-A41E-C89840907CD7"
+  },
+  {
+   "date": "2026-09-09",
    "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -南部場",
    "location": "高雄醫學大學附設中和紀念醫院啟川大樓6樓第二講堂",
    "credits": {
@@ -1372,6 +1980,19 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/415"
+  },
+  {
+   "date": "2026-09-10",
+   "title": "【免費課程】無人智慧店務：從營運洞察到流程自動化的精準決策實務 (臺北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/605514F6-9FAD-48CF-AF7E-7AD171DBFF75"
   },
   {
    "date": "2026-09-11",
@@ -1419,7 +2040,7 @@
    "title": "「智慧科技於長照服務之運用」工作坊(中區)",
    "location": "佛教慈濟醫療財團法人台中慈濟醫院 大愛樓5樓501會議室",
    "credits": {},
-   "cat": "research",
+   "cat": "tech",
    "src": "twna",
    "online": false,
    "ondemand": false,
@@ -1454,6 +2075,19 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-09-16",
+   "title": "非技術人員生成式AI辦公室應用實務班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/116461B3-2F17-4C13-9E33-CA4D22E8CA36"
+  },
+  {
    "date": "2026-09-17",
    "title": "「實證健康照護」審查委員共識會(南區)",
    "location": "",
@@ -1467,6 +2101,19 @@
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
+   "date": "2026-09-17",
+   "title": "新一代全端 AI 開發流程實戰",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/FE6118BF-F9DE-4F55-9F9F-0014A4B915FA"
+  },
+  {
    "date": "2026-09-18",
    "title": "2026.9.18~20 第七屆亞太急性腎損傷與連續性腎替代療法大會",
    "location": "台北國際會議中心",
@@ -1478,6 +2125,19 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/423"
+  },
+  {
+   "date": "2026-09-18",
+   "title": "Power Query 資料整合設計與自動化應用",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 7 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/699691F6-43A1-4907-A504-18D39EF4D7D0"
   },
   {
    "date": "2026-09-19",
@@ -1534,6 +2194,32 @@
    "url": "https://www.tnma100.org.tw/manager/upload/2607021315231.pdf"
   },
   {
+   "date": "2026-09-23",
+   "title": "企業導入人工智慧工具：資安防禦架構與內部控制實務",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/1F27FC94-A1AB-432D-9650-E255C4A4A5FD"
+  },
+  {
+   "date": "2026-09-23",
+   "title": "生成式 AI 程式開發 與 Vibe Coding 實務",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/76D2B1EB-1BF7-4DF7-8E0C-20B95B86CB99"
+  },
+  {
    "date": "2026-09-24",
    "title": "115年外傷護理繼續教育線上直播研習會(三)",
    "location": "Webex視訊直播",
@@ -1548,6 +2234,19 @@
    "region": "online",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/419"
+  },
+  {
+   "date": "2026-09-24",
+   "title": "低代碼資料視覺化與特徵工程實戰",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/7CCC196D-89EB-4FF6-90E5-F75BCE701E3C"
   },
   {
    "date": "2026-09-30",
@@ -1576,6 +2275,71 @@
    "region": "tbd",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-09-30",
+   "title": "自然語言處理ChatGPT大語言模型原理介紹與實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/2F4B046F-6237-42FF-96F8-B9E0827CEEC9"
+  },
+  {
+   "date": "2026-10-01",
+   "title": "Google Gemini 全方位視覺工作流實戰",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/45A2CE05-BE1E-497F-B5EF-55C0C727B63A"
+  },
+  {
+   "date": "2026-10-05",
+   "title": "數智化轉型二部曲-智能體AI(Agent AI)基礎：Python強化學習的決策原理與應用",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/9E83A695-8C68-4A61-B56E-721A2EEEFF6B"
+  },
+  {
+   "date": "2026-10-07",
+   "title": "AI輔助軟體開發實務",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/85B98699-B31F-4BBD-99D1-D18A0FEC27C2"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "【免費課程】智慧化倉儲管理：AI × IoT 智慧倉儲管理與創新應用(新竹班)第二梯",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/A1E7FD91-7673-4154-8F2D-D82C0C2AE1F4"
   }
  ]
 }
