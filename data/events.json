@@ -1,37 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-18T20:30:07+08:00",
+  "generated": "2026-07-19T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-11",
-   "title": "流感疫苗教育訓練(南區)",
-   "location": "長庚醫療財團法人高雄長庚紀念醫院 兒童大樓六樓國際會議廳紅廳",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-07-11",
-   "title": "第八屆第一次會員代表大會暨學術研討會-當生命不以斷食作答：如何陪伴病人走向善終",
-   "location": "",
-   "credits": {
-    "pro": 10
-   },
-   "cat": "research",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "學術研討",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/7002d3c1819e439bb3376b4f3b8856cd"
-  },
   {
    "date": "2026-07-12",
    "title": "115年_研3 (北區) 高齡透析研習會",
@@ -78,14 +50,14 @@
   {
    "date": "2026-07-14",
    "title": "115年醫療品質學院實作課程-風險管理工具-FMEA工作坊",
-   "location": "",
+   "location": "醫策會901會議室",
    "credits": {},
    "cat": "safety",
    "src": "jct",
    "online": false,
    "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
+   "region": "north",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rcj%2FNZdavcOFu2m2XHYwJ1tzMe0Wj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -121,9 +93,9 @@
   {
    "date": "2026-07-15",
    "title": "115年數位醫療危害病人安全之相關風險管控課程(實體場)",
-   "location": "",
+   "location": "【實體】醫策會901會議室",
    "credits": {},
-   "cat": "safety",
+   "cat": "tech",
    "src": "jct",
    "online": false,
    "ondemand": false,
@@ -197,7 +169,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FpX3NpNcvcmFu2m2XHYwJ1tzMewVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -563,6 +535,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/43A9ED7A-8DEE-4AA0-8E9F-2F0339B97F28"
   },
   {
+   "date": "2026-07-28",
+   "title": "【線上直播】國際視角下的難癒合傷口管理：從 Wound Hygiene 證據到新加坡 DFU 臨床實務(全程英文授課)",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6258&pageno1&continue=Y"
+  },
+  {
    "date": "2026-07-29",
    "title": "AI應用規劃師中級能力培訓班",
    "location": "台北",
@@ -603,6 +590,32 @@
   },
   {
    "date": "2026-07-30",
+   "title": "2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】(擇一組報名)第一組-建構感管專業分級制度強化人才培育與留任",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-30",
+   "title": "2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】(擇一組報名)第二組-深化防疫一體抗藥性防治策略推動與實踐",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-30",
    "title": "2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】第一組-建構感管專業分級制度強化人才培育與留任",
    "location": "",
    "credits": {},
@@ -626,6 +639,21 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
+  },
+  {
+   "date": "2026-07-30",
+   "title": "【線上直播】當護理管理遇見代理式 AI：兼顧效率、資安與專業責任的實踐路徑",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.6
+   },
+   "cat": "tech",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6259&pageno1&continue=Y"
   },
   {
    "date": "2026-07-31",
@@ -770,7 +798,7 @@
    "credits": {
     "np": 16.2
    },
-   "cat": "clinical",
+   "cat": "tech",
    "src": "tnpa",
    "online": false,
    "ondemand": false,
@@ -1354,6 +1382,21 @@
    "region": "north",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/2BA56EEC-3873-4DF5-B798-C34161278730"
+  },
+  {
+   "date": "2026-08-19",
+   "title": "【線上社團課程】NPower專注力社群-舒緩伸展瑜珈",
+   "location": "ZOOM線上會議室",
+   "credits": {
+    "np": 0.6
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6251&pageno1&continue=Y"
   },
   {
    "date": "2026-08-20",
@@ -2027,7 +2070,7 @@
    "credits": {
     "np": 8.2
    },
-   "cat": "research",
+   "cat": "tech",
    "src": "tnpa",
    "online": false,
    "ondemand": false,
@@ -2047,6 +2090,21 @@
    "region": "central",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-09-15",
+   "title": "【線上直播】當臨床問題來敲門：從AI工具到 Dyna Al的實證決策新流程",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "tech",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6257&pageno1&continue=Y"
   },
   {
    "date": "2026-09-16",
