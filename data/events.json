@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-07-19T16:00:38+08:00",
+  "generated": "2026-07-19T09:04:22+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -63,6 +63,21 @@
   {
    "date": "2026-07-14",
    "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (中區) -中慈場",
+   "location": "台中慈濟醫院大愛講堂",
+   "credits": {
+    "pro": 3
+   },
+   "cat": "teaching",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-07-14",
+   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (中區，地點變更) -中慈場",
    "location": "台中慈濟醫院大愛講堂",
    "credits": {
     "pro": 3
@@ -145,6 +160,19 @@
    "region": "south",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-07-17",
+   "title": "AI數位互動服務設計與創新應用工作坊(7/17、7/31)",
+   "location": "活動場次：全程 2026/07/17 ～ 2026/07/31",
+   "credits": {},
+   "cat": "tech",
+   "src": "ni",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "本課程擬申請護理人員繼續教育積分。",
+   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3545"
   },
   {
    "date": "2026-07-17",
@@ -414,6 +442,21 @@
    "region": "tbd",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-07-24",
+   "title": "護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(一)",
+   "location": "永和耕莘醫院住院大樓12樓國際會議廳",
+   "credits": {
+    "pro": 3
+   },
+   "cat": "clinical",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-07-24",
@@ -750,6 +793,21 @@
   },
   {
    "date": "2026-07-31",
+   "title": "護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -中部場",
+   "location": "台中慈濟醫院感恩樓5樓階梯教室",
+   "credits": {
+    "pro": 3
+   },
+   "cat": "clinical",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-07-31",
    "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -中部場",
    "location": "台中慈濟醫院感恩樓5樓階梯教室",
    "credits": {
@@ -891,6 +949,21 @@
   },
   {
    "date": "2026-08-05",
+   "title": "護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(二)",
+   "location": "林口長庚紀念醫院醫學大樓第二會議廳",
+   "credits": {
+    "pro": 3
+   },
+   "cat": "clinical",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-08-05",
    "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(二)",
    "location": "林口長庚紀念醫院醫學大樓第二會議廳",
    "credits": {
@@ -935,7 +1008,7 @@
    "title": "【本會研習會訊息】115年8月6日【AI數位照護在精神科護理的運用】研習會（南區）",
    "location": "",
    "credits": {},
-   "cat": "clinical",
+   "cat": "tech",
    "src": "psy",
    "online": false,
    "ondemand": false,
@@ -974,7 +1047,7 @@
    "title": "115年度護理資訊進階系列課程【Vibe Coding × AI：護理智慧應用開發實戰（無程式）】",
    "location": "天主教永和耕莘醫院門診大樓8F視訊教學會議室",
    "credits": {},
-   "cat": "clinical",
+   "cat": "tech",
    "src": "ni",
    "online": true,
    "ondemand": false,
@@ -1113,6 +1186,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/3F58E67C-079E-4E3C-81CC-15D6ABC49C2C"
   },
   {
+   "date": "2026-08-12",
+   "title": "智慧科技 Vibe Coding 系列-護理行政減負與智慧工作流實作工作坊",
+   "location": "台南市立醫院(委託秀傳醫療社團法人經營)5F大會議室",
+   "credits": {},
+   "cat": "tech",
+   "src": "ni",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "本課程擬申請護理人員繼續教育積分。",
+   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3547"
+  },
+  {
    "date": "2026-08-13",
    "title": "零程式AI編輯術-情資蒐集、自動分類與內容發布全攻略",
    "location": "台北",
@@ -1130,7 +1216,7 @@
    "title": "2026 智慧醫療 × 科技管理 × 幸福職場標竿交流",
    "location": "東元綜合醫院",
    "credits": {},
-   "cat": "admin",
+   "cat": "tech",
    "src": "tnma",
    "online": false,
    "ondemand": false,
@@ -1410,6 +1496,19 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-20",
+   "title": "AI數位互動服務設計與創新應用工作坊(8/20、9/4)",
+   "location": "秀傳醫療社團法人高雄秀傳紀念醫院八樓第一會議室",
+   "credits": {},
+   "cat": "tech",
+   "src": "ni",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "本課程擬申請護理人員繼續教育積分。",
+   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3546"
   },
   {
    "date": "2026-08-20",
@@ -1807,7 +1906,7 @@
     "pro": 5,
     "np": 5
    },
-   "cat": "clinical",
+   "cat": "tech",
    "src": "critical",
    "online": false,
    "ondemand": false,
@@ -1833,7 +1932,7 @@
    "title": "【北區】科技賦能 × 護理韌力-打造高壓時代的職場復原力與情意支持工作坊",
    "location": "北區-三軍總醫院B1 OSCE擬真大教室",
    "credits": {},
-   "cat": "clinical",
+   "cat": "tech",
    "src": "tnma",
    "online": false,
    "ondemand": false,
@@ -1849,7 +1948,7 @@
     "pro": 5,
     "np": 5
    },
-   "cat": "clinical",
+   "cat": "tech",
    "src": "critical",
    "online": false,
    "ondemand": false,
@@ -1992,6 +2091,21 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/204994B5-5346-4069-A41E-C89840907CD7"
+  },
+  {
+   "date": "2026-09-09",
+   "title": "護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -南部場",
+   "location": "高雄醫學大學附設中和紀念醫院啟川大樓6樓第二講堂",
+   "credits": {
+    "pro": 3
+   },
+   "cat": "clinical",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-09-09",
@@ -2243,7 +2357,7 @@
    "title": "【中區】科技賦能 × 護理韌力-打造高壓時代的職場復原力與情意支持工作坊",
    "location": "中區-臺中榮民總醫院研究大樓一樓第四會議室",
    "credits": {},
-   "cat": "clinical",
+   "cat": "tech",
    "src": "tnma",
    "online": false,
    "ondemand": false,
@@ -2388,6 +2502,22 @@
   },
   {
    "date": "2026-10-16",
+   "title": "115年度急重症CKRT照護研習會(南區)",
+   "location": "高雄醫學大學附設中和紀念醫院啟川大樓六樓第二講堂。",
+   "credits": {
+    "pro": 6,
+    "np": 6
+   },
+   "cat": "clinical",
+   "src": "critical",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.taccn.org.tw/activity/detail/416"
+  },
+  {
+   "date": "2026-10-16",
    "title": "【免費課程】智慧化倉儲管理：AI × IoT 智慧倉儲管理與創新應用(新竹班)第二梯",
    "location": "新竹",
    "credits": {},
@@ -2398,6 +2528,45 @@
    "region": "north",
    "ctext": "時數 30 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/A1E7FD91-7673-4154-8F2D-D82C0C2AE1F4"
+  },
+  {
+   "date": "2026-10-17",
+   "title": "115年度護理資訊進階系列課程 【Vibe Coding × AI：護理智慧應用開發實戰（無程式）】",
+   "location": "活動場次：單程 2026/10/17",
+   "credits": {},
+   "cat": "tech",
+   "src": "ni",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
+   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3544"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "ISO/IEC 42001:2023人工智慧管理系統(AIMS) 主導稽核員訓課程(高雄)",
+   "location": "高雄",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 35 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/09C7AFF3-5DD5-4A39-92BC-30B54BE01C1A"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "零程式AI知識管家實務-文件整理、LINE智能問答全攻略",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/BC5E0A4A-403C-4FCC-A72D-F00AE441BB79"
   }
  ]
 }

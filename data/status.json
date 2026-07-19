@@ -1,47 +1,47 @@
 {
-  "generated": "2026-07-19T16:00:38+08:00",
-  "overall": "ok",
+  "generated": "2026-07-19T09:04:22+00:00",
+  "overall": "partial",
   "sources": {
     "nuna": {
       "status": "ok",
       "count": 24,
-      "last_success": "2026-07-12",
+      "last_success": "2026-07-19",
       "message": ""
     },
     "critical": {
       "status": "ok",
       "count": 9,
-      "last_success": "2026-07-12",
+      "last_success": "2026-07-19",
       "message": ""
     },
     "psy": {
       "status": "ok",
       "count": 2,
-      "last_success": "2026-07-12",
+      "last_success": "2026-07-19",
       "message": ""
     },
     "tnna": {
-      "status": "ok",
-      "count": 10,
+      "status": "empty",
+      "count": 0,
       "last_success": "2026-07-12",
-      "message": ""
+      "message": "抓取成功但 0 筆，可能網站改版或選擇器失效"
     },
     "tnma": {
       "status": "ok",
       "count": 50,
-      "last_success": "2026-07-12",
+      "last_success": "2026-07-19",
       "message": ""
     },
     "ni": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-07-12",
+      "last_success": "2026-07-19",
       "message": ""
     },
     "ahqroc": {
       "status": "ok",
       "count": 8,
-      "last_success": "2026-07-12",
+      "last_success": "2026-07-19",
       "message": ""
     },
     "jct": {
@@ -53,7 +53,7 @@
     "hospice": {
       "status": "ok",
       "count": 4,
-      "last_success": "2026-07-12",
+      "last_success": "2026-07-19",
       "message": ""
     },
     "twna": {
@@ -70,8 +70,8 @@
     },
     "itri": {
       "status": "ok",
-      "count": 75,
-      "last_success": "2026-07-18",
+      "count": 76,
+      "last_success": "2026-07-19",
       "message": ""
     }
   }
