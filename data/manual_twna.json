@@ -1,7 +1,7 @@
 {
  "comment": "台灣護理學會（twna）robots.txt 全站 Disallow，依專案守則不自動爬。初始資料 2026-07-10 由偵察期單次快取頁（另存頁匯入器開發過程中留存）匯入，42 筆。日後更新方式：瀏覽器開課程列表頁 → 另存新檔（僅 HTML）→ 跑 scripts/import_twna_page.py <另存的.html>，會自動合併新資料且保留你手動修過的既有條目；也可以直接手動編輯下方 events（欄位格式見 README「手動維護來源」一節）。",
- "manual_imported_at": "2026-07-14T00:19:13+08:00",
- "manual_checked_at": "2026-07-14T00:19:13+08:00",
+ "manual_imported_at": "2026-07-20T01:36:37+08:00",
+ "manual_checked_at": "2026-07-20T01:36:37+08:00",
  "events": [
   {
    "date": "2026-07-02",
@@ -504,6 +504,30 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
+   "ctext": "積分請洽學會官網",
+   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-08-15",
+   "title": "腫瘤照護實證應用網路研習會(線上視訊課程)",
+   "location": "線上視訊 請自備電腦、手機或平板,下載並安裝視訊軟體。",
+   "credits": {},
+   "cat": "clinical",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "積分請洽學會官網",
+   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-08-28",
+   "title": "提升管路照護安全工作坊(南區)",
+   "location": "高雄榮民總醫院 高齡醫學大樓地下一樓第十會議室",
+   "credits": {},
+   "cat": "clinical",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   }

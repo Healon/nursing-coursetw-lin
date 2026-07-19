@@ -1,39 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-19T09:04:22+00:00",
+  "generated": "2026-07-20T01:37:07+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-12",
-   "title": "115年_研3 (北區) 高齡透析研習會",
-   "location": "亞東醫院 14 樓國際會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "clinical",
-   "src": "tnna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "公務人員終身學習時數 3 小時",
-   "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1918"
-  },
-  {
-   "date": "2026-07-12",
-   "title": "115年研習會(網頁測試請勿報名)",
-   "location": "亞東醫院 14 樓國際會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "other",
-   "src": "tnna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "公務人員終身學習時數 3 小時",
-   "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1921"
-  },
   {
    "date": "2026-07-13",
    "title": "115年醫院病人安全年度目標推廣課程(南部場)",
@@ -1320,6 +1290,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/9E7D8C38-36AA-4B80-8B17-E338B756CB2B"
   },
   {
+   "date": "2026-08-15",
+   "title": "腫瘤照護實證應用網路研習會(線上視訊課程)",
+   "location": "線上視訊 請自備電腦、手機或平板,下載並安裝視訊軟體。",
+   "credits": {},
+   "cat": "clinical",
+   "src": "twna",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "積分請洽學會官網",
+   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
    "date": "2026-08-16",
    "title": "115年_研4(線上) 慢性腎臟病繼續教育研習會",
    "location": "",
@@ -1735,6 +1718,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/E3F29E16-FE73-41C6-B0CF-1AD63D19D969"
+  },
+  {
+   "date": "2026-08-28",
+   "title": "提升管路照護安全工作坊(南區)",
+   "location": "高雄榮民總醫院 高齡醫學大樓地下一樓第十會議室",
+   "credits": {},
+   "cat": "clinical",
+   "src": "twna",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "積分請洽學會官網",
+   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
   },
   {
    "date": "2026-08-28",
