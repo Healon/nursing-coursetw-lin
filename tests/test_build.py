@@ -67,6 +67,42 @@ class TestRender:
         assert json.loads(payload)[0]["t"] == "a\\b</x"
 
 
+class TestManualSourceDates:
+    """manual_source_dates()：手動來源顯示「人工匯入／確認日」而非 pipeline 執行日；
+    缺檔／壞檔回空 dict 不擋 build（頁面顯示「尚無人工紀錄」）。"""
+
+    def test_returns_newer_of_two_timestamps_as_taipei_date(self, monkeypatch, tmp_path):
+        path = tmp_path / "manual_twna.json"
+        path.write_text(json.dumps({
+            "manual_imported_at": "2026-07-20T16:00:00+08:00",
+            "manual_checked_at": "2026-07-24T09:30:00+08:00",
+        }), encoding="utf-8")
+        monkeypatch.setattr(build, "MANUAL_TWNA_PATH", path)
+        assert build.manual_source_dates() == {"twna": "2026-07-24"}
+
+    def test_missing_file_returns_empty(self, monkeypatch, tmp_path):
+        monkeypatch.setattr(build, "MANUAL_TWNA_PATH", tmp_path / "nope.json")
+        assert build.manual_source_dates() == {}
+
+    def test_broken_json_returns_empty(self, monkeypatch, tmp_path):
+        path = tmp_path / "manual_twna.json"
+        path.write_text("{broken", encoding="utf-8")
+        monkeypatch.setattr(build, "MANUAL_TWNA_PATH", path)
+        assert build.manual_source_dates() == {}
+
+    def test_no_manual_activity_returns_empty(self, monkeypatch, tmp_path):
+        path = tmp_path / "manual_twna.json"
+        path.write_text(json.dumps({"manual_imported_at": "", "events": []}), encoding="utf-8")
+        monkeypatch.setattr(build, "MANUAL_TWNA_PATH", path)
+        assert build.manual_source_dates() == {}
+
+    def test_config_blob_carries_manual_dates_and_executions(self):
+        blob = build.make_config_blob()
+        assert "manualUpdatedAt" in blob  # 模板 manual 分支消費這個鍵
+        assert set(blob["sourceExecutions"]) == set(blob["sources"])
+        assert blob["sourceExecutions"]["twna"] == "manual"
+
+
 class TestRealTemplate:
     def test_real_template_renders_clean(self):
         template = build.TEMPLATE_PATH.read_text(encoding="utf-8")

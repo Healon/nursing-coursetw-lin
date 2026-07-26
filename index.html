@@ -205,8 +205,8 @@ a { color: var(--primary); }
   padding: 3px 10px;
   font-size: .8rem;
 }
-.disclaimer, .footer-note, .credit-line { margin: 8px 0 0; }
-.credit-line { font-size: .78rem; opacity: .8; }
+.disclaimer, .footer-note, .footer-updated, .credit-line { margin: 8px 0 0; }
+.footer-updated, .credit-line { font-size: .78rem; opacity: .8; }
 
 /* ── RWD 斷點（Lin 2026-07-10 指示：適應不同視窗大小）──────────
    桌機寬幕：wrap 上限 1200px，網格 auto-fill 自動 3-4 欄；
@@ -272,7 +272,8 @@ a { color: var(--primary); }
   <div class="wrap">
     <div id="source-stats"></div>
     <p class="disclaimer">本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。</p>
-    <p class="footer-note">資料每週自動更新一次。</p>
+    <p class="footer-note">資料每天自動更新一次；各來源實際更新日期見下方來源狀態。</p>
+    <p class="footer-updated">本頁更新時間：2026-07-20T01:37:07+08:00</p>
     <p class="credit-line">本頁由開源靜態模板自動產生（GitHub Actions 排程爬蟲＋GitHub Pages）。</p>
   </div>
 </footer>
@@ -280,7 +281,7 @@ a { color: var(--primary); }
 <script>
 "use strict";
 /* CONFIG:START */
-const CONFIG = {"site":{"title":"護理教育訓練網站","subtitle":"繼續教育課程與學術活動，一頁查詢","disclaimer":"本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。","footer_note":"資料每週自動更新一次。"},"categories":{"teaching":"教學","tech":"智慧科技","clinical":"臨床照護","safety":"病人安全","admin":"行政管理","ethics":"倫理法規","research":"研究學術","other":"其他"},"creditTypes":{"pro":"專業","quality":"品質","ethics":"倫理","law":"法規","np":"專科護理師"},"regions":{"north":"北部","central":"中部","south":"南部","east":"東部","online":"線上","tbd":"未定其他"},"sources":{"demo":"示範資料","nuna":"護理師護士公會全聯會","critical":"中華民國急重症護理學會","psy":"中華民國精神衛生護理學會","tnna":"臺灣腎臟護理學會","tnma":"臺灣護理管理學會","ni":"台灣護理資訊學會","ahqroc":"台灣醫療品質協會","jct":"醫策會","hospice":"台灣安寧緩和護理學會","twna":"台灣護理學會","tnpa":"台灣專科護理師學會","itri":"工研院產業學院"}};
+const CONFIG = {"site":{"title":"護理教育訓練網站","subtitle":"繼續教育課程與學術活動，一頁查詢","disclaimer":"本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。","footer_note":"資料每天自動更新一次；各來源實際更新日期見下方來源狀態。"},"categories":{"teaching":"教學","tech":"智慧科技","clinical":"臨床照護","safety":"病人安全","admin":"行政管理","ethics":"倫理法規","research":"研究學術","other":"其他"},"creditTypes":{"pro":"專業","quality":"品質","ethics":"倫理","law":"法規","np":"專科護理師"},"regions":{"north":"北部","central":"中部","south":"南部","east":"東部","online":"線上","tbd":"未定其他"},"sources":{"demo":"示範資料","nuna":"護理師護士公會全聯會","critical":"中華民國急重症護理學會","psy":"中華民國精神衛生護理學會","tnna":"臺灣腎臟護理學會","tnma":"臺灣護理管理學會","ni":"台灣護理資訊學會","ahqroc":"台灣醫療品質協會","jct":"醫策會","hospice":"台灣安寧緩和護理學會","twna":"台灣護理學會","tnpa":"台灣專科護理師學會","itri":"工研院產業學院"},"sourceExecutions":{"demo":"cloud","nuna":"cloud","critical":"cloud","psy":"cloud","tnna":"cloud","tnma":"cloud","ni":"cloud","ahqroc":"cloud","jct":"local","hospice":"cloud","twna":"manual","tnpa":"local","itri":"cloud"},"manualUpdatedAt":{"twna":"2026-07-20"}};
 /* CONFIG:END */
 /* STATUS:START */
 const SOURCE_STATUS = {"generated":"2026-07-20T01:37:07+08:00","overall":"partial","sources":{"nuna":{"status":"ok","count":24,"last_success":"2026-07-19","message":""},"critical":{"status":"ok","count":9,"last_success":"2026-07-19","message":""},"psy":{"status":"ok","count":2,"last_success":"2026-07-19","message":""},"tnna":{"status":"empty","count":0,"last_success":"2026-07-12","message":"抓取成功但 0 筆，可能網站改版或選擇器失效"},"tnma":{"status":"ok","count":50,"last_success":"2026-07-19","message":""},"ni":{"status":"ok","count":10,"last_success":"2026-07-19","message":""},"ahqroc":{"status":"ok","count":8,"last_success":"2026-07-19","message":""},"jct":{"status":"ok","count":16,"last_success":"2026-07-20","message":""},"hospice":{"status":"ok","count":4,"last_success":"2026-07-19","message":""},"twna":{"status":"ok","count":44,"last_success":"2026-07-20","message":""},"tnpa":{"status":"ok","count":14,"last_success":"2026-07-20","message":""},"itri":{"status":"ok","count":76,"last_success":"2026-07-19","message":""}}};
@@ -509,7 +510,7 @@ function syncSelectAllPill(groupEl) {
 /* 來源健康狀態（2026-07-10 Lin 指示改版）：公開頁不顯示個別來源的錯誤訊息——
    訪客不需要看原始技術錯誤；維護者的錯誤可見性走 data/status.json、GitHub Actions
    紅燈、本機更新的桌面通知三個管道，資訊沒有變少、只是換對象。
-   公開頁保留：頁尾中性筆數 chips（含停更來源的「更新至」日期，誠實不驚悚）；
+   公開頁保留：頁尾中性筆數 chips（每來源常駐「更新至」日期，手動來源另標「手動」，誠實不驚悚）；
    以及唯一例外「全滅紅橫幅」——所有來源都失敗代表整頁可能過期，這是訪客權益，保留。 */
 /* 來源能見度規則：列入健康快照（＝enabled）或實際有課程才顯示 chip 與篩選 pill；
    停用且無資料的來源（如已下線的示範資料、尚未填資料的手動來源）不佔版面當噪音 */
@@ -520,6 +521,7 @@ function srcVisible(code) {
 
 function renderStatus() {
   const st = (SOURCE_STATUS && SOURCE_STATUS.sources) || {};
+  const execs = (CONFIG && CONFIG.sourceExecutions) || {};
   const counts = {};
   LIVE_EVENTS.forEach((e) => { counts[e.src] = (counts[e.src] || 0) + 1; });
 
@@ -527,9 +529,19 @@ function renderStatus() {
     .filter(([code]) => srcVisible(code))
     .map(([code, label]) => {
       const s = st[code];
-      const stale = s && s.status !== "ok" && s.last_success
-        ? '（更新至 ' + esc(s.last_success) + '）' : '';
-      return '<span class="chip">' + esc(label) + '：' + (counts[code] || 0) + ' 筆' + stale + '</span>';
+      // 每來源常駐顯示「更新至」日期（2026-07-26 Lin 訂：各學會更新時點不同步，要一眼可辨）。
+      // manual 來源（twna）改用 build 注入的人工匯入／確認日——它的 last_success 只是
+      // pipeline 讀檔日，日更後天天刷新，拿來顯示會謊報新鮮度；沒有人工紀錄就誠實寫明。
+      let dateNote = '';
+      if (execs[code] === "manual") {
+        const manualDate = (CONFIG.manualUpdatedAt || {})[code];
+        dateNote = manualDate
+          ? '（更新至 ' + esc(manualDate) + '．手動）'
+          : '（尚無人工紀錄．手動）';
+      } else if (s && s.last_success) {
+        dateNote = '（更新至 ' + esc(s.last_success) + '）';
+      }
+      return '<span class="chip">' + esc(label) + '：' + (counts[code] || 0) + ' 筆' + dateNote + '</span>';
     })
     .join("");
 

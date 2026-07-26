@@ -17,12 +17,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config import site as cfg
+from scripts import twna_freshness
 
 ROOT = Path(__file__).resolve().parents[1]
 TEMPLATE_PATH = ROOT / "templates" / "index.html.tpl"
 OUTPUT_PATH = ROOT / "index.html"
 EVENTS_PATH = ROOT / "data" / "events.json"
 STATUS_PATH = ROOT / "data" / "status.json"
+MANUAL_TWNA_PATH = ROOT / "data" / "manual_twna.json"
 
 MARKERS = ("THEME", "CONFIG", "STATUS", "EVENTS")
 
@@ -50,6 +52,23 @@ def replace_marker(html: str, name: str, payload: str) -> str:
     return html
 
 
+def manual_source_dates() -> dict[str, str]:
+    """手動維護來源的「人工匯入／確認」日期（取兩時戳較新者的台北日期）。
+
+    手動來源的 status.json last_success 只代表「pipeline 讀檔成功日」，日更後天天刷新，
+    不能拿來當資料新鮮度；頁尾要顯示的是人真正動過資料的日期。檔案缺失或壞損回空 dict
+    （比照 EVENTS/STATUS 缺檔給預設值的慣例，不擋 build——沒有日期就顯示「尚無人工紀錄」）。
+    """
+    try:
+        raw = json.loads(MANUAL_TWNA_PATH.read_text(encoding="utf-8"))
+        latest = twna_freshness.latest_manual_activity(raw)
+    except (OSError, json.JSONDecodeError, ValueError, AttributeError, TypeError):
+        return {}
+    if latest is None:
+        return {}
+    return {"twna": latest.astimezone(twna_freshness.TAIPEI).date().isoformat()}
+
+
 def make_config_blob() -> dict:
     """前端只需要 label 對照表，keywords 等爬蟲設定不進頁面。"""
     return {
@@ -58,6 +77,12 @@ def make_config_blob() -> dict:
         "creditTypes": dict(cfg.CREDIT_TYPES),
         "regions": {code: item["label"] for code, item in cfg.REGIONS.items()},
         "sources": {code: item["label"] for code, item in cfg.SOURCES.items()},
+        # 執行位置分類（cloud/local/manual）：讓前端在頁尾 chip 分流顯示——
+        # cloud/local 用 status 的 last_success，manual 用下面的人工日期。
+        "sourceExecutions": {code: item.get("execution", "cloud") for code, item in cfg.SOURCES.items()},
+        # 手動來源的人工匯入／確認日期（code -> YYYY-MM-DD）；目前只有 twna 一家，
+        # 未來新增第二個 manual 來源時要擴充 manual_source_dates()（單檔寫死，見其 docstring）。
+        "manualUpdatedAt": manual_source_dates(),
     }
 
 

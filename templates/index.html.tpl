@@ -191,8 +191,8 @@ a { color: var(--primary); }
   padding: 3px 10px;
   font-size: .8rem;
 }
-.disclaimer, .footer-note, .credit-line { margin: 8px 0 0; }
-.credit-line { font-size: .78rem; opacity: .8; }
+.disclaimer, .footer-note, .footer-updated, .credit-line { margin: 8px 0 0; }
+.footer-updated, .credit-line { font-size: .78rem; opacity: .8; }
 
 /* ── RWD 斷點（Lin 2026-07-10 指示：適應不同視窗大小）──────────
    桌機寬幕：wrap 上限 1200px，網格 auto-fill 自動 3-4 欄；
@@ -259,6 +259,7 @@ a { color: var(--primary); }
     <div id="source-stats"></div>
     <p class="disclaimer">@@DISCLAIMER@@</p>
     <p class="footer-note">@@FOOTER_NOTE@@</p>
+    <p class="footer-updated">本頁更新時間：@@UPDATED_AT@@</p>
     <p class="credit-line">本頁由開源靜態模板自動產生（GitHub Actions 排程爬蟲＋GitHub Pages）。</p>
   </div>
 </footer>
@@ -495,7 +496,7 @@ function syncSelectAllPill(groupEl) {
 /* 來源健康狀態（2026-07-10 Lin 指示改版）：公開頁不顯示個別來源的錯誤訊息——
    訪客不需要看原始技術錯誤；維護者的錯誤可見性走 data/status.json、GitHub Actions
    紅燈、本機更新的桌面通知三個管道，資訊沒有變少、只是換對象。
-   公開頁保留：頁尾中性筆數 chips（含停更來源的「更新至」日期，誠實不驚悚）；
+   公開頁保留：頁尾中性筆數 chips（每來源常駐「更新至」日期，手動來源另標「手動」，誠實不驚悚）；
    以及唯一例外「全滅紅橫幅」——所有來源都失敗代表整頁可能過期，這是訪客權益，保留。 */
 /* 來源能見度規則：列入健康快照（＝enabled）或實際有課程才顯示 chip 與篩選 pill；
    停用且無資料的來源（如已下線的示範資料、尚未填資料的手動來源）不佔版面當噪音 */
@@ -506,6 +507,7 @@ function srcVisible(code) {
 
 function renderStatus() {
   const st = (SOURCE_STATUS && SOURCE_STATUS.sources) || {};
+  const execs = (CONFIG && CONFIG.sourceExecutions) || {};
   const counts = {};
   LIVE_EVENTS.forEach((e) => { counts[e.src] = (counts[e.src] || 0) + 1; });
 
@@ -513,9 +515,19 @@ function renderStatus() {
     .filter(([code]) => srcVisible(code))
     .map(([code, label]) => {
       const s = st[code];
-      const stale = s && s.status !== "ok" && s.last_success
-        ? '（更新至 ' + esc(s.last_success) + '）' : '';
-      return '<span class="chip">' + esc(label) + '：' + (counts[code] || 0) + ' 筆' + stale + '</span>';
+      // 每來源常駐顯示「更新至」日期（2026-07-26 Lin 訂：各學會更新時點不同步，要一眼可辨）。
+      // manual 來源（twna）改用 build 注入的人工匯入／確認日——它的 last_success 只是
+      // pipeline 讀檔日，日更後天天刷新，拿來顯示會謊報新鮮度；沒有人工紀錄就誠實寫明。
+      let dateNote = '';
+      if (execs[code] === "manual") {
+        const manualDate = (CONFIG.manualUpdatedAt || {})[code];
+        dateNote = manualDate
+          ? '（更新至 ' + esc(manualDate) + '．手動）'
+          : '（尚無人工紀錄．手動）';
+      } else if (s && s.last_success) {
+        dateNote = '（更新至 ' + esc(s.last_success) + '）';
+      }
+      return '<span class="chip">' + esc(label) + '：' + (counts[code] || 0) + ' 筆' + dateNote + '</span>';
     })
     .join("");
 
