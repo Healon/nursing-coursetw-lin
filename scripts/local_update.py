@@ -2,8 +2,9 @@
 Input:  預設零參數。--force 跳過「當日已成功」護欄；--no-push 只更新本機不推送（除錯用）。
 Output: data/*.json 與 index.html 更新、git commit＋push、macOS 桌面通知、繁中執行摘要。
 
-設計（Lin 2026-07-11 核准）：手動跑它＝一鍵指令；launchd 每週日 16:00 跑它＝自動化。
-同一支程式、兩種觸發，沒有兩套邏輯。
+設計（Lin 2026-07-11 核准；2026-07-26 改每日）：手動跑它＝一鍵指令；launchd 每天 16:00
+跑它＝自動化；桌面儀表板捷徑背景跑它＝順手觸發。同一支程式、多種觸發，沒有兩套邏輯。
+多重觸發靠兩道護欄不互撞：flock 單實例鎖（同時只跑一份）＋「當日已成功就跳過」。
 
 為什麼需要本機跑（而不是全交給雲端）：
 - jct（醫策會）與 tnpa（專科護理師學會）會擋 GitHub Actions 的機房 IP
@@ -11,13 +12,14 @@ Output: data/*.json 與 index.html 更新、git commit＋push、macOS 桌面通�
 - twna（台灣護理學會）robots 禁爬，靠維護者另存的頁面檔，而那些檔案只存在本機。
 
 錯誤可見性：每一步失敗都要 stderr＋桌面通知，禁止靜默；git pull 失敗立即中止
-（不在過期基底上工作，避免推送時打架）。排程時段刻意排在雲端週更（週日 15:00）之後，
+（不在過期基底上工作，避免推送時打架）。排程時段刻意排在雲端每日更新（15:17）之後，
 pull 恰好先收到雲端最新結果。
 """
 from __future__ import annotations
 
 import argparse
 import datetime as dt
+import fcntl
 import json
 import subprocess
 import sys
@@ -32,6 +34,9 @@ STATUS_PATH = ROOT / "data" / "status.json"
 TWNA_DATA_PATH = ROOT / "data" / "manual_twna.json"
 TWNA_DOWNLOAD_DIR = twna_watch.DOWNLOAD_DIR
 LOCAL_SOURCES = ("jct", "tnpa")
+# 單實例鎖：儀表板背景觸發、launchd 16:00、手動一鍵可能同日多次或同時發生，
+# 同時只允許一份實例跑（另一份立即安靜退出），避免並發 git commit／寫 data 檔互相打架。
+LOCK_PATH = Path("/tmp/nursing-local-update.lock")
 
 # 自動更新允許變動的檔案（資料產物）。工作區若有這清單以外的髒檔，代表 Lin 可能改到一半，
 # 中止不碰，保護進行中的手動修改。
@@ -104,11 +109,31 @@ def _fail(step: str, detail: str) -> int:
     return 1
 
 
+def acquire_single_instance_lock():
+    """搶單實例鎖；成功回傳鎖檔 handle（呼叫端保留引用到結束），搶不到回 None。
+
+    flock 隨行程結束（含 crash）由核心自動釋放，不會留殘鎖；LOCK_NB 讓後到者立即
+    知道有人在跑，安靜退出即可（exit 0——這是預期協調，不是錯誤）。
+    """
+    handle = LOCK_PATH.open("w")
+    try:
+        fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        handle.close()
+        return None
+    return handle
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="本機一鍵更新（jct/tnpa 補爬＋twna 匯入＋推送）")
     ap.add_argument("--force", action="store_true", help="跳過「當日已成功」護欄，強制重爬 jct/tnpa")
     ap.add_argument("--no-push", action="store_true", help="只更新本機，不 commit/push（除錯用）")
     args = ap.parse_args(argv)
+
+    lock = acquire_single_instance_lock()
+    if lock is None:
+        print("[local-update] 另一個更新實例正在執行，本次直接退出（單實例鎖）", flush=True)
+        return 0
 
     print(f"[local-update] 開始（{dt.datetime.now().strftime('%Y-%m-%d %H:%M')}）", flush=True)
 

@@ -19,8 +19,6 @@
     <string>/Users/healon/Projects/nursing-coursetw-lin</string>
     <key>StartCalendarInterval</key>
     <dict>
-        <key>Weekday</key>
-        <integer>0</integer>
         <key>Hour</key>
         <integer>16</integer>
         <key>Minute</key>

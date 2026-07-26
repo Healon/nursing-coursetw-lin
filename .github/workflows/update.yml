@@ -1,4 +1,4 @@
-# 每週自動更新：爬來源 → 有變更才 commit → 全滅時亮紅。
+# 每日自動更新：爬來源 → 有變更才 commit → 全滅時亮紅。
 # 步驟順序是刻意設計（詳見 docs/ARCHITECTURE.md）：
 #   1. update.py 對「來源失敗」恆常 exit 0 → 頁面（含警示徽章）一定會被發布
 #   2. diff-gated commit：有變更才 commit push，GitHub Pages 隨之自動重建
@@ -7,7 +7,7 @@ name: update-events
 
 on:
   schedule:
-    - cron: "0 7 * * 0"  # 週日 07:00 UTC＝台北時間 15:00
+    - cron: "17 7 * * *"  # 每天 07:17 UTC＝台北 15:17（GitHub 整點 cron 壅塞易延遲，取非整點）
   workflow_dispatch: {}
 
 permissions:
@@ -35,7 +35,7 @@ jobs:
             git config user.name "events-auto-update"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data index.html
-            git commit -m "chore: weekly events update"
+            git commit -m "chore: daily events update"
             git push
           else
             echo "No changes to publish."

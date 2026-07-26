@@ -20,30 +20,41 @@ def snapshot(last_success="2026-07-12"):
     }
 
 
-def test_current_sunday_is_fresh():
-    manual = {"manual_checked_at": "2026-07-19T14:00:00+08:00"}
-    assert check_freshness.evaluate(snapshot("2026-07-19"), manual, NOW) == []
+# NOW＝2026-07-20（一）09:00 台北。天數窗語意（2026-07-26 隨日更導入）：
+# jct/tnpa 允許 2 天（昨天更新是健康常態，容忍一次沒開機），twna 允許 8 天（人工週頻＋1 天寬限）。
+FRESH_MANUAL = {"manual_checked_at": "2026-07-19T14:00:00+08:00"}
 
 
-def test_missed_sunday_makes_next_monday_fail_even_if_previous_sunday_succeeded():
+def test_yesterday_update_is_fresh():
+    assert check_freshness.evaluate(snapshot("2026-07-19"), FRESH_MANUAL, NOW) == []
+
+
+def test_all_sources_stale_beyond_windows_report_each():
+    # jct/tnpa 距今 8 天（>2）；twna 距今 8 天又 17 小時（>8 天）
     failures = check_freshness.evaluate(
         snapshot("2026-07-12"),
-        {"manual_checked_at": "2026-07-12T16:00:00+08:00"},
+        {"manual_checked_at": "2026-07-11T16:00:00+08:00"},
         NOW,
     )
 
     assert [failure.split(":", 1)[0] for failure in failures] == ["jct", "tnpa", "twna"]
 
 
-def test_older_cycle_reports_each_source():
-    failures = check_freshness.evaluate(
-        snapshot("2026-07-11"),
-        {"manual_checked_at": "2026-07-11T08:59:59+08:00"},
-        NOW,
-    )
-    assert any("jct" in failure for failure in failures)
-    assert any("tnpa" in failure for failure in failures)
-    assert any("twna" in failure for failure in failures)
+def test_local_source_window_boundary_two_days_fresh_three_days_stale():
+    assert check_freshness.evaluate(snapshot("2026-07-18"), FRESH_MANUAL, NOW) == []
+
+    failures = check_freshness.evaluate(snapshot("2026-07-17"), FRESH_MANUAL, NOW)
+    assert [failure.split(":", 1)[0] for failure in failures] == ["jct", "tnpa"]
+
+
+def test_twna_window_boundary_eight_days_inclusive():
+    # 恰好 8 天整（now - latest == 8d）：邊界當下仍新鮮（比照 twna_freshness.is_fresh 契約）
+    exactly_8d = {"manual_checked_at": "2026-07-12T09:00:00+08:00"}
+    assert check_freshness.evaluate(snapshot("2026-07-19"), exactly_8d, NOW) == []
+
+    over_8d = {"manual_checked_at": "2026-07-12T08:59:59+08:00"}
+    failures = check_freshness.evaluate(snapshot("2026-07-19"), over_8d, NOW)
+    assert [failure.split(":", 1)[0] for failure in failures] == ["twna"]
 
 
 def test_missing_or_invalid_state_fails_closed():

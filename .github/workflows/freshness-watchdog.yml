@@ -2,7 +2,7 @@ name: local-source-freshness
 
 on:
   schedule:
-    - cron: "0 1 * * 1"  # Monday 09:00 Asia/Taipei
+    - cron: "13 1 * * *"  # 每天 09:13 Asia/Taipei（跑在 16:00 本機更新前，健康常態＝昨天成功；避整點壅塞）
   workflow_dispatch: {}
 
 permissions:

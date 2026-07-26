@@ -1,4 +1,4 @@
-"""local_update 一鍵更新的離線測試：防狂打護欄、TWNA 摘要與 git 競爭處理。"""
+"""local_update 一鍵更新的離線測試：防狂打護欄、單實例鎖、TWNA 摘要與 git 競爭處理。"""
 from __future__ import annotations
 
 import datetime as dt
@@ -9,6 +9,23 @@ from scripts import local_update
 
 def result(code=0, out="", err=""):
     return subprocess.CompletedProcess([], code, out, err)
+
+
+class TestSingleInstanceLock:
+    """flock 單實例鎖：同時只允許一份實例（儀表板背景觸發／launchd／手動可能撞期）。
+    flock 綁 open file description，同一行程兩次 open 也會互斥，可在單測內驗證。"""
+
+    def test_second_acquire_fails_until_first_released(self, monkeypatch, tmp_path):
+        monkeypatch.setattr(local_update, "LOCK_PATH", tmp_path / "test.lock")
+
+        first = local_update.acquire_single_instance_lock()
+        assert first is not None
+        assert local_update.acquire_single_instance_lock() is None  # 鎖被持有
+
+        first.close()  # 釋放後可再取得
+        second = local_update.acquire_single_instance_lock()
+        assert second is not None
+        second.close()
 
 
 class TestDirtyBeyondData:

@@ -21,6 +21,12 @@ STATUS_PATH = ROOT / "data" / "status.json"
 MANUAL_TWNA_PATH = ROOT / "data" / "manual_twna.json"
 TAIPEI = ZoneInfo("Asia/Taipei")
 LOCAL_SOURCES = ("jct", "tnpa")
+# 每來源獨立新鮮窗（2026-07-26 隨「週更改日更」導入，取代原本共用的週日週期判定）：
+# - jct/tnpa 由本機每天 16:00 補抓，watchdog 每天 09:13 跑在當日更新之前，健康常態的
+#   last_success 是「昨天」；窗留 2 天＝再容忍一次 Mac 沒開機，第 3 天起亮紅。
+# - twna 仍為人工每週維護（robots 禁爬），窗 8 天＝一週節奏加一天寬限。
+LOCAL_SOURCE_MAX_AGE_DAYS = 2
+TWNA_MAX_AGE_DAYS = 8
 
 
 def _aware_now(now: dt.datetime) -> dt.datetime:
@@ -33,7 +39,6 @@ def _local_source_failure(
     status_snapshot: dict,
     code: str,
     today: dt.date,
-    cycle_start: dt.date,
 ) -> str | None:
     try:
         value = status_snapshot["sources"][code]["last_success"]
@@ -43,8 +48,9 @@ def _local_source_failure(
 
     if last_success > today:
         return f"{code}: last_success 位於未來（{last_success.isoformat()}）"
-    if last_success < cycle_start:
-        return f"{code}: 本週日更新週期尚未成功（最近 {last_success.isoformat()}）"
+    age_days = (today - last_success).days
+    if age_days > LOCAL_SOURCE_MAX_AGE_DAYS:
+        return f"{code}: 已 {age_days} 天未成功更新（最近 {last_success.isoformat()}）"
     return None
 
 
@@ -59,8 +65,11 @@ def _twna_failure(manual_twna: dict, now: dt.datetime) -> str | None:
     if latest > now:
         return f"twna: 手動檢查時間位於未來（{latest.isoformat()}）"
 
-    if latest.astimezone(TAIPEI) < twna_freshness.weekly_cycle_start(now):
-        return f"twna: 本週日更新週期尚未手動檢查（最近 {latest.isoformat()}）"
+    if not twna_freshness.is_fresh(manual_twna, now, max_age_days=TWNA_MAX_AGE_DAYS):
+        return (
+            f"twna: 人工維護已超過 {TWNA_MAX_AGE_DAYS} 天未更新"
+            f"（最近 {latest.isoformat()}）"
+        )
     return None
 
 
@@ -69,9 +78,8 @@ def evaluate(
     manual_twna: dict,
     now: dt.datetime,
 ) -> list[str]:
-    """Return one failure per source not successful in the current Sunday cycle."""
+    """Return one failure per source whose data is older than its freshness window."""
     local_now = _aware_now(now)
-    cycle_start = twna_freshness.weekly_cycle_start(local_now).date()
 
     failures: list[str] = []
     for code in LOCAL_SOURCES:
@@ -79,7 +87,6 @@ def evaluate(
             status_snapshot,
             code,
             local_now.date(),
-            cycle_start,
         )
         if failure:
             failures.append(failure)
@@ -118,7 +125,10 @@ def main(
             print(failure)
         return 1
 
-    print("fresh: jct、tnpa、twna 均已在本週日更新週期成功")
+    print(
+        "fresh: jct、tnpa（"
+        f"{LOCAL_SOURCE_MAX_AGE_DAYS} 天內）與 twna（{TWNA_MAX_AGE_DAYS} 天內）皆在新鮮窗內"
+    )
     return 0
 
 
