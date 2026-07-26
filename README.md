@@ -8,17 +8,17 @@
 完整拆解與設計決策見 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)。
 
 ```
-GitHub Actions cron（每週日台北 15:00）
+GitHub Actions cron（每天台北 15:17）
   → scripts/update.py --profile cloud：只跑 9 個可從雲端抓取的公開來源
   → 正規化、去重合併、時間窗過濾 → data/events.json
   → 來源健康快照 → data/status.json
   → scripts/build.py：注入 templates/index.html.tpl → index.html（自包含單檔）
   → 有變更才自動 commit push → GitHub Pages 自動重新發布
 
-本機 launchd（每週日台北 16:00）
+本機 launchd（每天台北 16:00）
   → 匯入專案 `download-twna/` 內的 twna 另存頁 → 從住宅 IP 抓 jct/tnpa → commit push
 
-GitHub Actions watchdog（每週一台北 09:00）
+GitHub Actions watchdog（每天台北 09:13）
   → 完全離線檢查 jct/tnpa/twna 新鮮度；逾期就讓 Actions 亮紅
 ```
 
@@ -45,8 +45,8 @@ pytest -q
 
 | 模式 | 來源 | 執行方式 |
 |---|---|---|
-| `cloud` | nuna、critical、psy、tnna、tnma、ni、ahqroc、hospice、itri | 週日 15:00 GitHub Actions 執行 `scripts/update.py --profile cloud` |
-| `local` | jct、tnpa | 週日 16:00 Mac 住宅 IP 執行；雲端 workflow 不會嘗試 |
+| `cloud` | nuna、critical、psy、tnna、tnma、ni、ahqroc、hospice、itri | 每天 15:17 GitHub Actions 執行 `scripts/update.py --profile cloud` |
+| `local` | jct、tnpa | 每天 16:00 Mac 住宅 IP 執行；雲端 workflow 不會嘗試 |
 | `manual` | twna | 程式只讀人工另存後的本機 JSON，永不自動請求 TWNA |
 
 指定模式可用 `.venv/bin/python scripts/update.py --profile cloud|local|manual`；診斷單一來源則用
@@ -249,13 +249,13 @@ launchctl print "gui/$(id -u)/com.lin.twna-reminder"
 2. GitHub 網頁 → repo → Settings → Pages → Build and deployment：
    Source 選「Deploy from a branch」，Branch 選 `main`、資料夾 `/(root)`，存檔。
 3. 一到兩分鐘後網站上線：`https://<你的帳號>.github.io/<repo名>/`。
-4. 啟用自動更新：repo → Actions → 啟用 workflows → 選「update-events」→「Run workflow」手動跑第一次，確認流程綠燈（或亮紅時查頁尾與 log）。之後每週日台北 15:00 自動執行。
+4. 啟用自動更新：repo → Actions → 啟用 workflows → 選「update-events」→「Run workflow」手動跑第一次，確認流程綠燈（或亮紅時查頁尾與 log）。之後每天台北 15:17 自動執行。
 5. 上線前清掉示範資料：`config/site.py` 把 `demo` 的 `enabled` 改 `False`，執行
    `python3 scripts/update.py --reset`，確認頁面只剩真實來源後 commit push。
 
 ## 本機更新（一個指令）
 
-雲端每週日 15:00 只更新 9 家 `cloud` 來源，不執行會擋 GitHub 機房 IP 的醫策會 jct、
+雲端每天 15:17 只更新 9 家 `cloud` 來源，不執行會擋 GitHub 機房 IP 的醫策會 jct、
 專科護理師學會 tnpa（LESSONS L-2026-07-10-008），也不執行 robots 禁爬的 twna。
 後三家的本機資料由**同一個指令**補完：
 
@@ -266,14 +266,15 @@ launchctl print "gui/$(id -u)/com.lin.twna-reminder"
 它會自動做完全部：收雲端最新結果（git pull）→ 掃專案的 `download-twna/` 匯入 twna 另存頁 →
 補爬 jct＋tnpa → 重建 → commit → push → 桌面通知。同一天兩家都已成功抓過就不重爬；
 隔天執行可再次抓取，符合課程可能每日更新的需求。只有明知需要重驗時才用 `--force`。
-工作區有非資料檔的改動會先中止，保護你改到一半的東西。
+工作區有非資料檔的改動會先中止，保護你改到一半的東西。同時只會有一份實例執行
+（flock 單實例鎖）：儀表板捷徑、launchd 排程與手動點擊就算撞在一起也不會互相打架。
 
 **Finder／Dock 一鍵執行**：在 Finder 雙擊 `scripts/run_local_update.command`，或把它拖到
 Dock 右側的檔案區，之後點一下即可執行同一套流程；同一天已成功的來源仍由
 `local_update.py` 判斷並跳過，不會重複抓取。完整輸出會附加到
 `~/Library/Logs/nursing-course-update.log`，方便事後查看。
 
-**自動化**：每週日 16:00 由 launchd 自動跑同一支（接在雲端週更之後，pull 恰好收到最新）。
+**自動化**：每天 16:00 由 launchd 自動跑同一支（接在雲端每日更新之後，pull 恰好收到最新）。
 安裝一次即可：
 
 ```bash
@@ -281,17 +282,24 @@ cp scripts/launchd/com.lin.nursing-local-update.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.lin.nursing-local-update.plist
 ```
 
+> **排程實際執行的是內建碟的另一份 clone**：`~/Projects/nursing-coursetw-lin`（launchd 對
+> 外接卷宗有 TCC／EX_CONFIG 限制，見全域 LESSONS L-2026-07-10-005、L-2026-07-12-003），
+> 與外接 SSD 的開發 clone 靠 GitHub 同步。開發 clone 改完 code **push 後**，排程 clone 會在
+> 每次執行開頭 `git pull --ff-only` 收到；若改了 plist 或要立即生效，記得到那份 clone pull
+> 並重新 bootstrap plist。
+
 - 看執行紀錄：`tail /tmp/nursing-local-update.log`
 - 移除：`launchctl unload ~/Library/LaunchAgents/com.lin.nursing-local-update.plist && rm ~/Library/LaunchAgents/com.lin.nursing-local-update.plist`
-- 排程時 Mac 只是睡眠會在喚醒後補跑；完全關機錯過不保證補跑，週一 watchdog 會亮紅提醒改按一鍵。
-- twna 即時監看（方式三）為選配：另存後想「立刻」上站才需要；平常靠本節的週排程即可。
+- 排程時 Mac 只是睡眠會在喚醒後補跑；完全關機錯過不保證補跑，每天 09:13 的 watchdog 會亮紅提醒改按一鍵。
+- twna 即時監看（方式三）為選配：另存後想「立刻」上站才需要；平常靠本節的每日排程即可。
 
-### 週一 09:00 失聯偵測
+### 每天 09:13 失聯偵測
 
-`.github/workflows/freshness-watchdog.yml` 每週一台北 09:00 執行
+`.github/workflows/freshness-watchdog.yml` 每天台北 09:13 執行
 `scripts/check_freshness.py`。它只讀 repo 裡的 `data/status.json` 與 `data/manual_twna.json`，
-不載入 parser、不連來源網站；jct/tnpa 與 twna 必須在剛開始的星期日更新週期內成功，否則
-（含缺漏、格式錯誤或時間位於未來）Actions 會亮紅。也可在 Actions 頁手動 Run workflow。
+不載入 parser、不連來源網站；jct/tnpa 最近成功日不得超過 2 天（容忍一次沒開機），twna
+人工維護不得超過 8 天（週節奏＋1 天寬限），否則（含缺漏、格式錯誤或時間位於未來）
+Actions 會亮紅。也可在 Actions 頁手動 Run workflow。
 
 ### 本機更新失敗時
 
@@ -317,7 +325,7 @@ Actions 亮紅時：開 repo → Actions → 點該次執行看哪個來源失�
 
 ## 爬蟲禮貌守則（請遵守）
 
-- 排程每週最多一次；手動測試時勿反覆狂打。
+- 排程每天最多一次（2026-07-26 隨日更需求由每週放寬，Lin 核准）；手動測試時勿反覆狂打。
 - 所有請求一律走 `base.download()`：內建 1 至 2.5 秒隨機延遲與表明身分的 User-Agent（請到 `SCRAPE["user_agent"]` 填上聯絡方式）。極少數老憑證網站改走 `base.download_curl()`（同樣完整驗證憑證，見該函式 docstring）；**禁止**用 verify=False 關閉憑證驗證。
 - 只抓公開、免登入頁面；需登入的來源不爬，改人工維護。
 - 每張活動卡保留回連原始報名頁，不轉載全文，資料著作權歸各學會。
@@ -338,7 +346,7 @@ data/events.json         活動資料（單一事實來源，自動產生）
 data/status.json         來源健康狀態（自動產生）
 index.html               發布頁（自動產生，勿手改）
 tests/                   離線測試（fixture 驅動，不連網）
-.github/workflows/update.yml  每週自動更新流程
+.github/workflows/update.yml  每日自動更新流程
 docs/ARCHITECTURE.md     逆向拆解報告與設計決策
 ```
 

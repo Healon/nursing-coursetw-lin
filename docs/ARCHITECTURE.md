@@ -12,7 +12,7 @@
 Taiwan_Neurology 看起來像有後台的資料庫網站，實際上是一條**零後端的靜態流水線**：
 
 ```
-GitHub Actions cron（每週日 07:00 UTC＝台北 15:00）
+GitHub Actions cron（每天 07:17 UTC＝台北 15:17）
   → 一支 Python 爬蟲（純標準庫＋系統 curl，53KB 單檔）
   → 爬 13 個神經科相關學會網站的公開活動頁
   → 去重、分類、正規化
@@ -152,7 +152,7 @@ GitHub Actions cron（每週日 07:00 UTC＝台北 15:00）
 | `scripts/update.py` | pipeline 入口與失敗語意的實作（來源失敗不退出、系統失敗必退出） |
 | `scripts/scrape.py` | 除錯用 CLI：單獨跑某來源看結果，不動資料檔 |
 | `templates/index.html.tpl` | 版面與前端互動（搜尋／篩選／排序／月份分組／行事曆連結／警示呈現） |
-| `.github/workflows/update.yml` | 每週排程：update → diff-gated commit → status --check |
+| `.github/workflows/update.yml` | 每日排程：update → diff-gated commit → status --check |
 
 ## 7. 沿用與捨棄的參考站行為
 
