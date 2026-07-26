@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-07-26T09:29:13+08:00",
+  "generated": "2026-07-26T09:40:10+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -707,7 +707,7 @@
    "ondemand": false,
    "region": "south",
    "ctext": "公務人員終身學習時數 3 小時",
-   "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1923"
+   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1923"
   },
   {
    "date": "2026-08-04",
@@ -1162,7 +1162,7 @@
    "ondemand": false,
    "region": "online",
    "ctext": "公務人員終身學習時數 3 小時",
-   "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1924"
+   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1924"
   },
   {
    "date": "2026-08-17",
@@ -1663,7 +1663,7 @@
    "ondemand": false,
    "region": "north",
    "ctext": "公務人員終身學習時數 5 小時",
-   "url": "https://www.tnna.org.tw/home/study_content.asp?WC_ID=1925"
+   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1925"
   },
   {
    "date": "2026-08-31",
