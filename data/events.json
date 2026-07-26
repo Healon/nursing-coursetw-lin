@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-07-26T09:40:10+08:00",
+  "generated": "2026-07-26T09:24:48+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -793,6 +793,19 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-08-06",
+   "title": "Power BI Desktop 大數據分析實務與應用",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/3DEB4783-098A-4A8C-A331-FE9949B666BF"
   },
   {
    "date": "2026-08-06",
@@ -2425,6 +2438,32 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/BC5E0A4A-403C-4FCC-A72D-F00AE441BB79"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Claude Skills工作流程自動化實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/82A8AA0F-5F3F-4380-90C7-7E22062EE6BF"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "地端LLM部署與應用程式開發實務",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/E758BCCB-07A2-423C-BBAD-DCF8DE670197"
   },
   {
    "date": "2026-10-24",
