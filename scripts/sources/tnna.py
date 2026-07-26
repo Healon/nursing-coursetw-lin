@@ -3,8 +3,10 @@ Input:  base.download() 取得的列表頁與各詳情頁 HTML（study_content.a
 Output: fetch() -> list[dict]；parse_list()／parse_detail() 為純函式，
         供 tests/fixtures/tnna_list.html 與 tnna_detail.html 離線測試使用。
 
-頁面結構（2026-07-10 實測）：
-- 列表頁 https://www.tnna.org.tw/home/study_list.asp：每筆活動為一張卡片
+頁面結構（2026-07-10 實測；2026-07-26 站方把整站由 /home/ 搬遷至 /home/v2/，舊路徑回 404
+——07-19 起雲端因此抓 0 筆。新舊卡片與詳情模板經逐元素比對（標籤＋class 序列）結構完全不變，
+故只改 LIST_URL 跟進新路徑；詳情頁 URL 是列表頁相對連結經 urljoin 解析，會自動跟隨）：
+- 列表頁 https://www.tnna.org.tw/home/v2/study_list.asp：每筆活動為一張卡片
   <a href="study_content.asp?WC_ID=<id>" class="block p-6"><h3>標題</h3>...
   <span>舉辦日期：YYYY/M/D</span>...<span class="truncate">地點</span>...</a>。
   與 critical.py 不同的是，列表頁本身已含日期（西元，非民國）與地點，不必等詳情頁才知道；
@@ -34,7 +36,7 @@ from bs4 import BeautifulSoup
 
 from scripts.sources import base
 
-LIST_URL = "https://www.tnna.org.tw/home/study_list.asp"
+LIST_URL = "https://www.tnna.org.tw/home/v2/study_list.asp"
 
 MAX_DETAIL_PAGES = 12
 STALE_DAYS = 7

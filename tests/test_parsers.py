@@ -268,7 +268,7 @@ class TestTnnaSource:
         for cand in candidates:
             assert cand["id"].isdigit()
             assert cand["title"]
-            assert cand["url"] == f"https://www.tnna.org.tw/home/study_content.asp?WC_ID={cand['id']}"
+            assert cand["url"] == f"https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID={cand['id']}"
 
     def test_parse_list_date_from_gregorian_slash(self):
         candidates = {c["id"]: c for c in tnna.parse_list(_fixture("tnna_list.html"))}

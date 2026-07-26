@@ -129,10 +129,11 @@ SOURCES = {
     },
     "tnna": {
         "label": "臺灣腎臟護理學會",
-        "url": "https://www.tnna.org.tw/home/study_list.asp",
+        "url": "https://www.tnna.org.tw/home/v2/study_list.asp",
         "enabled": True,
         "execution": "cloud",
-        "note": "已驗證可抓（2026-07-10 實測列表 10 筆卡片式，含日期／地點；詳情頁 study_content.asp?WC_ID= 補積分，免登入）。勿與腎臟醫學會 tsn.org.tw 混淆。",
+        "note": "已驗證可抓（2026-07-10 實測列表 10 筆卡片式，含日期／地點；詳情頁 study_content.asp?WC_ID= 補積分，免登入）。勿與腎臟醫學會 tsn.org.tw 混淆。"
+        "2026-07-26 站方整站搬遷 /home/ → /home/v2/（舊 URL 404，07-19 起雲端抓 0 筆），已改新路徑跟進，模板結構不變。",
     },
     "tnma": {
         "label": "臺灣護理管理學會",

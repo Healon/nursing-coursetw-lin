@@ -2,13 +2,14 @@
 <html lang="zh-Hant">
 <head><meta charset="utf-8"><title>研習會 - 臺灣腎臟護理學會</title></head>
 <body>
-<!-- 節錄自 https://www.tnna.org.tw/home/study_list.asp 真實頁面（研習會列表卡片），
+<!-- 節錄自 https://www.tnna.org.tw/home/v2/study_list.asp 真實頁面（研習會列表卡片），
      保留真實 class 與 DOM 結構，原始頁面共 10 張卡片，此處裁到 4 張：
      WC_ID=1918／1925 為「今天 7 天前」以後的近期活動（fetch() 會進詳情頁補積分，
      1918 對應 tnna_detail.html）；WC_ID=1922／1914 分別為過期 19 天與過期超過三個月的
      候選，用來驗證 parse_list() 仍會正確解析出這些候選（日期／地點／標題），但 fetch()
      的「跳過明顯過期候選不進詳情」節流邏輯要另外用 fetch() 自身的單元測試/整合觀察，
-     parse_list() 本身不做時間窗判斷。抓取日期 2026-07-10。 -->
+     parse_list() 本身不做時間窗判斷。抓取日期 2026-07-10；2026-07-26 站方整站搬遷至 /home/v2/（舊路徑 404），
+     經逐元素比對（標籤＋class 序列）新站卡片模板結構不變，節錄內容沿用原快照，僅更新本註解的來源 URL。 -->
 <section class="py-12 sm:py-16">
 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 <div class="max-w-5xl mx-auto">
