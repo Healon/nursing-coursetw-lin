@@ -1,162 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-20T01:37:07+08:00",
+  "generated": "2026-07-26T09:29:13+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-13",
-   "title": "115年醫院病人安全年度目標推廣課程(南部場)",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BcmtYZEJ5paFu2m2XHYwJ1tzMuQYj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-14",
-   "title": "115年醫療品質學院實作課程-風險管理工具-FMEA工作坊",
-   "location": "醫策會901會議室",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rcj%2FNZdavcOFu2m2XHYwJ1tzMe0Wj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-14",
-   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (中區) -中慈場",
-   "location": "台中慈濟醫院大愛講堂",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "teaching",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-14",
-   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (中區，地點變更) -中慈場",
-   "location": "台中慈濟醫院大愛講堂",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "teaching",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-14",
-   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略(中區-醫院推薦場) -中慈場",
-   "location": "台中慈濟醫院階梯教室",
-   "credits": {
-    "pro": 7
-   },
-   "cat": "teaching",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-15",
-   "title": "115年數位醫療危害病人安全之相關風險管控課程(實體場)",
-   "location": "【實體】醫策會901會議室",
-   "credits": {},
-   "cat": "tech",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=q8j%2BYs0MssGFu2m2XHYwJ1tzMewQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-15",
-   "title": "【線上社團課程】NPower專注力社群-好好吃，維持健康與窈窕",
-   "location": "ZOOM線上會議室",
-   "credits": {
-    "np": 0.6
-   },
-   "cat": "other",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6250&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-07-16",
-   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略(南區-醫院推薦場) -高醫岡山醫院",
-   "location": "高雄醫學大學附設高醫岡山醫院11樓第一會議室",
-   "credits": {
-    "pro": 7
-   },
-   "cat": "teaching",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-16",
-   "title": "臨床教師的留任藝術CBME實務、AI創新與帶領新生代護理人的關鍵策略",
-   "location": "財團法人私立高雄醫學大學附設高醫岡山醫院 第一會議室",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-07-17",
-   "title": "AI數位互動服務設計與創新應用工作坊(7/17、7/31)",
-   "location": "活動場次：全程 2026/07/17 ～ 2026/07/31",
-   "credits": {},
-   "cat": "tech",
-   "src": "ni",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "本課程擬申請護理人員繼續教育積分。",
-   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3545"
-  },
-  {
-   "date": "2026-07-17",
-   "title": "疾病照護品質認證經驗分享研討會(線上視訊課程)",
-   "location": "線上視訊 請自備電腦、手機或平板,下載並安裝視訊軟體。",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-07-20",
    "title": "115 年診所病人安全年度目標推廣課程 (實體課程及視訊課程)-115 年診所病人安全年度目標推廣課程",
@@ -180,7 +27,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FpX3NpNcvcmFu2m2XHYwJ1tzMewVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -193,7 +40,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "醫策會上課時數證明、公務人力時數、護理繼續教育訓練積分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJz8ZZBZs5OFu2m2XHYwJ1tzMe0Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -206,7 +53,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "無",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -1707,6 +1554,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/B44AC5A6-5B52-4702-B1A3-DEC321BB138E"
   },
   {
+   "date": "2026-08-27",
+   "title": "【線上直播】心腎保護：從控制到預防的全面屏障",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6260&pageno1&continue=Y"
+  },
+  {
    "date": "2026-08-28",
    "title": "Claude實戰班： 從自動化辦公到打造專屬AI工具",
    "location": "新竹",
@@ -2563,6 +2425,21 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/BC5E0A4A-403C-4FCC-A72D-F00AE441BB79"
+  },
+  {
+   "date": "2026-10-24",
+   "title": "【實體】2026專師傷口衛生沉浸式工作坊｜萬芳醫院場",
+   "location": "萬芳醫院六樓國際會議廳",
+   "credits": {
+    "np": 3.2
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6245&pageno1&continue=Y"
   }
  ]
 }
