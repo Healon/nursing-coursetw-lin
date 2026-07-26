@@ -282,11 +282,11 @@ cp scripts/launchd/com.lin.nursing-local-update.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.lin.nursing-local-update.plist
 ```
 
-> **排程實際執行的是內建碟的另一份 clone**：`~/Projects/nursing-coursetw-lin`（launchd 對
-> 外接卷宗有 TCC／EX_CONFIG 限制，見全域 LESSONS L-2026-07-10-005、L-2026-07-12-003），
-> 與外接 SSD 的開發 clone 靠 GitHub 同步。開發 clone 改完 code **push 後**，排程 clone 會在
-> 每次執行開頭 `git pull --ff-only` 收到；若改了 plist 或要立即生效，記得到那份 clone pull
-> 並重新 bootstrap plist。
+> **路徑事實（2026-07-26 以 inode 核實）**：`~/Projects` 是指向 `/Volumes/MAC SSD/dev/Projects`
+> 的 symlink，所以 plist 裡的 `/Users/healon/Projects/nursing-coursetw-lin` 與外接 SSD 的開發
+> 目錄是**同一份工作樹**，改完 code 不需要第二份 pull。代價是排程依賴外接 SSD 保持掛載；
+> 若日後改回「內建碟獨立 clone」的雙份架構，記得同步改寫本段與 plist 路徑。改了 plist
+> 本體記得重新 `cp` 到 `~/Library/LaunchAgents` 並 bootout＋bootstrap 才生效。
 
 - 看執行紀錄：`tail /tmp/nursing-local-update.log`
 - 移除：`launchctl unload ~/Library/LaunchAgents/com.lin.nursing-local-update.plist && rm ~/Library/LaunchAgents/com.lin.nursing-local-update.plist`
