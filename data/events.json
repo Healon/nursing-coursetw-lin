@@ -1,61 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-27T10:52:02+00:00",
+  "generated": "2026-07-28T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-20",
-   "title": "115 年診所病人安全年度目標推廣課程 (實體課程及視訊課程)-115 年診所病人安全年度目標推廣課程",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FpX3NpNcvcmFu2m2XHYwJ1tzMewVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-20",
-   "title": "115 年診所病人安全年度目標推廣課程 (實體課程及視訊課程)-115年診所病人安全年度目標推廣課程-視訊報名",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FpX3NpNcvcmFu2m2XHYwJ1tzMewVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-20",
-   "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-數據分析解讀與初階實作",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "醫策會上課時數證明、公務人力時數、護理繼續教育訓練積分",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJz8ZZBZs5OFu2m2XHYwJ1tzMe0Rj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-20",
-   "title": "115年度臨床醫事人員培訓計畫教學成效指標說明會-115年度臨床醫事人員培訓計畫教學成效指標說明會 (第1場)",
-   "location": "",
-   "credits": {},
-   "cat": "teaching",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "無",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
   {
    "date": "2026-07-22",
    "title": "115年度臨床醫事人員培訓計畫教學成效指標說明會-115年度臨床醫事人員培訓計畫教學成效指標說明會 (第2場)",
@@ -66,7 +14,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "無",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -339,7 +287,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -352,7 +300,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -458,7 +406,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "台灣感染症醫學會學分（申請中）、社團法人台灣感染管制學會學分（申請中）及本會醫療品質學分（可申請「全民健保醫院總額品質保證保留款實施方案」之學分）",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
