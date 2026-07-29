@@ -1,48 +1,48 @@
 {
-  "generated": "2026-07-29T16:00:37+08:00",
-  "overall": "partial",
+  "generated": "2026-07-29T09:50:14+00:00",
+  "overall": "ok",
   "sources": {
     "nuna": {
       "status": "ok",
       "count": 24,
-      "last_success": "2026-07-28",
+      "last_success": "2026-07-29",
       "message": ""
     },
     "critical": {
       "status": "ok",
       "count": 8,
-      "last_success": "2026-07-28",
+      "last_success": "2026-07-29",
       "message": ""
     },
     "psy": {
       "status": "ok",
-      "count": 2,
-      "last_success": "2026-07-28",
+      "count": 1,
+      "last_success": "2026-07-29",
       "message": ""
     },
     "tnna": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-07-28",
+      "last_success": "2026-07-29",
       "message": ""
     },
     "tnma": {
       "status": "ok",
       "count": 50,
-      "last_success": "2026-07-28",
+      "last_success": "2026-07-29",
       "message": ""
     },
     "ni": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-07-28",
+      "last_success": "2026-07-29",
       "message": ""
     },
     "ahqroc": {
-      "status": "error",
-      "count": 0,
-      "last_success": "2026-07-27",
-      "message": "ConnectTimeout: HTTPSConnectionPool(host='www.ahqroc.org.tw', port=443): Max retries exceeded with url: /Class.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ahqroc.org.tw', port=443) at 0x7f3b588f6720>, 'Connection to www.ahqroc.org.tw timed out. (connect timeout=30)'))"
+      "status": "ok",
+      "count": 8,
+      "last_success": "2026-07-29",
+      "message": ""
     },
     "jct": {
       "status": "ok",
@@ -53,7 +53,7 @@
     "hospice": {
       "status": "ok",
       "count": 5,
-      "last_success": "2026-07-28",
+      "last_success": "2026-07-29",
       "message": ""
     },
     "twna": {
@@ -71,7 +71,7 @@
     "itri": {
       "status": "ok",
       "count": 66,
-      "last_success": "2026-07-28",
+      "last_success": "2026-07-29",
       "message": ""
     }
   }

@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-07-29T16:00:37+08:00",
+  "generated": "2026-07-29T09:50:14+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -601,6 +601,21 @@
   },
   {
    "date": "2026-08-01",
+   "title": "※體位管理與慢性病的健康識能精準實踐",
+   "location": "財團法人張榮發基金會國際會議中心1003會議廳",
+   "credits": {
+    "quality": 1
+   },
+   "cat": "admin",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260801"
+  },
+  {
+   "date": "2026-08-01",
    "title": "【⏰延期更新】第八屆第一次會員代表大會暨學術研討會-當生命不以斷食作答：如何陪伴病人走向善終",
    "location": "",
    "credits": {
@@ -656,6 +671,21 @@
    "region": "south",
    "ctext": "公務人員終身學習時數 3 小時",
    "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1923"
+  },
+  {
+   "date": "2026-08-03",
+   "title": "※115年根本原因分析工作坊",
+   "location": "三軍總醫院OSCE擬真教室",
+   "credits": {
+    "quality": 1.5
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260803"
   },
   {
    "date": "2026-08-04",
@@ -1544,6 +1574,21 @@
   },
   {
    "date": "2026-08-28",
+   "title": "※PDCA於臨床應用實作工作坊",
+   "location": "第二會議室",
+   "credits": {
+    "quality": 1.5
+   },
+   "cat": "clinical",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260828"
+  },
+  {
+   "date": "2026-08-28",
    "title": "提升管路照護安全工作坊(南區)",
    "location": "高雄榮民總醫院 高齡醫學大樓地下一樓第十會議室",
    "credits": {},
@@ -1745,6 +1790,21 @@
    "region": "north",
    "ctext": "時數 350 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/68E8BACF-E0A6-4238-9A49-C128F4DD085C"
+  },
+  {
+   "date": "2026-09-03",
+   "title": "※以病人為中心談病人權益",
+   "location": "大林慈濟醫院 5樓 大講堂",
+   "credits": {
+    "quality": 0.5
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260903"
   },
   {
    "date": "2026-09-03",
@@ -2442,6 +2502,35 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.tnpa.org.tw/events/content.php?id=6245&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-10-29",
+   "title": "115年度急重症CKRT照護研習會(中區)",
+   "location": "彰化基督教醫院二期十一樓連瑪玉學術講堂",
+   "credits": {
+    "pro": 6,
+    "np": 6
+   },
+   "cat": "clinical",
+   "src": "critical",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "",
+   "url": "https://www.taccn.org.tw/activity/detail/417"
+  },
+  {
+   "date": "2026-10-29",
+   "title": "數智化轉型首部曲-從預測型AI到生成和決策型AI：圖神經網路與深度生成建模Python實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/12E14F15-610B-421F-8CB7-338BE6640E0C"
   }
  ]
 }
