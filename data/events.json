@@ -1,63 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-29T09:50:14+00:00",
+  "generated": "2026-07-30T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-22",
-   "title": "115年度臨床醫事人員培訓計畫教學成效指標說明會-115年度臨床醫事人員培訓計畫教學成效指標說明會 (第2場)",
-   "location": "",
-   "credits": {},
-   "cat": "teaching",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "無",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJ%2BuZZYNssWFu2m2XHYwJ1tzMewSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-22",
-   "title": "Vibe Coding × AI程式開發-進階實戰班（規格驅動開發與AI協作）",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/C99365DE-C60E-4CC9-9492-2FA19CE8F206"
-  },
-  {
-   "date": "2026-07-22",
-   "title": "【免費課程】行政與財務流程AI自動化： 打造高效能行政財務AI部隊-臺北班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 30 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/99D3CFD7-404B-4EEA-932A-A85677163D2E"
-  },
-  {
-   "date": "2026-07-22",
-   "title": "【線上直播】心痛該怎麼辦：該如何治療心絞痛",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "other",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6253&pageno1&continue=Y"
-  },
   {
    "date": "2026-07-23",
    "title": "115年「護理倫理暨法律研討會」 -北區(實體場)",
@@ -419,7 +365,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "台灣感染症醫學會學分（申請中）、社團法人台灣感染管制學會學分（申請中）及本會醫療品質學分（可申請「全民健保醫院總額品質保證保留款實施方案」之學分）",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2B8j8MsNZs8eFu2m2XHYwJ1tzMe8Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
   },
   {
@@ -2142,6 +2088,21 @@
   },
   {
    "date": "2026-09-16",
+   "title": "【線上社團課程】NPower專注力社群-精油梳心~理出好心情",
+   "location": "ZOOM線上會議室",
+   "credits": {
+    "np": 0.6
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6261&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-09-16",
    "title": "非技術人員生成式AI辦公室應用實務班",
    "location": "台北",
    "credits": {},
@@ -2217,6 +2178,19 @@
    "region": "tbd",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-09-22",
+   "title": "115年台灣臨床成效指標（TCPI）感染照護指標標竿暨交流會",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZ%2BsM8JY4MiFu2m2XHYwJ1tzMe4Qj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDj"
   },
   {
    "date": "2026-09-22",
