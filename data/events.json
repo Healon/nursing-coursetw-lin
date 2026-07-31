@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-07-31T16:00:39+08:00",
+  "generated": "2026-07-31T10:00:11+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -2194,6 +2194,22 @@
   },
   {
    "date": "2026-10-05",
+   "title": "台灣急診五級檢傷指導員訓練課程",
+   "location": "林口長庚紀念醫院臨床技能訓練中心(兒童醫療大樓L棟B2)",
+   "credits": {
+    "pro": 6,
+    "np": 6
+   },
+   "cat": "other",
+   "src": "critical",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.taccn.org.tw/activity/detail/425"
+  },
+  {
+   "date": "2026-10-05",
    "title": "數智化轉型二部曲-智能體AI(Agent AI)基礎：Python強化學習的決策原理與應用",
    "location": "台北",
    "credits": {},
@@ -2233,6 +2249,19 @@
    "region": "south",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/416"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "AI應用導入規劃認證班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 38 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/23370359-F598-42C1-91B0-6C9F9AD16BE4"
   },
   {
    "date": "2026-10-16",
