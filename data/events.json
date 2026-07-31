@@ -1,159 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-30T09:42:47+00:00",
+  "generated": "2026-07-31T16:00:39+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-23",
-   "title": "115年「護理倫理暨法律研討會」 -北區(實體場)",
-   "location": "亞東紀念醫院南棟14樓國際會議廳",
-   "credits": {
-    "pro": 1.8,
-    "law": 5.4
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "含性別議題課程",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "115年「護理倫理暨法律研討會」 -東區(視訊場，仍須至指定教室上課)",
-   "location": "門諾醫院恩慈樓4樓401會議室",
-   "credits": {
-    "pro": 1.8,
-    "law": 5.4
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": true,
-   "ondemand": false,
-   "region": "east",
-   "ctext": "含性別議題課程",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "115年「護理倫理暨法律研討會」 -澎湖區(視訊場，仍須至指定教室上課)",
-   "location": "三軍總醫院澎湖分院EMT教室(舊院區二樓訓練教室）",
-   "credits": {
-    "pro": 1.8,
-    "law": 5.4
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": true,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "含性別議題課程",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "115年「護理倫理暨法律研討會」 -連江區(視訊場，仍須至指定教室上課)",
-   "location": "連江縣立醫院3樓講堂",
-   "credits": {
-    "pro": 1.8,
-    "law": 5.4
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "含性別議題課程",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "115年「護理倫理暨法律研討會」 -金門區(視訊場，仍須至指定教室上課)",
-   "location": "衛生福利部金門醫院8樓視訊會議室",
-   "credits": {
-    "pro": 1.8,
-    "law": 5.4
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "含性別議題課程",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "115年度急重症護理繼續教育視訊直播講座(五)災難護理",
-   "location": "Google meet視訊直播",
-   "credits": {
-    "pro": 3,
-    "np": 3
-   },
-   "cat": "clinical",
-   "src": "critical",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/410"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "115年度護理資訊進階系列課程 【生成式AI × 護理數據分析與教學研究創新實戰】",
-   "location": "高雄長庚紀念醫院質子中心二樓多功能教室",
-   "credits": {},
-   "cat": "teaching",
-   "src": "ni",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
-   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3503"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "RAG向量資料庫與多模態AI應用工作坊",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 20 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/177F60F8-3485-438D-8C10-03785DECF5B9"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "「住院整合照護服務品質與人力運用效益研析暨輔導計畫」期末成果發表會 -實體場",
-   "location": "台大兒醫大樓B1講堂",
-   "credits": {
-    "pro": 3.8
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-23",
-   "title": "醫照整合工作坊(北區)",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-07-24",
    "title": "護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(一)",
@@ -672,7 +522,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqM5MM48eFu2m2XHYwJ1tzMe8Vj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
