@@ -1,52 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-31T10:00:11+00:00",
+  "generated": "2026-08-01T16:00:37+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-24",
-   "title": "護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(一)",
-   "location": "永和耕莘醫院住院大樓12樓國際會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-24",
-   "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(一)",
-   "location": "永和耕莘醫院住院大樓12樓國際會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-07-24",
-   "title": "零程式打造智慧流程自動化-微軟PL-900考證輔導班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/0F944D6F-A481-4754-BB34-3FA8D420D6DA"
-  },
   {
    "date": "2026-07-25",
    "title": "流感疫苗教育訓練(中區)",
@@ -753,14 +710,14 @@
   {
    "date": "2026-08-12",
    "title": "115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會(視訊場)-115年台灣臨床成效指標(TCPI)精神照護指標交流暨標竿學習營(視訊場)",
-   "location": "",
+   "location": "視訊課程（課程連結待報名截止，將以email方式通知）",
    "credits": {},
    "cat": "clinical",
    "src": "jct",
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會上課時數證明、公務人力時數、護理人員繼續教育訓練積分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8Zv8YZQN4MKFu2m2XHYwJ1tzMe8Qj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
@@ -1111,7 +1068,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "醫策會上課時數證明、公務人力時數、品質學院學分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
@@ -1176,7 +1133,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "醫策會上課時數證明、公務人力時數、品質學院學分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
   },
   {
@@ -2032,14 +1989,14 @@
   {
    "date": "2026-09-22",
    "title": "115年台灣臨床成效指標（TCPI）感染照護指標標竿暨交流會",
-   "location": "",
+   "location": "國立臺灣大學醫學院附設醫院新竹臺大分院新竹醫院醫療大樓6樓多媒體會議室",
    "credits": {},
    "cat": "clinical",
    "src": "jct",
    "online": false,
    "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
+   "region": "north",
+   "ctext": "醫策會上課時數證明、公務人力時數、護理人員繼續教育訓練積分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZ%2BsM8JY4MiFu2m2XHYwJ1tzMe4Qj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDj"
   },
   {
