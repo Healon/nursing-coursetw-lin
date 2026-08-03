@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-03T16:00:35+08:00",
+  "generated": "2026-08-03T10:52:53+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -2315,6 +2315,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/12E14F15-610B-421F-8CB7-338BE6640E0C"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "廠區智慧AI監測與城市基礎設施數位化養成班（高雄班）",
+   "location": "高雄",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 234 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/8E0CCAB8-F7D4-4DE6-8A78-C0D71F9AAF7E"
   }
  ]
 }
