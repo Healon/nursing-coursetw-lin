@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-04T16:00:34+08:00",
+  "generated": "2026-08-04T09:51:28+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1318,6 +1318,21 @@
   },
   {
    "date": "2026-08-29",
+   "title": "※2026/8/29「115年會員大會暨學術研討會」(論文錄取)",
+   "location": "國防醫學院三樓",
+   "credits": {
+    "quality": 10
+   },
+   "cat": "research",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20260829-1"
+  },
+  {
+   "date": "2026-08-29",
    "title": "※2026/8/29「115年會員大會暨學術研討會」(論文錄取)(錄取後才開放)",
    "location": "國防醫學院三樓",
    "credits": {
@@ -1550,6 +1565,36 @@
    "region": "central",
    "ctext": "必修課程",
    "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/b5487a4af37a4bb880a1e2d8c55fb19c"
+  },
+  {
+   "date": "2026-09-05",
+   "title": "❤️【ZOOM同步視訊】❤️從「心」出發，讓幸福成為護理的力量-【護理職場幸福力分享會】",
+   "location": "",
+   "credits": {
+    "pro": 12
+   },
+   "cat": "clinical",
+   "src": "hospice",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "學術研討",
+   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/380dc62e92834f1999011879bfd2e837"
+  },
+  {
+   "date": "2026-09-05",
+   "title": "❤️【實體場】❤️從「心」出發，讓幸福成為護理的力量-【護理職場幸福力分享會】",
+   "location": "",
+   "credits": {
+    "pro": 12
+   },
+   "cat": "clinical",
+   "src": "hospice",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "學術研討",
+   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/3c8cf5b37aea401295505fb646fe571a"
   },
   {
    "date": "2026-09-05",
