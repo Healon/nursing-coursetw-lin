@@ -1,48 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-03T10:52:53+00:00",
+  "generated": "2026-08-04T16:00:34+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-27",
-   "title": "115 年醫院病人安全年度目標推廣課程(實體課程及視訊課程)-115 年醫院病人安全年度目標推廣課程",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-27",
-   "title": "115 年醫院病人安全年度目標推廣課程(實體課程及視訊課程)-115年醫院病人安全年度目標推廣課程-視訊報名",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rpj3NJZa5MCFu2m2XHYwJ1tzMewXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDt"
-  },
-  {
-   "date": "2026-07-27",
-   "title": "AI工具輕鬆入門：提升職場效率與決策力-台北班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/3CFD8FAF-75C4-4937-BFDA-7A928087F6BE"
-  },
   {
    "date": "2026-07-28",
    "title": "NotebookLM AI工作助理實戰",
