@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-05T16:00:37+08:00",
+  "generated": "2026-08-05T09:49:45+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -801,6 +801,19 @@
    "region": "online",
    "ctext": "公務人員終身學習時數 3 小時",
    "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1924"
+  },
+  {
+   "date": "2026-08-16",
+   "title": "test test -",
+   "location": "12313",
+   "credits": {},
+   "cat": "other",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-08-17",
@@ -2144,6 +2157,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/85B98699-B31F-4BBD-99D1-D18A0FEC27C2"
   },
   {
+   "date": "2026-10-12",
+   "title": "【產業新尖兵計畫】廠區智慧AI監測與城市基礎設施數位化養成班（台中班）",
+   "location": "台中",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "時數 234 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B9439DF6-0848-4DC7-ABE0-9E94F793C0CD"
+  },
+  {
    "date": "2026-10-16",
    "title": "115年度急重症CKRT照護研習會(南區)",
    "location": "高雄醫學大學附設中和紀念醫院啟川大樓六樓第二講堂。",
@@ -2306,6 +2332,32 @@
    "region": "south",
    "ctext": "時數 234 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/8E0CCAB8-F7D4-4DE6-8A78-C0D71F9AAF7E"
+  },
+  {
+   "date": "2026-11-05",
+   "title": "AI數據分析產業應用養成班(第8梯次)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 364 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B5484C11-75DC-41A4-BAD7-95F8994FB14E"
+  },
+  {
+   "date": "2026-11-05",
+   "title": "低代碼資料建模與決策優化實戰",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/90D6D276-CC7C-4E94-91CE-0547D0965BD3"
   }
  ]
 }
