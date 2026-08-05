@@ -1,50 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-04T09:51:28+00:00",
+  "generated": "2026-08-05T16:00:37+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-28",
-   "title": "NotebookLM AI工作助理實戰",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/1F7F993A-90D4-448F-9668-5F0F9A55EDC4"
-  },
-  {
-   "date": "2026-07-28",
-   "title": "【免費課程】AI應用工具：零基礎輕鬆入門AI工具百寶箱-基礎實務班(臺南班)",
-   "location": "台南",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 15 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/43A9ED7A-8DEE-4AA0-8E9F-2F0339B97F28"
-  },
-  {
-   "date": "2026-07-28",
-   "title": "【線上直播】國際視角下的難癒合傷口管理：從 Wound Hygiene 證據到新加坡 DFU 臨床實務(全程英文授課)",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "clinical",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6258&pageno1&continue=Y"
-  },
   {
    "date": "2026-07-29",
    "title": "AI應用規劃師中級能力培訓班",
@@ -2074,6 +2033,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/7CCC196D-89EB-4FF6-90E5-F75BCE701E3C"
+  },
+  {
+   "date": "2026-09-30",
+   "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-指標稽核概念與操作實務",
+   "location": "中華民國護理師護士公會全國聯合會8樓會議室",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "醫策會上課時數證明、公務人力時數、護理繼續教育訓練積分",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FZj%2BOMML5sOFu2m2XHYwJ1tzMe4Sj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDj"
   },
   {
    "date": "2026-09-30",
