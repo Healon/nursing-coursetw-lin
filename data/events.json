@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-06T16:00:32+08:00",
+  "generated": "2026-08-06T09:52:08+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -2076,6 +2076,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/45A2CE05-BE1E-497F-B5EF-55C0C727B63A"
   },
   {
+   "date": "2026-10-02",
+   "title": "AI工具輕鬆入門：提升職場效率與決策力-直播班",
+   "location": "數位直播",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/D8AD1DF3-6AE7-4CD7-B59F-89AC823C72F2"
+  },
+  {
    "date": "2026-10-05",
    "title": "台灣急診五級檢傷指導員訓練課程",
    "location": "林口長庚紀念醫院臨床技能訓練中心(兒童醫療大樓L棟B2)",
@@ -2116,6 +2129,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/85B98699-B31F-4BBD-99D1-D18A0FEC27C2"
+  },
+  {
+   "date": "2026-10-12",
+   "title": "AI工具輕鬆入門：提升職場效率與決策力-新竹班",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/F4EE4327-3A3B-49BD-8AC5-5B7A9A7099A0"
   },
   {
    "date": "2026-10-12",
@@ -2238,6 +2264,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/E758BCCB-07A2-423C-BBAD-DCF8DE670197"
   },
   {
+   "date": "2026-10-22",
+   "title": "高壓輪班下的領導策略、團隊韌性與身心照護",
+   "location": "新北市立聯合醫院復健大樓6樓大禮堂",
+   "credits": {},
+   "cat": "clinical",
+   "src": "tnma",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "積分與細節詳見簡章附件",
+   "url": "https://www.tnma100.org.tw/manager/upload/2608061215391.pdf"
+  },
+  {
    "date": "2026-10-24",
    "title": "【實體】2026專師傷口衛生沉浸式工作坊｜萬芳醫院場",
    "location": "萬芳醫院六樓國際會議廳",
@@ -2280,6 +2319,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/12E14F15-610B-421F-8CB7-338BE6640E0C"
+  },
+  {
+   "date": "2026-11-02",
+   "title": "Vibe Coding Web 應用系統開發實務班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/8A735844-981D-4382-A865-21C44452A19E"
   },
   {
    "date": "2026-11-03",
