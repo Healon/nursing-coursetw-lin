@@ -1,48 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-05T09:49:45+00:00",
+  "generated": "2026-08-06T16:00:32+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-07-29",
-   "title": "AI應用規劃師中級能力培訓班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 23 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/74ACE65B-B5DC-4515-8914-39EFF7DE70CA"
-  },
-  {
-   "date": "2026-07-29",
-   "title": "Power BI Desktop 大數據分析實務與應用",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/3DEB4783-098A-4A8C-A331-FE9949B666BF"
-  },
-  {
-   "date": "2026-07-29",
-   "title": "【本會研習會訊息】115年7月29日【法官保留制度下探討強制住院精神照護權益】研習會",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "psy",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.psynurse.org.tw/news1.aspx?entry=1226"
-  },
   {
    "date": "2026-07-30",
    "title": "2026年抗生素管理與感染管制高峰論壇-【分場實務論壇】(擇一組報名)第一組-建構感管專業分級制度強化人才培育與留任",
