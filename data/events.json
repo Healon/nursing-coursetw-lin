@@ -1,80 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-08T16:00:34+08:00",
+  "generated": "2026-08-09T03:27:07+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-01",
-   "title": "PyTorch人臉辨識模型實作",
-   "location": "數位直播",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/483A8687-CF22-452A-9CAB-841B2C7B067B"
-  },
-  {
-   "date": "2026-08-01",
-   "title": "※體位管理與慢性病的健康識能精準實踐",
-   "location": "財團法人張榮發基金會國際會議中心1003會議廳",
-   "credits": {
-    "quality": 1
-   },
-   "cat": "admin",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260801"
-  },
-  {
-   "date": "2026-08-01",
-   "title": "【⏰延期更新】第八屆第一次會員代表大會暨學術研討會-當生命不以斷食作答：如何陪伴病人走向善終",
-   "location": "",
-   "credits": {
-    "pro": 10
-   },
-   "cat": "research",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "學術研討",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/8329fed152a1464db8aee7ba9f9fa2be"
-  },
-  {
-   "date": "2026-08-01",
-   "title": "【實體】8/1Part1+8/15Part2，AI 實戰升級：專科護理師實證核心力與臨床決策工作坊(此課程共兩梯次，兩天需皆參與。)",
-   "location": "臺北市立萬芳醫院-委託臺北醫學大學辦理5樓501會議室",
-   "credits": {
-    "np": 16.2
-   },
-   "cat": "tech",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6232&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-08-01",
-   "title": "流感疫苗教育訓練(東區)",
-   "location": "臺灣基督教門諾會醫療財團法人門諾醫院 薄柔纜禮拜堂",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-08-02",
    "title": "115年_研5 (南區)_居家血液透析",
