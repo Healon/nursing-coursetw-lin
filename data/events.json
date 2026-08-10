@@ -1,24 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-09T08:01:48+00:00",
+  "generated": "2026-08-10T16:00:35+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-02",
-   "title": "115年_研5 (南區)_居家血液透析",
-   "location": "高雄榮民總醫院第二會議室",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "clinical",
-   "src": "tnna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "公務人員終身學習時數 3 小時",
-   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1923"
-  },
   {
    "date": "2026-08-03",
    "title": "※115年根本原因分析工作坊",
