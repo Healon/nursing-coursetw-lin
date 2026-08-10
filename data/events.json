@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-10T16:00:35+08:00",
+  "generated": "2026-08-10T08:51:42+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1910,6 +1910,19 @@
   },
   {
    "date": "2026-10-07",
+   "title": "AI 品牌影像商用實戰： 從AI影像生成、品牌傳達到商業接案的完整工作流程",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 7 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/5EC65ABC-5DAD-41E5-952D-2F8DF69C9AB1"
+  },
+  {
+   "date": "2026-10-07",
    "title": "AI輔助軟體開發實務",
    "location": "台北",
    "credits": {},
@@ -1946,6 +1959,21 @@
    "region": "central",
    "ctext": "時數 234 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/B9439DF6-0848-4DC7-ABE0-9E94F793C0CD"
+  },
+  {
+   "date": "2026-10-14",
+   "title": "北區：2026年《好好練習告別》一日工作坊",
+   "location": "",
+   "credits": {
+    "pro": 4
+   },
+   "cat": "other",
+   "src": "hospice",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "學術研討",
+   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/4bcef42336e344dfbdc3e643d9b5983f"
   },
   {
    "date": "2026-10-16",
@@ -2053,6 +2081,21 @@
    "region": "south",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/E758BCCB-07A2-423C-BBAD-DCF8DE670197"
+  },
+  {
+   "date": "2026-10-22",
+   "title": "南區：2026年《好好練習告別》一日工作坊",
+   "location": "",
+   "credits": {
+    "pro": 4
+   },
+   "cat": "other",
+   "src": "hospice",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "學術研討",
+   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/376e205e49d44728ad825ca177fd763b"
   },
   {
    "date": "2026-10-22",
@@ -2175,6 +2218,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/90D6D276-CC7C-4E94-91CE-0547D0965BD3"
+  },
+  {
+   "date": "2026-11-10",
+   "title": "NotebookLM AI工作助理實戰",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/DBCDF336-9295-4369-B8EE-8E4DE668B24D"
   }
  ]
 }
