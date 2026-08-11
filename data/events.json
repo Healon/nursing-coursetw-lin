@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-11T16:00:39+08:00",
+  "generated": "2026-08-11T08:15:54+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1944,6 +1944,19 @@
    "region": "central",
    "ctext": "時數 234 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/B9439DF6-0848-4DC7-ABE0-9E94F793C0CD"
+  },
+  {
+   "date": "2026-10-13",
+   "title": "商業服務業-AI部署與應用系統導入工作坊(臺北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 40 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/E670D78F-39C3-4C63-AAE9-3FE206891E55"
   },
   {
    "date": "2026-10-14",
