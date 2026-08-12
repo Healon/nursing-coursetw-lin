@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-12T16:00:37+08:00",
+  "generated": "2026-08-12T08:40:10+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -634,6 +634,21 @@
    "region": "tbd",
    "ctext": "醫策會上課時數證明、公務人力時數、品質學院學分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
+  },
+  {
+   "date": "2026-08-20",
+   "title": "115年研習會(網頁測試請勿報名)",
+   "location": "亞東醫院 14 樓國際會議廳",
+   "credits": {
+    "pro": 3
+   },
+   "cat": "other",
+   "src": "tnna",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "公務人員終身學習時數 3 小時",
+   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1921"
   },
   {
    "date": "2026-08-20",
