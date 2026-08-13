@@ -1,81 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-12T08:40:10+00:00",
+  "generated": "2026-08-13T16:00:31+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-05",
-   "title": "115年「護理倫理暨法律研討會」 -南區(實體場)",
-   "location": "高雄醫學大學附設中和紀念醫院啟川大樓6樓第一講堂",
-   "credits": {
-    "pro": 1.8,
-    "law": 5.4
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "含性別議題課程",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-08-05",
-   "title": "115年醫療品質學院實作課程-品質改善循環PDCA 基礎課程及案例演練工作坊",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqM5MM48eFu2m2XHYwJ1tzMe8Vj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-05",
-   "title": "【免費課程】開發潛在客戶：AI 關鍵字行銷讓客戶主動找上你實作應用班(臺南班)",
-   "location": "台南",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 18 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/2EBEDF70-A868-4CAA-8B95-4C8321CBA7E4"
-  },
-  {
-   "date": "2026-08-05",
-   "title": "護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(二)",
-   "location": "林口長庚紀念醫院醫學大樓第二會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-08-05",
-   "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -北部場(二)",
-   "location": "林口長庚紀念醫院醫學大樓第二會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
   {
    "date": "2026-08-06",
    "title": "Power BI Desktop 大數據分析實務與應用",
