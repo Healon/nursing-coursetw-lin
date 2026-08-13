@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-13T16:00:31+08:00",
+  "generated": "2026-08-13T08:44:31+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1890,6 +1890,21 @@
   },
   {
    "date": "2026-10-14",
+   "title": "北區(淡水馬偕安寧療護示範中心)：2026年《好好練習告別》一日工作坊",
+   "location": "",
+   "credits": {
+    "pro": 4
+   },
+   "cat": "clinical",
+   "src": "hospice",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "學術研討",
+   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/4bcef42336e344dfbdc3e643d9b5983f"
+  },
+  {
+   "date": "2026-10-14",
    "title": "北區：2026年《好好練習告別》一日工作坊",
    "location": "",
    "credits": {
@@ -2009,6 +2024,21 @@
    "region": "south",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/E758BCCB-07A2-423C-BBAD-DCF8DE670197"
+  },
+  {
+   "date": "2026-10-22",
+   "title": "南區(成大醫院)：2026年《好好練習告別》一日工作坊",
+   "location": "",
+   "credits": {
+    "pro": 4
+   },
+   "cat": "other",
+   "src": "hospice",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "學術研討",
+   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/376e205e49d44728ad825ca177fd763b"
   },
   {
    "date": "2026-10-22",
