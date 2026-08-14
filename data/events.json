@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-14T16:00:27+08:00",
+  "generated": "2026-08-14T08:38:15+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -2033,6 +2033,19 @@
    "region": "central",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/417"
+  },
+  {
+   "date": "2026-10-29",
+   "title": "打造AI小幫手-用n8n實現流程自動化",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/08156912-7B71-450B-9EC3-0ECCB6BD0259"
   },
   {
    "date": "2026-10-29",
