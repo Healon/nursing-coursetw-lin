@@ -1,87 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-13T08:44:31+00:00",
+  "generated": "2026-08-14T16:00:27+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-06",
-   "title": "Power BI Desktop 大數據分析實務與應用",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/3DEB4783-098A-4A8C-A331-FE9949B666BF"
-  },
-  {
-   "date": "2026-08-06",
-   "title": "「咳嗽的中醫精準治療與照護」工作坊(北區)",
-   "location": "三軍總醫院附設民眾診療服務處 B1臨床技能及測驗中心 擬真大教室",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-06",
-   "title": "【免費課程】消費行為洞察與預測：掌握消費行為預測與個人化精準行銷實戰班 (嘉義班)",
-   "location": "嘉義",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 30 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/4A4125D9-6F19-4562-8B14-520607DAB02B"
-  },
-  {
-   "date": "2026-08-06",
-   "title": "【本會研習會訊息】115年8月6日【AI數位照護在精神科護理的運用】研習會（南區）",
-   "location": "",
-   "credits": {},
-   "cat": "tech",
-   "src": "psy",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.psynurse.org.tw/news1.aspx?entry=1229"
-  },
-  {
-   "date": "2026-08-06",
-   "title": "自動光學檢測AOI及AI之工業應用實務",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/A949F019-9A58-464D-B778-F57768CF57CC"
-  },
-  {
-   "date": "2026-08-06",
-   "title": "零程式生成式AI打造互動式網頁",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/32B72F8D-35E4-4FB6-A7E2-6A04053CAF39"
-  },
   {
    "date": "2026-08-07",
    "title": "115年度護理資訊進階系列課程【Vibe Coding × AI：護理智慧應用開發實戰（無程式）】",
