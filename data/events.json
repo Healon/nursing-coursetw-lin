@@ -1,74 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-14T08:38:15+00:00",
+  "generated": "2026-08-15T07:44:24+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-07",
-   "title": "115年度護理資訊進階系列課程【Vibe Coding × AI：護理智慧應用開發實戰（無程式）】",
-   "location": "天主教永和耕莘醫院門診大樓8F視訊教學會議室",
-   "credits": {},
-   "cat": "tech",
-   "src": "ni",
-   "online": true,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
-   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3538"
-  },
-  {
-   "date": "2026-08-07",
-   "title": "EPAs工作坊",
-   "location": "財團法人私立高雄醫學大學附設中和紀念醫院 啟川大樓6樓第二講堂",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-07",
-   "title": "EPAs工作坊(線上視訊)",
-   "location": "線上視訊 請自備電腦、手機或平板,下載並安裝視訊軟體。",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-07",
-   "title": "「災難護理: 全災害情境下之大量傷患處置與延長照護整合實務訓練」工作坊(上午線上視訊)",
-   "location": "線上視訊 請自備電腦、手機或平板,下載並安裝視訊軟體。",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-07",
-   "title": "「災難護理: 全災害情境下之大量傷患處置與延長照護整合實務訓練」工作坊(全日實體場)",
-   "location": "奇美醫療財團法人奇美醫院 第五醫療大樓5樓552會議室",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-08-10",
    "title": "AI工具輕鬆入門：提升職場效率與決策力",
