@@ -1,47 +1,47 @@
 {
-  "generated": "2026-08-15T16:00:31+08:00",
+  "generated": "2026-08-16T07:45:34+00:00",
   "overall": "partial",
   "sources": {
     "nuna": {
       "status": "ok",
       "count": 24,
-      "last_success": "2026-08-15",
+      "last_success": "2026-08-16",
       "message": ""
     },
     "critical": {
       "status": "ok",
       "count": 6,
-      "last_success": "2026-08-15",
+      "last_success": "2026-08-16",
       "message": ""
     },
     "psy": {
-      "status": "error",
+      "status": "empty",
       "count": 0,
       "last_success": "2026-08-05",
-      "message": "HTTPError: 500 Server Error: Internal Server Error for url: https://www.psynurse.org.tw/news.aspx"
+      "message": "抓取成功但 0 筆，可能網站改版或選擇器失效"
     },
     "tnna": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-08-15",
+      "last_success": "2026-08-16",
       "message": ""
     },
     "tnma": {
       "status": "ok",
       "count": 50,
-      "last_success": "2026-08-15",
+      "last_success": "2026-08-16",
       "message": ""
     },
     "ni": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-08-15",
+      "last_success": "2026-08-16",
       "message": ""
     },
     "ahqroc": {
       "status": "ok",
       "count": 8,
-      "last_success": "2026-08-15",
+      "last_success": "2026-08-16",
       "message": ""
     },
     "jct": {
@@ -52,8 +52,8 @@
     },
     "hospice": {
       "status": "ok",
-      "count": 8,
-      "last_success": "2026-08-15",
+      "count": 7,
+      "last_success": "2026-08-16",
       "message": ""
     },
     "twna": {
@@ -71,7 +71,7 @@
     "itri": {
       "status": "ok",
       "count": 59,
-      "last_success": "2026-08-15",
+      "last_success": "2026-08-16",
       "message": ""
     }
   }

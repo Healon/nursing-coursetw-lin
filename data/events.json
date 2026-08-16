@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-15T16:00:31+08:00",
+  "generated": "2026-08-16T07:45:34+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -2059,6 +2059,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/DBCDF336-9295-4369-B8EE-8E4DE668B24D"
+  },
+  {
+   "date": "2026-11-16",
+   "title": "AI深度學習於電腦視覺與時序建模應用",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/DEB30802-618C-4A91-A04E-6EFB820F86A5"
   }
  ]
 }
