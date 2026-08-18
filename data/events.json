@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-17T08:00:46+00:00",
+  "generated": "2026-08-18T07:54:32+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-10",
-   "title": "AI工具輕鬆入門：提升職場效率與決策力",
-   "location": "高雄",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/9DCE808C-874A-457A-9AF2-9D48250DA6F2"
-  },
   {
    "date": "2026-08-11",
    "title": "AI Agent開發實戰：多Agent架構設計與MCP整合",
@@ -2072,6 +2059,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/DEB30802-618C-4A91-A04E-6EFB820F86A5"
+  },
+  {
+   "date": "2026-11-18",
+   "title": "零程式AI編輯術-情資蒐集、自動分類與內容發布全攻略",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/5FEEA01B-A520-4BD6-A554-D148010D9BFC"
   }
  ]
 }
