@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-18T07:54:32+00:00",
+  "generated": "2026-08-19T07:54:27+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-11",
-   "title": "AI Agent開發實戰：多Agent架構設計與MCP整合",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/7E8677C7-A2FB-40BD-B1F6-6161D9FE9509"
-  },
   {
    "date": "2026-08-12",
    "title": "115年台灣臨床成效指標(TCPI)精神照護指標標竿暨交流會(視訊場)",
@@ -339,6 +326,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/566F29EE-423C-4491-84D2-F6CE7DBE0727"
+  },
+  {
+   "date": "2026-08-19",
+   "title": "test test -",
+   "location": "12313",
+   "credits": {},
+   "cat": "other",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-08-19",
