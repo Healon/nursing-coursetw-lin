@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-20T07:57:19+00:00",
+  "generated": "2026-08-21T07:57:21+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-13",
-   "title": "零程式AI編輯術-情資蒐集、自動分類與內容發布全攻略",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/5FEEA01B-A520-4BD6-A554-D148010D9BFC"
-  },
   {
    "date": "2026-08-14",
    "title": "2026 智慧醫療 × 科技管理 × 幸福職場標竿交流",
@@ -1979,6 +1966,19 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.tnpa.org.tw/events/content.php?id=6245&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-10-28",
+   "title": "n8n自動化流程實戰：建構高效工作流",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/14078F49-7329-4B99-A835-C57C1A00A194"
   },
   {
    "date": "2026-10-28",
