@@ -1,89 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-21T07:57:21+00:00",
+  "generated": "2026-08-22T07:46:24+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-14",
-   "title": "2026 智慧醫療 × 科技管理 × 幸福職場標竿交流",
-   "location": "東元綜合醫院",
-   "credits": {},
-   "cat": "tech",
-   "src": "tnma",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分與細節詳見簡章附件",
-   "url": "https://www.tnma100.org.tw/manager/upload/2606091400011.pdf"
-  },
-  {
-   "date": "2026-08-14",
-   "title": "AI工具輕鬆入門：提升職場效率與決策力-直播班",
-   "location": "數位直播",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/DE4F0F01-584D-4E9E-9496-5CC10BA72248"
-  },
-  {
-   "date": "2026-08-14",
-   "title": "【產業新尖兵計畫】廠區智慧AI監測與城市基礎設施數位化養成班（台中班）",
-   "location": "台中",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "時數 234 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B9439DF6-0848-4DC7-ABE0-9E94F793C0CD"
-  },
-  {
-   "date": "2026-08-14",
-   "title": "【線上直播】從冰山頂端到水面之下：血脂管理的全貌思維",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "admin",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6247&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-08-14",
-   "title": "南丁格爾學苑護理領導人才培訓",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-14",
-   "title": "生成式AI短影音實作",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/8DACE65E-6863-4DC2-8663-17E4D7C48A9F"
-  },
   {
    "date": "2026-08-15",
    "title": "2026年台灣安寧緩和護理學會💜【南區】💜🧘🎶《回到內在的寧靜｜聲音療癒與正念覺察》",
