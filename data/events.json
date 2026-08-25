@@ -1,35 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-24T08:04:45+00:00",
+  "generated": "2026-08-25T07:58:41+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-17",
-   "title": "Claude Skills工作流程自動化實作",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/C789FA0D-6CE7-41AE-93DE-C5AB594334A5"
-  },
-  {
-   "date": "2026-08-17",
-   "title": "從AI模型到決策-資料建模與決策優化實務案例訓練",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/DB73EF5A-B667-4FB3-B787-40EFB89B6805"
-  },
   {
    "date": "2026-08-18",
    "title": "【線上直播】掌握壓力性損傷預防關鍵：高風險皮膚的評估與保護策略",
@@ -1451,6 +1425,21 @@
   },
   {
    "date": "2026-09-30",
+   "title": "⭐已經有證書要【選修】⭐2026年【中區3️⃣】安寧緩和護理專業【進階】課程-9/30-10/14彰基、11/14-11/15中榮",
+   "location": "",
+   "credits": {
+    "pro": 58
+   },
+   "cat": "clinical",
+   "src": "hospice",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "必修課程",
+   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/3d7ef53183f34fcbbd5a3446a5eda9c7"
+  },
+  {
+   "date": "2026-09-30",
    "title": "精神衛生護理師核心能力之學界與業界對話",
    "location": "台灣護理學會 國際會議廳(9F)",
    "credits": {},
@@ -2031,6 +2020,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/226F5DC2-4134-495D-AF15-AE1B45DFC6B0"
+  },
+  {
+   "date": "2026-11-25",
+   "title": "【全新改版】大型語言模型(LLM)應用開發實戰－平日班(第四梯)",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/A1DF1675-295E-4698-80FA-7325CFC71BC1"
   }
  ]
 }
