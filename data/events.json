@@ -1,50 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-25T07:58:41+00:00",
+  "generated": "2026-08-26T07:59:26+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-18",
-   "title": "【線上直播】掌握壓力性損傷預防關鍵：高風險皮膚的評估與保護策略",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "other",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6249&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-08-18",
-   "title": "個案報告審查委員共識會(南區)",
-   "location": "高雄榮民總醫院 急診大樓六樓第五會議室",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-18",
-   "title": "護理專案審查委員共識會(南區)",
-   "location": "高雄榮民總醫院 急診大樓六樓第五會議室",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-08-19",
    "title": "115年「護理倫理暨法律研討會」 -中區(實體場)",
@@ -1463,6 +1422,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/2F4B046F-6237-42FF-96F8-B9E0827CEEC9"
+  },
+  {
+   "date": "2026-10-01",
+   "title": "AI與大數據應用開發實戰養成班(第11梯次)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 350 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/68E8BACF-E0A6-4238-9A49-C128F4DD085C"
   },
   {
    "date": "2026-10-01",
