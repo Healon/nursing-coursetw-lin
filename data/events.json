@@ -1,89 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-27T18:17:52+00:00",
+  "generated": "2026-08-28T19:26:41+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-20",
-   "title": "115年台灣臨床成效指標（TCPI）指標全攻略套裝課程品管必備統計分析技巧課程",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "醫策會上課時數證明、公務人力時數、品質學院學分",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-20",
-   "title": "115年研習會(網頁測試請勿報名)",
-   "location": "亞東醫院 14 樓國際會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "other",
-   "src": "tnna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "公務人員終身學習時數 3 小時",
-   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1921"
-  },
-  {
-   "date": "2026-08-20",
-   "title": "AI數位互動服務設計與創新應用工作坊(8/20、9/4)",
-   "location": "秀傳醫療社團法人高雄秀傳紀念醫院八樓第一會議室",
-   "credits": {},
-   "cat": "tech",
-   "src": "ni",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "本課程擬申請護理人員繼續教育積分。",
-   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3546"
-  },
-  {
-   "date": "2026-08-20",
-   "title": "Gemini多元工作術實戰班",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/4CBC10F6-F195-4EFD-84C8-B6042A087215"
-  },
-  {
-   "date": "2026-08-20",
-   "title": "n8n × AI 智慧製造自動化實戰班",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/AA51B0FC-7E8C-4554-A4C8-2A5D24FD0776"
-  },
-  {
-   "date": "2026-08-20",
-   "title": "零程式自動化實務：n8n 與生成式 AI 整合應用",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/0EDF1F03-236C-44CB-9856-87D76B323B01"
-  },
   {
    "date": "2026-08-21",
    "title": "115年台灣臨床成效指標（TCPI）指標全攻略套裝課程品管必備統計分析技巧課程",
@@ -778,6 +698,21 @@
   {
    "date": "2026-09-08",
    "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (北區) -亞東醫院",
+   "location": "亞東醫院國際會議廳",
+   "credits": {
+    "pro": 3
+   },
+   "cat": "teaching",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-09-08",
+   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (北區-醫院推薦名單查詢) -亞東醫院",
    "location": "亞東醫院國際會議廳",
    "credits": {
     "pro": 3
@@ -1841,6 +1776,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/DEB30802-618C-4A91-A04E-6EFB820F86A5"
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Vibe Coding 應用 - SDD規格驅動開發實務",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/865A130B-BCB6-45F8-B706-C8932FF71DE3"
   },
   {
    "date": "2026-11-18",
