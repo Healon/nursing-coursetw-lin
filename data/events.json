@@ -1,51 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-28T19:26:41+00:00",
+  "generated": "2026-08-29T13:10:38+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-21",
-   "title": "115年台灣臨床成效指標（TCPI）指標全攻略套裝課程品管必備統計分析技巧課程",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "醫策會上課時數證明、公務人力時數、品質學院學分",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMqsMc1fs8WFu2m2XHYwJ1tzMe8Tj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDi"
-  },
-  {
-   "date": "2026-08-21",
-   "title": "115年度急重症護理繼續教育視訊直播講座(六)急重症器官衰竭照護",
-   "location": "webex視訊直播",
-   "credits": {
-    "pro": 3,
-    "np": 3
-   },
-   "cat": "clinical",
-   "src": "critical",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/413"
-  },
-  {
-   "date": "2026-08-21",
-   "title": "AI應用規劃師初級培訓班(新竹班-第三梯次)",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 18 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/820D25B2-B22A-410B-B68C-E37CFE5BAF9D"
-  },
   {
    "date": "2026-08-22",
    "title": "【實體】2026專師傷口衛生沉浸式工作坊｜成大醫院場",
