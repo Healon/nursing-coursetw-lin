@@ -1,50 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-29T13:10:38+00:00",
+  "generated": "2026-08-30T12:53:39+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-22",
-   "title": "【實體】2026專師傷口衛生沉浸式工作坊｜成大醫院場",
-   "location": "成大醫院門診大樓四樓會議室",
-   "credits": {
-    "np": 3.2
-   },
-   "cat": "clinical",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6244&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-08-22",
-   "title": "個案報告審查委員共識會(北區─學會)",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-22",
-   "title": "護理專案審查委員共識會(北區─學會)",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-08-24",
    "title": "Make × LINE × Gemini 自動化應用實戰班",
@@ -1828,6 +1787,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/DB73EF5A-B667-4FB3-B787-40EFB89B6805"
+  },
+  {
+   "date": "2026-11-30",
+   "title": "ISO/IEC 42001: 2023 人工智慧管理系統主導稽核員訓練課程(台北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 40 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/577571C9-8E7F-48CF-A988-80DFBF651CC7"
   }
  ]
 }
