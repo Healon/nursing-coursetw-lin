@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-30T12:53:39+00:00",
+  "generated": "2026-08-31T15:06:10+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1303,6 +1303,19 @@
   },
   {
    "date": "2026-10-12",
+   "title": "Excel × AI數據分析與報表優化實務",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/24483468-6B96-4353-A9FC-00080A52B32C"
+  },
+  {
+   "date": "2026-10-12",
    "title": "【產業新尖兵計畫】廠區智慧AI監測與城市基礎設施數位化養成班（台中班）",
    "location": "台中",
    "credits": {},
@@ -1693,6 +1706,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/DEB30802-618C-4A91-A04E-6EFB820F86A5"
+  },
+  {
+   "date": "2026-11-16",
+   "title": "AI輔助財務報表數據分析實戰",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/0FA48F72-36E3-4DA0-9972-1D5AAFA6A19E"
   },
   {
    "date": "2026-11-17",
