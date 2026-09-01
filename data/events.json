@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-08-31T15:06:10+00:00",
+  "generated": "2026-09-01T12:34:35+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-24",
-   "title": "Make × LINE × Gemini 自動化應用實戰班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/6CC5374D-AF6C-4232-9210-52F5FC40BF0A"
-  },
   {
    "date": "2026-08-25",
    "title": "RAG技術實戰：打造內部知識查詢系統",
@@ -1641,6 +1628,19 @@
    "region": "north",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/8A735844-981D-4382-A865-21C44452A19E"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "【產業新尖兵計畫】廠區智慧AI監測與城市基礎設施數位化養成班（高雄班）",
+   "location": "高雄",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 234 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/8E0CCAB8-F7D4-4DE6-8A78-C0D71F9AAF7E"
   },
   {
    "date": "2026-11-03",
