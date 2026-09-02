@@ -1,61 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-01T12:34:35+00:00",
+  "generated": "2026-09-02T12:07:30+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-25",
-   "title": "RAG技術實戰：打造內部知識查詢系統",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12.5 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/474162A9-9FEE-4E82-9F05-4C2DB65061EC"
-  },
-  {
-   "date": "2026-08-25",
-   "title": "個案報告審查委員共識會(北區─國泰)",
-   "location": "國泰人壽大樓 B1 國際會議廳",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-25",
-   "title": "護理專案審查委員共識會(北區─國泰)",
-   "location": "國泰人壽大樓 B1 國際會議廳",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-25",
-   "title": "護理師核心職能與國家考試及教學精進研討會",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-08-26",
    "title": "n8n自動化流程實戰：建構高效工作流",
