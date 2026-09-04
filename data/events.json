@@ -1,37 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-03T12:06:43+00:00",
+  "generated": "2026-09-04T12:08:26+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-27",
-   "title": "【免費課程】AI需求洞察預測：數據分析與Tableau視覺化應用-實作應用班(臺南班)",
-   "location": "台南",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 18 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B44AC5A6-5B52-4702-B1A3-DEC321BB138E"
-  },
-  {
-   "date": "2026-08-27",
-   "title": "【線上直播】心腎保護：從控制到預防的全面屏障",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "other",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6260&pageno1&continue=Y"
-  },
   {
    "date": "2026-08-28",
    "title": "Claude實戰班： 從自動化辦公到打造專屬AI工具",

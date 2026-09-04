@@ -1,17 +1,17 @@
 {
-  "generated": "2026-09-03T12:06:43+00:00",
+  "generated": "2026-09-04T12:08:26+00:00",
   "overall": "partial",
   "sources": {
     "nuna": {
       "status": "ok",
       "count": 25,
-      "last_success": "2026-09-03",
+      "last_success": "2026-09-04",
       "message": ""
     },
     "critical": {
       "status": "ok",
-      "count": 8,
-      "last_success": "2026-09-03",
+      "count": 7,
+      "last_success": "2026-09-04",
       "message": ""
     },
     "psy": {
@@ -23,7 +23,7 @@
     "tnna": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-09-03",
+      "last_success": "2026-09-04",
       "message": ""
     },
     "tnma": {
@@ -35,13 +35,13 @@
     "ni": {
       "status": "ok",
       "count": 12,
-      "last_success": "2026-09-03",
+      "last_success": "2026-09-04",
       "message": ""
     },
     "ahqroc": {
       "status": "ok",
       "count": 8,
-      "last_success": "2026-09-03",
+      "last_success": "2026-09-04",
       "message": ""
     },
     "jct": {
@@ -53,7 +53,7 @@
     "hospice": {
       "status": "ok",
       "count": 8,
-      "last_success": "2026-09-03",
+      "last_success": "2026-09-04",
       "message": ""
     },
     "twna": {
@@ -70,8 +70,8 @@
     },
     "itri": {
       "status": "ok",
-      "count": 52,
-      "last_success": "2026-09-03",
+      "count": 56,
+      "last_success": "2026-09-04",
       "message": ""
     }
   }
