@@ -1,67 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-05T11:16:30+00:00",
+  "generated": "2026-09-06T11:39:47+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-29",
-   "title": "※2026/8/29「115年會員大會暨學術研討會」(一般參加)",
-   "location": "國防醫學院三樓",
-   "credits": {
-    "quality": 10
-   },
-   "cat": "research",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20260829"
-  },
-  {
-   "date": "2026-08-29",
-   "title": "※2026/8/29「115年會員大會暨學術研討會」(論文錄取)",
-   "location": "國防醫學院三樓",
-   "credits": {
-    "quality": 10
-   },
-   "cat": "research",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20260829-1"
-  },
-  {
-   "date": "2026-08-29",
-   "title": "※2026/8/29「115年會員大會暨學術研討會」(論文錄取)(錄取後才開放)",
-   "location": "國防醫學院三樓",
-   "credits": {
-    "quality": 10
-   },
-   "cat": "research",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20260829-1"
-  },
-  {
-   "date": "2026-08-29",
-   "title": "護理師國考基礎醫學之命審題人才培訓工作坊",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-08-30",
    "title": "115年_研6_行政主管研習營",
@@ -1705,6 +1647,19 @@
    "region": "north",
    "ctext": "時數 40 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/577571C9-8E7F-48CF-A988-80DFBF651CC7"
+  },
+  {
+   "date": "2026-12-07",
+   "title": "知識圖譜實戰-語意搜尋與AI問答的關鍵技術",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B17001D2-11D1-44AC-B8E0-283F473C4163"
   }
  ]
 }
