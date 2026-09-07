@@ -1,24 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-06T11:39:47+00:00",
+  "generated": "2026-09-07T13:30:50+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-30",
-   "title": "115年_研6_行政主管研習營",
-   "location": "亞東紀念醫院南棟10樓第二教室",
-   "credits": {
-    "pro": 5.2
-   },
-   "cat": "admin",
-   "src": "tnna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "公務人員終身學習時數 5 小時",
-   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1925"
-  },
   {
    "date": "2026-08-31",
    "title": "智慧領航.永續全期:手術室數位轉型與管理新紀元工作坊",
