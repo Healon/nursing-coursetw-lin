@@ -1,35 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-07T13:30:50+00:00",
+  "generated": "2026-09-08T12:08:51+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-08-31",
-   "title": "智慧領航.永續全期:手術室數位轉型與管理新紀元工作坊",
-   "location": "財團法人私立高雄醫學大學附設中和紀念醫院 啟川大樓6樓第一會議室",
-   "credits": {},
-   "cat": "tech",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-08-31",
-   "title": "知識圖譜實戰-語意搜尋與AI問答的關鍵技術",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B17001D2-11D1-44AC-B8E0-283F473C4163"
-  },
   {
    "date": "2026-09-01",
    "title": "AI應用規劃師初級能力培訓班",
