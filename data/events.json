@@ -1,48 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-08T12:08:51+00:00",
+  "generated": "2026-09-09T12:20:46+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-01",
-   "title": "AI應用規劃師初級能力培訓班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14.5 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/ADEF443A-0DDA-4B27-BDE8-FF9BCD4C336C"
-  },
-  {
-   "date": "2026-09-01",
-   "title": "Excel × AI數據分析與報表優化實務",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/24483468-6B96-4353-A9FC-00080A52B32C"
-  },
-  {
-   "date": "2026-09-01",
-   "title": "餐飲暨服務業青年AI實戰養成班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 240 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/81CBA606-AAA1-4702-943B-10263B7D41D5"
-  },
   {
    "date": "2026-09-02",
    "title": "9月視訊-護理人力管理：法規合規、指標應用與排班最佳化",
