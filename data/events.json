@@ -1,64 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-09T12:20:46+00:00",
+  "generated": "2026-09-10T12:14:16+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-02",
-   "title": "9月視訊-護理人力管理：法規合規、指標應用與排班最佳化",
-   "location": "採 Microsoft Teams 線上直播",
-   "credits": {},
-   "cat": "clinical",
-   "src": "tnma",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "積分與細節請洽官方公告",
-   "url": "https://www.tnma100.org.tw/training/training02.asp"
-  },
-  {
-   "date": "2026-09-02",
-   "title": "AI Agent × MCP × 自動化工作流實作：從本地 LLM 到跨平台整合",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/3EDA9988-0286-4997-AA5D-C8F8E5EAF033"
-  },
-  {
-   "date": "2026-09-02",
-   "title": "AI動態及不確定性建模-風險管控與分佈式強化學習技術",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/F76FFEE5-E5BD-45D4-A3BA-C38F6579B29B"
-  },
-  {
-   "date": "2026-09-02",
-   "title": "重症照護3.0 - 智慧化、整合化、流程再進化研習會-南區",
-   "location": "高雄日航酒店",
-   "credits": {
-    "pro": 5,
-    "np": 5
-   },
-   "cat": "tech",
-   "src": "critical",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/421"
-  },
   {
    "date": "2026-09-03",
    "title": "AI與大數據應用開發實戰養成班(第11梯次)",
@@ -1436,6 +1381,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/DBCDF336-9295-4369-B8EE-8E4DE668B24D"
   },
   {
+   "date": "2026-11-13",
+   "title": "Power Query 資料整合設計與自動化應用",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 7 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/699691F6-43A1-4907-A504-18D39EF4D7D0"
+  },
+  {
    "date": "2026-11-16",
    "title": "AI深度學習於電腦視覺與時序建模應用",
    "location": "台北",
@@ -1580,6 +1538,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/B17001D2-11D1-44AC-B8E0-283F473C4163"
+  },
+  {
+   "date": "2026-12-11",
+   "title": "Microsoft Azure AI 基礎-微軟AI-901考證輔導班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/76E0EF6D-0161-44B2-AF73-087B9E741D79"
   }
  ]
 }
