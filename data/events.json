@@ -1,81 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-10T12:14:16+00:00",
+  "generated": "2026-09-11T12:12:55+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-03",
-   "title": "AI與大數據應用開發實戰養成班(第11梯次)",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 350 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/68E8BACF-E0A6-4238-9A49-C128F4DD085C"
-  },
-  {
-   "date": "2026-09-03",
-   "title": "※以病人為中心談病人權益",
-   "location": "大林慈濟醫院 5樓 大講堂",
-   "credits": {
-    "quality": 0.5
-   },
-   "cat": "other",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260903"
-  },
-  {
-   "date": "2026-09-03",
-   "title": "※醫療品質 3.0 × 4.0：醫病同產、數位創新與病人中心照護新典範",
-   "location": "萬芳醫院6樓國際會議廳",
-   "credits": {
-    "quality": 1
-   },
-   "cat": "tech",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260903-1"
-  },
-  {
-   "date": "2026-09-03",
-   "title": "【北區】科技賦能 × 護理韌力-打造高壓時代的職場復原力與情意支持工作坊",
-   "location": "北區-三軍總醫院B1 OSCE擬真大教室",
-   "credits": {},
-   "cat": "tech",
-   "src": "tnma",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "積分與細節詳見簡章附件",
-   "url": "https://www.tnma100.org.tw/manager/upload/2607021301141.pdf"
-  },
-  {
-   "date": "2026-09-03",
-   "title": "重症照護3.0 - 智慧化、整合化、流程再進化研習會-中區",
-   "location": "台中日月千禧酒店",
-   "credits": {
-    "pro": 5,
-    "np": 5
-   },
-   "cat": "tech",
-   "src": "critical",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/422"
-  },
   {
    "date": "2026-09-04",
    "title": "Microsoft Azure AI 基礎-微軟AI-901考證輔導班",
@@ -412,6 +340,19 @@
    "region": "tbd",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-09-12",
+   "title": "測試-請勿報名",
+   "location": "",
+   "credits": {},
+   "cat": "other",
+   "src": "tnna",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "公務人員終身學習時數 6 小時",
+   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1927"
   },
   {
    "date": "2026-09-13",
@@ -1073,6 +1014,21 @@
    "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3544"
   },
   {
+   "date": "2026-10-17",
+   "title": "長照3.0醫養結合發展新視野研討會(中區) -",
+   "location": "衛生福利部臺中醫院-醫療大樓12樓大禮堂",
+   "credits": {
+    "pro": 7.2
+   },
+   "cat": "research",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
    "date": "2026-10-19",
    "title": "ISO/IEC 42001:2023人工智慧管理系統(AIMS) 主導稽核員訓課程(高雄)",
    "location": "高雄",
@@ -1366,6 +1322,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/90D6D276-CC7C-4E94-91CE-0547D0965BD3"
+  },
+  {
+   "date": "2026-11-07",
+   "title": "AI智能自動化實戰班–從Workflow到AI Agent",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/5C5A179C-EF31-48D8-A6D9-4772E6F3ECCF"
   },
   {
    "date": "2026-11-10",
