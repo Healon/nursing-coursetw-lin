@@ -1,110 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-12T11:37:12+00:00",
+  "generated": "2026-09-13T12:44:11+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-05",
-   "title": "2026年【中區3️⃣】安寧緩和護理專業【基礎】課程-9/5-9/6臺中榮民總醫院",
-   "location": "",
-   "credits": {
-    "pro": 13
-   },
-   "cat": "clinical",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "必修課程",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/b5487a4af37a4bb880a1e2d8c55fb19c"
-  },
-  {
-   "date": "2026-09-05",
-   "title": "※醫院風險及危害管理-FMEA失效模式與效應分析",
-   "location": "",
-   "credits": {
-    "quality": 3
-   },
-   "cat": "admin",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260905"
-  },
-  {
-   "date": "2026-09-05",
-   "title": "❤️【ZOOM同步視訊】❤️從「心」出發，讓幸福成為護理的力量-【護理職場幸福力分享會】",
-   "location": "",
-   "credits": {
-    "pro": 12
-   },
-   "cat": "clinical",
-   "src": "hospice",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "學術研討",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/380dc62e92834f1999011879bfd2e837"
-  },
-  {
-   "date": "2026-09-05",
-   "title": "❤️【實體場】❤️從「心」出發，讓幸福成為護理的力量-【護理職場幸福力分享會】",
-   "location": "",
-   "credits": {
-    "pro": 12
-   },
-   "cat": "clinical",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "學術研討",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/3c8cf5b37aea401295505fb646fe571a"
-  },
-  {
-   "date": "2026-09-05",
-   "title": "⭐已經有證書要【選修】⭐2026年【中區3️⃣】安寧緩和護理專業【基礎】課程-9/5-9/6臺中榮民總醫院",
-   "location": "",
-   "credits": {
-    "pro": 13
-   },
-   "cat": "clinical",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "必修課程",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/5e2f651b6e48435f8409fe22bc648a12"
-  },
-  {
-   "date": "2026-09-05",
-   "title": "第四十二次護理研究論文發表會-一般與會者報名用",
-   "location": "中山醫學大學 誠愛樓9樓國際會議廳",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-09-05",
-   "title": "第四十二次護理研究論文發表會-發表者專用-申請積分用",
-   "location": "中山醫學大學 誠愛樓9樓國際會議廳",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-09-06",
    "title": "※團隊資源管理(TRM)教育訓練",
@@ -1494,6 +1393,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/76E0EF6D-0161-44B2-AF73-087B9E741D79"
+  },
+  {
+   "date": "2026-12-14",
+   "title": "從先驗知識到高風險決策建模-貝氏機器學習與不確定性量化實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/58337D24-4991-4E86-804C-831952A336BB"
   }
  ]
 }
