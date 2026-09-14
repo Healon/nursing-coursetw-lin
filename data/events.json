@@ -1,24 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-13T12:44:11+00:00",
+  "generated": "2026-09-14T14:02:47+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-06",
-   "title": "※團隊資源管理(TRM)教育訓練",
-   "location": "",
-   "credits": {
-    "quality": 3
-   },
-   "cat": "admin",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260906"
-  },
   {
    "date": "2026-09-07",
    "title": "從先驗知識到高風險決策建模-貝氏機器學習與不確定性量化實作",
@@ -680,6 +665,36 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/D8AD1DF3-6AE7-4CD7-B59F-89AC823C72F2"
   },
   {
+   "date": "2026-10-02",
+   "title": "※【發表人員】2026年根本原因分析(RCA)競賽",
+   "location": "國泰人壽大樓B1國際會議廳",
+   "credits": {
+    "quality": 7
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261002"
+  },
+  {
+   "date": "2026-10-02",
+   "title": "※【觀摩人員】2026年根本原因分析(RCA)競賽",
+   "location": "國泰人壽大樓B1國際會議廳",
+   "credits": {
+    "quality": 7
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261002-1"
+  },
+  {
    "date": "2026-10-05",
    "title": "※人因工程與醫品病安課程",
    "location": "",
@@ -774,6 +789,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/24483468-6B96-4353-A9FC-00080A52B32C"
+  },
+  {
+   "date": "2026-10-12",
+   "title": "iPAS AI應用規劃師(初級)實務應用暨考照輔導班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 15 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B6A92F6B-4AC7-4178-9274-1C0BCB57B364"
   },
   {
    "date": "2026-10-12",
@@ -900,6 +928,21 @@
    "region": "central",
    "ctext": "",
    "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-10-18",
+   "title": "115年_研7_透析護理主管感控研習會",
+   "location": "亞東紀念醫院10樓 南棟第二教室",
+   "credits": {
+    "pro": 6.6
+   },
+   "cat": "clinical",
+   "src": "tnna",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "公務人員終身學習時數 6 小時",
+   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1928"
   },
   {
    "date": "2026-10-19",
@@ -1169,6 +1212,19 @@
    "region": "south",
    "ctext": "時數 234 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/8E0CCAB8-F7D4-4DE6-8A78-C0D71F9AAF7E"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "新一代全端 AI 開發流程實戰",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/FE6118BF-F9DE-4F55-9F9F-0014A4B915FA"
   },
   {
    "date": "2026-11-05",
