@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-14T14:02:47+00:00",
+  "generated": "2026-09-15T12:41:01+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-07",
-   "title": "從先驗知識到高風險決策建模-貝氏機器學習與不確定性量化實作",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/58337D24-4991-4E86-804C-831952A336BB"
-  },
   {
    "date": "2026-09-08",
    "title": "Vibe Coding 應用 - SDD規格驅動開發實務",
