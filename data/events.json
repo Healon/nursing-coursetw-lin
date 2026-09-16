@@ -1,67 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-15T12:41:01+00:00",
+  "generated": "2026-09-16T12:36:40+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-08",
-   "title": "Vibe Coding 應用 - SDD規格驅動開發實務",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/865A130B-BCB6-45F8-B706-C8932FF71DE3"
-  },
-  {
-   "date": "2026-09-08",
-   "title": "※護理人的改善故事館",
-   "location": "高雄榮民總醫院門診大樓第二會議室",
-   "credits": {
-    "quality": 3
-   },
-   "cat": "clinical",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20260908"
-  },
-  {
-   "date": "2026-09-08",
-   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (北區) -亞東醫院",
-   "location": "亞東醫院國際會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "teaching",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-09-08",
-   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (北區-醫院推薦名單查詢) -亞東醫院",
-   "location": "亞東醫院國際會議廳",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "teaching",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
   {
    "date": "2026-09-09",
    "title": "AI應用規劃師中級能力培訓班",
