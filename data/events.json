@@ -1,65 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-16T12:36:40+00:00",
+  "generated": "2026-09-17T12:35:55+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-09",
-   "title": "AI應用規劃師中級能力培訓班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 23 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/223AA1BF-966F-4BA6-AA4E-29E7262250F5"
-  },
-  {
-   "date": "2026-09-09",
-   "title": "圖神經網路實戰應用-從圖資料到AI建模解決方案",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/204994B5-5346-4069-A41E-C89840907CD7"
-  },
-  {
-   "date": "2026-09-09",
-   "title": "護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -南部場",
-   "location": "高雄醫學大學附設中和紀念醫院啟川大樓6樓第二講堂",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
-  {
-   "date": "2026-09-09",
-   "title": "護理領導力培育與護理職涯永續支持計畫─護理的社會力：跨專業對話與護理職涯永續論壇 -南部場",
-   "location": "高雄醫學大學附設中和紀念醫院啟川大樓6樓第二講堂",
-   "credits": {
-    "pro": 3
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
   {
    "date": "2026-09-10",
    "title": "115年度急重症CKRT照護研習會(北區)",
@@ -1326,6 +1270,19 @@
    "region": "north",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/A1DF1675-295E-4698-80FA-7325CFC71BC1"
+  },
+  {
+   "date": "2026-11-26",
+   "title": "企業導入人工智慧工具：資安防禦架構與內部控制實務",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/1F27FC94-A1AB-432D-9650-E255C4A4A5FD"
   },
   {
    "date": "2026-11-27",
