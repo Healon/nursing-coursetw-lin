@@ -1,35 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-19T11:56:40+00:00",
+  "generated": "2026-09-20T12:22:17+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-12",
-   "title": "115年青年護師論壇",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "other",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-09-12",
-   "title": "測試-請勿報名",
-   "location": "",
-   "credits": {},
-   "cat": "other",
-   "src": "tnna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "公務人員終身學習時數 6 小時",
-   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1927"
-  },
   {
    "date": "2026-09-13",
    "title": "【實體】從病人旅程到智慧賦能：NP專屬AI Agent創新工作坊",
@@ -1319,6 +1293,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/2C0D0E95-1766-4765-A64E-012943479923"
+  },
+  {
+   "date": "2026-12-21",
+   "title": "圖神經網路實戰應用-從圖資料到AI建模解決方案",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/204994B5-5346-4069-A41E-C89840907CD7"
   }
  ]
 }
