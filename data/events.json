@@ -1,24 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-20T12:22:17+00:00",
+  "generated": "2026-09-21T14:08:40+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-13",
-   "title": "【實體】從病人旅程到智慧賦能：NP專屬AI Agent創新工作坊",
-   "location": "振興醫院健康大樓2樓第一會議室",
-   "credits": {
-    "np": 8.2
-   },
-   "cat": "tech",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6252&pageno1&continue=Y"
-  },
   {
    "date": "2026-09-15",
    "title": "※根本原因分析工作坊",
