@@ -1,67 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-22T12:37:08+00:00",
+  "generated": "2026-09-23T12:45:43+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-15",
-   "title": "※根本原因分析工作坊",
-   "location": "",
-   "credits": {
-    "quality": 1
-   },
-   "cat": "other",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260915"
-  },
-  {
-   "date": "2026-09-15",
-   "title": "「智慧科技於長照服務之運用」工作坊(中區)",
-   "location": "佛教慈濟醫療財團法人台中慈濟醫院 大愛樓5樓501會議室",
-   "credits": {},
-   "cat": "tech",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-09-15",
-   "title": "【線上直播】當臨床問題來敲門：從AI工具到 Dyna AI的實證決策新流程",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "tech",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6257&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-09-15",
-   "title": "【線上直播】當臨床問題來敲門：從AI工具到 Dyna Al的實證決策新流程",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "tech",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6257&pageno1&continue=Y"
-  },
   {
    "date": "2026-09-16",
    "title": "「咳嗽的中醫精準治療與照護」工作坊(南區-實體)",
