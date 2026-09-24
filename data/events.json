@@ -1,63 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-23T12:45:43+00:00",
+  "generated": "2026-09-24T12:43:48+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-16",
-   "title": "「咳嗽的中醫精準治療與照護」工作坊(南區-實體)",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-09-16",
-   "title": "「咳嗽的中醫精準治療與照護」工作坊(東區-同步視訊場)",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-09-16",
-   "title": "【線上社團課程】NPower專注力社群-精油梳心~理出好心情",
-   "location": "ZOOM線上會議室",
-   "credits": {
-    "np": 0.6
-   },
-   "cat": "other",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6261&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-09-16",
-   "title": "非技術人員生成式AI辦公室應用實務班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/116461B3-2F17-4C13-9E33-CA4D22E8CA36"
-  },
   {
    "date": "2026-09-17",
    "title": "※人因工程與醫品病安課程",
@@ -996,6 +942,21 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/DBCDF336-9295-4369-B8EE-8E4DE668B24D"
+  },
+  {
+   "date": "2026-11-11",
+   "title": "長照3.0醫養結合發展新視野研討會(東區) -",
+   "location": "羅東聖母醫院-外科大樓11樓大禮堂",
+   "credits": {
+    "pro": 7.2
+   },
+   "cat": "research",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-11-13",
