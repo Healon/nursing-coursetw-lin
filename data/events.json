@@ -1,50 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-24T12:43:48+00:00",
+  "generated": "2026-09-25T12:46:11+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-17",
-   "title": "※人因工程與醫品病安課程",
-   "location": "",
-   "credits": {
-    "quality": 1
-   },
-   "cat": "safety",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260917"
-  },
-  {
-   "date": "2026-09-17",
-   "title": "「實證健康照護」審查委員共識會(南區)",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-09-17",
-   "title": "新一代全端 AI 開發流程實戰",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/FE6118BF-F9DE-4F55-9F9F-0014A4B915FA"
-  },
   {
    "date": "2026-09-18",
    "title": "2026.9.18~20 第七屆亞太急性腎損傷與連續性腎替代療法大會",
