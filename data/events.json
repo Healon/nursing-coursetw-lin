@@ -1,50 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-25T12:46:11+00:00",
+  "generated": "2026-09-26T12:14:21+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-18",
-   "title": "2026.9.18~20 第七屆亞太急性腎損傷與連續性腎替代療法大會",
-   "location": "台北國際會議中心",
-   "credits": {},
-   "cat": "other",
-   "src": "critical",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/423"
-  },
-  {
-   "date": "2026-09-18",
-   "title": "Power Query 資料整合設計與自動化應用",
-   "location": "台南",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 7 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/699691F6-43A1-4907-A504-18D39EF4D7D0"
-  },
-  {
-   "date": "2026-09-18",
-   "title": "※共築病安文化",
-   "location": "",
-   "credits": {
-    "quality": 0.5
-   },
-   "cat": "safety",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20260918"
-  },
   {
    "date": "2026-09-19",
    "title": "115年度社區衛生護理師認證考試",
