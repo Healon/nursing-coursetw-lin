@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-26T12:14:21+00:00",
+  "generated": "2026-09-27T00:52:53+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-19",
-   "title": "115年度社區衛生護理師認證考試",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
   {
    "date": "2026-09-22",
    "title": "115年台灣臨床成效指標（TCPI）感染照護指標標竿暨交流會",
@@ -70,6 +57,19 @@
    "region": "online",
    "ctext": "積分請洽學會官網",
    "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-09-23",
+   "title": "115年醫療品質學院實作課程-根本原因分析RCA工作坊",
+   "location": "中華民國護理師護士公會全國聯合會8樓會議室",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=qpr6OMFfvcOFu2m2XHYwJ1tzMe4Wj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDj"
   },
   {
    "date": "2026-09-23",
@@ -138,6 +138,21 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/7CCC196D-89EB-4FF6-90E5-F75BCE701E3C"
+  },
+  {
+   "date": "2026-09-29",
+   "title": "【線上直播】藥量減法，守護加法：血壓與血脂管理的最大化策略",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "admin",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6264&pageno1&continue=Y"
   },
   {
    "date": "2026-09-30",
@@ -235,6 +250,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/45A2CE05-BE1E-497F-B5EF-55C0C727B63A"
   },
   {
+   "date": "2026-10-01",
+   "title": "【線上直播】FNP臨床決策力提升：居家社區鑑別診斷實務與OSCE經驗分享",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.6
+   },
+   "cat": "teaching",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6268&pageno1&continue=Y"
+  },
+  {
    "date": "2026-10-02",
    "title": "AI工具輕鬆入門：提升職場效率與決策力-直播班",
    "location": "數位直播",
@@ -276,6 +306,21 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261002-1"
+  },
+  {
+   "date": "2026-10-04",
+   "title": "【實體】說故事的人：Find the Blue Reason（以呼吸道感染為例）｜中區",
+   "location": "裕元花園酒店4F溫莎廣場",
+   "credits": {
+    "np": 5.6
+   },
+   "cat": "safety",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6280&pageno1&continue=Y"
   },
   {
    "date": "2026-10-05",
@@ -322,6 +367,32 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/9E83A695-8C68-4A61-B56E-721A2EEEFF6B"
   },
   {
+   "date": "2026-10-05",
+   "title": "醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（南區場）、（中區場）-醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（南區場）",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "醫策會教育訓練時數及公務人員終身學習時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；護理師人員繼續教育積分申請中。",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=qZupNsINvZaFu2m2XHYwJ1tzMe4Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
+  },
+  {
+   "date": "2026-10-06",
+   "title": "115年醫療品質學院進階課程-團隊資源管理TRM師資培訓工作坊-115年醫療品質學院進階課程-團隊資源管理TRM模擬教學師資培訓工作坊",
+   "location": "新北市護理師護士公會",
+   "credits": {},
+   "cat": "teaching",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=q5isNpdf45OFu2m2XHYwJ1tzMekRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
+  },
+  {
    "date": "2026-10-07",
    "title": "AI 品牌影像商用實戰： 從AI影像生成、品牌傳達到商業接案的完整工作流程",
    "location": "新竹",
@@ -346,6 +417,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/85B98699-B31F-4BBD-99D1-D18A0FEC27C2"
+  },
+  {
+   "date": "2026-10-08",
+   "title": "115年醫療品質學院實作課程-品管圈QCC課題達成型",
+   "location": "社團法人新北市護理師護士公會",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人員繼續教育時數",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8Zn6MpNZt8SFu2m2XHYwJ1tzMekVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
   },
   {
    "date": "2026-10-12",
@@ -400,6 +484,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/B9439DF6-0848-4DC7-ABE0-9E94F793C0CD"
   },
   {
+   "date": "2026-10-12",
+   "title": "【線上直播】抗藥性細菌之治療",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6285&pageno1&continue=Y"
+  },
+  {
    "date": "2026-10-13",
    "title": "商業服務業-AI部署與應用系統導入工作坊(臺北班)",
    "location": "台北",
@@ -411,6 +510,19 @@
    "region": "north",
    "ctext": "時數 40 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/E670D78F-39C3-4C63-AAE9-3FE206891E55"
+  },
+  {
+   "date": "2026-10-14",
+   "title": "115年醫療品質學院實作課程-醫院內部稽核工作坊",
+   "location": "醫策會701會議室",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8Z6qMpYK5sGFu2m2XHYwJ1tzMekUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
   },
   {
    "date": "2026-10-14",
@@ -441,6 +553,19 @@
    "region": "north",
    "ctext": "學術研討",
    "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/4bcef42336e344dfbdc3e643d9b5983f"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（南區場）、（中區場）-醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（中區場）",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=qZupNsINvZaFu2m2XHYwJ1tzMe4Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
   },
   {
    "date": "2026-10-16",
@@ -499,6 +624,19 @@
   },
   {
    "date": "2026-10-17",
+   "title": "115年護理青年國際事務學習營",
+   "location": "台灣護理學會 國際會議廳(9F)",
+   "credits": {},
+   "cat": "clinical",
+   "src": "twna",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "積分請洽學會官網",
+   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
+  },
+  {
+   "date": "2026-10-17",
    "title": "長照3.0醫養結合發展新視野研討會(中區) -",
    "location": "衛生福利部臺中醫院-醫療大樓12樓大禮堂",
    "credits": {
@@ -526,6 +664,36 @@
    "region": "north",
    "ctext": "公務人員終身學習時數 6 小時",
    "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1928"
+  },
+  {
+   "date": "2026-10-18",
+   "title": "2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽",
+   "location": "大臺南會展中心",
+   "credits": {
+    "np": 3
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6262&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-10-18",
+   "title": "2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】限第一作者",
+   "location": "大臺南會展中心",
+   "credits": {
+    "np": 3
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6263&pageno1&continue=Y"
   },
   {
    "date": "2026-10-19",
@@ -593,6 +761,36 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/82A8AA0F-5F3F-4380-90C7-7E22062EE6BF"
   },
   {
+   "date": "2026-10-20",
+   "title": "【線上直播】用心守護失禁肌膚：從 IAD 臨床辨識、精準照護到 FMS 實務應用",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6283&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "【線上社團課程】NPower專注力社群-練習情緒除噪與心理邊界",
+   "location": "ZOOM線上會議室",
+   "credits": {
+    "np": 0.6
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6284&pageno1&continue=Y"
+  },
+  {
    "date": "2026-10-21",
    "title": "地端LLM部署與應用程式開發實務",
    "location": "台南",
@@ -604,6 +802,19 @@
    "region": "south",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/E758BCCB-07A2-423C-BBAD-DCF8DE670197"
+  },
+  {
+   "date": "2026-10-22",
+   "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-臨床照護品質應用與全方位溝通技巧",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BZ7%2FNMZZ4MaFu2m2XHYwJ1tzMekSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
   },
   {
    "date": "2026-10-22",
@@ -660,6 +871,36 @@
    "region": "north",
    "ctext": "積分與細節詳見簡章附件",
    "url": "https://www.tnma100.org.tw/manager/upload/2608061215391.pdf"
+  },
+  {
+   "date": "2026-10-24",
+   "title": "【OSCE儲備師資】專科護理師OSCE臨床思維與技能訓練之儲備師資工作坊(南區場)",
+   "location": "高雄榮民總醫院高齡大樓B1臨床技能中心",
+   "credits": {
+    "np": 7
+   },
+   "cat": "teaching",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6273&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-10-24",
+   "title": "【OSCE考生衝刺】專科護理師OSCE臨床思維與技能訓練工作坊(南區場)",
+   "location": "高雄榮民總醫院高齡大樓B1臨床技能中心",
+   "credits": {
+    "np": 7.8
+   },
+   "cat": "teaching",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6270&pageno1&continue=Y"
   },
   {
    "date": "2026-10-24",
@@ -758,6 +999,36 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/CB8DB410-9679-44C7-8555-C1E131F64C8E"
   },
   {
+   "date": "2026-10-31",
+   "title": "【OSCE儲備師資】專科護理師OSCE臨床思維與技能訓練之儲備師資工作坊(北區場)",
+   "location": "淡水馬偕紀念醫院-恩典樓側棟3樓-臨床技能訓練中心",
+   "credits": {
+    "np": 7
+   },
+   "cat": "teaching",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6278&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-10-31",
+   "title": "【OSCE考生衝刺】專科護理師OSCE臨床思維與技能訓練工作坊(北區場)",
+   "location": "淡水馬偕紀念醫院-恩典樓側棟3樓-臨床技能訓練中心",
+   "credits": {
+    "np": 7.8
+   },
+   "cat": "teaching",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6271&pageno1&continue=Y"
+  },
+  {
    "date": "2026-11-02",
    "title": "Vibe Coding Web 應用系統開發實務班",
    "location": "台北",
@@ -836,6 +1107,45 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/90D6D276-CC7C-4E94-91CE-0547D0965BD3"
   },
   {
+   "date": "2026-11-06",
+   "title": "115年提升醫院防火安全交流研討會",
+   "location": "",
+   "credits": {},
+   "cat": "research",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F8%2F%2BNcELsJGFu2m2XHYwJ1tzMegQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "2026年台灣健康照護聯合學術研討會-一般暨投稿錄取報名專區",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqOJdYvZKFu2m2XHYwJ1tzMuQXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "2026年台灣健康照護聯合學術研討會-學生報名專區",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fc33MZdc5seFu2m2XHYwJ1tzMuQWj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
    "date": "2026-11-07",
    "title": "AI智能自動化實戰班–從Workflow到AI Agent",
    "location": "新竹",
@@ -847,6 +1157,34 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/5C5A179C-EF31-48D8-A6D9-4772E6F3ECCF"
+  },
+  {
+   "date": "2026-11-07",
+   "title": "【實體】說故事的人：Find the Blue Reason（以呼吸道感染為例）｜南區",
+   "location": "H2O Hotel 水京棧國際酒店宴會廳",
+   "credits": {
+    "np": 5.6
+   },
+   "cat": "safety",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6281&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-11-10",
+   "title": "115年台灣臨床成效指標(TCPI)指標全攻略套裝課程資料視覺化技巧工作坊(初階課程)",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpj5N5dcsZGFu2m2XHYwJ1tzMegRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
    "date": "2026-11-10",
@@ -1073,6 +1411,36 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/76E0EF6D-0161-44B2-AF73-087B9E741D79"
+  },
+  {
+   "date": "2026-12-12",
+   "title": "實際操作學員報名處-【實體】專科護理師場【從腫脹到線條：淋巴繃帶加壓治療工作坊】",
+   "location": "台北南港展覽館(近期公告)",
+   "credits": {
+    "np": 2.7
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6254&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-12-12",
+   "title": "觀摩學員報名處-【實體】專科護理師場【從腫脹到線條：淋巴繃帶加壓治療工作坊】",
+   "location": "台北南港展覽館(近期公告)",
+   "credits": {
+    "np": 2.7
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6255&pageno1&continue=Y"
   },
   {
    "date": "2026-12-14",
