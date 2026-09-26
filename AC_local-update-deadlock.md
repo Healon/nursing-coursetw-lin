@@ -23,3 +23,16 @@
 
 - twna 的新鮮度：最近一次人工匯入是 8/16，watchdog 對 twna 仍會亮紅，需 Lin 另存課程頁或按「本週已確認」。不可用程式時間假裝人工檢查。
 - 本機有「未推送的 commit」時 `pull --ff-only` 仍會失敗（例如推送因網路中斷）。此情況維持中止並通知，不自動 rebase 或 reset。
+
+## 驗收結果（2026-09-27 00:52 實跑）
+
+| 條件 | 結果 | 證據 |
+|---|---|---|
+| 1 Observable | 通過 | `TestSyncWithCloud::test_recovers_from_uncommitted_derived_artifacts` |
+| 2 Measurable | 通過 | `pytest -q` 250 passed；負對照在 fixture 內直接 pull 確實失敗；變異驗證（拿掉還原步驟、拿掉 twna 重建）兩條新測試皆報紅 |
+| 3 Bounded | 通過 | commit `eceb97c` 只含 local_update、twna_watch、兩支測試、README、AUTOMATION 與本檔 |
+| 4 Testable | 通過，附一項修正 | origin 的 jct、tnpa `last_success` 為 2026-09-27；本機與 origin 同步、工作區乾淨；線上 Pages 已建置 `3dd625e` |
+
+條件 4 的修正：8/16 匯入的 3 筆 twna 課程中，2026-09-04 與 2026-09-12 兩場已超過 `keep_past_days`（7 天），由時間窗依設計濾除；2026-10-17 那場已上站。原寫「3 筆都出現在 events.json」在 9/27 已不可能成立，以本表為準。
+
+未解（屬預期）：`check_freshness.py` 對 twna 仍 exit 1（最近人工匯入 2026-08-16），需 Lin 另存課程頁或按「本週已確認」。
