@@ -75,7 +75,7 @@ LaunchAgent `com.lin.twna-reminder`，週日 14:00 與 15:00，在本週更新�
 
 ## 已知限制
 
-**自動匯入不等於自動上站。** `twna_watch.process()` 只做匯入與本機重建 `index.html`，沒有 git push。網站要等當天 16:00 的 `local_update` 推送，或人工按 `run_local_update.command`。README 方式三寫的「立刻上站」與實際有落差。
+**（2026-09-27 已修正）自動匯入現在會直接上站。** 舊版 `twna_watch` 自己匯入並重建 `index.html` 但不 commit，留下未提交的衍生產物；雲端每日更新改到同一批檔，之後每天 `local_update` 的 `git pull --ff-only` 都被拒，2026-08-16 至 09-26 本機更新停擺 42 天、watchdog 連紅 40 天。現行做法：`twna_watch` 發現另存頁就交給 `local_update` 走完整條（同步、匯入、重建、commit、push）；`local_update` 同步前會先還原未提交的衍生產物（`events.json`、`status.json`、`index.html`），只保留原始資料 `manual_twna.json`。細節見專案根目錄 `AC_local-update-deadlock.md`。
 
 **重開機後監看是否存活未驗證。** `WatchPaths` 指向外接 SSD，而外接卷宗掛載晚於 launchd 啟動，有註冊失敗且不自動復活的風險（同族教訓見 `~/.claude/rules/LESSONS.md` 的 L-2026-08-06-001）。驗證與修復：
 

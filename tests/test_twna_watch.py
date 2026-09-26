@@ -1,7 +1,8 @@
-"""twna_watch 監看器測試：頁面辨識與資料夾掃描。全部離線、只碰 tmp_path。"""
+"""twna_watch 監看器測試：頁面辨識、資料夾掃描與發布交接。全部離線、只碰 tmp_path。"""
 from __future__ import annotations
 
 import json
+import subprocess
 
 import pytest
 
@@ -59,3 +60,53 @@ def test_broken_candidate_rows_are_not_archived_or_recorded(monkeypatch, tmp_pat
     assert page.exists()
     assert not (tmp_path / twna_watch.ARCHIVE_DIRNAME).exists()
     assert json.loads(data.read_text(encoding="utf-8")) == original
+
+
+def test_process_only_imports_and_archives(monkeypatch, tmp_path):
+    """process 只寫原始資料並歸檔；自己重建會留下未提交的衍生產物（2026-08-16 事故）。"""
+    page = tmp_path / "course.html"
+    page.write_text(TWNA_HTML, encoding="utf-8")
+    monkeypatch.setattr(twna_watch.import_twna_page, "run", lambda f, data: {"added": 2, "skipped_dupe": 0})
+    monkeypatch.setattr(
+        twna_watch.subprocess, "run", lambda *a, **kw: pytest.fail("process 不可自己重建或呼叫外部指令")
+    )
+
+    stats = twna_watch.process(page)
+
+    assert stats["added"] == 2
+    assert not page.exists()
+    assert (tmp_path / twna_watch.ARCHIVE_DIRNAME / "course.html").exists()
+
+
+class TestMainHandsOffToLocalUpdate:
+    def _patch(self, monkeypatch, tmp_path, exit_code=0):
+        monkeypatch.setattr(twna_watch, "DOWNLOAD_DIR", tmp_path)
+        calls = []
+        monkeypatch.setattr(
+            twna_watch.subprocess, "run",
+            lambda cmd, **kw: calls.append(cmd) or subprocess.CompletedProcess(cmd, exit_code),
+        )
+        return calls
+
+    def test_twna_page_triggers_local_update(self, monkeypatch, tmp_path):
+        (tmp_path / "course.html").write_text(TWNA_HTML, encoding="utf-8")
+        calls = self._patch(monkeypatch, tmp_path)
+
+        assert twna_watch.main([]) == 0
+        assert len(calls) == 1
+        assert calls[0][-1].endswith("scripts/local_update.py")
+        # 匯入與歸檔由 local_update 負責，監看器本身不動檔案
+        assert (tmp_path / "course.html").exists()
+
+    def test_local_update_failure_is_propagated(self, monkeypatch, tmp_path):
+        (tmp_path / "course.html").write_text(TWNA_HTML, encoding="utf-8")
+        self._patch(monkeypatch, tmp_path, exit_code=1)
+
+        assert twna_watch.main([]) == 1
+
+    def test_non_twna_file_does_nothing(self, monkeypatch, tmp_path):
+        (tmp_path / "other.html").write_text("<html>別的頁</html>", encoding="utf-8")
+        calls = self._patch(monkeypatch, tmp_path)
+
+        assert twna_watch.main([]) == 0
+        assert calls == []

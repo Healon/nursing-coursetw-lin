@@ -1,8 +1,12 @@
-"""local_update 一鍵更新的離線測試：防狂打護欄、單實例鎖、TWNA 摘要與 git 競爭處理。"""
+"""local_update 一鍵更新的離線測試：防狂打護欄、單實例鎖、TWNA 摘要、git 競爭處理與同步死結回歸。"""
 from __future__ import annotations
 
 import datetime as dt
+import json
 import subprocess
+import sys
+
+import pytest
 
 from scripts import local_update
 
@@ -39,6 +43,141 @@ class TestDirtyBeyondData:
     def test_non_data_change_is_flagged(self):
         porcelain = " M data/events.json\n M scripts/sources/jct.py\n?? notes.txt\n"
         assert local_update.dirty_beyond_data(porcelain) == ["scripts/sources/jct.py", "notes.txt"]
+
+
+class TestDirtyDerived:
+    def test_only_derived_artifacts_are_restorable(self):
+        porcelain = " M data/events.json\n M data/manual_twna.json\n M index.html\n M data/status.json\n"
+        assert local_update.dirty_derived(porcelain) == ["data/events.json", "index.html", "data/status.json"]
+
+    def test_source_data_is_never_restored(self):
+        assert local_update.dirty_derived(" M data/manual_twna.json\n") == []
+
+    def test_untracked_file_is_skipped(self):
+        # checkout 還原不了未追蹤檔，列進去只會讓 git 報錯
+        assert local_update.dirty_derived("?? index.html\n") == []
+
+
+class TestSourcesToRebuild:
+    def test_stale_local_sources_are_scraped(self):
+        assert local_update.sources_to_rebuild(False, False) == ["jct", "tnpa"]
+
+    def test_leftover_twna_data_is_rebuilt_even_when_scraped_today(self):
+        assert local_update.sources_to_rebuild(True, True) == ["twna"]
+
+    def test_nothing_to_do(self):
+        assert local_update.sources_to_rebuild(True, False) == []
+
+
+def _git_run(cwd, *args):
+    subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True, text=True)
+
+
+def _write_all(root, paths, text):
+    for p in paths:
+        (root / p).write_text(text, encoding="utf-8")
+
+
+@pytest.fixture
+def stuck_clone(tmp_path, monkeypatch):
+    """重現 2026-08-16 的卡死狀態：本機資料產物未提交，雲端又推了改到同一批衍生產物的 commit。
+
+    全程只用暫存 git repo；隔離使用者全域 git 設定，避免簽章或 hook 影響測試。
+    """
+    monkeypatch.setenv("GIT_CONFIG_GLOBAL", str(tmp_path / "gitconfig"))
+    monkeypatch.setenv("GIT_CONFIG_NOSYSTEM", "1")
+    for key in ("GIT_AUTHOR_NAME", "GIT_COMMITTER_NAME"):
+        monkeypatch.setenv(key, "test")
+    for key in ("GIT_AUTHOR_EMAIL", "GIT_COMMITTER_EMAIL"):
+        monkeypatch.setenv(key, "test@example.com")
+
+    origin = tmp_path / "origin.git"
+    _git_run(tmp_path, "init", "-q", "--bare", "-b", "main", str(origin))
+    cloud = tmp_path / "cloud"
+    _git_run(tmp_path, "init", "-q", "-b", "main", str(cloud))
+    _git_run(cloud, "remote", "add", "origin", str(origin))
+    (cloud / "data").mkdir()
+    _write_all(cloud, local_update.DATA_PATHS, "v1\n")
+    _git_run(cloud, "add", "-A")
+    _git_run(cloud, "commit", "-q", "-m", "seed")
+    _git_run(cloud, "push", "-q", "origin", "main")
+
+    local = tmp_path / "local"
+    _git_run(tmp_path, "clone", "-q", str(origin), str(local))
+
+    # 雲端每日更新：只改衍生產物（雲端永不改寫 manual_twna.json）
+    _write_all(cloud, local_update.DERIVED_PATHS, "cloud\n")
+    _git_run(cloud, "commit", "-q", "-am", "chore: daily events update")
+    _git_run(cloud, "push", "-q", "origin", "main")
+
+    # 本機：twna 匯入改了原始資料，舊版監看器又重建了衍生產物，全部未提交
+    _write_all(local, local_update.DATA_PATHS, "local\n")
+    return local
+
+
+class TestSyncWithCloud:
+    def test_recovers_from_uncommitted_derived_artifacts(self, stuck_clone, monkeypatch):
+        # 負對照：舊流程直接 pull 必定被擋，證明 fixture 真的重現了死結
+        plain = subprocess.run(
+            ["git", "pull", "--ff-only", "origin", "main"], cwd=stuck_clone, capture_output=True, text=True
+        )
+        assert plain.returncode != 0
+
+        monkeypatch.setattr(local_update, "ROOT", stuck_clone)
+        ok, detail = local_update.sync_with_cloud()
+
+        assert ok, detail
+        for p in local_update.DERIVED_PATHS:
+            assert (stuck_clone / p).read_text(encoding="utf-8") == "cloud\n"
+        assert (stuck_clone / "data/manual_twna.json").read_text(encoding="utf-8") == "local\n"
+        head = subprocess.run(["git", "rev-parse", "HEAD", "origin/main"], cwd=stuck_clone,
+                              capture_output=True, text=True).stdout.split()
+        assert head[0] == head[1]
+
+    def test_unpushed_local_commit_is_reported_not_rewritten(self, stuck_clone, monkeypatch):
+        # 本機有未推送的 commit（例如上次推送因網路中斷）→ 回報失敗，不自動 rebase 或 reset
+        _git_run(stuck_clone, "commit", "-q", "-am", "local data commit")
+        before = subprocess.run(["git", "rev-parse", "HEAD"], cwd=stuck_clone,
+                                capture_output=True, text=True).stdout.strip()
+
+        monkeypatch.setattr(local_update, "ROOT", stuck_clone)
+        ok, detail = local_update.sync_with_cloud()
+
+        assert ok is False
+        assert detail
+        after = subprocess.run(["git", "rev-parse", "HEAD"], cwd=stuck_clone,
+                               capture_output=True, text=True).stdout.strip()
+        assert after == before
+
+
+def test_leftover_twna_data_is_rebuilt_when_local_sources_are_fresh(monkeypatch, tmp_path):
+    """8/16 遺留的 twna 匯入：jct/tnpa 今天已抓過也要重建 twna，否則還原衍生產物後課程會消失。"""
+    today = dt.date.today().isoformat()
+    status_path = tmp_path / "status.json"
+    status_path.write_text(json.dumps(
+        {"sources": {"jct": {"last_success": today}, "tnpa": {"last_success": today}}}
+    ), encoding="utf-8")
+    monkeypatch.setattr(local_update, "LOCK_PATH", tmp_path / "test.lock")
+    monkeypatch.setattr(local_update, "STATUS_PATH", status_path)
+    monkeypatch.setattr(local_update, "TWNA_DOWNLOAD_DIR", tmp_path / "no-inbox")
+    monkeypatch.setattr(local_update, "TWNA_DATA_PATH", tmp_path / "missing.json")
+    monkeypatch.setattr(local_update, "_notify", lambda message: None)
+
+    def fake_git(*args):
+        if args[:2] == ("status", "--porcelain") and "--" in args:
+            return result(0, " M data/manual_twna.json\n")
+        return result(0)
+
+    runs = []
+    monkeypatch.setattr(local_update, "_git", fake_git)
+    monkeypatch.setattr(local_update.subprocess, "run", lambda cmd, **kw: runs.append(cmd) or result(0))
+
+    assert local_update.main(["--no-push"]) == 0
+
+    update_calls = [cmd for cmd in runs if str(cmd[1]).endswith("update.py")]
+    assert update_calls == [
+        [sys.executable, str(local_update.ROOT / "scripts" / "update.py"), "--sources", "twna"]
+    ]
 
 
 class TestSourcesFreshToday:

@@ -38,21 +38,48 @@ LOCAL_SOURCES = ("jct", "tnpa")
 # 同時只允許一份實例跑（另一份立即安靜退出），避免並發 git commit／寫 data 檔互相打架。
 LOCK_PATH = Path("/tmp/nursing-local-update.lock")
 
-# 自動更新允許變動的檔案（資料產物）。工作區若有這清單以外的髒檔，代表 Lin 可能改到一半，
+# 資料產物分兩類（2026-09-27）：
+# - 原始資料：人工投入、只存在本機、雲端永不改寫（manual_twna.json）→ 同步時必須保留。
+# - 衍生產物：由原始資料＋爬取結果重建（events/status/index）→ 未提交版本可丟棄、之後重建。
+# 衍生產物若在 pull 前處於未提交狀態，雲端每日更新必定改到同一批檔，pull --ff-only 會拒絕
+# 覆蓋而每天失敗（2026-08-16 至 09-26 本機更新停擺 42 天即此，見 AC_local-update-deadlock.md）。
+SOURCE_DATA_PATHS = ("data/manual_twna.json",)
+DERIVED_PATHS = ("data/events.json", "data/status.json", "index.html")
+# 自動更新允許變動的檔案。工作區若有這清單以外的髒檔，代表 Lin 可能改到一半，
 # 中止不碰，保護進行中的手動修改。
-DATA_PATHS = ("data/events.json", "data/status.json", "data/manual_twna.json", "index.html")
+DATA_PATHS = DERIVED_PATHS + SOURCE_DATA_PATHS
+
+
+def _porcelain_entries(porcelain: str) -> list[tuple[str, str]]:
+    """把 `git status --porcelain` 輸出拆成 (狀態碼, 路徑)。"""
+    entries: list[tuple[str, str]] = []
+    for line in porcelain.splitlines():
+        if not line.strip():
+            continue
+        entries.append((line[:2], line[3:].strip().strip('"')))
+    return entries
 
 
 def dirty_beyond_data(porcelain: str) -> list[str]:
     """從 `git status --porcelain` 輸出找出「資料產物以外」的髒檔；純函式，供測試。"""
-    offending: list[str] = []
-    for line in porcelain.splitlines():
-        if not line.strip():
-            continue
-        path = line[3:].strip().strip('"')
-        if path not in DATA_PATHS:
-            offending.append(path)
-    return offending
+    return [path for _, path in _porcelain_entries(porcelain) if path not in DATA_PATHS]
+
+
+def dirty_derived(porcelain: str) -> list[str]:
+    """找出已追蹤、但有未提交修改的衍生產物；純函式，供測試。未追蹤（??）的不算，checkout 還原不了。"""
+    return [path for code, path in _porcelain_entries(porcelain) if path in DERIVED_PATHS and code != "??"]
+
+
+def sources_to_rebuild(local_fresh_today: bool, twna_changed: bool) -> list[str]:
+    """決定本次要跑 update.py 的來源；純函式，供測試。
+
+    jct/tnpa 今天已成功就不重爬（爬蟲禮貌）；twna 只要原始資料有未提交變動就重建
+    （零網路請求，且衍生產物在同步時已還原，不重建就會漏掉這批課程）。
+    """
+    codes = [] if local_fresh_today else list(LOCAL_SOURCES)
+    if twna_changed:
+        codes.append("twna")
+    return codes
 
 
 def sources_fresh_today(status_snapshot: dict, today_iso: str, codes=LOCAL_SOURCES) -> bool:
@@ -73,6 +100,28 @@ def _notify(message: str) -> None:
 
 def _git(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+
+
+def sync_with_cloud() -> tuple[bool, str]:
+    """先把未提交的衍生產物還原，再 fast-forward 到雲端最新；原始資料原樣保留。
+
+    衍生產物稍後一律重建，丟掉本機未提交版本不會失去資訊；原始資料雲端永不改寫，
+    留在工作區也不會擋住 fast-forward。本機若有未推送的 commit 仍會失敗並回報，
+    不自動 rebase 或 reset（那需要人判斷）。
+    """
+    porcelain = _git("status", "--porcelain")
+    if porcelain.returncode != 0:
+        return False, porcelain.stderr.strip()
+    derived = dirty_derived(porcelain.stdout)
+    if derived:
+        restore = _git("checkout", "--", *derived)
+        if restore.returncode != 0:
+            return False, (restore.stderr or restore.stdout).strip()
+        print(f"[local-update] 已還原 {len(derived)} 個未提交的衍生產物，稍後依原始資料重建", flush=True)
+    pull = _git("pull", "--ff-only", "origin", "main")
+    if pull.returncode != 0:
+        return False, (pull.stderr or pull.stdout).strip()
+    return True, ""
 
 
 def push_with_one_rebase_retry() -> tuple[bool, str]:
@@ -145,10 +194,10 @@ def main(argv: list[str] | None = None) -> int:
     if offending:
         return _fail("工作區檢查", f"有未提交的非資料檔改動：{', '.join(offending[:5])}（請先處理或收起來）")
 
-    # 2. 先收雲端結果（週日 15:00 的雲端週更），避免之後推送打架
-    pull = _git("pull", "--ff-only", "origin", "main")
-    if pull.returncode != 0:
-        return _fail("git pull", pull.stderr.strip()[:160])
+    # 2. 先收雲端結果，避免之後推送打架；未提交的衍生產物先還原，否則 pull 會被擋
+    synced, detail = sync_with_cloud()
+    if not synced:
+        return _fail("git pull", detail[:160])
     print("[local-update] ✔ 已同步雲端最新結果")
 
     # 3. 掃下載資料夾有無 twna 另存頁（重用監看器邏輯：辨識、匯入、去重、歸檔）
@@ -178,15 +227,21 @@ def main(argv: list[str] | None = None) -> int:
         return _fail("twna import", f"{type(exc).__name__}: {exc}"[:160])
     print(f"[local-update] ✔ twna 另存頁：{twna_note}")
 
-    # 4. 防狂打護欄：今天已成功抓過 jct/tnpa 就不重爬（--force 可強制）
+    # 4. 決定要重建哪些來源：jct/tnpa 今天已成功就不重爬（--force 可強制）；
+    #    twna 原始資料有未提交變動（本次匯入或先前遺留）就重建，把課程併進衍生產物
     today_iso = dt.date.today().isoformat()
     snapshot = json.loads(STATUS_PATH.read_text(encoding="utf-8")) if STATUS_PATH.exists() else {}
-    if not args.force and sources_fresh_today(snapshot, today_iso):
+    local_fresh = not args.force and sources_fresh_today(snapshot, today_iso)
+    if local_fresh:
         print(f"[local-update] ✔ jct/tnpa 今天（{today_iso}）已成功抓過，跳過重爬（--force 可強制）")
-    else:
-        print("[local-update] 爬取 jct＋tnpa（台灣住宅 IP 專屬的兩家）…")
+    twna_status = _git("status", "--porcelain", "--", *SOURCE_DATA_PATHS)
+    if twna_status.returncode != 0:
+        return _fail("git 檢查", twna_status.stderr.strip()[:120])
+    codes = sources_to_rebuild(local_fresh, bool(twna_status.stdout.strip()))
+    if codes:
+        print(f"[local-update] 更新來源：{'、'.join(codes)}（jct/tnpa 走台灣住宅 IP，twna 只讀本機資料）…")
         upd = subprocess.run(
-            [sys.executable, str(ROOT / "scripts" / "update.py"), "--sources", ",".join(LOCAL_SOURCES)],
+            [sys.executable, str(ROOT / "scripts" / "update.py"), "--sources", ",".join(codes)],
             cwd=ROOT,
         )
         if upd.returncode != 0:

@@ -188,8 +188,8 @@ twna（台灣護理學會）不用你逐欄手動打字抄課程資訊，改用�
 ### 方式三：全自動監看（最省力；你只剩「另存」一個動作）
 
 安裝一次之後，流程變成：**瀏覽器開課程頁 → 另存新檔到專案的 `download-twna/` → 完事**。
-系統會自動認出這是 twna 課程頁、匯入去重、重建網站、跳桌面通知，原始檔自動歸檔到
-`download-twna/twna-imported/`。合規不變：程式永遠只讀你另存的本機檔案，不對該站發任何請求；
+系統會自動認出這是 twna 課程頁，交給 `local_update.py` 匯入去重、重建網站、commit 推送上線、
+跳桌面通知，原始檔自動歸檔到 `download-twna/twna-imported/`。合規不變：程式永遠只讀你另存的本機檔案，不對該站發任何請求；
 「開頁面、存檔」這步依守則保留為人類動作。
 
 安裝（一次性，每台機器各裝一次）：
@@ -199,7 +199,7 @@ cp "scripts/launchd/com.lin.twna-watch.plist" ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.lin.twna-watch.plist
 ```
 
-- 手動單次掃描（不裝監看也能用）：`.venv/bin/python scripts/twna_watch.py`
+- 手動單次掃描（不裝監看也能用，有另存頁就會推送上線）：`.venv/bin/python scripts/twna_watch.py`
 - 看執行紀錄：`tail /tmp/twna-watch.log`
 - 移除：`launchctl unload ~/Library/LaunchAgents/com.lin.twna-watch.plist && rm ~/Library/LaunchAgents/com.lin.twna-watch.plist`
 - 注意：plist 內的路徑指向本專案在外接 SSD 的位置，專案搬家或換機時要同步修改；

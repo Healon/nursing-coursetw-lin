@@ -1,9 +1,9 @@
-"""Purpose: twna 另存頁「零指令」自動匯入器 —— 掃描下載資料夾，發現另存的課程頁就自動走完
-        匯入→更新→重建→通知，維護者只剩「瀏覽器另存新檔」一個動作。
-Input:  --folder 指定掃描資料夾（預設專案的 download-twna/）；單次掃描即結束（配合 launchd WatchPaths
-        觸發，不常駐、不輪詢）。
-Output: data/manual_twna.json 更新、網站重建（update.py --sources twna）、處理過的檔案移入
-        <folder>/twna-imported/ 歸檔（避免重複處理）、macOS 桌面通知（盡力而為）。
+"""Purpose: twna 另存頁「零指令」自動發布的觸發器 —— 掃描專案的 download-twna/，發現另存的
+        課程頁就交給 local_update 走完匯入→重建→commit→push→通知，維護者只剩「瀏覽器另存新檔」一個動作。
+Input:  無參數；單次掃描即結束（配合 launchd WatchPaths 觸發，不常駐、不輪詢）。
+Output: 由 local_update 產生：data/manual_twna.json 與網站更新並推送、處理過的檔案移入
+        download-twna/twna-imported/ 歸檔（避免重複處理）、macOS 桌面通知。
+        process() 供 local_update 呼叫，只寫原始資料與歸檔，不重建、不 commit。
 
 合規背景（重要，勿刪）：act.e-twna.org.tw 的 robots.txt 全站 Disallow，本專案不對該站發出
 任何自動化請求。本監看器全程零網路請求：它只認「維護者本人用瀏覽器另存到本機」的靜態檔案。
@@ -62,29 +62,15 @@ def scan_folder(folder: Path, *, now: float | None = None) -> list[Path]:
     return hits
 
 
-def _notify(message: str) -> None:
-    """macOS 桌面通知；失敗就靜靜略過（通知只是體驗加分，不是資料流的一部分，可容忍失敗）。"""
-    try:
-        subprocess.run(
-            ["osascript", "-e",
-             f'display notification "{message}" with title "護理教育訓練網站"'],
-            capture_output=True, timeout=10,
-        )
-    except Exception:
-        pass
-
-
 def process(f: Path) -> dict:
-    """匯入單一另存頁 → 更新網站 → 歸檔原始檔。任何一步失敗都讓例外浮出（launchd log 可見）。"""
+    """匯入單一另存頁到 manual_twna.json → 歸檔原始檔。任何一步失敗都讓例外浮出（launchd log 可見）。
+
+    只寫原始資料、不重建網站：重建與 commit 由 local_update 一次做完。這裡若自己重建，
+    會留下未提交的衍生產物（2026-08-16 事故，見 AC_local-update-deadlock.md）。
+    """
     stats = import_twna_page.run(f, DATA_PATH)
     # 即使沒有新課程，run() 仍已更新 manual_* 時間戳；不要回復或略過這個本機資料變更，
     # local_update.py 會在後續 diff/commit 階段把「本週已人工檢查」的事實一併保存。
-    if stats["added"] > 0:
-        # 有新課程才值得重建網站；沒新增就省下這步（重建仍是本機動作，只是避免無謂 churn）
-        subprocess.run(
-            [sys.executable, str(PROJECT / "scripts" / "update.py"), "--sources", "twna"],
-            check=True, cwd=PROJECT, capture_output=True,
-        )
     archive = f.parent / ARCHIVE_DIRNAME
     archive.mkdir(exist_ok=True)
     target = archive / f.name
@@ -95,26 +81,21 @@ def process(f: Path) -> dict:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="掃描下載資料夾，自動匯入 twna 另存課程頁")
-    ap.add_argument("--folder", default=str(DOWNLOAD_DIR))
-    args = ap.parse_args(argv)
+    ap = argparse.ArgumentParser(description="掃描下載資料夾，發現 twna 另存課程頁就交給 local_update 匯入並發布")
+    ap.parse_args(argv)
 
-    folder = Path(args.folder).expanduser()
-    if not folder.is_dir():
-        print(f"[twna-watch] 資料夾不存在：{folder}", file=sys.stderr)
+    if not DOWNLOAD_DIR.is_dir():
+        print(f"[twna-watch] 資料夾不存在：{DOWNLOAD_DIR}", file=sys.stderr)
         return 1
 
-    hits = scan_folder(folder)
+    hits = scan_folder(DOWNLOAD_DIR)
     if not hits:
-        return 0  # launchd 每次下載都會觸發，非 twna 檔案安靜結束是正常路徑
+        return 0  # launchd 每次資料夾變動都會觸發，非 twna 檔案安靜結束是正常路徑
 
-    for f in hits:
-        print(f"[twna-watch] 發現 twna 課程頁：{f.name}")
-        stats = process(f)
-        msg = f"台灣護理學會：新增 {stats['added']} 筆、重複 {stats['skipped_dupe']} 筆"
-        print(f"[twna-watch] {msg}（原始檔已歸檔至 {ARCHIVE_DIRNAME}/）")
-        _notify(msg if stats["added"] else "課程頁已處理，沒有新課程")
-    return 0
+    # 發布只走一條路：local_update 負責同步雲端、匯入、重建、commit、push、通知。
+    # 它若正被 16:00 排程占用（單實例鎖），檔案留在收件匣，下一次執行會收走，不會遺失。
+    print(f"[twna-watch] 發現 twna 課程頁：{', '.join(f.name for f in hits)}，交給 local_update 匯入並發布")
+    return subprocess.run([sys.executable, str(PROJECT / "scripts" / "local_update.py")], cwd=PROJECT).returncode
 
 
 if __name__ == "__main__":
