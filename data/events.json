@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-09-28T16:00:43+08:00",
+  "generated": "2026-09-28T15:27:31+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1493,6 +1493,19 @@
    "region": "north",
    "ctext": "時數 24 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/F9B26CD0-9799-45EB-8250-CE542A1917C6"
+  },
+  {
+   "date": "2026-12-29",
+   "title": "AI與大數據應用開發實戰養成班(第12梯次)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 350 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/570F79DC-E31D-46EC-9695-2604A85286F3"
   }
  ]
 }
