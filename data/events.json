@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-09-29T16:00:40+08:00",
+  "generated": "2026-09-29T14:04:31+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1310,6 +1310,19 @@
   },
   {
    "date": "2026-11-23",
+   "title": "Google Apps Script × Gemini：免程式自動化實戰班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/C4A18E09-C996-4DA6-B3D6-9B7A8B5C7794"
+  },
+  {
+   "date": "2026-11-23",
    "title": "資料煉金術-用視覺化與特徵工程打造AI建模基礎",
    "location": "台北",
    "credits": {},
@@ -1361,6 +1374,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/1F27FC94-A1AB-432D-9650-E255C4A4A5FD"
   },
   {
+   "date": "2026-11-26",
+   "title": "企業導入人工智慧工具：資安防禦架構與內部控制實務(臺中班)",
+   "location": "台中",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/1F27FC94-A1AB-432D-9650-E255C4A4A5FD"
+  },
+  {
    "date": "2026-11-27",
    "title": "從AI模型到決策-資料建模與決策優化實務案例訓練",
    "location": "台北",
@@ -1372,6 +1398,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/DB73EF5A-B667-4FB3-B787-40EFB89B6805"
+  },
+  {
+   "date": "2026-11-30",
+   "title": "Claude 進階協作實戰班：打造可複製的 AI 工作法",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/2E4734E3-E9E2-43CC-BD46-D2C237BCE1F5"
   },
   {
    "date": "2026-11-30",
@@ -1387,6 +1426,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/577571C9-8E7F-48CF-A988-80DFBF651CC7"
   },
   {
+   "date": "2026-12-01",
+   "title": "AI × VBA Excel報表自動化實戰班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/E91DFEA0-F5EC-4304-81EE-FB73DC3677A6"
+  },
+  {
    "date": "2026-12-07",
    "title": "知識圖譜實戰-語意搜尋與AI問答的關鍵技術",
    "location": "台北",
@@ -1398,6 +1450,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/B17001D2-11D1-44AC-B8E0-283F473C4163"
+  },
+  {
+   "date": "2026-12-08",
+   "title": "AI Agent 職場實作班：ChatGPT打造專屬工作助理",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/A51C84AD-035B-41C3-835D-C578008CE762"
   },
   {
    "date": "2026-12-11",
