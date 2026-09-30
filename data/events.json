@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-09-30T16:00:48+08:00",
+  "generated": "2026-09-30T13:43:16+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1172,6 +1172,21 @@
    "region": "south",
    "ctext": "時數 7 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/699691F6-43A1-4907-A504-18D39EF4D7D0"
+  },
+  {
+   "date": "2026-11-15",
+   "title": "2026年台灣安寧緩和護理學會💜【東區】💜《禪茶之旅 開心門寂靜茶席》",
+   "location": "",
+   "credits": {
+    "pro": 2.5
+   },
+   "cat": "clinical",
+   "src": "hospice",
+   "online": false,
+   "ondemand": false,
+   "region": "east",
+   "ctext": "學術研討",
+   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/1ae6ec7ad3b84e7b8d2cb591c7f30687"
   },
   {
    "date": "2026-11-16",
