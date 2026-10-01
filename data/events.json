@@ -1,61 +1,9 @@
 {
  "meta": {
-  "generated": "2026-09-30T13:43:16+00:00",
+  "generated": "2026-10-01T16:00:35+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-23",
-   "title": "115年醫療品質學院實作課程-根本原因分析RCA工作坊",
-   "location": "中華民國護理師護士公會全國聯合會8樓會議室",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=qpr6OMFfvcOFu2m2XHYwJ1tzMe4Wj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILDj"
-  },
-  {
-   "date": "2026-09-23",
-   "title": "【中區】科技賦能 × 護理韌力-打造高壓時代的職場復原力與情意支持工作坊",
-   "location": "中區-臺中榮民總醫院研究大樓一樓第四會議室",
-   "credits": {},
-   "cat": "tech",
-   "src": "tnma",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "積分與細節詳見簡章附件",
-   "url": "https://www.tnma100.org.tw/manager/upload/2607021315231.pdf"
-  },
-  {
-   "date": "2026-09-23",
-   "title": "企業導入人工智慧工具：資安防禦架構與內部控制實務",
-   "location": "台南",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/1F27FC94-A1AB-432D-9650-E255C4A4A5FD"
-  },
-  {
-   "date": "2026-09-23",
-   "title": "生成式 AI 程式開發 與 Vibe Coding 實務",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/76D2B1EB-1BF7-4DF7-8E0C-20B95B86CB99"
-  },
   {
    "date": "2026-09-24",
    "title": "115年外傷護理繼續教育線上直播研習會(三)",
@@ -752,14 +700,14 @@
   {
    "date": "2026-10-22",
    "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-臨床照護品質應用與全方位溝通技巧",
-   "location": "",
+   "location": "醫策會701會議室",
    "credits": {},
    "cat": "clinical",
    "src": "jct",
    "online": false,
    "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
+   "region": "north",
+   "ctext": "醫策會上課時數證明、公務人力時數、護理繼續教育訓練積分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BZ7%2FNMZZ4MaFu2m2XHYwJ1tzMekSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
   },
   {
