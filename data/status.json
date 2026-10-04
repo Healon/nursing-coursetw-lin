@@ -1,17 +1,17 @@
 {
-  "generated": "2026-10-04T16:00:40+08:00",
+  "generated": "2026-10-04T13:12:11+00:00",
   "overall": "partial",
   "sources": {
     "nuna": {
       "status": "ok",
       "count": 23,
-      "last_success": "2026-10-03",
+      "last_success": "2026-10-04",
       "message": ""
     },
     "critical": {
       "status": "ok",
       "count": 4,
-      "last_success": "2026-10-03",
+      "last_success": "2026-10-04",
       "message": ""
     },
     "psy": {
@@ -23,7 +23,7 @@
     "tnna": {
       "status": "ok",
       "count": 10,
-      "last_success": "2026-10-03",
+      "last_success": "2026-10-04",
       "message": ""
     },
     "tnma": {
@@ -35,13 +35,13 @@
     "ni": {
       "status": "ok",
       "count": 12,
-      "last_success": "2026-10-03",
+      "last_success": "2026-10-04",
       "message": ""
     },
     "ahqroc": {
       "status": "ok",
       "count": 8,
-      "last_success": "2026-10-03",
+      "last_success": "2026-10-04",
       "message": ""
     },
     "jct": {
@@ -53,7 +53,7 @@
     "hospice": {
       "status": "ok",
       "count": 6,
-      "last_success": "2026-10-03",
+      "last_success": "2026-10-04",
       "message": ""
     },
     "twna": {
@@ -69,10 +69,10 @@
       "message": ""
     },
     "itri": {
-      "status": "error",
-      "count": 0,
-      "last_success": "2026-10-02",
-      "message": "RuntimeError: curl failed (exit 28) for https://college.itri.org.tw/Lesson/LessonList?FolderGUIDs=41098C03-5148-4153-964A-2DE86697F68F: curl: (28) Connection timed out after 30001 milliseconds"
+      "status": "ok",
+      "count": 52,
+      "last_success": "2026-10-04",
+      "message": ""
     }
   }
 }
