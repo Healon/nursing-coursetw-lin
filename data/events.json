@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-04T13:12:11+00:00",
+  "generated": "2026-10-05T16:00:40+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -818,7 +818,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、台灣婦產科醫學會、台灣周產期醫學會 學分申請中",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、台灣婦產科醫學會、台灣周產期醫學會、助產 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=q8%2F2OZFbvZGFu2m2XHYwJ1tzMegVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
   },
   {
@@ -1143,6 +1143,21 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
+  },
+  {
+   "date": "2026-11-12",
+   "title": "【線上直播】癌性傷口管理關鍵密碼-當癒合不再是唯一目標",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6286&pageno1&continue=Y"
   },
   {
    "date": "2026-11-13",
