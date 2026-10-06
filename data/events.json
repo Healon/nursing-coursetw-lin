@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-05T16:00:19+00:00",
+  "generated": "2026-10-06T14:11:42+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1078,6 +1078,19 @@
    "url": "https://www.tnpa.org.tw/events/content.php?id=6281&pageno1&continue=Y"
   },
   {
+   "date": "2026-11-09",
+   "title": "AI協作流程設計與導入工作坊",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B4152ECC-ACB3-4C8B-B9E7-B3FC35DF226F"
+  },
+  {
    "date": "2026-11-10",
    "title": "115 年醫院病人安全年度目標推廣課程（第四場）-實體報名",
    "location": "",
@@ -1227,6 +1240,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/0FA48F72-36E3-4DA0-9972-1D5AAFA6A19E"
   },
   {
+   "date": "2026-11-16",
+   "title": "※績效管理與經營分析實務運用研討會",
+   "location": "亞東紀念醫院6樓階梯教室",
+   "credits": {
+    "quality": 7
+   },
+   "cat": "admin",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261116"
+  },
+  {
    "date": "2026-11-17",
    "title": "Vibe Coding 應用 - SDD規格驅動開發實務",
    "location": "台北",
@@ -1293,6 +1321,21 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/C4A18E09-C996-4DA6-B3D6-9B7A8B5C7794"
+  },
+  {
+   "date": "2026-11-23",
+   "title": "※精實醫療於醫療界運用工作坊",
+   "location": "佛教慈濟醫療財團法人台北慈濟醫院合心樓3F合心會議室",
+   "credits": {
+    "quality": 8
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261123"
   },
   {
    "date": "2026-11-23",
@@ -1464,6 +1507,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/E91DFEA0-F5EC-4304-81EE-FB73DC3677A6"
   },
   {
+   "date": "2026-12-05",
+   "title": "※FOCUS-PDCA品管工具實務運用工作坊-北部場",
+   "location": "佛教慈濟醫療財團法人台北慈濟醫院 合心樓 3F 和氣會議室",
+   "credits": {
+    "quality": 8
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261205"
+  },
+  {
    "date": "2026-12-07",
    "title": "知識圖譜實戰-語意搜尋與AI問答的關鍵技術",
    "location": "台北",
@@ -1501,6 +1559,36 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/76E0EF6D-0161-44B2-AF73-087B9E741D79"
+  },
+  {
+   "date": "2026-12-11",
+   "title": "※醫療失效模式與效應分析(HFMEA)實務應用工作坊",
+   "location": "佛教慈濟醫療財團法人台北慈濟醫院合心樓3F合心會議室",
+   "credits": {
+    "quality": 7
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261211"
+  },
+  {
+   "date": "2026-12-12",
+   "title": "※FOCUS-PDCA品管工具實務運用工作坊-南部場",
+   "location": "高雄榮民總醫院 高齡醫學大樓 B1 第十一會議室",
+   "credits": {
+    "quality": 8
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261212"
   },
   {
    "date": "2026-12-12",
