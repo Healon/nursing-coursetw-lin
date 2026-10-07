@@ -1,24 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-06T14:11:42+00:00",
+  "generated": "2026-10-07T14:30:07+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-09-29",
-   "title": "【線上直播】藥量減法，守護加法：血壓與血脂管理的最大化策略",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "admin",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6264&pageno1&continue=Y"
-  },
   {
    "date": "2026-09-30",
    "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-指標稽核概念與操作實務",
@@ -282,6 +267,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/85B98699-B31F-4BBD-99D1-D18A0FEC27C2"
+  },
+  {
+   "date": "2026-10-07",
+   "title": "test test -",
+   "location": "12313",
+   "credits": {},
+   "cat": "other",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-10-08",
@@ -781,6 +779,21 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.tnpa.org.tw/events/content.php?id=6245&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-10-27",
+   "title": "「兆元健保時代的護理治理:支付制度新趨勢」研討會(推薦名單查詢) -全日(或半日場)",
+   "location": "視訊",
+   "credits": {
+    "pro": 6.4
+   },
+   "cat": "clinical",
+   "src": "nuna",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-10-28",
@@ -1505,6 +1518,21 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/E91DFEA0-F5EC-4304-81EE-FB73DC3677A6"
+  },
+  {
+   "date": "2026-12-02",
+   "title": "腦血管疾病防治基金會25周年暨2026優秀護理人員表揚大會 -",
+   "location": "台大醫院國際會議中心401廳",
+   "credits": {
+    "pro": 1.8
+   },
+   "cat": "clinical",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-12-05",
