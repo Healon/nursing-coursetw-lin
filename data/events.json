@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-08T16:00:45+08:00",
+  "generated": "2026-10-08T14:35:06+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -224,6 +224,21 @@
    "region": "north",
    "ctext": "本課程提供醫策會教育訓練時數、公務人員繼續教育時數",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8Zn6MpNZt8SFu2m2XHYwJ1tzMekVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
+  },
+  {
+   "date": "2026-10-08",
+   "title": "臨床教師的留任藝術 CBME實務、AI創新與帶領新生代護理人的關鍵策略 (北區) -亞東醫院",
+   "location": "亞東醫院國際會議廳",
+   "credits": {
+    "pro": 3
+   },
+   "cat": "teaching",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-10-12",
@@ -1131,6 +1146,22 @@
   },
   {
    "date": "2026-11-12",
+   "title": "2026智慧科技與人因工程在急重症照護及病人安全之臨床應用研習工作坊",
+   "location": "承億酒店 9F-心閱閣",
+   "credits": {
+    "pro": 6.2,
+    "np": 6.2
+   },
+   "cat": "tech",
+   "src": "critical",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.taccn.org.tw/activity/detail/434"
+  },
+  {
+   "date": "2026-11-12",
    "title": "【線上直播】癌性傷口管理關鍵密碼-當癒合不再是唯一目標",
    "location": "Google Meet 線上直播課程",
    "credits": {
@@ -1671,6 +1702,19 @@
    "region": "north",
    "ctext": "時數 350 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/570F79DC-E31D-46EC-9695-2604A85286F3"
+  },
+  {
+   "date": "2027-01-08",
+   "title": "AI應用規劃師初級能力培訓班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14.5 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/85C0CBA2-2B52-45D6-B0BE-36DBEF9211B0"
   }
  ]
 }
