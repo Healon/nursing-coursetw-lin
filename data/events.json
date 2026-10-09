@@ -1,50 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-08T14:35:06+00:00",
+  "generated": "2026-10-09T16:00:40+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-01",
-   "title": "AI與大數據應用開發實戰養成班(第11梯次)",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 350 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/68E8BACF-E0A6-4238-9A49-C128F4DD085C"
-  },
-  {
-   "date": "2026-10-01",
-   "title": "Google Gemini 全方位視覺工作流實戰",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/45A2CE05-BE1E-497F-B5EF-55C0C727B63A"
-  },
-  {
-   "date": "2026-10-01",
-   "title": "【線上直播】FNP臨床決策力提升：居家社區鑑別診斷實務與OSCE經驗分享",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.6
-   },
-   "cat": "teaching",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6268&pageno1&continue=Y"
-  },
   {
    "date": "2026-10-02",
    "title": "AI工具輕鬆入門：提升職場效率與決策力-直播班",
