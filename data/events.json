@@ -1,52 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-09T14:22:25+00:00",
+  "generated": "2026-10-10T16:00:36+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-02",
-   "title": "AI工具輕鬆入門：提升職場效率與決策力-直播班",
-   "location": "數位直播",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/D8AD1DF3-6AE7-4CD7-B59F-89AC823C72F2"
-  },
-  {
-   "date": "2026-10-02",
-   "title": "※【發表人員】2026年根本原因分析(RCA)競賽",
-   "location": "國泰人壽大樓B1國際會議廳",
-   "credits": {
-    "quality": 7
-   },
-   "cat": "other",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261002"
-  },
-  {
-   "date": "2026-10-02",
-   "title": "※【觀摩人員】2026年根本原因分析(RCA)競賽",
-   "location": "國泰人壽大樓B1國際會議廳",
-   "credits": {
-    "quality": 7
-   },
-   "cat": "other",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261002-1"
-  },
   {
    "date": "2026-10-04",
    "title": "【實體】說故事的人：Find the Blue Reason（以呼吸道感染為例）｜中區",
