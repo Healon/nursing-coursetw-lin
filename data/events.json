@@ -1,24 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-11T14:03:09+00:00",
+  "generated": "2026-10-12T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-04",
-   "title": "【實體】說故事的人：Find the Blue Reason（以呼吸道感染為例）｜中區",
-   "location": "裕元花園酒店4F溫莎廣場",
-   "credits": {
-    "np": 5.6
-   },
-   "cat": "safety",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6280&pageno1&continue=Y"
-  },
   {
    "date": "2026-10-05",
    "title": "※人因工程與醫品病安課程",
