@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-13T16:00:41+08:00",
+  "generated": "2026-10-13T15:03:23+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1046,6 +1046,36 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/699691F6-43A1-4907-A504-18D39EF4D7D0"
   },
   {
+   "date": "2026-11-13",
+   "title": "※【圈隊免費名額5名】2026年品質改善成果發表競賽",
+   "location": "臺北榮民總醫院",
+   "credits": {
+    "quality": 7
+   },
+   "cat": "safety",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261113"
+  },
+  {
+   "date": "2026-11-13",
+   "title": "※【整日觀摩】2026年品質改善成果發表競賽",
+   "location": "臺北榮民總醫院",
+   "credits": {
+    "quality": 7
+   },
+   "cat": "safety",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261113-1"
+  },
+  {
    "date": "2026-11-15",
    "title": "2026年台灣安寧緩和護理學會💜【東區】💜《禪茶之旅 開心門寂靜茶席》",
    "location": "",
@@ -1059,6 +1089,19 @@
    "region": "east",
    "ctext": "學術研討",
    "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/1ae6ec7ad3b84e7b8d2cb591c7f30687"
+  },
+  {
+   "date": "2026-11-16",
+   "title": "AI 數位教材開發實戰班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B095369A-B635-47D4-9C06-0E7ED04CA0CF"
   },
   {
    "date": "2026-11-16",
@@ -1248,6 +1291,19 @@
    "region": "north",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/A1DF1675-295E-4698-80FA-7325CFC71BC1"
+  },
+  {
+   "date": "2026-11-25",
+   "title": "駕馭AI簡報風格設計全攻略",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/ECCBF149-1E37-4C53-AF3F-26EB41FEF03A"
   },
   {
    "date": "2026-11-26",
@@ -1559,6 +1615,45 @@
    "region": "north",
    "ctext": "時數 14.5 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/85C0CBA2-2B52-45D6-B0BE-36DBEF9211B0"
+  },
+  {
+   "date": "2027-01-11",
+   "title": "零程式自動化實務： n8n 與生成式 AI 整合應用",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/5D9DE55E-E7F2-4DF3-BFAD-C24B984D81DC"
+  },
+  {
+   "date": "2027-01-13",
+   "title": "Claude Skills工作流程自動化實作",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/8BB4FC69-E1B7-480D-83C7-A686614EB473"
+  },
+  {
+   "date": "2027-01-13",
+   "title": "生成式AI辦公應用：報告、企劃與簡報快速產出",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/9A6D99D8-A5AA-47F2-861C-794CB684B313"
   }
  ]
 }
