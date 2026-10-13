@@ -1,66 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-12T16:44:14+00:00",
+  "generated": "2026-10-13T16:00:41+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-05",
-   "title": "※人因工程與醫品病安課程",
-   "location": "",
-   "credits": {
-    "quality": 2
-   },
-   "cat": "safety",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20261005"
-  },
-  {
-   "date": "2026-10-05",
-   "title": "台灣急診五級檢傷指導員訓練課程",
-   "location": "林口長庚紀念醫院臨床技能訓練中心(兒童醫療大樓L棟B2)",
-   "credits": {
-    "pro": 6,
-    "np": 6
-   },
-   "cat": "other",
-   "src": "critical",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/425"
-  },
-  {
-   "date": "2026-10-05",
-   "title": "數智化轉型二部曲-智能體AI(Agent AI)基礎：Python強化學習的決策原理與應用",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/9E83A695-8C68-4A61-B56E-721A2EEEFF6B"
-  },
-  {
-   "date": "2026-10-05",
-   "title": "醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（南區場）、（中區場）-醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（南區場）",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "醫策會教育訓練時數及公務人員終身學習時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；護理師人員繼續教育積分申請中。",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=qZupNsINvZaFu2m2XHYwJ1tzMe4Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
-  },
   {
    "date": "2026-10-06",
    "title": "115年醫療品質學院進階課程-團隊資源管理TRM師資培訓工作坊-115年醫療品質學院進階課程-團隊資源管理TRM模擬教學師資培訓工作坊",
@@ -776,7 +719,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fcj7Oc0N5JaFu2m2XHYwJ1tzMegSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
