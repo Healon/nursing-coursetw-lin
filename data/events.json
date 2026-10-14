@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-13T15:03:23+00:00",
+  "generated": "2026-10-14T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-06",
-   "title": "115年醫療品質學院進階課程-團隊資源管理TRM師資培訓工作坊-115年醫療品質學院進階課程-團隊資源管理TRM模擬教學師資培訓工作坊",
-   "location": "新北市護理師護士公會",
-   "credits": {},
-   "cat": "teaching",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=q5isNpdf45OFu2m2XHYwJ1tzMekRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
-  },
   {
    "date": "2026-10-07",
    "title": "AI 品牌影像商用實戰： 從AI影像生成、品牌傳達到商業接案的完整工作流程",
@@ -667,6 +654,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/12E14F15-610B-421F-8CB7-338BE6640E0C"
   },
   {
+   "date": "2026-10-30",
+   "title": "115年數位醫療危害病人安全之相關風險管控課程(視訊)-安全醫囑與決策支援-115年數位醫療危害病人安全之相關風險管控課程(視訊)-安全醫囑與決策支援系統設計：病人安全建議",
+   "location": "報名後視訊連結於上課前一週提供",
+   "credits": {},
+   "cat": "tech",
+   "src": "jct",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpz2NsFZsMeFu2m2XHYwJ1tzMesQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
+  },
+  {
    "date": "2026-10-31",
    "title": "Vibe Coding × AI輔助資料分析-入門實作班(第二梯)",
    "location": "台北",
@@ -745,7 +745,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、台灣婦產科醫學會、台灣周產期醫學會、助產 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8c33Y5EMssmFu2m2XHYwJ1tzMegUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -1159,6 +1159,19 @@
   },
   {
    "date": "2026-11-18",
+   "title": "115年數位醫療危害病人安全之相關風險管控課程-運用AI在醫囑與決策支援系統設計",
+   "location": "",
+   "credits": {},
+   "cat": "tech",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8JSrNMxescGFu2m2XHYwJ1tzMesTj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
+   "date": "2026-11-18",
    "title": "零程式AI編輯術-情資蒐集、自動分類與內容發布全攻略",
    "location": "台北",
    "credits": {},
@@ -1304,6 +1317,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/ECCBF149-1E37-4C53-AF3F-26EB41FEF03A"
+  },
+  {
+   "date": "2026-11-26",
+   "title": "115年數位醫療危害病人安全之相關風險管控課程-安全溝通：從資訊安全到病人安全",
+   "location": "",
+   "credits": {},
+   "cat": "tech",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJz5N8YLt5OFu2m2XHYwJ1tzMesSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
    "date": "2026-11-26",
