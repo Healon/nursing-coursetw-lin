@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-19T16:00:42+08:00",
+  "generated": "2026-10-19T14:40:34+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -42,6 +42,21 @@
    "region": "north",
    "ctext": "時數 15 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/B6A92F6B-4AC7-4178-9274-1C0BCB57B364"
+  },
+  {
+   "date": "2026-10-12",
+   "title": "※運用統計流程管制(SPC)進行品質改善",
+   "location": "三軍總醫院地下一樓 OSCE擬真大教室",
+   "credits": {
+    "quality": 1.5
+   },
+   "cat": "safety",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20261012"
   },
   {
    "date": "2026-10-12",
@@ -977,6 +992,19 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5r2MsZQsMiFu2m2XHYwJ1tzMegZj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
+   "date": "2026-11-13",
+   "title": "115年度護理資訊進階系列課程 【SMART Nursing：智慧監測於臨床照護】",
+   "location": "台北國泰萬怡酒店 蘭花廳Orchid",
+   "credits": {},
+   "cat": "tech",
+   "src": "ni",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
+   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3553"
   },
   {
    "date": "2026-11-13",
