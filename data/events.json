@@ -1,91 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-19T14:40:34+00:00",
+  "generated": "2026-10-20T16:00:42+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-12",
-   "title": "AI工具輕鬆入門：提升職場效率與決策力-新竹班",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/F4EE4327-3A3B-49BD-8AC5-5B7A9A7099A0"
-  },
-  {
-   "date": "2026-10-12",
-   "title": "Excel × AI數據分析與報表優化實務",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/24483468-6B96-4353-A9FC-00080A52B32C"
-  },
-  {
-   "date": "2026-10-12",
-   "title": "iPAS AI應用規劃師(初級)實務應用暨考照輔導班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 15 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B6A92F6B-4AC7-4178-9274-1C0BCB57B364"
-  },
-  {
-   "date": "2026-10-12",
-   "title": "※運用統計流程管制(SPC)進行品質改善",
-   "location": "三軍總醫院地下一樓 OSCE擬真大教室",
-   "credits": {
-    "quality": 1.5
-   },
-   "cat": "safety",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20261012"
-  },
-  {
-   "date": "2026-10-12",
-   "title": "【產業新尖兵計畫】廠區智慧AI監測與城市基礎設施數位化養成班（台中班）",
-   "location": "台中",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "時數 234 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B9439DF6-0848-4DC7-ABE0-9E94F793C0CD"
-  },
-  {
-   "date": "2026-10-12",
-   "title": "【線上直播】抗藥性細菌之治療",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "other",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6285&pageno1&continue=Y"
-  },
   {
    "date": "2026-10-13",
    "title": "商業服務業-AI部署與應用系統導入工作坊(臺北班)",
@@ -615,6 +533,19 @@
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpz2NsFZsMeFu2m2XHYwJ1tzMesQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
   },
   {
+   "date": "2026-10-30",
+   "title": "115年數位醫療危害病人安全之相關風險管控課程(視訊)-安全醫囑與決策支援系統設計：病人安全建議",
+   "location": "報名後視訊連結於上課前一週提供",
+   "credits": {},
+   "cat": "tech",
+   "src": "jct",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BM6sY80K45GFu2m2XHYwJ1tzMesWj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
+  },
+  {
    "date": "2026-10-31",
    "title": "Vibe Coding × AI輔助資料分析-入門實作班(第二梯)",
    "location": "台北",
@@ -784,7 +715,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "申請中",
+   "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqOJdYvZKFu2m2XHYwJ1tzMuQXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -1142,7 +1073,7 @@
    "ondemand": false,
    "region": "tbd",
    "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8JSrNMxescGFu2m2XHYwJ1tzMesTj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FZupYcUJ4MWFu2m2XHYwJ1tzMesZj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
    "date": "2026-11-18",
@@ -1316,7 +1247,7 @@
    "ondemand": false,
    "region": "tbd",
    "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJz5N8YLt5OFu2m2XHYwJ1tzMesSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rp%2F3ZJNYsZWFu2m2XHYwJ1tzMesYj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
    "date": "2026-11-26",
