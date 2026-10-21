@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-20T12:43:26+00:00",
+  "generated": "2026-10-21T16:00:42+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-13",
-   "title": "商業服務業-AI部署與應用系統導入工作坊(臺北班)",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 40 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/E670D78F-39C3-4C63-AAE9-3FE206891E55"
-  },
   {
    "date": "2026-10-14",
    "title": "115年醫療品質學院實作課程-醫院內部稽核工作坊",
