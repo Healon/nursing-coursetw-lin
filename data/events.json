@@ -1,52 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-21T12:56:21+00:00",
+  "generated": "2026-10-22T12:58:31+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-14",
-   "title": "115年醫療品質學院實作課程-醫院內部稽核工作坊",
-   "location": "醫策會701會議室",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8Z6qMpYK5sGFu2m2XHYwJ1tzMekUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
-  },
-  {
-   "date": "2026-10-14",
-   "title": "北區(淡水馬偕安寧療護示範中心)：2026年《好好練習告別》一日工作坊",
-   "location": "",
-   "credits": {
-    "pro": 4
-   },
-   "cat": "clinical",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "學術研討",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/4bcef42336e344dfbdc3e643d9b5983f"
-  },
-  {
-   "date": "2026-10-14",
-   "title": "北區：2026年《好好練習告別》一日工作坊",
-   "location": "",
-   "credits": {
-    "pro": 4
-   },
-   "cat": "other",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "學術研討",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/4bcef42336e344dfbdc3e643d9b5983f"
-  },
   {
    "date": "2026-10-15",
    "title": "醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（南區場）、（中區場）-醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（中區場）",
@@ -885,6 +842,22 @@
   },
   {
    "date": "2026-11-12",
+   "title": "2026智慧科技與人因工程在急重症照護及病人安全之臨床應用研習工作坊 (群益邀請)",
+   "location": "承億酒店 9F-心閱閣",
+   "credits": {
+    "pro": 6.2,
+    "np": 6.2
+   },
+   "cat": "tech",
+   "src": "critical",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.taccn.org.tw/activity/detail/437"
+  },
+  {
+   "date": "2026-11-12",
    "title": "【線上直播】癌性傷口管理關鍵密碼-當癒合不再是唯一目標",
    "location": "Google Meet 線上直播課程",
    "credits": {
@@ -1090,6 +1063,19 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.taccn.org.tw/activity/detail/431"
+  },
+  {
+   "date": "2026-11-19",
+   "title": "115年度護理資訊進階系列課程 【護理資訊新世代與賦能研討會】",
+   "location": "新北市立土城醫院醫療大樓二樓國際會議廳",
+   "credits": {},
+   "cat": "tech",
+   "src": "ni",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
+   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3554"
   },
   {
    "date": "2026-11-20",
@@ -1512,6 +1498,19 @@
   },
   {
    "date": "2026-12-21",
+   "title": "【免費課程】AI驅動市場需求分析：AI 賦能市場洞察與精準決策實作應用 (臺北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/05604949-128D-418E-8253-9A9482CB1448"
+  },
+  {
+   "date": "2026-12-21",
    "title": "圖神經網路實戰應用-從圖資料到AI建模解決方案",
    "location": "台北",
    "credits": {},
@@ -1652,6 +1651,19 @@
    "region": "south",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/E758BCCB-07A2-423C-BBAD-DCF8DE670197"
+  },
+  {
+   "date": "2027-01-22",
+   "title": "生成式 AI 程式開發 與 Vibe Coding 實務",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/5CE47019-817B-487E-A1BC-8DC242E82264"
   }
  ]
 }
