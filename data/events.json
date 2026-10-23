@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-22T12:58:31+00:00",
+  "generated": "2026-10-23T16:00:42+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-15",
-   "title": "醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（南區場）、（中區場）-醫療事故通報及根本原因分析概念基本教育訓練：醫預法臨床案例學習營（中區場）",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "醫策會教育訓練時數及公務人員終身學習時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；護理師人員繼續教育積分申請中。",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=qZupNsINvZaFu2m2XHYwJ1tzMe4Xj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
-  },
   {
    "date": "2026-10-16",
    "title": "115年度急重症CKRT照護研習會(南區)",
@@ -659,7 +646,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqOJdYvZKFu2m2XHYwJ1tzMuQXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -672,7 +659,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fc33MZdc5seFu2m2XHYwJ1tzMuQWj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -1169,6 +1156,19 @@
    "region": "online",
    "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5SsNcwM4cGFu2m2XHYwJ1tzMegYj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
+   "date": "2026-11-24",
+   "title": "115年醫療品質學院進階實作課程-SPC指標分析以及判讀-115年醫療品質學院進階實作課程- SPC指標分析以及判讀",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FM2qOMNZ58aFu2m2XHYwJ1tzMeoRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
    "date": "2026-11-25",
