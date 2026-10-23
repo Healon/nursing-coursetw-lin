@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-23T16:00:42+08:00",
+  "generated": "2026-10-23T12:38:14+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1008,6 +1008,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/865A130B-BCB6-45F8-B706-C8932FF71DE3"
+  },
+  {
+   "date": "2026-11-17",
+   "title": "新一代全端 AI 開發流程實戰",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 14 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/FE6118BF-F9DE-4F55-9F9F-0014A4B915FA"
   },
   {
    "date": "2026-11-18",
