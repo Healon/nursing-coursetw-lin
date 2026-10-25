@@ -1,50 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-24T12:00:21+00:00",
+  "generated": "2026-10-25T12:34:39+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-17",
-   "title": "115年度護理資訊進階系列課程 【Vibe Coding × AI：護理智慧應用開發實戰（無程式）】",
-   "location": "活動場次：單程 2026/10/17",
-   "credits": {},
-   "cat": "tech",
-   "src": "ni",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
-   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3544"
-  },
-  {
-   "date": "2026-10-17",
-   "title": "115年護理青年國際事務學習營",
-   "location": "台灣護理學會 國際會議廳(9F)",
-   "credits": {},
-   "cat": "clinical",
-   "src": "twna",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "積分請洽學會官網",
-   "url": "https://www.act.e-twna.org.tw/ActSign/PUB/ActClass_List.aspx"
-  },
-  {
-   "date": "2026-10-17",
-   "title": "長照3.0醫養結合發展新視野研討會(中區) -",
-   "location": "衛生福利部臺中醫院-醫療大樓12樓大禮堂",
-   "credits": {
-    "pro": 7.2
-   },
-   "cat": "research",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
   {
    "date": "2026-10-18",
    "title": "115年_研7_透析護理主管感控研習會",
@@ -1635,6 +1594,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/5CE47019-817B-487E-A1BC-8DC242E82264"
+  },
+  {
+   "date": "2027-01-25",
+   "title": "Vibe Coding Web 應用系統開發實務班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/8A735844-981D-4382-A865-21C44452A19E"
   }
  ]
 }
