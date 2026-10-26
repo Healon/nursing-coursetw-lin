@@ -1,54 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-25T12:34:39+00:00",
+  "generated": "2026-10-26T16:00:41+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-18",
-   "title": "115年_研7_透析護理主管感控研習會",
-   "location": "亞東紀念醫院10樓 南棟第二教室",
-   "credits": {
-    "pro": 6.6
-   },
-   "cat": "clinical",
-   "src": "tnna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "公務人員終身學習時數 6 小時",
-   "url": "https://www.tnna.org.tw/home/v2/study_content.asp?WC_ID=1928"
-  },
-  {
-   "date": "2026-10-18",
-   "title": "2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽",
-   "location": "大臺南會展中心",
-   "credits": {
-    "np": 3
-   },
-   "cat": "clinical",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6262&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-10-18",
-   "title": "2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】限第一作者",
-   "location": "大臺南會展中心",
-   "credits": {
-    "np": 3
-   },
-   "cat": "clinical",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6263&pageno1&continue=Y"
-  },
   {
    "date": "2026-10-19",
    "title": "ISO/IEC 42001:2023人工智慧管理系統(AIMS) 主導稽核員訓課程(高雄)",
