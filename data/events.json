@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-27T16:00:41+08:00",
+  "generated": "2026-10-27T13:12:17+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -29,6 +29,21 @@
    "region": "north",
    "ctext": "時數 14 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/82A8AA0F-5F3F-4380-90C7-7E22062EE6BF"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "※提升職場復原力-從白袍到山嶺 卸下聽診器 聆聽群山與自我的對話",
+   "location": "總院一期十樓梅監霧禮拜堂",
+   "credits": {
+    "quality": 0.5
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20261020"
   },
   {
    "date": "2026-10-20",
@@ -1173,6 +1188,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/E91DFEA0-F5EC-4304-81EE-FB73DC3677A6"
   },
   {
+   "date": "2026-12-01",
+   "title": "AI數據分析產業應用養成班(第8梯次)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 364 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B5484C11-75DC-41A4-BAD7-95F8994FB14E"
+  },
+  {
    "date": "2026-12-02",
    "title": "腦血管疾病防治基金會25周年暨2026優秀護理人員表揚大會 -",
    "location": "台大醫院國際會議中心401廳",
@@ -1328,6 +1356,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/58337D24-4991-4E86-804C-831952A336BB"
+  },
+  {
+   "date": "2026-12-17",
+   "title": "打造AI小幫手-用n8n實現流程自動化",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/08156912-7B71-450B-9EC3-0ECCB6BD0259"
   },
   {
    "date": "2026-12-19",
