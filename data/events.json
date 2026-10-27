@@ -1,48 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-26T14:15:27+00:00",
+  "generated": "2026-10-27T16:00:41+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-19",
-   "title": "ISO/IEC 42001:2023人工智慧管理系統(AIMS) 主導稽核員訓課程(高雄)",
-   "location": "高雄",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 35 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/09C7AFF3-5DD5-4A39-92BC-30B54BE01C1A"
-  },
-  {
-   "date": "2026-10-19",
-   "title": "生成式 AI 程式開發與 Vibe Coding 實務",
-   "location": "台南",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/7608DB8E-D3E2-419B-BDFB-AB49CA7F8E55"
-  },
-  {
-   "date": "2026-10-19",
-   "title": "零程式AI知識管家實務-文件整理、LINE智能問答全攻略",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/BC5E0A4A-403C-4FCC-A72D-F00AE441BB79"
-  },
   {
    "date": "2026-10-20",
    "title": "AI協作流程設計與導入工作坊",
