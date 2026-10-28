@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-28T16:00:38+08:00",
+  "generated": "2026-10-28T14:01:45+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1382,6 +1382,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/08156912-7B71-450B-9EC3-0ECCB6BD0259"
   },
   {
+   "date": "2026-12-18",
+   "title": "※[南部場]2026年Post-ISQua Highlights國際健康照護品質協會年會精萃分享-跨越國界看見品質",
+   "location": "國軍高雄總醫院",
+   "credits": {
+    "quality": 6.5
+   },
+   "cat": "clinical",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261218"
+  },
+  {
    "date": "2026-12-19",
    "title": "Vibe Coding × AI程式開發-進階實戰班（規格驅動開發與AI協作）（第二梯）",
    "location": "台北",
@@ -1393,6 +1408,21 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/2C0D0E95-1766-4765-A64E-012943479923"
+  },
+  {
+   "date": "2026-12-21",
+   "title": "※[北部場]2026年Post-ISQua Highlights國際健康照護品質協會年會精萃分享-跨越國界看見品質",
+   "location": "馬偕紀念醫院(台北院區",
+   "credits": {
+    "quality": 6.5
+   },
+   "cat": "clinical",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261221"
   },
   {
    "date": "2026-12-21",
