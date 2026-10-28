@@ -1,65 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-27T13:12:17+00:00",
+  "generated": "2026-10-28T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-20",
-   "title": "AI協作流程設計與導入工作坊",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B4152ECC-ACB3-4C8B-B9E7-B3FC35DF226F"
-  },
-  {
-   "date": "2026-10-20",
-   "title": "Claude Skills工作流程自動化實作",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/82A8AA0F-5F3F-4380-90C7-7E22062EE6BF"
-  },
-  {
-   "date": "2026-10-20",
-   "title": "※提升職場復原力-從白袍到山嶺 卸下聽診器 聆聽群山與自我的對話",
-   "location": "總院一期十樓梅監霧禮拜堂",
-   "credits": {
-    "quality": 0.5
-   },
-   "cat": "other",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=B-20261020"
-  },
-  {
-   "date": "2026-10-20",
-   "title": "【線上直播】用心守護失禁肌膚：從 IAD 臨床辨識、精準照護到 FMS 實務應用",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "clinical",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6283&pageno1&continue=Y"
-  },
   {
    "date": "2026-10-21",
    "title": "【線上社團課程】NPower專注力社群-練習情緒除噪與心理邊界",
@@ -792,6 +736,19 @@
   },
   {
    "date": "2026-11-16",
+   "title": "115年醫療品質學院進階實作課程-根本原因分析（RCA 2.0／HFACS）高階分析師培訓班",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rs6pZMRdsceFu2m2XHYwJ1tzMeoQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
+   "date": "2026-11-16",
    "title": "AI 數位教材開發實戰班",
    "location": "台北",
    "credits": {},
@@ -882,6 +839,21 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FZupYcUJ4MWFu2m2XHYwJ1tzMesZj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
+   "date": "2026-11-18",
+   "title": "【線上社團課程】NPower專注力社群-11月課程",
+   "location": "ZOOM線上會議室",
+   "credits": {
+    "np": 0.6
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6289&pageno1&continue=Y"
   },
   {
    "date": "2026-11-18",
@@ -1137,6 +1109,19 @@
   },
   {
    "date": "2026-11-27",
+   "title": "115年醫療品質學院實作課程-醫院內部稽核工作坊",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rM73M5YJtZKFu2m2XHYwJ1tzMeoSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+  },
+  {
+   "date": "2026-11-27",
    "title": "從AI模型到決策-資料建模與決策優化實務案例訓練",
    "location": "台北",
    "credits": {},
@@ -1173,6 +1158,19 @@
    "region": "north",
    "ctext": "時數 40 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/577571C9-8E7F-48CF-A988-80DFBF651CC7"
+  },
+  {
+   "date": "2026-12-01",
+   "title": "115年醫療品質學院實作課程- Power BI資料視覺化工作坊-115年醫療品質學院實作課程-Power BI資料視覺化工作坊",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FJusZc1dtsWFu2m2XHYwJ1tzMeoTj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHo"
   },
   {
    "date": "2026-12-01",
@@ -1343,6 +1341,19 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.tnpa.org.tw/events/content.php?id=6255&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-12-14",
+   "title": "115年醫療品質學院進階實作課程-根本原因分析（RCA 2.0／HFACS）高階分析師培訓班",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bsn4ZcVbvMaFu2m2XHYwJ1tzMeoQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHo"
   },
   {
    "date": "2026-12-14",
