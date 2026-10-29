@@ -1,37 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-28T14:01:45+00:00",
+  "generated": "2026-10-29T16:00:35+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-21",
-   "title": "【線上社團課程】NPower專注力社群-練習情緒除噪與心理邊界",
-   "location": "ZOOM線上會議室",
-   "credits": {
-    "np": 0.6
-   },
-   "cat": "other",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6284&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-10-21",
-   "title": "地端LLM部署與應用程式開發實務",
-   "location": "台南",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 18 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/E758BCCB-07A2-423C-BBAD-DCF8DE670197"
-  },
   {
    "date": "2026-10-22",
    "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-臨床照護品質應用與全方位溝通技巧",
@@ -843,6 +815,21 @@
   {
    "date": "2026-11-18",
    "title": "【線上社團課程】NPower專注力社群-11月課程",
+   "location": "ZOOM線上會議室",
+   "credits": {
+    "np": 0.6
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6289&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-11-18",
+   "title": "【線上社團課程】NPower專注力社群-11月課程-從知道到做到：重新把自己放進健康決策裡",
    "location": "ZOOM線上會議室",
    "credits": {
     "np": 0.6
