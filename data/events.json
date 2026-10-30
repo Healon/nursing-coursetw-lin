@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-30T16:00:39+08:00",
+  "generated": "2026-10-30T14:07:45+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1329,6 +1329,21 @@
   },
   {
    "date": "2026-12-21",
+   "title": "※AI工具職場應用實務工作坊",
+   "location": "佛教慈濟醫療財團法人台北慈濟醫院 合心樓3F合心會議室",
+   "credits": {
+    "quality": 6
+   },
+   "cat": "tech",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261221-1"
+  },
+  {
+   "date": "2026-12-21",
    "title": "※[北部場]2026年Post-ISQua Highlights國際健康照護品質協會年會精萃分享-跨越國界看見品質",
    "location": "馬偕紀念醫院(台北院區",
    "credits": {
@@ -1406,6 +1421,32 @@
    "region": "north",
    "ctext": "時數 350 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/570F79DC-E31D-46EC-9695-2604A85286F3"
+  },
+  {
+   "date": "2027-01-04",
+   "title": "【免費課程】無人智慧店務：從營運洞察到流程自動化的精準決策實務 (臺北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/FD9C4156-DB46-4DE4-BD75-1A6A1A3F5C72"
+  },
+  {
+   "date": "2027-01-06",
+   "title": "n8n自動化流程實戰：建構高效工作流",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/14078F49-7329-4B99-A835-C57C1A00A194"
   },
   {
    "date": "2027-01-08",
