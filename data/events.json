@@ -1,78 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-29T14:18:22+00:00",
+  "generated": "2026-10-30T16:00:39+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-22",
-   "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-臨床照護品質應用與全方位溝通技巧",
-   "location": "醫策會701會議室",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "醫策會上課時數證明、公務人力時數、護理繼續教育訓練積分",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BZ7%2FNMZZ4MaFu2m2XHYwJ1tzMekSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
-  },
-  {
-   "date": "2026-10-22",
-   "title": "【政府補助】千瓦級晶片散熱暨兆瓦級AI資料中心冷卻解決方案(進階班)",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14.5 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/DE05EED6-4C56-439B-B494-89E5F13D27C6"
-  },
-  {
-   "date": "2026-10-22",
-   "title": "南區(成大醫院)：2026年《好好練習告別》一日工作坊",
-   "location": "",
-   "credits": {
-    "pro": 4
-   },
-   "cat": "other",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "學術研討",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/376e205e49d44728ad825ca177fd763b"
-  },
-  {
-   "date": "2026-10-22",
-   "title": "南區：2026年《好好練習告別》一日工作坊",
-   "location": "",
-   "credits": {
-    "pro": 4
-   },
-   "cat": "other",
-   "src": "hospice",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "學術研討",
-   "url": "https://www.hospicenurse.org.tw/ehc-tahpn/s/w/edu/scheduleInfo1/schedule1/376e205e49d44728ad825ca177fd763b"
-  },
-  {
-   "date": "2026-10-22",
-   "title": "高壓輪班下的領導策略、團隊韌性與身心照護",
-   "location": "新北市立聯合醫院復健大樓6樓大禮堂",
-   "credits": {},
-   "cat": "clinical",
-   "src": "tnma",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "積分與細節詳見簡章附件",
-   "url": "https://www.tnma100.org.tw/manager/upload/2608061215391.pdf"
-  },
   {
    "date": "2026-10-24",
    "title": "【OSCE儲備師資】專科護理師OSCE臨床思維與技能訓練之儲備師資工作坊(南區場)",
@@ -505,7 +436,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、台灣婦產科醫學會、台灣周產期醫學會 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rMqtZswN5sSFu2m2XHYwJ1tzMegWj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -810,7 +741,7 @@
    "ondemand": false,
    "region": "tbd",
    "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FZupYcUJ4MWFu2m2XHYwJ1tzMesZj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8JSrNMxescGFu2m2XHYwJ1tzMesTj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
    "date": "2026-11-18",
@@ -1040,7 +971,7 @@
    "ondemand": false,
    "region": "tbd",
    "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rp%2F3ZJNYsZWFu2m2XHYwJ1tzMesYj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJz5N8YLt5OFu2m2XHYwJ1tzMesSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
    "date": "2026-11-26",
