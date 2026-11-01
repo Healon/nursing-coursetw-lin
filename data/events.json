@@ -1,54 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-31T13:39:35+00:00",
+  "generated": "2026-11-01T16:00:33+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-24",
-   "title": "【OSCE儲備師資】專科護理師OSCE臨床思維與技能訓練之儲備師資工作坊(南區場)",
-   "location": "高雄榮民總醫院高齡大樓B1臨床技能中心",
-   "credits": {
-    "np": 7
-   },
-   "cat": "teaching",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6273&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-10-24",
-   "title": "【OSCE考生衝刺】專科護理師OSCE臨床思維與技能訓練工作坊(南區場)",
-   "location": "高雄榮民總醫院高齡大樓B1臨床技能中心",
-   "credits": {
-    "np": 7.8
-   },
-   "cat": "teaching",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6270&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-10-24",
-   "title": "【實體】2026專師傷口衛生沉浸式工作坊｜萬芳醫院場",
-   "location": "萬芳醫院六樓國際會議廳",
-   "credits": {
-    "np": 3.2
-   },
-   "cat": "clinical",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6245&pageno1&continue=Y"
-  },
   {
    "date": "2026-10-27",
    "title": "「兆元健保時代的護理治理:支付制度新趨勢」研討會(推薦名單查詢) -全日(或半日場)",
@@ -449,7 +404,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、台灣婦產科醫學會、台灣周產期醫學會 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rMqtZswN5sSFu2m2XHYwJ1tzMegWj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -462,7 +417,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "醫策會上課時數證明、公務人力時數、護理繼續教育訓練積分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpj5N5dcsZGFu2m2XHYwJ1tzMegRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -481,14 +436,14 @@
   {
    "date": "2026-11-11",
    "title": "115年醫療品質學院實作課程-根本原因分析RCA工作坊",
-   "location": "",
+   "location": "醫策會701會議室",
    "credits": {},
    "cat": "safety",
    "src": "jct",
    "online": false,
    "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
+   "region": "north",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人員繼續教育時數",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FZj2YpMM4ciFu2m2XHYwJ1tzMesRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
