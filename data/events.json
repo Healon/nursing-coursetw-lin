@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-02T16:00:42+08:00",
+  "generated": "2026-11-02T17:04:14+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -797,6 +797,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/0F944D6F-A481-4754-BB34-3FA8D420D6DA"
   },
   {
+   "date": "2026-11-21",
+   "title": "AI智能自動化實戰班–從Workflow到AI Agent",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/5C5A179C-EF31-48D8-A6D9-4772E6F3ECCF"
+  },
+  {
    "date": "2026-11-23",
    "title": "Google Apps Script × Gemini：免程式自動化實戰班",
    "location": "台北",
@@ -1143,6 +1156,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/A51C84AD-035B-41C3-835D-C578008CE762"
   },
   {
+   "date": "2026-12-09",
+   "title": "※Power BI 實務運用工作坊-初階班",
+   "location": "亞東紀念醫院南棟十樓第二教室",
+   "credits": {
+    "quality": 7
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261209"
+  },
+  {
    "date": "2026-12-11",
    "title": "Microsoft Azure AI 基礎-微軟AI-901考證輔導班",
    "location": "台北",
@@ -1242,6 +1270,21 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/58337D24-4991-4E86-804C-831952A336BB"
   },
   {
+   "date": "2026-12-16",
+   "title": "※Power BI 實務運用工作坊-中階班",
+   "location": "亞東紀念醫院南棟十樓第二教室",
+   "credits": {
+    "quality": 7
+   },
+   "cat": "other",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261216"
+  },
+  {
    "date": "2026-12-17",
    "title": "打造AI小幫手-用n8n實現流程自動化",
    "location": "台北",
@@ -1281,6 +1324,21 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/2C0D0E95-1766-4765-A64E-012943479923"
+  },
+  {
+   "date": "2026-12-21",
+   "title": "※AI工具在醫療品質與病人安全實踐與應用",
+   "location": "佛教慈濟醫療財團法人台北慈濟醫院 合心樓3F合心會議室",
+   "credits": {
+    "quality": 6
+   },
+   "cat": "tech",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261221-1"
   },
   {
    "date": "2026-12-21",
@@ -1431,6 +1489,32 @@
   },
   {
    "date": "2027-01-11",
+   "title": "AI工具輕鬆入門：提升職場效率與決策力-台北班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/BF4F789C-B1B9-49B4-9DFE-126CADB059B2"
+  },
+  {
+   "date": "2027-01-11",
+   "title": "【免費課程】智慧餐廚機器人：引領餐廳邁向高效營運(臺中班)",
+   "location": "台中",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B4ADE463-FBFF-4D91-B3C9-6305C6DCDD27"
+  },
+  {
+   "date": "2027-01-11",
    "title": "零程式自動化實務： n8n 與生成式 AI 整合應用",
    "location": "台北",
    "credits": {},
@@ -1467,6 +1551,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/9A6D99D8-A5AA-47F2-861C-794CB684B313"
+  },
+  {
+   "date": "2027-01-14",
+   "title": "【免費課程】AI投報率(ROI)評估：服務業 AI 轉型與 ROI 評估實戰(臺中班)",
+   "location": "台中",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/EDAF7F67-8B99-4D1A-A869-7A03EA957136"
   },
   {
    "date": "2027-01-18",
