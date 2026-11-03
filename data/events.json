@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-02T17:04:14+00:00",
+  "generated": "2026-11-03T16:00:39+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -339,6 +339,21 @@
    "region": "south",
    "ctext": "",
    "url": "https://www.tnpa.org.tw/events/content.php?id=6281&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-11-08",
+   "title": "【線上工作坊】實證進階一次到位：NP4實證案例報告撰寫暨JBI實證工具線上工作坊",
+   "location": "Google Meet 線上工作坊",
+   "credits": {
+    "np": 4
+   },
+   "cat": "research",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6287&pageno1&continue=Y"
   },
   {
    "date": "2026-11-08",
@@ -1113,6 +1128,21 @@
    "region": "north",
    "ctext": "",
    "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261205"
+  },
+  {
+   "date": "2026-12-05",
+   "title": "【實體】超音波導引 PICC 置入、照護與維護實務工作坊",
+   "location": "聯新國際醫院創新技能中心",
+   "credits": {
+    "np": 7.2
+   },
+   "cat": "clinical",
+   "src": "tnpa",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6290&pageno1&continue=Y"
   },
   {
    "date": "2026-12-05",
