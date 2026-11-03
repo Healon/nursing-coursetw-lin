@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-03T16:00:39+08:00",
+  "generated": "2026-11-03T15:06:33+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1161,6 +1161,19 @@
   },
   {
    "date": "2026-12-07",
+   "title": "【免費課程】線上線下(OMO)數據整合：AI Agent驅動服務業智慧轉型實戰班（臺北班）",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": true,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/4665A6CA-82A0-4A6C-B2F7-28B2B11A6B9C"
+  },
+  {
+   "date": "2026-12-07",
    "title": "知識圖譜實戰-語意搜尋與AI問答的關鍵技術",
    "location": "台北",
    "credits": {},
@@ -1329,6 +1342,19 @@
   },
   {
    "date": "2026-12-18",
+   "title": "115年護理資訊標竿學習暨推展經驗交流活動",
+   "location": "高雄榮民總醫院急診大樓第六會議室",
+   "credits": {},
+   "cat": "tech",
+   "src": "ni",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "本課程不發予研習會證明書，申請護理師繼續教育積分中。",
+   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3555"
+  },
+  {
+   "date": "2026-12-18",
    "title": "※[南部場]2026年Post-ISQua Highlights國際健康照護品質協會年會精萃分享-跨越國界看見品質",
    "location": "國軍高雄總醫院",
    "credits": {
@@ -1492,6 +1518,19 @@
    "url": "https://college.itri.org.tw/Lesson/LessonData/14078F49-7329-4B99-A835-C57C1A00A194"
   },
   {
+   "date": "2027-01-07",
+   "title": "【免費課程】智慧營運AI代理：AI賦能實戰_從零打造營運管理專屬AI助理(臺中班)",
+   "location": "台中",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/00C5194B-5698-43AC-B4EA-D4153996ADC6"
+  },
+  {
    "date": "2027-01-08",
    "title": "AI應用規劃師初級能力培訓班",
    "location": "台北",
@@ -1542,6 +1581,19 @@
    "region": "central",
    "ctext": "時數 30 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/B4ADE463-FBFF-4D91-B3C9-6305C6DCDD27"
+  },
+  {
+   "date": "2027-01-11",
+   "title": "【免費課程】消費行為洞察與預測：掌握消費行為預測與個人化精準行銷實戰班 (臺北班)",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/EA6ACAA8-AE8D-432B-9D53-744B050BD760"
   },
   {
    "date": "2027-01-11",
