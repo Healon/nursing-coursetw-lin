@@ -1,24 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-03T15:06:33+00:00",
+  "generated": "2026-11-04T16:00:37+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-27",
-   "title": "「兆元健保時代的護理治理:支付制度新趨勢」研討會(推薦名單查詢) -全日(或半日場)",
-   "location": "視訊",
-   "credits": {
-    "pro": 6.4
-   },
-   "cat": "clinical",
-   "src": "nuna",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
   {
    "date": "2026-10-28",
    "title": "n8n自動化流程實戰：建構高效工作流",
