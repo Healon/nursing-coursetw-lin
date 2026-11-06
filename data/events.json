@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-06T16:00:36+08:00",
+  "generated": "2026-11-06T15:02:20+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1602,6 +1602,19 @@
    "region": "north",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/8A735844-981D-4382-A865-21C44452A19E"
+  },
+  {
+   "date": "2027-01-27",
+   "title": "AI工具輕鬆入門：提升職場效率與決策力-直播班",
+   "location": "數位直播",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/576654F3-CE1F-4372-89D1-CC6B3AB6A198"
   }
  ]
 }
