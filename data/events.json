@@ -1,64 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-05T15:27:43+00:00",
+  "generated": "2026-11-06T16:00:36+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-29",
-   "title": "115 年診所病人安全年度目標推廣課程（婦產場-第一場）-視訊報名-雙向溝通～守護孕產安全～",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、台灣婦產科醫學會、台灣周產期醫學會、助產 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=q8%2F2OZFbvZGFu2m2XHYwJ1tzMegVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
-  },
-  {
-   "date": "2026-10-29",
-   "title": "115年度急重症CKRT照護研習會(中區)",
-   "location": "彰化基督教醫院二期十一樓連瑪玉學術講堂",
-   "credits": {
-    "pro": 6,
-    "np": 6
-   },
-   "cat": "clinical",
-   "src": "critical",
-   "online": false,
-   "ondemand": false,
-   "region": "central",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/417"
-  },
-  {
-   "date": "2026-10-29",
-   "title": "打造AI小幫手-用n8n實現流程自動化",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/08156912-7B71-450B-9EC3-0ECCB6BD0259"
-  },
-  {
-   "date": "2026-10-29",
-   "title": "數智化轉型首部曲-從預測型AI到生成和決策型AI：圖神經網路與深度生成建模Python實作",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/12E14F15-610B-421F-8CB7-338BE6640E0C"
-  },
   {
    "date": "2026-10-30",
    "title": "115年數位醫療危害病人安全之相關風險管控課程(視訊)-安全醫囑與決策支援-115年數位醫療危害病人安全之相關風險管控課程(視訊)-安全醫囑與決策支援系統設計：病人安全建議",
