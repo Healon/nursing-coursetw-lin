@@ -1,35 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-06T15:02:20+00:00",
+  "generated": "2026-11-07T16:00:36+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-30",
-   "title": "115年數位醫療危害病人安全之相關風險管控課程(視訊)-安全醫囑與決策支援-115年數位醫療危害病人安全之相關風險管控課程(視訊)-安全醫囑與決策支援系統設計：病人安全建議",
-   "location": "報名後視訊連結於上課前一週提供",
-   "credits": {},
-   "cat": "tech",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bpz2NsFZsMeFu2m2XHYwJ1tzMesQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
-  },
-  {
-   "date": "2026-10-30",
-   "title": "115年數位醫療危害病人安全之相關風險管控課程(視訊)-安全醫囑與決策支援系統設計：病人安全建議",
-   "location": "報名後視訊連結於上課前一週提供",
-   "credits": {},
-   "cat": "tech",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BM6sY80K45GFu2m2XHYwJ1tzMesWj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHq"
-  },
   {
    "date": "2026-10-31",
    "title": "Vibe Coding × AI輔助資料分析-入門實作班(第二梯)",
