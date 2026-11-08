@@ -1,52 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-07T14:01:50+00:00",
+  "generated": "2026-11-08T16:00:40+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-10-31",
-   "title": "Vibe Coding × AI輔助資料分析-入門實作班(第二梯)",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/CB8DB410-9679-44C7-8555-C1E131F64C8E"
-  },
-  {
-   "date": "2026-10-31",
-   "title": "【OSCE儲備師資】專科護理師OSCE臨床思維與技能訓練之儲備師資工作坊(北區場)",
-   "location": "淡水馬偕紀念醫院-恩典樓側棟3樓-臨床技能訓練中心",
-   "credits": {
-    "np": 7
-   },
-   "cat": "teaching",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6278&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-10-31",
-   "title": "【OSCE考生衝刺】專科護理師OSCE臨床思維與技能訓練工作坊(北區場)",
-   "location": "淡水馬偕紀念醫院-恩典樓側棟3樓-臨床技能訓練中心",
-   "credits": {
-    "np": 7.8
-   },
-   "cat": "teaching",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6271&pageno1&continue=Y"
-  },
   {
    "date": "2026-11-02",
    "title": "115 年診所病人安全年度目標推廣課程-視訊報名-運用醫病合作對話促進醫療暴力預防",
