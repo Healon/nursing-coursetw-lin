@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-08T14:17:54+00:00",
+  "generated": "2026-11-09T16:00:39+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -286,13 +286,13 @@
   {
    "date": "2026-11-11",
    "title": "115年醫療品質學院實作課程-根本原因分析RCA工作坊",
-   "location": "醫策會701會議室",
+   "location": "",
    "credits": {},
    "cat": "safety",
    "src": "jct",
    "online": false,
    "ondemand": false,
-   "region": "north",
+   "region": "tbd",
    "ctext": "本課程提供醫策會教育訓練時數、公務人員繼續教育時數",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FZj2YpMM4ciFu2m2XHYwJ1tzMesRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
@@ -1047,6 +1047,21 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261209"
+  },
+  {
+   "date": "2026-12-09",
+   "title": "【線上直播】失智症BPSD症狀處置",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6291&pageno1&continue=Y"
   },
   {
    "date": "2026-12-11",
