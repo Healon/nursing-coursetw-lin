@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-09T16:00:39+08:00",
+  "generated": "2026-11-09T17:28:37+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1496,6 +1496,19 @@
    "region": "central",
    "ctext": "時數 30 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/EDAF7F67-8B99-4D1A-A869-7A03EA957136"
+  },
+  {
+   "date": "2027-01-18",
+   "title": "AI輔助財務報表數據分析實戰",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 6 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/0FA48F72-36E3-4DA0-9972-1D5AAFA6A19E"
   },
   {
    "date": "2027-01-18",
