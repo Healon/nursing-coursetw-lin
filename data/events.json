@@ -1,35 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-09T17:28:37+00:00",
+  "generated": "2026-11-10T16:00:37+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-02",
-   "title": "115 年診所病人安全年度目標推廣課程-視訊報名-運用醫病合作對話促進醫療暴力預防",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fcj7Oc0N5JaFu2m2XHYwJ1tzMegSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
-  },
-  {
-   "date": "2026-11-02",
-   "title": "Vibe Coding Web 應用系統開發實務班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 18 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/8A735844-981D-4382-A865-21C44452A19E"
-  },
   {
    "date": "2026-11-03",
    "title": "115 年診所病人安全年度目標推廣課程（婦產場-第二場）-視訊報名-從產前到新生兒： 孕產兒安全的關鍵溝通",
@@ -361,14 +335,14 @@
   {
    "date": "2026-11-13",
    "title": "115 年醫院病人安全年度目標推廣課程（第五場）-實體報名",
-   "location": "",
+   "location": "國立臺灣大學醫學院附設醫院兒童醫院 B1講堂",
    "credits": {},
    "cat": "safety",
    "src": "jct",
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5r2MsZQsMiFu2m2XHYwJ1tzMegZj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
