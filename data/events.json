@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-10T16:00:37+08:00",
+  "generated": "2026-11-10T15:35:46+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1470,6 +1470,32 @@
    "region": "central",
    "ctext": "時數 30 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/EDAF7F67-8B99-4D1A-A869-7A03EA957136"
+  },
+  {
+   "date": "2027-01-16",
+   "title": "架構導向Vibe Coding落地與治理",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/4602B99D-9471-4639-B85F-D804EE1C1027"
+  },
+  {
+   "date": "2027-01-18",
+   "title": "AI 數位教材開發實戰班",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/B095369A-B635-47D4-9C06-0E7ED04CA0CF"
   },
   {
    "date": "2027-01-18",
