@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T15:35:46+00:00",
+  "generated": "2026-11-11T16:00:36+08:00",
   "overall": "partial",
   "sources": {
     "nuna": {
@@ -46,8 +46,8 @@
     },
     "jct": {
       "status": "ok",
-      "count": 20,
-      "last_success": "2026-11-10",
+      "count": 19,
+      "last_success": "2026-11-11",
       "message": ""
     },
     "hospice": {
@@ -65,7 +65,7 @@
     "tnpa": {
       "status": "ok",
       "count": 6,
-      "last_success": "2026-11-10",
+      "last_success": "2026-11-11",
       "message": ""
     },
     "itri": {

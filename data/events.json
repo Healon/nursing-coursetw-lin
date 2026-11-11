@@ -1,61 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-10T15:35:46+00:00",
+  "generated": "2026-11-11T16:00:36+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-03",
-   "title": "115 年診所病人安全年度目標推廣課程（婦產場-第二場）-視訊報名-從產前到新生兒： 孕產兒安全的關鍵溝通",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、台灣婦產科醫學會、台灣周產期醫學會、助產 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8c33Y5EMssmFu2m2XHYwJ1tzMegUj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
-  },
-  {
-   "date": "2026-11-03",
-   "title": "【產業新尖兵計畫】廠區智慧AI監測與城市基礎設施數位化養成班（高雄班）",
-   "location": "高雄",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 234 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/8E0CCAB8-F7D4-4DE6-8A78-C0D71F9AAF7E"
-  },
-  {
-   "date": "2026-11-03",
-   "title": "廠區智慧AI監測與城市基礎設施數位化養成班（高雄班）",
-   "location": "高雄",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 234 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/8E0CCAB8-F7D4-4DE6-8A78-C0D71F9AAF7E"
-  },
-  {
-   "date": "2026-11-03",
-   "title": "新一代全端 AI 開發流程實戰",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/FE6118BF-F9DE-4F55-9F9F-0014A4B915FA"
-  },
   {
    "date": "2026-11-05",
    "title": "AI數據分析產業應用養成班(第8梯次)",
@@ -426,7 +374,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rs6pZMRdsceFu2m2XHYwJ1tzMeoQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
