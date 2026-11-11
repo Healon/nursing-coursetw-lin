@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-11T16:00:36+08:00",
+  "generated": "2026-11-11T15:10:54+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -984,6 +984,21 @@
    "region": "online",
    "ctext": "",
    "url": "https://www.tnpa.org.tw/events/content.php?id=6291&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-12-10",
+   "title": "115年護理研究創新與數位教學成果發表暨頒獎典禮 -",
+   "location": "臺中榮民總醫院研究大樓一樓",
+   "credits": {
+    "pro": 4.8
+   },
+   "cat": "teaching",
+   "src": "nuna",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "",
+   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
   },
   {
    "date": "2026-12-11",
