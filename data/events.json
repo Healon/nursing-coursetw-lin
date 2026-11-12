@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-11T15:10:54+00:00",
+  "generated": "2026-11-12T16:00:39+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -446,6 +446,21 @@
   },
   {
    "date": "2026-11-17",
+   "title": "【線上直播】實證與研究進化論－跨國論壇",
+   "location": "Google Meet 線上直播課程",
+   "credits": {
+    "np": 1.2
+   },
+   "cat": "research",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6293&pageno1&continue=Y"
+  },
+  {
+   "date": "2026-11-17",
    "title": "新一代全端 AI 開發流程實戰",
    "location": "新竹",
    "credits": {},
@@ -580,6 +595,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/5C5A179C-EF31-48D8-A6D9-4772E6F3ECCF"
+  },
+  {
+   "date": "2026-11-23",
+   "title": "115年度臨床醫事人員培訓計畫「護理職類導師研習營」",
+   "location": "",
+   "credits": {},
+   "cat": "clinical",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZ%2F2NpEL58WFu2m2XHYwJ1tzMeUQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
    "date": "2026-11-23",
@@ -1098,6 +1126,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/58337D24-4991-4E86-804C-831952A336BB"
+  },
+  {
+   "date": "2026-12-16",
+   "title": "2026年提升正向病安文化(TPSC)分享會",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rM3%2BZZEKsMWFu2m2XHYwJ1tzMeURj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHo"
   },
   {
    "date": "2026-12-16",
