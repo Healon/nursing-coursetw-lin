@@ -1,35 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-12T15:58:41+00:00",
+  "generated": "2026-11-13T16:00:41+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-05",
-   "title": "AI數據分析產業應用養成班(第8梯次)",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 364 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B5484C11-75DC-41A4-BAD7-95F8994FB14E"
-  },
-  {
-   "date": "2026-11-05",
-   "title": "低代碼資料建模與決策優化實戰",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/90D6D276-CC7C-4E94-91CE-0547D0965BD3"
-  },
   {
    "date": "2026-11-06",
    "title": "115年提升醫院防火安全交流研討會",
@@ -883,6 +857,21 @@
    "region": "north",
    "ctext": "時數 364 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/B5484C11-75DC-41A4-BAD7-95F8994FB14E"
+  },
+  {
+   "date": "2026-12-02",
+   "title": "【線上直播】輔英科技大學護理學院國際學術專題講座",
+   "location": "線上直播課程",
+   "credits": {
+    "np": 3.6
+   },
+   "cat": "tech",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6292&pageno1&continue=Y"
   },
   {
    "date": "2026-12-02",
