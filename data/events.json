@@ -1,48 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-13T15:23:34+00:00",
+  "generated": "2026-11-14T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-06",
-   "title": "115年提升醫院防火安全交流研討會",
-   "location": "",
-   "credits": {},
-   "cat": "research",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F8%2F%2BNcELsJGFu2m2XHYwJ1tzMegQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
-  },
-  {
-   "date": "2026-11-06",
-   "title": "2026年台灣健康照護聯合學術研討會-一般暨投稿錄取報名專區",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rJiqOJdYvZKFu2m2XHYwJ1tzMuQXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
-  },
-  {
-   "date": "2026-11-06",
-   "title": "2026年台灣健康照護聯合學術研討會-學生報名專區",
-   "location": "",
-   "credits": {},
-   "cat": "clinical",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Fc33MZdc5seFu2m2XHYwJ1tzMuQWj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
-  },
   {
    "date": "2026-11-07",
    "title": "AI智能自動化實戰班–從Workflow到AI Agent",
@@ -449,14 +410,14 @@
   {
    "date": "2026-11-18",
    "title": "115年數位醫療危害病人安全之相關風險管控課程-運用AI在醫囑與決策支援系統設計",
-   "location": "",
+   "location": "報名後視訊連結於上課前一週提供",
    "credits": {},
    "cat": "tech",
    "src": "jct",
-   "online": false,
+   "online": true,
    "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
+   "region": "online",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=8JSrNMxescGFu2m2XHYwJ1tzMesTj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -534,14 +495,14 @@
   {
    "date": "2026-11-20",
    "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-病人流指標管理工作坊",
-   "location": "",
+   "location": "TCCC台灣文創訓練中心-新北板橋館 4 樓B401教室",
    "credits": {},
    "cat": "clinical",
    "src": "jct",
    "online": false,
    "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
+   "region": "north",
+   "ctext": "醫策會上課時數證明、公務人力時數、品質學院學分、護理繼續教育訓練積分",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2Bp%2BsYs1evMaFu2m2XHYwJ1tzMesVj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -580,7 +541,7 @@
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "醫策會",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rZ%2F2NpEL58WFu2m2XHYwJ1tzMeUQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
