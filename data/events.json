@@ -1,37 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-14T14:09:09+00:00",
+  "generated": "2026-11-15T16:00:41+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-07",
-   "title": "AI智能自動化實戰班–從Workflow到AI Agent",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/5C5A179C-EF31-48D8-A6D9-4772E6F3ECCF"
-  },
-  {
-   "date": "2026-11-07",
-   "title": "【實體】說故事的人：Find the Blue Reason（以呼吸道感染為例）｜南區",
-   "location": "H2O Hotel 水京棧國際酒店宴會廳",
-   "credits": {
-    "np": 5.6
-   },
-   "cat": "safety",
-   "src": "tnpa",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6281&pageno1&continue=Y"
-  },
   {
    "date": "2026-11-08",
    "title": "【線上工作坊】實證進階一次到位：NP4實證案例報告撰寫暨JBI實證工具線上工作坊",
