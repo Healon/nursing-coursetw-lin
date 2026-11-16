@@ -1,39 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-15T14:45:12+00:00",
+  "generated": "2026-11-16T16:00:36+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-08",
-   "title": "【線上工作坊】實證進階一次到位：NP4實證案例報告撰寫暨JBI實證工具線上工作坊",
-   "location": "Google Meet 線上工作坊",
-   "credits": {
-    "np": 4
-   },
-   "cat": "research",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6287&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-11-08",
-   "title": "實證進階一次到位：NP4實證案例報告撰寫暨JBI實證工具線上工作坊",
-   "location": "Google Meet 線上工作坊",
-   "credits": {
-    "np": 4
-   },
-   "cat": "research",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6287&pageno1&continue=Y"
-  },
   {
    "date": "2026-11-09",
    "title": "AI協作流程設計與導入工作坊",
