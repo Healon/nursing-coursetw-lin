@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-16T16:00:36+08:00",
+  "generated": "2026-11-16T17:00:18+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1483,6 +1483,32 @@
    "region": "online",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/576654F3-CE1F-4372-89D1-CC6B3AB6A198"
+  },
+  {
+   "date": "2027-02-16",
+   "title": "Power Query 資料整合設計與自動化應用",
+   "location": "台南",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 7 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/699691F6-43A1-4907-A504-18D39EF4D7D0"
+  },
+  {
+   "date": "2027-02-16",
+   "title": "Vibe Coding × AI輔助資料分析-入門實作班(第二梯)",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/CB8DB410-9679-44C7-8555-C1E131F64C8E"
   }
  ]
 }
