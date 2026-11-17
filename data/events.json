@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-17T16:00:39+08:00",
+  "generated": "2026-11-17T16:53:12+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1340,6 +1340,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/9A6D99D8-A5AA-47F2-861C-794CB684B313"
+  },
+  {
+   "date": "2027-01-14",
+   "title": "AI應用規劃師初級培訓班(新竹班-第四梯次)",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/3F5DF223-018A-4179-BF5E-1A8922036663"
   },
   {
    "date": "2027-01-14",
