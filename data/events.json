@@ -1,22 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-16T17:00:18+00:00",
+  "generated": "2026-11-17T16:00:39+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-09",
-   "title": "AI協作流程設計與導入工作坊",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B4152ECC-ACB3-4C8B-B9E7-B3FC35DF226F"
-  },
   {
    "date": "2026-11-10",
    "title": "115 年醫院病人安全年度目標推廣課程（第四場）-實體報名",
