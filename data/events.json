@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T16:00:41+08:00",
+  "generated": "2026-11-18T16:27:35+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -832,7 +832,7 @@
    "title": "115年護理研究創新與數位教學成果發表暨頒獎典禮 -",
    "location": "臺中榮民總醫院研究大樓一樓",
    "credits": {
-    "pro": 4.8
+    "pro": 2.4
    },
    "cat": "teaching",
    "src": "nuna",
@@ -1011,6 +1011,21 @@
    "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261218"
   },
   {
+   "date": "2026-12-18",
+   "title": "※南部場2026年Post-ISQua Highlights國際健康照護品質協會年會精萃分享-跨越國界看見品質",
+   "location": "國軍高雄總醫院",
+   "credits": {
+    "quality": 6.5
+   },
+   "cat": "clinical",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261218"
+  },
+  {
    "date": "2026-12-19",
    "title": "Vibe Coding × AI程式開發-進階實戰班（規格驅動開發與AI協作）（第二梯）",
    "location": "台北",
@@ -1056,6 +1071,21 @@
   {
    "date": "2026-12-21",
    "title": "※[北部場]2026年Post-ISQua Highlights國際健康照護品質協會年會精萃分享-跨越國界看見品質",
+   "location": "馬偕紀念醫院(台北院區",
+   "credits": {
+    "quality": 6.5
+   },
+   "cat": "clinical",
+   "src": "ahqroc",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "",
+   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261221"
+  },
+  {
+   "date": "2026-12-21",
+   "title": "※北部場2026年Post-ISQua Highlights國際健康照護品質協會年會精萃分享-跨越國界看見品質",
    "location": "馬偕紀念醫院(台北院區",
    "credits": {
     "quality": 6.5
@@ -1444,6 +1474,32 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/CB8DB410-9679-44C7-8555-C1E131F64C8E"
+  },
+  {
+   "date": "2027-02-18",
+   "title": "【免費課程】智慧倉儲與智慧配送：AI驅動的物流管理實務(臺中班)",
+   "location": "台中",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "central",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/0400DA57-C5FE-47EA-8CE7-A7ECECBA8DD6"
+  },
+  {
+   "date": "2027-02-18",
+   "title": "多模態視覺AI與Vision Agent開發實戰",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/333FB80F-5CEE-43D4-8084-50725B6534A6"
   }
  ]
 }
