@@ -1,37 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-18T16:27:35+00:00",
+  "generated": "2026-11-19T16:00:35+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-11",
-   "title": "115年醫療品質學院實作課程-根本原因分析RCA工作坊",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人員繼續教育時數",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FZj2YpMM4ciFu2m2XHYwJ1tzMesRj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
-  },
-  {
-   "date": "2026-11-11",
-   "title": "長照3.0醫養結合發展新視野研討會(東區) -",
-   "location": "羅東聖母醫院-外科大樓11樓大禮堂",
-   "credits": {
-    "pro": 7.2
-   },
-   "cat": "research",
-   "src": "nuna",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.nurse.org.tw/publicUI/D/D101.aspx"
-  },
   {
    "date": "2026-11-12",
    "title": "2026智慧科技與人因工程在急重症照護及病人安全之臨床應用研習工作坊",
@@ -498,7 +470,7 @@
    "online": true,
    "ondemand": false,
    "region": "online",
-   "ctext": "",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師、專科護理師、台灣婦產科醫學會、台灣周產期醫學會、助產 學分申請中",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=qpn2YZZftZGFu2m2XHYwJ1tzMegXj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -968,6 +940,21 @@
    "region": "tbd",
    "ctext": "",
    "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261216"
+  },
+  {
+   "date": "2026-12-16",
+   "title": "【線上社團課程】NPower專注力社群-空白與點線間，找回內在的寧靜",
+   "location": "ZOOM線上會議室",
+   "credits": {
+    "np": 0.6
+   },
+   "cat": "other",
+   "src": "tnpa",
+   "online": true,
+   "ondemand": false,
+   "region": "online",
+   "ctext": "",
+   "url": "https://www.tnpa.org.tw/events/content.php?id=6294&pageno1&continue=Y"
   },
   {
    "date": "2026-12-17",
