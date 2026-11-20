@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-20T16:00:37+08:00",
+  "generated": "2026-11-20T16:08:38+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -757,7 +757,7 @@
    "title": "115年護理研究創新與數位教學成果發表暨頒獎典禮 -",
    "location": "臺中榮民總醫院研究大樓一樓",
    "credits": {
-    "pro": 2.4
+    "pro": 7.2
    },
    "cat": "teaching",
    "src": "nuna",
@@ -1440,6 +1440,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/333FB80F-5CEE-43D4-8084-50725B6534A6"
+  },
+  {
+   "date": "2027-02-20",
+   "title": "Vibe Coding × AI程式開發-進階實戰班（規格驅動開發與AI協作）（第二梯）",
+   "location": "台北",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/2C0D0E95-1766-4765-A64E-012943479923"
   }
  ]
 }
