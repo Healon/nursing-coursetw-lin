@@ -1,56 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-19T16:33:44+00:00",
+  "generated": "2026-11-20T16:00:37+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-12",
-   "title": "2026智慧科技與人因工程在急重症照護及病人安全之臨床應用研習工作坊",
-   "location": "承億酒店 9F-心閱閣",
-   "credits": {
-    "pro": 6.2,
-    "np": 6.2
-   },
-   "cat": "tech",
-   "src": "critical",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/434"
-  },
-  {
-   "date": "2026-11-12",
-   "title": "2026智慧科技與人因工程在急重症照護及病人安全之臨床應用研習工作坊 (群益邀請)",
-   "location": "承億酒店 9F-心閱閣",
-   "credits": {
-    "pro": 6.2,
-    "np": 6.2
-   },
-   "cat": "tech",
-   "src": "critical",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/437"
-  },
-  {
-   "date": "2026-11-12",
-   "title": "【線上直播】癌性傷口管理關鍵密碼-當癒合不再是唯一目標",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "clinical",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6286&pageno1&continue=Y"
-  },
   {
    "date": "2026-11-13",
    "title": "115 年醫院病人安全年度目標推廣課程（第五場）-實體報名",
