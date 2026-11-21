@@ -1,78 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-20T16:08:38+00:00",
+  "generated": "2026-11-21T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-13",
-   "title": "115 年醫院病人安全年度目標推廣課程（第五場）-實體報名",
-   "location": "國立臺灣大學醫學院附設醫院兒童醫院 B1講堂",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明，醫策會教育訓練時數適用於「全民健康保險醫院總額品質保證保留款實施方案」；醫師、護理師 學分申請中",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2F5r2MsZQsMiFu2m2XHYwJ1tzMegZj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
-  },
-  {
-   "date": "2026-11-13",
-   "title": "115年度護理資訊進階系列課程 【SMART Nursing：智慧監測於臨床照護】",
-   "location": "台北國泰萬怡酒店 蘭花廳Orchid",
-   "credits": {},
-   "cat": "tech",
-   "src": "ni",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
-   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3553"
-  },
-  {
-   "date": "2026-11-13",
-   "title": "Power Query 資料整合設計與自動化應用",
-   "location": "台南",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "south",
-   "ctext": "時數 7 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/699691F6-43A1-4907-A504-18D39EF4D7D0"
-  },
-  {
-   "date": "2026-11-13",
-   "title": "※【圈隊免費名額5名】2026年品質改善成果發表競賽",
-   "location": "臺北榮民總醫院",
-   "credits": {
-    "quality": 7
-   },
-   "cat": "safety",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261113"
-  },
-  {
-   "date": "2026-11-13",
-   "title": "※【整日觀摩】2026年品質改善成果發表競賽",
-   "location": "臺北榮民總醫院",
-   "credits": {
-    "quality": 7
-   },
-   "cat": "safety",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261113-1"
-  },
   {
    "date": "2026-11-15",
    "title": "2026年台灣安寧緩和護理學會💜【東區】💜《禪茶之旅 開心門寂靜茶席》",
@@ -455,14 +386,14 @@
   {
    "date": "2026-11-26",
    "title": "115年數位醫療危害病人安全之相關風險管控課程-安全溝通：從資訊安全到病人安全",
-   "location": "",
+   "location": "報名後視訊連結於上課前一週提供",
    "credits": {},
    "cat": "tech",
    "src": "jct",
-   "online": false,
+   "online": true,
    "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
+   "region": "online",
+   "ctext": "醫策會教育訓練時數及公務人員繼續教育時數證明",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2BJz5N8YLt5OFu2m2XHYwJ1tzMesSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
