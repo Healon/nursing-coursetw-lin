@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-23T16:00:37+08:00",
+  "generated": "2026-11-23T19:14:28+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1161,6 +1161,19 @@
    "region": "north",
    "ctext": "時數 6 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/9A6D99D8-A5AA-47F2-861C-794CB684B313"
+  },
+  {
+   "date": "2027-01-13",
+   "title": "超越 Vibe Coding： Claude Code 多 Agent 協同開發實戰",
+   "location": "雲端教室",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "時數 12 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/E3E3F1B6-423D-43FF-A0C2-74BB891BC1C0"
   },
   {
    "date": "2027-01-14",
