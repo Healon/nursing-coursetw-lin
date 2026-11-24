@@ -1,76 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-23T19:14:28+00:00",
+  "generated": "2026-11-24T16:00:38+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-16",
-   "title": "115年醫療品質學院進階實作課程-根本原因分析（RCA 2.0／HFACS）高階分析師培訓班",
-   "location": "",
-   "credits": {},
-   "cat": "safety",
-   "src": "jct",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "本課程提供醫策會教育訓練時數、公務人力繼續教育時數",
-   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rs6pZMRdsceFu2m2XHYwJ1tzMeoQj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
-  },
-  {
-   "date": "2026-11-16",
-   "title": "AI 數位教材開發實戰班",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/B095369A-B635-47D4-9C06-0E7ED04CA0CF"
-  },
-  {
-   "date": "2026-11-16",
-   "title": "AI深度學習於電腦視覺與時序建模應用",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 12 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/DEB30802-618C-4A91-A04E-6EFB820F86A5"
-  },
-  {
-   "date": "2026-11-16",
-   "title": "AI輔助財務報表數據分析實戰",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/0FA48F72-36E3-4DA0-9972-1D5AAFA6A19E"
-  },
-  {
-   "date": "2026-11-16",
-   "title": "※績效管理與經營分析實務運用研討會",
-   "location": "亞東紀念醫院6樓階梯教室",
-   "credits": {
-    "quality": 7
-   },
-   "cat": "admin",
-   "src": "ahqroc",
-   "online": false,
-   "ondemand": false,
-   "region": "tbd",
-   "ctext": "",
-   "url": "https://www.ahqroc.org.tw/ClassDetail.aspx?sid=A-20261116"
-  },
   {
    "date": "2026-11-17",
    "title": "Vibe Coding 應用 - SDD規格驅動開發實務",
@@ -436,14 +369,14 @@
   {
    "date": "2026-11-27",
    "title": "115年醫療品質學院實作課程-醫院內部稽核工作坊",
-   "location": "",
+   "location": "醫策會701會議室",
    "credits": {},
    "cat": "safety",
    "src": "jct",
    "online": false,
    "ondemand": false,
    "region": "tbd",
-   "ctext": "",
+   "ctext": "本課程提供醫策會教育訓練時數、公務人員繼續教育時數",
    "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=rM73M5YJtZKFu2m2XHYwJ1tzMeoSj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHr"
   },
   {
@@ -850,6 +783,19 @@
    "region": "south",
    "ctext": "本課程不發予研習會證明書，申請護理師繼續教育積分中。",
    "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3555"
+  },
+  {
+   "date": "2026-12-18",
+   "title": "115年醫療品質學院實作課程-風險管理工具-FMEA工作坊",
+   "location": "",
+   "credits": {},
+   "cat": "safety",
+   "src": "jct",
+   "online": false,
+   "ondemand": false,
+   "region": "tbd",
+   "ctext": "",
+   "url": "https://attend.jct.org.tw/activity/event_news_detail.php?arg=%2FMr4NpRasJWFu2m2XHYwJ1tzMeUTj0QgqROk7%2BjJ7a5tvlRscx5M5uWfILHo"
   },
   {
    "date": "2026-12-18",
