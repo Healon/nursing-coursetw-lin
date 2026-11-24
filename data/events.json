@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-24T16:00:38+08:00",
+  "generated": "2026-11-24T18:53:18+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1328,6 +1328,19 @@
    "region": "north",
    "ctext": "時數 12 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/2C0D0E95-1766-4765-A64E-012943479923"
+  },
+  {
+   "date": "2027-02-24",
+   "title": "【全選】AI資料中心高速光互連與光電整合技術",
+   "location": "新竹",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "north",
+   "ctext": "時數 18 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/69C0CE0F-E363-4301-93B6-6E753422F6C5"
   }
  ]
 }
