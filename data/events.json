@@ -1,50 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-24T18:53:18+00:00",
+  "generated": "2026-11-25T16:00:41+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-17",
-   "title": "Vibe Coding 應用 - SDD規格驅動開發實務",
-   "location": "台北",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 6 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/865A130B-BCB6-45F8-B706-C8932FF71DE3"
-  },
-  {
-   "date": "2026-11-17",
-   "title": "【線上直播】實證與研究進化論－跨國論壇",
-   "location": "Google Meet 線上直播課程",
-   "credits": {
-    "np": 1.2
-   },
-   "cat": "research",
-   "src": "tnpa",
-   "online": true,
-   "ondemand": false,
-   "region": "online",
-   "ctext": "",
-   "url": "https://www.tnpa.org.tw/events/content.php?id=6293&pageno1&continue=Y"
-  },
-  {
-   "date": "2026-11-17",
-   "title": "新一代全端 AI 開發流程實戰",
-   "location": "新竹",
-   "credits": {},
-   "cat": "tech",
-   "src": "itri",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "時數 14 小時",
-   "url": "https://college.itri.org.tw/Lesson/LessonData/FE6118BF-F9DE-4F55-9F9F-0014A4B915FA"
-  },
   {
    "date": "2026-11-18",
    "title": "115年數位醫療危害病人安全之相關風險管控課程-運用AI在醫囑與決策支援系統設計",
