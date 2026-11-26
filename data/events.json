@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-26T16:00:36+08:00",
+  "generated": "2026-11-26T17:43:06+00:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
@@ -1244,6 +1244,19 @@
    "region": "north",
    "ctext": "時數 18 小時",
    "url": "https://college.itri.org.tw/Lesson/LessonData/69C0CE0F-E363-4301-93B6-6E753422F6C5"
+  },
+  {
+   "date": "2027-02-26",
+   "title": "【免費課程】跨國物流供應鏈管理：AI 賦能供應鏈韌性與營運優化-高雄班",
+   "location": "高雄",
+   "credits": {},
+   "cat": "tech",
+   "src": "itri",
+   "online": false,
+   "ondemand": false,
+   "region": "south",
+   "ctext": "時數 30 小時",
+   "url": "https://college.itri.org.tw/Lesson/LessonData/451F0800-6F0C-46EA-9A30-23D2EEE05CEB"
   }
  ]
 }
