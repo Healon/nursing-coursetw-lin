@@ -1,38 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-26T17:43:06+00:00",
+  "generated": "2026-11-27T16:00:35+08:00",
   "disclaimer": "本站為個人維護的非官方彙整頁，活動資訊以各學會官方網站公告為準；活動內容著作權歸各主辦單位所有。"
  },
  "events": [
-  {
-   "date": "2026-11-19",
-   "title": "115年度外傷護理指導員訓練課程(TNTP Instructor Course)",
-   "location": "新光醫院地下室三樓第八會議室",
-   "credits": {
-    "pro": 7,
-    "np": 7
-   },
-   "cat": "clinical",
-   "src": "critical",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "",
-   "url": "https://www.taccn.org.tw/activity/detail/431"
-  },
-  {
-   "date": "2026-11-19",
-   "title": "115年度護理資訊進階系列課程 【護理資訊新世代與賦能研討會】",
-   "location": "新北市立土城醫院醫療大樓二樓國際會議廳",
-   "credits": {},
-   "cat": "tech",
-   "src": "ni",
-   "online": false,
-   "ondemand": false,
-   "region": "north",
-   "ctext": "本課程申請護理人員繼續教育積分，可抵用本學會進階資訊護理師之積分認證 (無額外提供研習會證明書)。",
-   "url": "https://www.ni.org.tw/v2/newsm_cload3.aspx?pidm=3554"
-  },
   {
    "date": "2026-11-20",
    "title": "115年台灣臨床成效指標(TCPI) 指標全攻略套裝課程-病人流指標管理工作坊",
